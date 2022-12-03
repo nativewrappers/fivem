@@ -1,0 +1,33 @@
+name: "Publish Package"
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get tag
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Bump package version
+        run: node .github/actions/bump-package-version.js
+        env:
+          RELEASE_VERSION: ${{ env.RELEASE_VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: ^6.24.1
+      - run: pnpm install
+      - run: pnpm run ci
+      # because we update the package version pnpm will get mad over an unclean branch
+      # we don't want a bunch of version bump commits so just ignore the git checks
+      - run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
