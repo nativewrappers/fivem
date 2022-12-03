@@ -5,9 +5,12 @@
     "moduleResolution": "node",
     "declaration": true,
     "outDir": "./lib",
-    "types": ["@citizenfx/server"],
+    "types": ["@citizenfx/server", "../common/**"],
     "strict": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+	"paths": {
+		"@common/*": ["../common/src/*"]
+	}
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]

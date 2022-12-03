@@ -7,6 +7,9 @@
     "outDir": "./lib",
     "types": ["@citizenfx/client"],
     "strict": true,
+	"paths": {
+		"@common/*": ["../common/src/*"]
+	},
     "strictNullChecks": true
   },
   "include": ["src"],

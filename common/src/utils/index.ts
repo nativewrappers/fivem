@@ -6,6 +6,8 @@ export { Maths } from "./Maths";
 export { Quaternion } from "./Quaternion";
 export { Color } from "./Color";
 
+export { cleanPlayerName } from "./cleanPlayerName";
+
 export const Delay = (milliseconds: number): Promise<void> =>
 	new Promise(resolve => setTimeout(resolve, milliseconds));
 

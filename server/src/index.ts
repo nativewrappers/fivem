@@ -1,10 +1,9 @@
 export * from "./utils";
 
-export * from "./Convar";
 export * from "./Events";
 export * from "./Game";
-export * from "./Kvp";
-export * from "./Resource";
+
+export { Convar, Kvp, Resource } from "@common/index";
 
 export * from "./utils/index";
 export * from "./entities/index";

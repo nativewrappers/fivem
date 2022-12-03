@@ -4,8 +4,7 @@
     "module": "es2020",
     "moduleResolution": "node",
     "declaration": true,
-    "outDir": "./lib",
-    "types": ["@citizenfx/server"],
+    "types": ["@citizenfx/client", "@citizenfx/server"],
     "strict": true,
     "strictNullChecks": true
   },
