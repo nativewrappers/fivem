@@ -1,13 +1,20 @@
 import { ClassTypes } from "../enum/ClassTypes";
 import { Hash } from "../type/Hash";
 import { Entity } from "./Entity";
-import { EntityType, EntityWrapper } from "./EntityWrapper";
-import type { Vehicle } from "./Vehicle";
-
 export class Ped extends Entity {
 	protected type = ClassTypes.Ped;
 	constructor(handle: number) {
 		super(handle);
+	}
+
+	/**
+	 * Get an interable list of peds currently on the server
+	 * @returns Iterable list of Peds.
+	 */
+	public static *AllPeds(): IterableIterator<Ped> {
+		for (const pedId of GetAllPeds() as unknown as number[]) {
+			yield new Ped(pedId);
+		}
 	}
 
 	public static fromNetworkId(netId: number): Ped {
@@ -42,20 +49,24 @@ export class Ped extends Entity {
 		return GetPedScriptTaskStage(this.handle);
 	}
 
-	public get LastSourceOfDamage(): EntityType {
-		return EntityWrapper.fromHandle(this.handle);
+	public get LastSourceOfDamage(): number {
+		return GetPedSourceOfDamage(this.handle);
 	}
 
-	public get DeathCause(): EntityType {
-		return EntityWrapper.fromHandle(this.handle);
+	public get DeathCause(): number {
+		return GetPedCauseOfDeath(this.handle);
 	}
 
 	public get Weapon(): Hash {
 		return GetSelectedPedWeapon(this.handle);
 	}
 
-	public get LastVehicle(): Vehicle {
-		return EntityWrapper.fromHandle(this.handle) as Vehicle;
+	public get Vehicle(): number {
+		return GetVehiclePedIsIn(this.handle, false);
+	}
+
+	public get LastVehicle(): number {
+		return GetVehiclePedIsIn(this.handle, true);
 	}
 
 	public get IsPlayer(): boolean {

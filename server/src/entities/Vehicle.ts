@@ -2,16 +2,25 @@ import { ClassTypes } from "../enum/ClassTypes";
 import { VehicleLockStatus } from "../enum/VehicleLockStatus";
 import { VehicleType } from "../enum/VehicleType";
 import { Hash } from "../type/Hash";
-import { Color } from "../utils/Color";
+import { Color } from "../utils";
 import { Entity } from "./Entity";
-import { EntityWrapper } from "./EntityWrapper";
-import type { Ped } from "./Ped";
 
 export class Vehicle extends Entity {
 	protected type = ClassTypes.Vehicle;
 	constructor(handle: number) {
 		super(handle);
 	}
+
+	/**
+	 * Get an interable list of vehicles currently on the server
+	 * @returns Iterable list of Vehicles.
+	 */
+	public static *AllVehicles(): IterableIterator<Vehicle> {
+		for (const prop of GetAllVehicles() as unknown as number[]) {
+			yield new Vehicle(prop);
+		}
+	}
+
 	public static fromNetworkId(netId: number): Vehicle {
 		return new Vehicle(NetworkGetEntityFromNetworkId(netId));
 	}
@@ -201,11 +210,11 @@ export class Vehicle extends Entity {
 		return IsVehicleExtraTurnedOn(this.handle, extraId);
 	}
 
-	public getPedInSeat(seatIndex: number): Ped {
-		return EntityWrapper.fromHandle(GetPedInVehicleSeat(this.handle, seatIndex)) as Ped;
+	public getPedInSeat(seatIndex: number): number {
+		return GetPedInVehicleSeat(this.handle, seatIndex);
 	}
 
-	public getLastPedInSeat(seatIndex: number): Ped {
-		return EntityWrapper.fromHandle(GetLastPedInVehicleSeat(this.handle, seatIndex)) as Ped;
+	public getLastPedInSeat(seatIndex: number): number {
+		return GetLastPedInVehicleSeat(this.handle, seatIndex);
 	}
 }

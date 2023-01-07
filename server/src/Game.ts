@@ -1,4 +1,3 @@
-import { Ped, Prop, Vehicle } from "./entities";
 import { Player } from "./entities/Player";
 
 export abstract class Game {
@@ -65,36 +64,6 @@ export abstract class Game {
 	public static *PlayerList(): IterableIterator<Player> {
 		for (const id of getPlayers() as unknown as number[]) {
 			yield new Player(id);
-		}
-	}
-
-	/**
-	 * Get an interable list of peds currently on the server
-	 * @returns Iterable list of Peds.
-	 */
-	public static *getAllPed(): IterableIterator<Ped> {
-		for (const pedId of GetAllPeds() as unknown as number[]) {
-			yield new Ped(pedId);
-		}
-	}
-
-	/**
-	 * Get an interable list of props currently on the server
-	 * @returns Iterable list of Props.
-	 */
-	public static *getAllProps(): IterableIterator<Prop> {
-		for (const prop of GetAllObjects() as unknown as number[]) {
-			yield new Prop(prop);
-		}
-	}
-
-	/**
-	 * Get an interable list of vehicles currently on the server
-	 * @returns Iterable list of Vehicles.
-	 */
-	public static *getAllVehicles(): IterableIterator<Vehicle> {
-		for (const prop of GetAllVehicles() as unknown as number[]) {
-			yield new Vehicle(prop);
 		}
 	}
 }

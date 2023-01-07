@@ -4,8 +4,7 @@ import { eEntityType } from "../enum/eEntityType";
 import { PopulationType } from "../enum/PopulationType";
 import { Hash } from "../type/Hash";
 import { Vector4 } from "../utils";
-import { Vector3 } from "../utils/Vector3";
-import { EntityType, EntityWrapper } from "./EntityWrapper";
+import { Vector3 } from "../utils";
 import { Player } from "./Player";
 
 export class Entity {
@@ -32,8 +31,8 @@ export class Entity {
 		return this.handle !== 0 && DoesEntityExist(this.handle);
 	}
 
-	public get AttachedTo(): EntityType {
-		return EntityWrapper.fromHandle(GetEntityAttachedTo(this.handle));
+	public get AttachedTo(): number {
+		return GetEntityAttachedTo(this.handle);
 	}
 
 	public get Position(): Vector3 {

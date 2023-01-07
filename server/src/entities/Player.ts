@@ -1,7 +1,7 @@
 import cfx from "../cfx";
 import { ClassTypes } from "../enum/ClassTypes";
-import cleanPlayerName from "../utils/cleanPlayerName";
-import { Vector3 } from "../utils/Vector3";
+import { cleanPlayerName } from "../utils";
+import { Vector3 } from "../utils";
 import { Ped } from "./Ped";
 
 export class Player {

@@ -1,10 +1,10 @@
 {
   "name": "@nativewrappers/fivem-server",
-  "version": "0.0.6",
+  "version": "0.0.14",
   "description": "Javascript/Typescript wrapper for the FiveM Server natives",
-  "main": "lib/index.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/server/src/index.js",
+  "module": "lib/server/src/index.js",
+  "types": "lib/server/src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
@@ -20,6 +20,7 @@
   },
   "keywords": [
     "fivem",
+	"server",
     "wrapper",
     "javascript",
     "typescript",
