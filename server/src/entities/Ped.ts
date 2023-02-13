@@ -1,7 +1,8 @@
 import { ClassTypes } from "../enum/ClassTypes";
 import { Hash } from "../type/Hash";
-import { Entity } from "./Entity";
-export class Ped extends Entity {
+import { BaseEntity } from "./BaseEntity";
+
+export class Ped extends BaseEntity {
 	protected type = ClassTypes.Ped;
 	constructor(handle: number) {
 		super(handle);

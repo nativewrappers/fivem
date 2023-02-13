@@ -1,6 +1,6 @@
 {
   "name": "@nativewrappers/fivem-server",
-  "version": "0.0.14",
+  "version": "0.0.19",
   "description": "Javascript/Typescript wrapper for the FiveM Server natives",
   "main": "lib/server/src/index.js",
   "module": "lib/server/src/index.js",

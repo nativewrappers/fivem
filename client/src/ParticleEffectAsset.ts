@@ -1,5 +1,5 @@
 import { InvertAxis, InvertAxisFlags } from './enums';
-import { Entity } from './models/';
+import type { BaseEntity } from './models/BaseEntity';
 import { Vector3 } from './utils';
 
 /**
@@ -37,8 +37,6 @@ export class ParticleEffectAsset {
 	 * Start a particle effect at a world position.
 	 *
 	 * @param effectName Name of effect.
-	 * @param entity Entity to use effect on.
-	 * @param off Offset from entity position.
 	 * @param rot Rotation from entity position.
 	 * @param scale Size of the effect.
 	 * @param invertAxis Which axis to invert (default none).
@@ -85,7 +83,7 @@ export class ParticleEffectAsset {
 	 */
 	public startNonLoopedOnEntity(
 		effectName: string,
-		entity: Entity,
+		entity: BaseEntity,
 		off: Vector3 = new Vector3(0, 0, 0),
 		rot: Vector3 = new Vector3(0, 0, 0),
 		scale = 1.0,
@@ -96,6 +94,7 @@ export class ParticleEffectAsset {
 		}
 		const invertAxisFlags = invertAxis.flags;
 		SetPtfxAssetNextCall(this.assetName);
+        // This still returns 
 		return !!StartParticleFxLoopedOnEntity(
 			effectName,
 			entity.Handle,

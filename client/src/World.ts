@@ -1,4 +1,4 @@
-import { Entity, Model, Prop } from './';
+import { Model, Prop } from './';
 import { Blip } from './Blip';
 import { Camera } from './Camera';
 import {
@@ -13,6 +13,7 @@ import {
 import { GameplayCamera } from './GameplayCamera';
 import { VehicleHash } from './hashes';
 import { Ped, Vehicle } from './models';
+import type { BaseEntity } from './models/BaseEntity';
 import { Pickup } from './Pickup';
 import { RaycastResult } from './Raycast';
 import { Rope } from './Rope';
@@ -861,7 +862,7 @@ export abstract class World {
 		direction: Vector3,
 		maxDistance: number,
 		options: IntersectOptions,
-		ignoreEntity: Entity,
+		ignoreEntity: BaseEntity,
 	): RaycastResult {
 		const target = Vector3.add(source, Vector3.multiply(direction, maxDistance));
 

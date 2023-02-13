@@ -1,12 +1,13 @@
-import { Entity, EntityBone } from './';
+import { EntityBone } from './';
+import type { BaseEntity } from './BaseEntity';
 
 export class EntityBoneCollection {
-	protected readonly owner: Entity;
+	protected readonly owner: BaseEntity;
 
 	private readonly _collection: Enumerator<EntityBone> | undefined;
 	private _currentIndex = -1;
 
-	constructor(owner: Entity) {
+	constructor(owner: BaseEntity) {
 		this.owner = owner;
 	}
 

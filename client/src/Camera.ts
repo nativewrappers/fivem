@@ -1,5 +1,6 @@
 import { CameraShake } from './enums';
-import { Entity, PedBone } from './models';
+import { PedBone } from './models';
+import { BaseEntity } from './models/BaseEntity';
 import { Vector3 } from './utils';
 import { LoadAnimDict } from './utils/Animations';
 
@@ -185,8 +186,8 @@ export class Camera {
 		RemoveAnimDict(animDict);
 	}
 
-	public pointAt(target: Entity | PedBone | Vector3, offset: Vector3 = new Vector3(0, 0, 0)): void {
-		if (target instanceof Entity) {
+	public pointAt(target: BaseEntity | PedBone | Vector3, offset: Vector3 = new Vector3(0, 0, 0)): void {
+		if (target instanceof BaseEntity) {
 			PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
 		} else if (target instanceof PedBone) {
 			PointCamAtPedBone(
@@ -226,8 +227,8 @@ export class Camera {
 		return IsCamInterpolating(this.handle);
 	}
 
-	public attachTo(object: Entity | PedBone, offset: Vector3): void {
-		if (object instanceof Entity) {
+	public attachTo(object: BaseEntity | PedBone, offset: Vector3): void {
+		if (object instanceof BaseEntity) {
 			AttachCamToEntity(this.handle, object.Handle, offset.x, offset.y, offset.z, true);
 		} else if (object instanceof PedBone) {
 			AttachCamToPedBone(

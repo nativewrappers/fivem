@@ -10,11 +10,12 @@ import {
 } from '../enums';
 import { WeaponHash } from '../hashes';
 import { Tasks } from '../Tasks';
-import { Entity, PedBoneCollection, Vehicle } from './';
+import { PedBoneCollection, Vehicle } from './';
 import { WeaponCollection } from '../weapon/WeaponCollection';
 import { ClassTypes } from '../enums/ClassTypes';
+import { BaseEntity } from './BaseEntity';
 
-export class Ped extends Entity {
+export class Ped extends BaseEntity {
 	public static exists(ped: Ped): boolean {
 		return typeof ped !== 'undefined' && ped.exists();
 	}
@@ -513,7 +514,7 @@ export class Ped extends Entity {
 		SetPedIntoVehicle(this.handle, vehicle.Handle, Number(seat));
 	}
 
-	public isHeadtracking(entity: Entity): boolean {
+	public isHeadtracking(entity: BaseEntity): boolean {
 		return IsPedHeadtrackingEntity(this.handle, entity.Handle);
 	}
 
@@ -533,7 +534,7 @@ export class Ped extends Entity {
 		return new Ped(GetMeleeTargetForPed(this.handle));
 	}
 
-	public getKiller(): Entity | null {
+	public getKiller(): BaseEntity | null {
 		return Ped.fromHandle(GetPedSourceOfDeath(this.handle));
 	}
 

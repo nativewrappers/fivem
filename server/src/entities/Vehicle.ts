@@ -3,9 +3,9 @@ import { VehicleLockStatus } from "../enum/VehicleLockStatus";
 import { VehicleType } from "../enum/VehicleType";
 import { Hash } from "../type/Hash";
 import { Color } from "../utils";
-import { Entity } from "./Entity";
+import { BaseEntity } from "./BaseEntity";
 
-export class Vehicle extends Entity {
+export class Vehicle extends BaseEntity {
 	protected type = ClassTypes.Vehicle;
 	constructor(handle: number) {
 		super(handle);
@@ -25,7 +25,7 @@ export class Vehicle extends Entity {
 		return new Vehicle(NetworkGetEntityFromNetworkId(netId));
 	}
 
-	public static fromHandle(handle: number): Entity {
+	public static fromHandle(handle: number): Vehicle {
 		return new Vehicle(handle);
 	}
 

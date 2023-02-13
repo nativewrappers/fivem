@@ -1,7 +1,7 @@
 import { ClassTypes } from '../enums/ClassTypes';
-import { Entity } from './';
+import { BaseEntity } from './BaseEntity';
 
-export class Prop extends Entity {
+export class Prop extends BaseEntity {
 	public static exists(prop: Prop): boolean {
 		return typeof prop !== 'undefined' && prop.exists();
 	}

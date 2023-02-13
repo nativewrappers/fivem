@@ -5,7 +5,8 @@ import {
 	LeaveVehicleFlags,
 	VehicleSeat,
 } from './enums';
-import { Entity, Ped, Vehicle } from './models';
+import { Ped, Vehicle } from './models';
+import { BaseEntity } from './models/BaseEntity';
 import { TaskSequence } from './TaskSequence';
 import { Vector3 } from './utils';
 import { LoadAnimDict } from './utils/Animations';
@@ -25,8 +26,8 @@ export class Tasks {
 		TaskSetBlockingOfNonTemporaryEvents(this.ped.Handle, block);
 	}
 
-	public aimAt(target: Entity | Vector3, duration: number): void {
-		if (target instanceof Entity)
+	public aimAt(target: BaseEntity | Vector3, duration: number): void {
+		if (target instanceof BaseEntity)
 			TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false);
 		else TaskAimGunAtCoord(this.ped.Handle, target.x, target.y, target.z, duration, false, false);
 	}
@@ -55,15 +56,15 @@ export class Tasks {
 		TaskCower(this.ped.Handle, duration);
 	}
 
-	public chaseWithGroundVehicle(target: Entity): void {
+	public chaseWithGroundVehicle(target: BaseEntity): void {
 		TaskVehicleChase(this.ped.Handle, target.Handle);
 	}
 
-	public chaseWithHelicopter(target: Entity, offset: Vector3): void {
+	public chaseWithHelicopter(target: BaseEntity, offset: Vector3): void {
 		TaskHeliChase(this.ped.Handle, target.Handle, offset.x, offset.y, offset.z);
 	}
 
-	public chaseWithPlane(target: Entity, offset: Vector3): void {
+	public chaseWithPlane(target: BaseEntity, offset: Vector3): void {
 		TaskPlaneChase(this.ped.Handle, target.Handle, offset.x, offset.y, offset.z);
 	}
 
@@ -144,7 +145,7 @@ export class Tasks {
 	}
 
 	public followToOffsetFromEntity(
-		target: Entity,
+		target: BaseEntity,
 		offset: Vector3,
 		timeout: number,
 		stoppingRange: number,
@@ -191,7 +192,7 @@ export class Tasks {
 		}
 	}
 
-	public goToEntity(target: Entity, offset: Vector3 | null = null, timeout = -1): void {
+	public goToEntity(target: BaseEntity, offset: Vector3 | null = null, timeout = -1): void {
 		if (offset === null) {
 			offset = new Vector3(0, 0, 0);
 		}

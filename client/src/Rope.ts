@@ -1,4 +1,4 @@
-import { Entity } from './models';
+import type { BaseEntity } from './models/BaseEntity';
 import { Vector3 } from './utils';
 
 /**
@@ -71,7 +71,7 @@ export class Rope {
 	 * @param entity Entity to attach the rope to.
 	 * @param position Location where the rope is to be attached.
 	 */
-	public attachEntity(entity: Entity, position: Vector3): void {
+	public attachEntity(entity: BaseEntity, position: Vector3): void {
 		AttachRopeToEntity(this.handle, entity.Handle, position.x, position.y, position.z, false);
 	}
 
@@ -85,9 +85,9 @@ export class Rope {
 	 * @param length The desired length of the rope between the two entities.
 	 */
 	public attachEntities(
-		entityOne: Entity,
+		entityOne: BaseEntity,
 		positionOne: Vector3,
-		entityTwo: Entity,
+		entityTwo: BaseEntity,
 		positionTwo: Vector3,
 		length: number,
 	): void {
@@ -114,7 +114,7 @@ export class Rope {
 	 *
 	 * @param entity Entity to detach the rope from.
 	 */
-	public detachEntity(entity: Entity): void {
+	public detachEntity(entity: BaseEntity): void {
 		DetachRopeFromEntity(this.handle, entity.Handle);
 	}
 

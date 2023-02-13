@@ -1,7 +1,7 @@
 import { ClassTypes } from "../enum/ClassTypes";
-import { Entity } from "./Entity";
+import { BaseEntity } from "./BaseEntity";
 
-export class Prop extends Entity {
+export class Prop extends BaseEntity {
 	protected type = ClassTypes.Prop;
 	constructor(handle: number) {
 		super(handle);

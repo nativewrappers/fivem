@@ -1,5 +1,4 @@
 import {
-	Entity,
 	Ped,
 	VehicleDoorCollection,
 	VehicleModCollection,
@@ -18,8 +17,9 @@ import { Model } from '../Model';
 import { Game } from '../Game';
 import { Vector3 } from '../utils';
 import { ClassTypes } from '../enums/ClassTypes';
+import { BaseEntity } from './BaseEntity';
 
-export class Vehicle extends Entity {
+export class Vehicle extends BaseEntity {
 	public static getModelDisplayName(vehicleModel: Model): string {
 		return GetDisplayNameFromVehicleModel(vehicleModel.Hash);
 	}

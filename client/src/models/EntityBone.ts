@@ -1,12 +1,12 @@
 import { Vector3 } from '../utils';
-import { Entity } from './';
+import type { BaseEntity } from './BaseEntity';
 
 export class EntityBone {
 	public get Index(): number {
 		return this.index;
 	}
 
-	public get Owner(): Entity {
+	public get Owner(): BaseEntity {
 		return this.owner;
 	}
 
@@ -22,10 +22,10 @@ export class EntityBone {
 		return this.owner.exists() && this.index !== -1;
 	}
 
-	protected readonly owner: Entity;
+	protected readonly owner: BaseEntity;
 	protected readonly index: number;
 
-	constructor(owner: Entity, boneIndex?: number, boneName?: string) {
+	constructor(owner: BaseEntity, boneIndex?: number, boneName?: string) {
 		this.owner = owner;
 		this.index = boneIndex
 			? boneIndex

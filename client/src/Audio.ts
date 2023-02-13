@@ -1,5 +1,5 @@
 import { AudioFlag } from './enums';
-import { Entity } from './models';
+import type { BaseEntity } from './models/BaseEntity';
 import { Vector3 } from './utils';
 
 export abstract class Audio {
@@ -25,7 +25,7 @@ export abstract class Audio {
 	}
 
 	public static playSoundFromEntity(
-		entity: Entity,
+		entity: BaseEntity,
 		sound: string,
 		set?: string,
 		generateSoundId = true,

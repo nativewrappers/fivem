@@ -1,4 +1,5 @@
-import type { Entity, Ped, Vector3 } from '.';
+import type { Ped, Vector3 } from '.';
+import type { BaseEntity } from './models/BaseEntity';
 export class NetworkedScene {
 	private scene;
 	constructor(
@@ -53,7 +54,7 @@ export class NetworkedScene {
 	}
 
 	addEntity(
-		entity: Entity,
+		entity: BaseEntity,
 		animDict: string,
 		animName: string,
 		speed: number,
