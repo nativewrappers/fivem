@@ -1,4 +1,3 @@
-
 import { Blip } from '../Blip';
 import { ForceType } from '../enums';
 import { Game } from '../Game';

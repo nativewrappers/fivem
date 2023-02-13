@@ -1,9 +1,8 @@
 import { Vector3 } from './utils';
 import { BlipColor, BlipSprite } from './enums';
-import { Entity } from "./models/Entity";
+import { Entity } from './models/Entity';
 import { Player } from './models';
 import { EntityType } from './types/EntityType';
-
 
 export class Blip {
 	protected handle: number;

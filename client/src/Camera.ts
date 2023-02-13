@@ -186,7 +186,10 @@ export class Camera {
 		RemoveAnimDict(animDict);
 	}
 
-	public pointAt(target: BaseEntity | PedBone | Vector3, offset: Vector3 = new Vector3(0, 0, 0)): void {
+	public pointAt(
+		target: BaseEntity | PedBone | Vector3,
+		offset: Vector3 = new Vector3(0, 0, 0),
+	): void {
 		if (target instanceof BaseEntity) {
 			PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
 		} else if (target instanceof PedBone) {

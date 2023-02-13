@@ -94,7 +94,7 @@ export class ParticleEffectAsset {
 		}
 		const invertAxisFlags = invertAxis.flags;
 		SetPtfxAssetNextCall(this.assetName);
-        // This still returns 
+		// This still returns
 		return !!StartParticleFxLoopedOnEntity(
 			effectName,
 			entity.Handle,

@@ -23,6 +23,6 @@ export class Entity extends BaseEntity {
 	protected type = ClassTypes.Entity;
 
 	constructor(handle: number) {
-        super(handle)
+		super(handle);
 	}
 }
