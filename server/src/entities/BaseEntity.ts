@@ -15,8 +15,17 @@ export class BaseEntity {
 	}
 
 	public get Handle(): number {
-		return this.Handle;
+		return this.handle;
 	}
+
+	public get Owner(): number {
+		return NetworkGetEntityOwner(this.handle);
+	}
+
+	public get FirstOwner(): number {
+		return NetworkGetFirstEntityOwner(this.handle);
+	}
+
 
 	public get Exists(): boolean {
 		return this.handle !== 0 && DoesEntityExist(this.handle);

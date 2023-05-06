@@ -1,59 +1,61 @@
 {
-  "name": "@nativewrappers/fivem-server",
-  "version": "0.0.19",
-  "description": "Javascript/Typescript wrapper for the FiveM Server natives",
-  "main": "lib/server/src/index.js",
-  "module": "lib/server/src/index.js",
-  "types": "lib/server/src/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "ci": "pnpm run lint && pnpm run build",
-    "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint --fix . --ext .ts",
-    "typedoc": "typedoc",
-    "docs": "npm run typedoc -- --options typedoc.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nativewrappers/fivem-server.git"
-  },
-  "keywords": [
-    "fivem",
-	"server",
-    "wrapper",
-    "javascript",
-    "typescript",
-    "citizenfx"
-  ],
-  "files": [
-    "lib/**/*"
-  ],
-  "author": "Dillon Skaggs <AvarianKnight>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nativewrappers/fivem-server/issues"
-  },
-  "homepage": "https://fivemjs-server.avarian.dev/",
-  "devDependencies": {
-    "@citizenfx/server": "2.0.6086-1",
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "prettier": "^2.8.0",
-    "typedoc": "^0.23.21",
-    "typedoc-fivemjs-theme": "^0.2.7",
-    "typescript": "^4.9.3",
-    "eslint-scope": "^7.1.1",
-    "eslint-utils": "^3.0.0",
-    "eslint-visitor-keys": "^3.3.0",
-    "prettier-linter-helpers": "^1.0.0"
-  },
-  "directories": {
-    "doc": "docs",
-    "example": "examples",
-    "lib": "lib"
-  }
+	"name": "@nativewrappers/fivem-server",
+	"version": "0.0.20",
+	"description": "Javascript/Typescript wrapper for the FiveM Server natives",
+	"main": "lib/server/src/index.js",
+	"module": "lib/server/src/index.js",
+	"types": "lib/server/src/index.d.ts",
+	"scripts": {
+		"delete": "rm -rf lib",
+		"build": "tsc",
+		"watch": "tsc --watch",
+		"ci": "pnpm run lint && pnpm run build",
+		"lint": "eslint . --ext .ts",
+		"lint-fix": "eslint --fix . --ext .ts",
+		"typedoc": "typedoc",
+		"docs": "npm run typedoc -- --options typedoc.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nativewrappers/fivem-server.git"
+	},
+	"keywords": [
+		"fivem",
+		"server",
+		"wrapper",
+		"javascript",
+		"typescript",
+		"citizenfx"
+	],
+	"files": [
+		"lib/**/*"
+	],
+	"author": "Dillon Skaggs <AvarianKnight>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nativewrappers/fivem-server/issues"
+	},
+	"homepage": "https://fivemjs-server.avarian.dev/",
+	"devDependencies": {
+		"@citizenfx/server": "2.0.5800-1",
+		"@types/node": "^18.15.3",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^3.4.1",
+		"eslint-scope": "^7.1.1",
+		"eslint-utils": "^3.0.0",
+		"eslint-visitor-keys": "^3.3.0",
+		"prettier": "^2.8.0",
+		"prettier-linter-helpers": "^1.0.0",
+		"typedoc": "^0.23.21",
+		"typedoc-fivemjs-theme": "^0.2.7",
+		"typescript": "^4.9.3"
+	},
+	"directories": {
+		"doc": "docs",
+		"example": "examples",
+		"lib": "lib"
+	}
 }

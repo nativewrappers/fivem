@@ -8,6 +8,17 @@ export class Player {
 	protected type = ClassTypes.Player;
 	constructor(private readonly source: number) {}
 
+	/**
+	 * Get an interable list of players currently on the server
+	 * @returns Iterable list of Players.
+	 */
+	public static *AllPlayers(): IterableIterator<Player> {
+		const num = GetNumPlayerIndices();
+		for (let i = 0; i < num; i++) {
+			yield new Player(parseInt(GetPlayerFromIndex(i)));
+		}
+	}
+
 	public get Exists(): boolean {
 		return this.source !== 0;
 	}

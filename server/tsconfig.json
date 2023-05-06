@@ -6,7 +6,7 @@
     "declaration": true,
     "outDir": "./lib",
 	"declarationDir": "./lib",
-    "types": ["@citizenfx/server"],
+    "types": ["@citizenfx/server", "@types/node"],
     "strict": true,
     "strictNullChecks": true
   },

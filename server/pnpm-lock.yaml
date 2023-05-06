@@ -1,7 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@citizenfx/server': 2.0.6086-1
+  '@citizenfx/server': 2.0.5800-1
+  '@types/node': ^18.15.3
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   eslint: ^8.28.0
@@ -17,7 +18,8 @@ specifiers:
   typescript: ^4.9.3
 
 devDependencies:
-  '@citizenfx/server': 2.0.6086-1
+  '@citizenfx/server': 2.0.5800-1
+  '@types/node': 18.15.3
   '@typescript-eslint/eslint-plugin': 5.45.0_czs5uoqkd3podpy6vgtsxfc7au
   '@typescript-eslint/parser': 5.45.0_hsf322ms6xhhd4b5ne6lb74y4a
   eslint: 8.28.0
@@ -34,8 +36,8 @@ devDependencies:
 
 packages:
 
-  /@citizenfx/server/2.0.6086-1:
-    resolution: {integrity: sha512-Up119oKQZnS5SqSIB17OqKZLic1Z49hRW3dUlNJg8XQF/rlIsopqBwWLi6n+N05G/Knkqr4RiRGRDwa+F4GUYA==}
+  /@citizenfx/server/2.0.5800-1:
+    resolution: {integrity: sha512-8HfQEGoEOqREyTe4lC4fu/yWzEK/9YO03BkXBYI9jLQGSc4lDdxNUJhBDSwaLpuoGDRsYsaFnsETjdGA8AbQBg==}
     dev: true
 
   /@eslint/eslintrc/1.3.3:
@@ -98,6 +100,10 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
     dev: true
 
   /@types/semver/7.3.13:

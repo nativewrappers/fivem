@@ -16,8 +16,8 @@ export class Vehicle extends BaseEntity {
 	 * @returns Iterable list of Vehicles.
 	 */
 	public static *AllVehicles(): IterableIterator<Vehicle> {
-		for (const prop of GetAllVehicles() as unknown as number[]) {
-			yield new Vehicle(prop);
+		for (const veh of GetAllVehicles() as unknown as number[]) {
+			yield new Vehicle(veh);
 		}
 	}
 
@@ -37,7 +37,7 @@ export class Vehicle extends BaseEntity {
 		return GetIsVehiclePrimaryColourCustom(this.handle);
 	}
 
-	public get IsSecondaryColourCuston(): boolean {
+	public get IsSecondaryColourCustom(): boolean {
 		return GetIsVehicleSecondaryColourCustom(this.handle);
 	}
 
