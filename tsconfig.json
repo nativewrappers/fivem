@@ -17,6 +17,7 @@
 			"@common/*": ["./common/*"]
 		}
 	},
-	"exclude": ["node_modules", "**/__tests__/*", "./lib", "**/examples/"],
+	"include": [],
+	"exclude": ["lib", "**/examples/"],
 	"references": [{ "path": "./server" }, { "path": "./client" }]
 }
