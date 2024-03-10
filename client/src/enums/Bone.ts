@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 export enum Bone {
+	INVALID = -1,
 	SKEL_ROOT,
 	SKEL_Pelvis = 11816,
 	SKEL_L_Thigh = 58271,

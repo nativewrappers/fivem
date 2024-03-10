@@ -5,7 +5,7 @@ import {
 	LeaveVehicleFlags,
 	VehicleSeat,
 } from './enums';
-import { Ped, Vehicle } from './models';
+import { Entity, Ped, Vehicle } from './models';
 import { BaseEntity } from './models/BaseEntity';
 import { TaskSequence } from './TaskSequence';
 import { Vector3 } from './utils';
@@ -186,7 +186,7 @@ export class Tasks {
 				speed,
 				timeout,
 				0,
-				false,
+				0,
 				0,
 			);
 		}

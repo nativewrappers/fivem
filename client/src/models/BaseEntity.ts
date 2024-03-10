@@ -7,7 +7,7 @@ import { Quaternion, Vector3 } from '../utils';
 import { EntityBoneCollection, Ped, Prop, Vehicle } from './';
 import { EntityBone } from './EntityBone';
 import cfx, { StateBagChangeHandler } from '../cfx';
-import { Player } from '..';
+import { Entity, Player } from '..';
 import { ClassTypes } from '../enums/ClassTypes';
 
 export class BaseEntity {
