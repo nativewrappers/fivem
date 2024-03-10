@@ -6,20 +6,19 @@ on:
     branches: [ main ]
 
 jobs:
-	build:
-		name: Verify Build
-		runs-on: ubuntu-latest
-		strategy:
-			matrix:
-				node-version: [20.x]
-		steps:
-			- uses: actions/checkout@v4
-			- name: Use Node.js ${{ matrix.node-version }}
-			  uses: actions/setup-node@v4
-		with:
-			node-version: ${{ matrix.node-version }}
-		- uses: pnpm/action-setup@3
-			with:
-				version: 8
-			- run: pnpm install
-			- run: pnpm run ci
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - run: pnpm install
+      - run: pnpm run ci
