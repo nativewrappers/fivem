@@ -38,6 +38,10 @@ export class Vector3 implements Vec3 {
 		return primitives.map(prim => new Vector3(prim[0], prim[1], prim[2]));
 	}
 
+	public static fromBuffer({ buffer }: { buffer: Buffer, type: number }) {
+		return new Vector3(buffer.readFloatLE(0), buffer.readFloatLE(4), buffer.readFloatLE(8))
+	}
+
 	public static clone(v1: Vec3): Vector3 {
 		return Vector3.create(v1);
 	}
@@ -90,6 +94,10 @@ export class Vector3 implements Vec3 {
 	}
 
 	constructor(public x: number, public y: number, public z: number) {}
+
+	public toString() {
+		return `${this.type}(${this.x}, ${this.y}, ${this.z})`
+	};
 
 	public clone(): Vector3 {
 		return new Vector3(this.x, this.y, this.z);

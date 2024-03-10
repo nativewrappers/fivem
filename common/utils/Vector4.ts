@@ -39,6 +39,10 @@ export class Vector4 implements Vec4 {
 		return primitives.map(prim => new Vector4(prim[0], prim[1], prim[2], prim[3]));
 	}
 
+	public static fromBuffer({ buffer }: { buffer: Buffer, type: number }) {
+		return new Vector4(buffer.readFloatLE(0), buffer.readFloatLE(4), buffer.readFloatLE(8), buffer.readFloatLE(12))
+	}
+
 	public static clone(v1: Vec4): Vector4 {
 		return Vector4.create(v1);
 	}
@@ -79,6 +83,10 @@ export class Vector4 implements Vec4 {
 	}
 
 	constructor(public x: number, public y: number, public z: number, public w: number) {}
+
+	public toString() {
+		return `${this.type}(${this.x}, ${this.y}, ${this.z}, ${this.w})`
+	};
 
 	public clone(): Vector4 {
 		return new Vector4(this.x, this.y, this.z, this.w);
