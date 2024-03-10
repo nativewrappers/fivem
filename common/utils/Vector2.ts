@@ -32,6 +32,10 @@ export class Vector2 implements Vec2 {
 		return primitives.map(prim => new Vector2(prim[0], prim[1]));
 	}
 
+	public static fromBuffer({ buffer }: { buffer: Buffer, type: number }) {
+		return new Vector2(buffer.readFloatLE(0), buffer.readFloatLE(4))
+	}
+
 	public static clone(v1: Vec2): Vector2 {
 		return Vector2.create(v1);
 	}
@@ -65,6 +69,10 @@ export class Vector2 implements Vec2 {
 	}
 
 	constructor(public x: number, public y: number) {}
+
+	public toString() {
+		return `${this.type}(${this.x}, ${this.y})`
+	};
 
 	public clone(): Vector2 {
 		return new Vector2(this.x, this.y);
