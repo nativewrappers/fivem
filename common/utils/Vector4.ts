@@ -1,5 +1,6 @@
-// Source: https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
+import type { MsgpackBuffer } from '@common/types';
 
+// Source: https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 import { Vector3 } from './Vector3';
 
 // This is an adjusted version of the Source
@@ -37,7 +38,7 @@ export class Vector4 implements Vec4 {
 		return primitives.map(prim => new Vector4(prim[0], prim[1], prim[2], prim[3]));
 	}
 
-	public static fromBuffer({ buffer }: { buffer: Buffer; type: number }) {
+	public static fromBuffer({ buffer }: MsgpackBuffer) {
 		return new Vector4(
 			buffer.readFloatLE(0),
 			buffer.readFloatLE(4),

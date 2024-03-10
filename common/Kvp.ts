@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export class Kvp {
 	// TODO: Find a way to do this without casting to any

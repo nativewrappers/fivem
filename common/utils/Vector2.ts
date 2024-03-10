@@ -1,3 +1,5 @@
+import type { MsgpackBuffer } from '@common/types';
+
 // Source: https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 // This is an adjusted version of the Source
 export interface Vec2 {
@@ -32,7 +34,7 @@ export class Vector2 implements Vec2 {
 		return primitives.map(prim => new Vector2(prim[0], prim[1]));
 	}
 
-	public static fromBuffer({ buffer }: { buffer: Buffer; type: number }) {
+	public static fromBuffer({ buffer }: MsgpackBuffer) {
 		return new Vector2(buffer.readFloatLE(0), buffer.readFloatLE(4));
 	}
 
