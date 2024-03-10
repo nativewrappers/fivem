@@ -1,4 +1,3 @@
-// @ts-ignore
 /**
  * weapon component hash
  * refer: https://wiki.rage.mp/index.php?title=Weapons_Components

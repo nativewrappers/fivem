@@ -1,5 +1,3 @@
-//@ts-nocheck
-
 export class Resource {
 	constructor(public name: string) {}
 	public getMetadata(metadataKey: string, index: number): string {
