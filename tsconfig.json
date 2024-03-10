@@ -4,10 +4,9 @@
     "module": "es2020",
     "moduleResolution": "node",
     "declaration": true,
-    "types": ["@citizenfx/client", "@citizenfx/server"],
+    "types": ["@citizenfx/client", "@citizenfx/server", "@types/node"],
     "strict": true,
     "strictNullChecks": true
   },
-  "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
