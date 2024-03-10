@@ -1,13 +1,8 @@
 {
 	"extends": "../tsconfig.json",
 	"compilerOptions": {
-		"outDir": "./lib",
-		"declarationDir": "./lib",
-		"types": ["@citizenfx/client"],
-		"paths": {
-			"@common/*": ["../common/src/*"]
-		}
+		"composite": true,
+		"types": ["@citizenfx/client"]
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "**/__tests__/*"]
+	"include": ["./src/", "../common/"],
 }

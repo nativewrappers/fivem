@@ -1,12 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "es2020",
-    "moduleResolution": "node",
-    "declaration": true,
-    "types": ["@citizenfx/client", "@citizenfx/server", "@types/node"],
-    "strict": true,
-    "strictNullChecks": true
-  },
-  "exclude": ["node_modules", "**/__tests__/*"]
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./lib",
+		"declarationDir": "./lib",
+		"target": "es2021",
+		"module": "es2020",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"declaration": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"skipLibCheck": true,
+		"types": ["@citizenfx/server", "@citizenfx/client", "@types/node"],
+		"paths": {
+			"@common/*": ["./common/*"]
+		}
+	},
+	"exclude": ["node_modules", "**/__tests__/*", "./lib", "**/examples/"],
+	"references": [{ "path": "./server" }, { "path": "./client" }]
 }

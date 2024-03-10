@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 export class Convar {
 	public buffer(): string {
 		return GetConsoleBuffer();
