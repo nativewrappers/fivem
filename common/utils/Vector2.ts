@@ -70,7 +70,10 @@ export class Vector2 implements Vec2 {
 		return Vector2.divide(v, v.Length);
 	}
 
-	constructor(public x: number, public y: number) {}
+	constructor(
+		public x: number,
+		public y: number,
+	) {}
 
 	public toString() {
 		return `${this.type}(${this.x}, ${this.y})`;

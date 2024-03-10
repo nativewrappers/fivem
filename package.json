@@ -36,7 +36,8 @@
 		"build": "tsc --build",
 		"watch": "tsc --watch",
 		"ci": "pnpm run prettier && pnpm run build",
-		"prettier": "prettier */**/*.ts --check"
+		"prettier": "prettier */**/*.ts --check",
+		"prettier-fix": "prettier */**/*.ts --write"
 	},
 	"devDependencies": {
 		"@citizenfx/client": "2.0.7604-1",

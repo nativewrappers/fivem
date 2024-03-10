@@ -86,7 +86,12 @@ export class Vector4 implements Vec4 {
 		return Vector4.divide(v, v.Length);
 	}
 
-	constructor(public x: number, public y: number, public z: number, public w: number) {}
+	constructor(
+		public x: number,
+		public y: number,
+		public z: number,
+		public w: number,
+	) {}
 
 	public toString() {
 		return `${this.type}(${this.x}, ${this.y}, ${this.z}, ${this.w})`;
