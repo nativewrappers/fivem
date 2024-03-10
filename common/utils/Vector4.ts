@@ -1,6 +1,6 @@
 // Source: https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 
-import { Vector3 } from "./Vector3";
+import { Vector3 } from './Vector3';
 
 // This is an adjusted version of the Source
 export interface Vec4 {
@@ -13,9 +13,9 @@ export interface Vec4 {
 export type Vector4Type = Vector4 | Vec4;
 
 export class Vector4 implements Vec4 {
-	public type = "vec4";
+	public type = 'vec4';
 	public static create(v1: Vec4 | number): Vector4 {
-		if (typeof v1 === "number") return new Vector4(v1, v1, v1, v1);
+		if (typeof v1 === 'number') return new Vector4(v1, v1, v1, v1);
 		return new Vector4(v1.x, v1.y, v1.z, v1.w);
 	}
 
@@ -33,14 +33,17 @@ export class Vector4 implements Vec4 {
 	 * @param primitives A multi-dimensional array of number arrays
 	 * ```
 	 */
-	public static fromArrays(
-		primitives: [number, number, number, number][] | number[][],
-	): Vector4[] {
+	public static fromArrays(primitives: [number, number, number, number][] | number[][]): Vector4[] {
 		return primitives.map(prim => new Vector4(prim[0], prim[1], prim[2], prim[3]));
 	}
 
-	public static fromBuffer({ buffer }: { buffer: Buffer, type: number }) {
-		return new Vector4(buffer.readFloatLE(0), buffer.readFloatLE(4), buffer.readFloatLE(8), buffer.readFloatLE(12))
+	public static fromBuffer({ buffer }: { buffer: Buffer; type: number }) {
+		return new Vector4(
+			buffer.readFloatLE(0),
+			buffer.readFloatLE(4),
+			buffer.readFloatLE(8),
+			buffer.readFloatLE(12),
+		);
 	}
 
 	public static clone(v1: Vec4): Vector4 {
@@ -48,22 +51,22 @@ export class Vector4 implements Vec4 {
 	}
 
 	public static add(v1: Vector4Type, v2: Vector4Type | number): Vector4 {
-		if (typeof v2 === "number") return new Vector4(v1.x + v2, v1.y + v2, v1.z + v2, v1.w + v2);
+		if (typeof v2 === 'number') return new Vector4(v1.x + v2, v1.y + v2, v1.z + v2, v1.w + v2);
 		return new Vector4(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z, v1.w + v2.w);
 	}
 
 	public static subtract(v1: Vector4Type, v2: Vector4Type | number): Vector4 {
-		if (typeof v2 === "number") return new Vector4(v1.x - v2, v1.y - v2, v1.z - v2, v1.w - v2);
+		if (typeof v2 === 'number') return new Vector4(v1.x - v2, v1.y - v2, v1.z - v2, v1.w - v2);
 		return new Vector4(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z, v1.w - v2.w);
 	}
 
 	public static multiply(v1: Vector4Type, v2: Vector4Type | number): Vector4 {
-		if (typeof v2 === "number") return new Vector4(v1.x * v2, v1.y * v2, v1.z * v2, v1.w * v2);
+		if (typeof v2 === 'number') return new Vector4(v1.x * v2, v1.y * v2, v1.z * v2, v1.w * v2);
 		return new Vector4(v1.x * v2.x, v1.y * v2.y, v1.z * v2.z, v1.w * v2.w);
 	}
 
 	public static divide(v1: Vector4Type, v2: Vector4Type | number): Vector4 {
-		if (typeof v2 === "number") return new Vector4(v1.x / v2, v1.y / v2, v1.z / v2, v1.w / v2);
+		if (typeof v2 === 'number') return new Vector4(v1.x / v2, v1.y / v2, v1.z / v2, v1.w / v2);
 		return new Vector4(v1.x / v2.x, v1.y / v2.y, v1.z / v2.z, v1.w / v2.w);
 	}
 
@@ -85,8 +88,8 @@ export class Vector4 implements Vec4 {
 	constructor(public x: number, public y: number, public z: number, public w: number) {}
 
 	public toString() {
-		return `${this.type}(${this.x}, ${this.y}, ${this.z}, ${this.w})`
-	};
+		return `${this.type}(${this.x}, ${this.y}, ${this.z}, ${this.w})`;
+	}
 
 	public clone(): Vector4 {
 		return new Vector4(this.x, this.y, this.z, this.w);

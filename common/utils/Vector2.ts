@@ -8,9 +8,9 @@ export interface Vec2 {
 export type Vector2Type = Vector2 | Vec2;
 
 export class Vector2 implements Vec2 {
-	public type = "vec2";
+	public type = 'vec2';
 	public static create(v1: Vec2 | number): Vector2 {
-		if (typeof v1 === "number") return new Vector2(v1, v1);
+		if (typeof v1 === 'number') return new Vector2(v1, v1);
 		return new Vector2(v1.x, v1.y);
 	}
 
@@ -32,8 +32,8 @@ export class Vector2 implements Vec2 {
 		return primitives.map(prim => new Vector2(prim[0], prim[1]));
 	}
 
-	public static fromBuffer({ buffer }: { buffer: Buffer, type: number }) {
-		return new Vector2(buffer.readFloatLE(0), buffer.readFloatLE(4))
+	public static fromBuffer({ buffer }: { buffer: Buffer; type: number }) {
+		return new Vector2(buffer.readFloatLE(0), buffer.readFloatLE(4));
 	}
 
 	public static clone(v1: Vec2): Vector2 {
@@ -41,22 +41,22 @@ export class Vector2 implements Vec2 {
 	}
 
 	public static add(v1: Vector2Type, v2: Vector2Type | number): Vector2 {
-		if (typeof v2 === "number") return new Vector2(v1.x + v2, v1.y + v2);
+		if (typeof v2 === 'number') return new Vector2(v1.x + v2, v1.y + v2);
 		return new Vector2(v1.x + v2.x, v1.y + v2.y);
 	}
 
 	public static subtract(v1: Vector2Type, v2: Vector2Type | number): Vector2 {
-		if (typeof v2 === "number") return new Vector2(v1.x - v2, v1.y - v2);
+		if (typeof v2 === 'number') return new Vector2(v1.x - v2, v1.y - v2);
 		return new Vector2(v1.x - v2.x, v1.y - v2.y);
 	}
 
 	public static multiply(v1: Vector2Type, v2: Vector2Type | number): Vector2 {
-		if (typeof v2 === "number") return new Vector2(v1.x * v2, v1.y * v2);
+		if (typeof v2 === 'number') return new Vector2(v1.x * v2, v1.y * v2);
 		return new Vector2(v1.x * v2.x, v1.y * v2.y);
 	}
 
 	public static divide(v1: Vector2Type, v2: Vector2Type | number): Vector2 {
-		if (typeof v2 === "number") return new Vector2(v1.x / v2, v1.y / v2);
+		if (typeof v2 === 'number') return new Vector2(v1.x / v2, v1.y / v2);
 		return new Vector2(v1.x / v2.x, v1.y / v2.y);
 	}
 
@@ -71,8 +71,8 @@ export class Vector2 implements Vec2 {
 	constructor(public x: number, public y: number) {}
 
 	public toString() {
-		return `${this.type}(${this.x}, ${this.y})`
-	};
+		return `${this.type}(${this.x}, ${this.y})`;
+	}
 
 	public clone(): Vector2 {
 		return new Vector2(this.x, this.y);
