@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Ped, Prop, Vehicle, Entity } from "./entities";
-import { Player } from "./entities/Player";
-import { ClassTypes } from "./enum/ClassTypes";
-import { Vector2, Vector3, Vector4 } from "./utils";
+import { Ped, Prop, Vehicle, Entity } from './entities';
+import { Player } from './entities/Player';
+import { ClassTypes } from './enum/ClassTypes';
+import { Vector2, Vector3, Vector4 } from './utils';
 
 export type NetEvent = (player: Player, ...args: any[]) => void;
 

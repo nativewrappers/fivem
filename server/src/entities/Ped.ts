@@ -1,6 +1,6 @@
-import { ClassTypes } from "../enum/ClassTypes";
-import { Hash } from "../type/Hash";
-import { BaseEntity } from "./BaseEntity";
+import { ClassTypes } from '../enum/ClassTypes';
+import { Hash } from '../type/Hash';
+import { BaseEntity } from './BaseEntity';
 
 export class Ped extends BaseEntity {
 	protected type = ClassTypes.Ped;

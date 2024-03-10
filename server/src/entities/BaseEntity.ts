@@ -1,10 +1,10 @@
-import cfx from "../cfx";
-import { ClassTypes } from "../enum/ClassTypes";
-import { eEntityType } from "../enum/eEntityType";
-import { PopulationType } from "../enum/PopulationType";
-import { Hash } from "../type/Hash";
-import { Vector4 } from "../utils";
-import { Vector3 } from "../utils";
+import cfx from '../cfx';
+import { ClassTypes } from '../enum/ClassTypes';
+import { eEntityType } from '../enum/eEntityType';
+import { PopulationType } from '../enum/PopulationType';
+import { Hash } from '../type/Hash';
+import { Vector4 } from '../utils';
+import { Vector3 } from '../utils';
 
 export class BaseEntity {
 	protected type = ClassTypes.Entity;
@@ -25,7 +25,6 @@ export class BaseEntity {
 	public get FirstOwner(): number {
 		return NetworkGetFirstEntityOwner(this.handle);
 	}
-
 
 	public get Exists(): boolean {
 		return this.handle !== 0 && DoesEntityExist(this.handle);

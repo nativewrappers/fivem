@@ -1,5 +1,5 @@
-import { ClassTypes } from "../enum/ClassTypes";
-import { BaseEntity } from "./BaseEntity";
+import { ClassTypes } from '../enum/ClassTypes';
+import { BaseEntity } from './BaseEntity';
 
 export class Prop extends BaseEntity {
 	protected type = ClassTypes.Prop;
