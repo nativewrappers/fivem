@@ -1,0 +1,5 @@
+{
+	"entryPoints": ["./common/index.ts", "./client/src/index.ts", "./server/src/index.ts"],
+	"readme": "none",
+	"out": "docs",
+}
