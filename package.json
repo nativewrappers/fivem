@@ -8,9 +8,7 @@
 		"watch": "tsc --watch",
 		"ci": "pnpm run lint && pnpm run build",
 		"lint": "eslint . --ext .ts",
-		"lint-fix": "eslint --fix . --ext .ts",
-		"typedoc": "typedoc",
-		"docs": "npm run typedoc -- --options typedoc.json"
+		"lint-fix": "eslint --fix . --ext .ts"
 	},
 	"devDependencies": {
 		"@citizenfx/client": "2.0.7604-1",
@@ -27,7 +25,7 @@
 		"eslint-visitor-keys": "^3.4.3",
 		"prettier": "^2.8.8",
 		"prettier-linter-helpers": "^1.0.0",
-		"typedoc": "^0.22.18",
+		"typedoc": "^0.25.11",
 		"typedoc-fivemjs-theme": "^0.2.7",
 		"typescript": "^5.4.2"
 	}
