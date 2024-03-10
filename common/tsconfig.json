@@ -1,0 +1,10 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../lib/common/",
+		"declarationDir": "../lib/common/",
+		"rootDir": ".",
+		"composite": true
+	},
+	"include": ["./"]
+}
