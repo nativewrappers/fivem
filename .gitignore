@@ -1,4 +1,3 @@
 node_modules
-/lib
+*/lib
 .idea
-yarn.lock
