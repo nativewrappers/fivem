@@ -1,15 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "es2020",
-    "moduleResolution": "node",
-    "declaration": true,
-    "outDir": "./lib",
-	"declarationDir": "./lib",
-    "types": ["@citizenfx/server", "@types/node"],
-    "strict": true,
-    "strictNullChecks": true
-  },
-  "include": ["./src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./lib",
+		"declarationDir": "./lib",
+		"types": ["@citizenfx/server", "@types/node"],
+		"paths": {
+			"@common/*": ["../common/src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "**/__tests__/*"]
 }
