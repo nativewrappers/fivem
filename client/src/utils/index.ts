@@ -4,6 +4,7 @@ export { PointF } from './PointF';
 export { Crypto } from './Crypto';
 export { Point } from './Point';
 export { Size } from './Size';
+export { Color } from './Color';
 
 export {
 	Vector2,
@@ -11,7 +12,6 @@ export {
 	Vector4,
 	Maths,
 	Quaternion,
-	Color,
 	Delay,
 	enumValues,
 	getStringFromUInt8Array,
