@@ -14,6 +14,6 @@ export enum FiringPattern {
 	BurstFirePumpShotGun = 12239771,
 	BurstFireHeli = 2437838959,
 	BurstFireMicro = 1122960381,
-	BurstFireBursts = 1122960381,
+	BurstFireBursts = 445831135,
 	BurstFireTank = 3804904049,
 }
