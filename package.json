@@ -34,7 +34,7 @@
 	],
 	"scripts": {
 		"delete": "rm -rf lib",
-		"build": "tsc --build",
+		"build": "tsc --build && tsc-alias",
 		"watch": "tsc --watch",
 		"ci": "pnpm run prettier && pnpm run build",
 		"prettier": "prettier */**/*.ts --check",
@@ -49,6 +49,7 @@
 		"prettier-linter-helpers": "^1.0.0",
 		"typedoc": "^0.25.11",
 		"typedoc-fivemjs-theme": "^0.2.7",
-		"typescript": "^5.4.2"
+		"typescript": "^5.4.2",
+		"tsc-alias": "^1.8.8"
 	}
 }
