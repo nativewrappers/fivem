@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
       - name: Bump package version
         run: node .github/actions/bump-package-version.js
         env:
