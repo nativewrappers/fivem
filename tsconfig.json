@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
-		"rootDir": ".",
+		"rootDir": "./src",
+		"baseUrl": "./src",
 		"outDir": "./lib",
 		"declarationDir": "./lib",
 		"target": "es2021",
@@ -19,5 +20,5 @@
 	},
 	"include": [],
 	"exclude": ["lib", "**/examples/"],
-	"references": [{ "path": "./server" }, { "path": "./client" }]
+	"references": [{ "path": "./src/server" }, { "path": "./src/client" }]
 }

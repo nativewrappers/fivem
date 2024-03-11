@@ -1,9 +1,6 @@
 {
-	"extends": "../tsconfig.json",
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"outDir": "../lib/server/",
-		"declarationDir": "../lib/server/",
-		"rootDir": "./src/",
 		"composite": true,
 		"types": ["@citizenfx/server"]
 	},
