@@ -25,8 +25,8 @@ jobs:
 
       - run: |
           pnpm install --frozen-lockfile
+          pnpm version ${{ github.ref_name }}
           pnpm run ci
-          pnpm version ${{ github.ref_name }} --git-tag-version false
 
       # because we update the package version pnpm will get mad over an unclean branch
       # we don't want a bunch of version bump commits so just ignore the git checks
