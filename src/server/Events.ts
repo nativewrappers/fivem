@@ -67,7 +67,7 @@ export class Events {
 	/**
 	 * An onNet wrapper that properly converts the type into the correct type
 	 */
-	public onNet = (eventName: string, event: NetEvent) => {
+	static onNet = (eventName: string, event: NetEvent) => {
 		onNet(eventName, (...args: any[]) => {
 			const ply = new Player(source);
 
@@ -78,7 +78,7 @@ export class Events {
 	/**
 	 * An on wrapper that properly converts the classes
 	 */
-	public on = (eventName: string, event: NetEvent) => {
+	static on = (eventName: string, event: NetEvent) => {
 		on(eventName, (...args: any[]) => {
 			const ply = new Player(source);
 
