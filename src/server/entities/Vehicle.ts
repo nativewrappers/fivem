@@ -123,6 +123,10 @@ export class Vehicle extends BaseEntity {
 		return GetVehicleNumberPlateText(this.handle);
 	}
 
+	public get PlateTrimmed(): string {
+		return this.Plate.trim();
+	}
+
 	public get PlateIndex(): number {
 		return GetVehicleNumberPlateTextIndex(this.handle);
 	}
