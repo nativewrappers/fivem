@@ -11,7 +11,7 @@
 	"exports": {
 		".": "./common/index.js",
 		"./server": "./server/index.js",
-		"./client": "./server/index.js"
+		"./client": "./client/index.js"
 	},
 	"sideEffects": [
 		"./client/src/models/**"
