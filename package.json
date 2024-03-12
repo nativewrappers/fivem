@@ -4,21 +4,24 @@
 	"author": "Remco Troost <d0p3t>",
 	"license": "MIT",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "0.0.7",
+	"publishConfig": {
+		"directory": "lib"
+	},
 	"exports": {
-		".": "./lib/common/index.js",
-		"./server": "./lib/server/index.js",
-		"./client": "./lib/server/index.js"
+		".": "./common/index.js",
+		"./server": "./server/index.js",
+		"./client": "./server/index.js"
 	},
 	"sideEffects": [
 		"./client/src/models/**"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nativewrappers/fivem-client.git"
+		"url": "https://github.com/nativewrappers/fivem.git"
 	},
 	"bugs": {
-		"url": "https://github.com/nativewrappers/fivem-client/issues"
+		"url": "https://github.com/nativewrappers/fivem/issues"
 	},
 	"homepage": "https://fivemjs.avarian.dev/",
 	"keywords": [
@@ -29,12 +32,13 @@
 		"citizenfx"
 	],
 	"files": [
-		"./lib/**/*.js",
-		"./lib/**/*.d.ts"
+		"./**/*.js",
+		"./**/*.d.ts"
 	],
 	"scripts": {
 		"delete": "rm -rf lib",
-		"build": "tsc --build && tsc-alias",
+		"build": "pnpm run delete && tsc --build && tsc-alias && pnpm run copy-data",
+		"copy-data": "cp package.json lib/package.json && cp README.md lib/README.md",
 		"watch": "tsc --watch",
 		"ci": "pnpm run prettier && pnpm run build",
 		"prettier": "prettier */**/*.ts --check",
