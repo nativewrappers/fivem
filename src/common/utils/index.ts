@@ -1,10 +1,10 @@
-export { Vector2 } from './Vector2';
-export { Vector3 } from './Vector3';
-export { Vector4 } from './Vector4';
-export { PointF } from './PointF';
-export { Maths } from './Maths';
-export { Quaternion } from './Quaternion';
-export { Color } from './Color';
+export * from './Vector2';
+export * from './Vector3';
+export * from './Vector4';
+export * from './PointF';
+export * from './Maths';
+export * from './Quaternion';
+export * from './Color';
 
 export { cleanPlayerName } from './cleanPlayerName';
 
