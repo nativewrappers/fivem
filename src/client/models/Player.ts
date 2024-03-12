@@ -1,7 +1,7 @@
-import { Prop, Vehicle, Entity, Model, Color } from '..';
+import { Prop, Vehicle, Model, Color } from '..';
 import cfx, { StateBagChangeHandler } from '../cfx';
 import { ClassTypes } from '../enums/ClassTypes';
-import { Ped } from './';
+import { BaseEntity, Ped } from './';
 
 export class Player {
 	private handle: number;
@@ -120,10 +120,10 @@ export class Player {
 	//   DisablePlayerFiring(this.handle, value);
 	// }
 
-	public get EntityPlayerIsAimingAt(): Ped | Vehicle | Prop | null {
+	public get EntityPlayerIsAimingAt(): BaseEntity | null {
 		const [entityHit, entity] = GetEntityPlayerIsFreeAimingAt(this.handle);
 		if (entityHit) {
-			return Entity.fromHandle(entity);
+			return new BaseEntity(entity);
 		}
 		return null;
 	}
@@ -199,10 +199,10 @@ export class Player {
 	/**
 	 * The players melee target?
 	 */
-	public get TargetEntity(): Ped | Vehicle | Prop | null {
+	public get TargetEntity(): BaseEntity | null {
 		const [entityHit, entity] = GetPlayerTargetEntity(this.handle);
 		if (entityHit) {
-			return Entity.fromHandle(entity);
+			return new BaseEntity(entity);
 		}
 
 		return null;

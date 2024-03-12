@@ -1,5 +1,5 @@
 export { BaseEntity } from './BaseEntity';
-export { Entity } from './Entity';
+// export { Entity } from './Entity';
 export { EntityBone } from './EntityBone';
 export { EntityBoneCollection } from './EntityBoneCollection';
 export { Ped } from './Ped';

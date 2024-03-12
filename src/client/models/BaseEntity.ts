@@ -13,6 +13,14 @@ export class BaseEntity {
         return new BaseEntity(NetworkGetEntityFromNetworkId(networkId));
     }
 
+	public static fromStateBagName(stateBagName: string): BaseEntity | null {
+		const entity = GetEntityFromStateBagName(stateBagName);
+		if (entity !== 0) {
+			return new BaseEntity(entity);
+		}
+		return null;
+	}
+
     protected handle: number;
     protected bones: EntityBoneCollection | undefined;
     protected stateBagCookies: number[] = [];

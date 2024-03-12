@@ -1,8 +1,6 @@
 import { Vector3 } from './utils';
 import { BlipColor, BlipSprite } from './enums';
-import { Entity } from './models/Entity';
-import { Player } from './models';
-import { EntityType } from './types/EntityType';
+import { BaseEntity, Player } from './models';
 
 export class Blip {
 	protected handle: number;
@@ -81,8 +79,8 @@ export class Blip {
 		SetBlipNameToPlayerName(this.handle, player.Handle);
 	}
 
-	public get Entity(): EntityType | null {
-		return Entity.fromHandle(GetBlipInfoIdEntityIndex(this.handle));
+	public get Entity(): BaseEntity | null {
+		return new BaseEntity(GetBlipInfoIdEntityIndex(this.handle));
 	}
 
 	public set ShowHeadingIndicator(show: boolean) {

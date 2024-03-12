@@ -7,7 +7,7 @@ import { Vector4 } from './utils/Vector4';
 import { Player } from './models/Player';
 import { Prop } from './models/Prop';
 import { Vehicle } from './models/Vehicle';
-import { Entity } from './models/Entity';
+import { BaseEntity } from './models';
 
 export type NetEvent = (...args: any[]) => void;
 
@@ -45,7 +45,7 @@ const getClassFromArguments = (...args: any[]): any[] => {
 				continue;
 			}
 			case ClassTypes.Entity: {
-				newArgs.push(Entity.fromNetworkId(arg.netId));
+				newArgs.push(BaseEntity.fromNetworkId(arg.netId));
 				continue;
 			}
 			default: {
