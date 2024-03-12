@@ -7,11 +7,11 @@
 	<a href="https://github.com/nativewrappers/fivem/blob/master/LICENSE">
 		<img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT">
 	</a>
-	<a href="https://www.npmjs.com/package/nativewrappers/fivem">
-		<img src="https://img.shields.io/npm/v/nativewrappers/fivem?style=flat" alt="npm version">
+	<a href="https://www.npmjs.com/package/@nativewrappers/fivem">
+		<img src="https://img.shields.io/npm/v/@nativewrappers/fivem?style=flat" alt="npm version">
 	</a>
-	<a href="https://www.npmjs.com/package/nativewrappers/fivem">
-		<img src="https://img.shields.io/npm/dm/nativewrappers/fivem?style=flat">
+	<a href="https://www.npmjs.com/package/@nativewrappers/fivem">
+		<img src="https://img.shields.io/npm/dm/@nativewrappers/fivem?style=flat">
 	</a>
 	<a href="https://github.com/nativewrappers/fivem/actions/workflows/config.yml">
 		<img src="https://github.com/nativewrappers/fivem/actions/workflows/config.yml/badge.svg" alt="Workflow Status">
