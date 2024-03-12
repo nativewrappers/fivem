@@ -22,6 +22,10 @@ export class Ped extends BaseEntity {
 		return new Ped(NetworkGetEntityFromNetworkId(netId));
 	}
 
+	public static fromSource(source: number): Ped {
+		return new Ped(GetPlayerPed(source as any));
+	}
+
 	public static fromHandle(handle: number): Ped {
 		return new Ped(handle);
 	}
