@@ -1,3 +1,4 @@
+export { BaseEntity } from './BaseEntity';
 export { Entity } from './Entity';
 export { EntityBone } from './EntityBone';
 export { EntityBoneCollection } from './EntityBoneCollection';
