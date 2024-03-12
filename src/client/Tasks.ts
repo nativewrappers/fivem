@@ -5,7 +5,7 @@ import {
 	LeaveVehicleFlags,
 	VehicleSeat,
 } from './enums';
-import { Entity, Ped, Vehicle } from './models';
+import { Ped, Vehicle } from './models';
 import { BaseEntity } from './models/BaseEntity';
 import { TaskSequence } from './TaskSequence';
 import { Vector3 } from './utils';
@@ -251,8 +251,8 @@ export class Tasks {
 		}
 	}
 
-	public lookAt(targetOrPosition: Entity | Vector3, duration = -1): void {
-		if (targetOrPosition instanceof Entity)
+	public lookAt(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
+		if (targetOrPosition instanceof BaseEntity)
 			TaskLookAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, 0, 2);
 		else
 			TaskLookAtCoord(
@@ -396,8 +396,8 @@ export class Tasks {
 		TaskSwapWeapon(this.ped.Handle, false);
 	}
 
-	public turnTo(targetOrPosition: Entity | Vector3, duration = -1): void {
-		if (targetOrPosition instanceof Entity)
+	public turnTo(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
+		if (targetOrPosition instanceof BaseEntity)
 			TaskTurnPedToFaceEntity(this.ped.Handle, targetOrPosition.Handle, duration);
 		else
 			TaskTurnPedToFaceCoord(
