@@ -148,7 +148,7 @@ export class Vector {
 	}
 
 	public static normalize<T extends VectorType, U extends VectorLike>(this: T, a: U): U {
-		const length = (a as Vector).Length || this.Length(a);
+		const length = a instanceof Vector ? a.Length : this.Length(a);
 		return this.divide(a, length) as U;
 	}
 
@@ -203,12 +203,12 @@ export class Vector {
 		public w?: number,
 	) {}
 
-	*[Symbol.iterator](): Iterator<[string, number]> {
-		yield ['x', this.x];
-		yield ['y', this.y];
+	*[Symbol.iterator](): Iterator<number> {
+		yield this.x;
+		yield this.y;
 
-		if (this.z) yield ['z', this.z];
-		if (this.w) yield ['w', this.w];
+		if (this.z) yield this.z;
+		if (this.w) yield this.w;
 	}
 
 	public toString() {
@@ -281,7 +281,7 @@ export class Vector {
 	public get Length(): number {
 		let sum = 0;
 
-		for (let [_, value] of this) sum += value * value;
+		for (let value of this) sum += value * value;
 
 		return Math.sqrt(sum);
 	}
