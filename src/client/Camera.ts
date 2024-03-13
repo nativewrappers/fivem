@@ -63,11 +63,11 @@ export class Camera {
 	}
 
 	public set Direction(direction: Vector3) {
-		const dir = direction.normalize;
+		const dir = direction.normalize();
 
 		const vec1 = new Vector3(dir.x, dir.y, 0);
 		const vec2 = new Vector3(dir.z, vec1.distanceSquared(vec1), 0);
-		const vec3 = vec2.normalize;
+		const vec3 = vec2.normalize();
 
 		this.Rotation = new Vector3(
 			Math.atan2(vec3.x, vec3.y) * 57.295779513082323,
