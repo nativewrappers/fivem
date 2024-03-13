@@ -38,7 +38,7 @@ export class Vector {
 	public static create(x: number, y?: number): Vector2;
 	public static create(x: number, y?: number, z?: number): Vector3;
 	public static create(x: number, y?: number, z?: number, w?: number): Vector4;
-	public static create(xyzw: VectorLike): Vector4;
+	public static create<U extends VectorLike>(obj: U): U;
 	public static create<T extends VectorType>(
 		this: T,
 		x: VectorLike | number,
@@ -73,7 +73,7 @@ export class Vector {
 		return this.fromArray(arr);
 	}
 
-	public static clone<T extends VectorType>(this: T, obj: VectorLike) {
+	public static clone<T extends VectorType, U extends VectorLike>(this: T, obj: U) {
 		return this.create(obj);
 	}
 
@@ -92,7 +92,7 @@ export class Vector {
 		if (z) z = operator(z, isNumber ? b : b.z ?? 0);
 		if (w) w = operator(w, isNumber ? b : b.w ?? 0);
 
-		return this.create(x, y, z, w) as U;
+		return this.create(x, y, z, w) as unknown as U;
 	}
 
 	public static add<T extends VectorType, U extends VectorLike>(
@@ -101,6 +101,40 @@ export class Vector {
 		b: VectorLike | number,
 	): U {
 		return this.operate(a, b, (x, y) => x + y) as U;
+	}
+
+	public static addX<T extends VectorType, U extends VectorLike>(this: T, obj: U, x: number) {
+		const vec = this.clone(obj);
+		vec.x += x;
+
+		return vec;
+	}
+
+	public static addY<T extends VectorType, U extends VectorLike>(this: T, obj: U, y: number) {
+		if (typeof obj.y !== 'number') return;
+
+		const vec = this.clone(obj);
+		vec.y += y;
+
+		return vec;
+	}
+
+	public static addZ<T extends VectorType, U extends VectorLike>(this: T, obj: U, z: number) {
+		if (typeof obj.z !== 'number') return;
+
+		const vec = this.clone(obj);
+		vec.z! += z;
+
+		return vec;
+	}
+
+	public static addW<T extends VectorType, U extends VectorLike>(this: T, obj: U, w: number) {
+		if (typeof obj.w !== 'number') return;
+
+		const vec = this.clone(obj);
+		vec.w! += w;
+
+		return vec;
 	}
 
 	public static subtract<T extends VectorType, U extends VectorLike>(
@@ -145,6 +179,23 @@ export class Vector {
 		}
 
 		return result;
+	}
+
+	public static crossProduct<T extends VectorType, U extends VectorObject>(this: T, a: U, b: U) {
+		const { x: ax, y: ay, z: az, w: aw } = a;
+		const { x: bx, y: by, z: bz } = b;
+
+		if (
+			ax === undefined ||
+			ay === undefined ||
+			az === undefined ||
+			bx === undefined ||
+			by === undefined ||
+			bz === undefined
+		)
+			throw new Error('Vector.crossProduct requires two three-dimensional vectors.');
+
+		return this.create(ay * bz - az * by, az * bx - ax * bz, ax * by - ay * bx, aw) as unknown as U;
 	}
 
 	public static normalize<T extends VectorType, U extends VectorLike>(this: T, a: U): U {
@@ -222,7 +273,7 @@ export class Vector {
 	}
 
 	public clone() {
-		return Vector.clone(this) as this;
+		return Vector.clone(this);
 	}
 
 	/**
@@ -246,7 +297,7 @@ export class Vector {
 		return Math.sqrt(this.distanceSquared(v));
 	}
 
-	public get normalize() {
+	public normalize() {
 		return Vector.normalize(this);
 	}
 
@@ -255,15 +306,23 @@ export class Vector {
 	}
 
 	public add(v: VectorLike | number) {
-		return Vector.add(this, v) as this;
+		return Vector.add(this, v);
+	}
+
+	public addX(x: number) {
+		return Vector.addX(this, x);
+	}
+
+	public addY(x: number) {
+		return Vector.addY(this, x);
 	}
 
 	public subtract(v: VectorLike) {
-		return Vector.subtract(this, v) as this;
+		return Vector.subtract(this, v);
 	}
 
 	public multiply(v: VectorLike | number) {
-		return Vector.multiply(this, v) as this;
+		return Vector.multiply(this, v);
 	}
 
 	public divide(v: VectorLike | number) {
@@ -292,23 +351,31 @@ export class Vector {
 export class Vector2 extends Vector {
 	public type = 'vec2';
 
+	public static readonly Zero: Vector2 = new Vector2(0, 0);
+
 	constructor(x: number, y = x) {
 		super(2, x, y);
 	}
-
-	public static readonly Zero: Vector2 = new Vector2(0, 0);
 }
 
 export class Vector3 extends Vector implements Vec3 {
 	public type = 'vec3';
 	public z: number;
 
+	public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
+
 	constructor(x: number, y = x, z = y) {
 		super(3, x, y, z);
 		this.z = z;
 	}
 
-	public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
+	public addZ(z: number) {
+		return Vector.addZ(this, z);
+	}
+
+	public crossProduct(v: VectorLike) {
+		return Vector.crossProduct(this, v);
+	}
 }
 
 export class Vector4 extends Vector {
@@ -316,11 +383,26 @@ export class Vector4 extends Vector {
 	public z: number;
 	public w: number;
 
+	public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
+
 	constructor(x: number, y = x, z = y, w = z) {
 		super(4, x, y, z, w);
 		this.z = z;
 		this.w = w;
 	}
 
-	public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
+	public addZ(z: number) {
+		return Vector.addZ(this, z);
+	}
+
+	public addW(w: number) {
+		return Vector.addW(this, w);
+	}
+
+	public crossProduct(v: VectorLike) {
+		return Vector.crossProduct(this, v);
+	}
 }
+
+const vec = new Vector3(1);
+const vec2 = Vector.crossProduct(vec, vec);
