@@ -2,17 +2,26 @@
 
 import type { MsgpackBuffer } from '@common/types';
 
+/**
+ * Represents a 2-dimensional vector.
+ */
 export interface Vec2 {
 	x: number;
 	y: number;
 }
 
+/**
+ * Represents a 3-dimensional vector.
+ */
 export interface Vec3 {
 	x: number;
 	y: number;
 	z: number;
 }
 
+/**
+ * Represents a 4-dimensional vector.
+ */
 export interface Vec4 {
 	x: number;
 	y: number;
@@ -20,6 +29,9 @@ export interface Vec4 {
 	w: number;
 }
 
+/**
+ * An object with vector components.
+ */
 interface VectorObject {
 	x: number;
 	y: number;
@@ -27,18 +39,58 @@ interface VectorObject {
 	w?: number;
 }
 
+/**
+ * An array that can be converted to a vector.
+ */
 type VectorArray = [number, number, number?, number?] | number[];
+
+/**
+ * The constructor type of the Vector class.
+ */
 type VectorType = typeof Vector;
+
+/**
+ * Represents an object or class that can be treated as a vector.
+ */
 type VectorLike = VectorObject | Vector;
+
 type VectorKeys = keyof VectorObject;
 
+/**
+ * Utility type to get the vector type of an object based on its component.
+ */
+type InferVector<T> = T extends { z: number; w: number }
+	? Vector4
+	: T extends { z: number }
+	? Vector3
+	: Vector2;
+
+/**
+ * A base vector class inherited by all vector classes.
+ */
 export class Vector {
+	/**
+	 * The type identifier for vectors.
+	 */
 	public type = 'vec';
 
+	/**
+	 * Creates a new vector based on the provided parameters.
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to the value of x).
+	 * @param z The z-component of the vector (optional, defaults to the value of y).
+	 * @param w The w-component of the vector (optional, defaults to the value of z).
+	 * @returns A new vector instance.
+	 */
 	public static create(x: number, y?: number): Vector2;
 	public static create(x: number, y?: number, z?: number): Vector3;
 	public static create(x: number, y?: number, z?: number, w?: number): Vector4;
-	public static create<U extends VectorLike>(obj: U): U;
+	/**
+	 * Creates a new vector based on the provided vector-like object.
+	 * @param obj The object representing the vector.
+	 * @returns A new vector instance.
+	 */
+	public static create<T>(obj: T): InferVector<T>;
 	public static create<T extends VectorType>(
 		this: T,
 		x: VectorLike | number,
@@ -65,6 +117,11 @@ export class Vector {
 		}
 	}
 
+	/**
+	 * Creates a vector from binary data in a MsgpackBuffer.
+	 * @param msgpackBuffer The buffer containing binary data.
+	 * @returns A new vector instance.
+	 */
 	public static fromBuffer({ buffer }: MsgpackBuffer) {
 		const arr: number[] = [];
 
@@ -73,10 +130,22 @@ export class Vector {
 		return this.fromArray(arr);
 	}
 
+	/**
+	 * Creates a deep copy of the provided vector.
+	 * @param obj The vector to clone.
+	 * @returns A new vector instance that is a copy of the provided vector.
+	 */
 	public static clone<T extends VectorType, U extends VectorLike>(this: T, obj: U) {
 		return this.create(obj);
 	}
 
+	/**
+	 * Performs an operation between a vector and either another vector or scalar value.
+	 * @param a - The first vector.
+	 * @param b - The second vector or scalar value.
+	 * @param operator - The function defining the operation to perform.
+	 * @returns A new vector resulting from the operation.
+	 */
 	private static operate<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -95,6 +164,12 @@ export class Vector {
 		return this.create(x, y, z, w) as unknown as U;
 	}
 
+	/**
+	 * Adds two vectors or a scalar value to a vector.
+	 * @param a - The first vector or scalar value.
+	 * @param b - The second vector or scalar value.
+	 * @returns A new vector with incremented components.
+	 */
 	public static add<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -103,6 +178,12 @@ export class Vector {
 		return this.operate(a, b, (x, y) => x + y) as U;
 	}
 
+	/**
+	 * Adds a scalar value to the x-component of a vector.
+	 * @param obj - The vector.
+	 * @param x - The value to add to the x-component.
+	 * @returns A new vector with the x-component incremented.
+	 */
 	public static addX<T extends VectorType, U extends VectorLike>(this: T, obj: U, x: number) {
 		const vec = this.clone(obj);
 		vec.x += x;
@@ -110,6 +191,12 @@ export class Vector {
 		return vec;
 	}
 
+	/**
+	 * Adds a scalar value to the y-component of a vector.
+	 * @param obj - The vector.
+	 * @param y - The value to add to the y-component.
+	 * @returns A new vector with the y-component incremented.
+	 */
 	public static addY<T extends VectorType, U extends VectorLike>(this: T, obj: U, y: number) {
 		if (typeof obj.y !== 'number') return;
 
@@ -119,6 +206,12 @@ export class Vector {
 		return vec;
 	}
 
+	/**
+	 * Adds a scalar value to the z-component of a vector.
+	 * @param obj - The vector.
+	 * @param z - The value to add to the z-component.
+	 * @returns A new vector with the z-component incremented.
+	 */
 	public static addZ<T extends VectorType, U extends VectorLike>(this: T, obj: U, z: number) {
 		if (typeof obj.z !== 'number') return;
 
@@ -128,6 +221,12 @@ export class Vector {
 		return vec;
 	}
 
+	/**
+	 * Adds a scalar value to the w-component of a vector.
+	 * @param obj - The vector.
+	 * @param w - The value to add to the w-component.
+	 * @returns A new vector with the w-component incremented.
+	 */
 	public static addW<T extends VectorType, U extends VectorLike>(this: T, obj: U, w: number) {
 		if (typeof obj.w !== 'number') return;
 
@@ -137,6 +236,12 @@ export class Vector {
 		return vec;
 	}
 
+	/**
+	 * Subtracts one vector from another or subtracts a scalar value from a vector.
+	 * @param a - The vector.
+	 * @param b - The second vector or scalar value.
+	 * @returns A new vector with subtracted components.
+	 */
 	public static subtract<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -145,6 +250,12 @@ export class Vector {
 		return this.operate(a, b, (x, y) => x - y) as U;
 	}
 
+	/**
+	 * Multiplies two vectors by their components, or multiplies a vector by a scalar value.
+	 * @param a - The vector.
+	 * @param b - The second vector or scalar value.
+	 * @returns A new vector with multiplied components.
+	 */
 	public static multiply<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -153,6 +264,12 @@ export class Vector {
 		return this.operate(a, b, (x, y) => x * y) as U;
 	}
 
+	/**
+	 * Divides two vectors by their components, or divides a vector by a scalar value.
+	 * @param a - The vector.
+	 * @param b - The second vector or scalar vector.
+	 * @returns A new vector with divided components.
+	 */
 	public static divide<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -161,6 +278,12 @@ export class Vector {
 		return this.operate(a, b, (x, y) => x / y);
 	}
 
+	/**
+	 * Calculates the dot product of two vectors.
+	 * @param a - The first vector.
+	 * @param b - The second vector.
+	 * @returns A scalar value representing the degree of alignment between the input vectors.
+	 */
 	public static dotProduct<T extends VectorType, U extends VectorLike>(
 		this: T,
 		a: U,
@@ -181,6 +304,12 @@ export class Vector {
 		return result;
 	}
 
+	/**
+	 * Calculates the cross product of two vectors in three-dimensional space.
+	 * @param a - The first vector.
+	 * @param b - The second vector.
+	 * @returns A new vector perpendicular to both input vectors.
+	 */
 	public static crossProduct<T extends VectorType, U extends VectorObject>(this: T, a: U, b: U) {
 		const { x: ax, y: ay, z: az, w: aw } = a;
 		const { x: bx, y: by, z: bz } = b;
@@ -198,6 +327,11 @@ export class Vector {
 		return this.create(ay * bz - az * by, az * bx - ax * bz, ax * by - ay * bx, aw) as unknown as U;
 	}
 
+	/**
+	 * Normalizes a vector, producing a new vector with the same direction but with a magnitude of 1.
+	 * @param vector - The vector to be normalized.
+	 * @returns The new normalized vector.
+	 */
 	public static normalize<T extends VectorType, U extends VectorLike>(this: T, a: U): U {
 		const length = a instanceof Vector ? a.Length : this.Length(a);
 		return this.divide(a, length) as U;
@@ -234,6 +368,11 @@ export class Vector {
 		return primitives.map(this.fromArray) as InstanceType<T>[];
 	}
 
+	/**
+	 * Calculates the length (magnitude) of a vector.
+	 * @param obj - The vector for which to calculate the length.
+	 * @returns The magnitude of the vector.
+	 */
 	public static Length<T extends VectorType, U extends VectorLike>(this: T, obj: U): number {
 		let sum = 0;
 
@@ -247,6 +386,14 @@ export class Vector {
 		return Math.sqrt(sum);
 	}
 
+	/**
+	 * Constructs a new vector.
+	 * @param size The size of the vector (number of components).
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to x).
+	 * @param z The z-component of the vector (optional).
+	 * @param w The w-component of the vector (optional).
+	 */
 	constructor(
 		public size: number,
 		public x: number = 0,
@@ -272,6 +419,9 @@ export class Vector {
 		return this.toString();
 	}
 
+	/**
+	 * @see Vector.clone
+	 */
 	public clone() {
 		return Vector.clone(this);
 	}
@@ -297,48 +447,83 @@ export class Vector {
 		return Math.sqrt(this.distanceSquared(v));
 	}
 
+	/**
+	 * @see Vector.normalize
+	 */
 	public normalize() {
 		return Vector.normalize(this);
 	}
 
+	/**
+	 * @see Vector.dotProduct
+	 */
 	public dotProduct(v: this): number {
 		return Vector.dotProduct(this, v);
 	}
 
+	/**
+	 * @see Vector.add
+	 */
 	public add(v: VectorLike | number) {
 		return Vector.add(this, v);
 	}
 
+	/**
+	 * @see Vector.addX
+	 */
 	public addX(x: number) {
 		return Vector.addX(this, x);
 	}
 
+	/**
+	 * @see Vector.addY
+	 */
 	public addY(x: number) {
 		return Vector.addY(this, x);
 	}
 
+	/**
+	 * @see Vector.subtract
+	 */
 	public subtract(v: VectorLike) {
 		return Vector.subtract(this, v);
 	}
 
+	/**
+	 * @see Vector.multiply
+	 */
 	public multiply(v: VectorLike | number) {
 		return Vector.multiply(this, v);
 	}
 
+	/**
+	 * @see Vector.divide
+	 */
 	public divide(v: VectorLike | number) {
 		return Vector.divide(this, v);
 	}
 
+	/**
+	 * Converts the vector to an array of its components.
+	 */
 	public toArray() {
 		return [...this];
 	}
 
+	/**
+	 * Replaces the components of the vector with the components of another vector object.
+	 * @param v - The object whose components will replace the current vector's components.
+	 */
 	public replace<T extends VectorLike>(v: T): void {
 		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
 			if (key in this && key in v) this[key] = v[key] as number;
 		}
 	}
 
+	/**
+	 * Calculates the length (magnitude) of a vector.
+	 * @returns The magnitude of the vector.
+	 */
 	public get Length(): number {
 		let sum = 0;
 
@@ -348,36 +533,61 @@ export class Vector {
 	}
 }
 
+/**
+ * Represents a 2-dimensional vector.
+ */
 export class Vector2 extends Vector {
 	public type = 'vec2';
 
 	public static readonly Zero: Vector2 = new Vector2(0, 0);
 
+	/**
+	 * Constructs a new 2D vector.
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to x).
+	 */
 	constructor(x: number, y = x) {
 		super(2, x, y);
 	}
 }
 
+/**
+ * Represents a 3-dimensional vector.
+ */
 export class Vector3 extends Vector implements Vec3 {
 	public type = 'vec3';
 	public z: number;
 
 	public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
+	/**
+	 * Constructs a new 3D vector.
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to x).
+	 * @param z The z-component of the vector (optional, defaults to y).
+	 */
 	constructor(x: number, y = x, z = y) {
 		super(3, x, y, z);
 		this.z = z;
 	}
 
+	/**
+	 * @see Vector.addZ
+	 */
 	public addZ(z: number) {
 		return Vector.addZ(this, z);
 	}
 
+	/**
+	 * @see Vector.crossProduct
+	 */
 	public crossProduct(v: VectorLike) {
 		return Vector.crossProduct(this, v);
 	}
 }
-
+/**
+ * Represents a 4-dimensional vector.
+ */
 export class Vector4 extends Vector {
 	public type = 'vec4';
 	public z: number;
@@ -385,24 +595,37 @@ export class Vector4 extends Vector {
 
 	public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 
+	/**
+	 * Constructs a new 4D vector.
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to x).
+	 * @param z The z-component of the vector (optional, defaults to y).
+	 * @param w The w-component of the vector (optional, defaults to z).
+	 */
 	constructor(x: number, y = x, z = y, w = z) {
 		super(4, x, y, z, w);
 		this.z = z;
 		this.w = w;
 	}
 
+	/**
+	 * @see Vector.addZ
+	 */
 	public addZ(z: number) {
 		return Vector.addZ(this, z);
 	}
 
+	/**
+	 * @see Vector.addW
+	 */
 	public addW(w: number) {
 		return Vector.addW(this, w);
 	}
 
+	/**
+	 * @see Vector.crossProduct
+	 */
 	public crossProduct(v: VectorLike) {
 		return Vector.crossProduct(this, v);
 	}
 }
-
-const vec = new Vector3(1);
-const vec2 = Vector.crossProduct(vec, vec);
