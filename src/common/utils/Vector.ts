@@ -35,6 +35,10 @@ type VectorKeys = keyof VectorObject;
 export class Vector {
 	public type = 'vec';
 
+	public static create(x: number, y?: number): Vector2;
+	public static create(x: number, y?: number, z?: number): Vector3;
+	public static create(x: number, y?: number, z?: number, w?: number): Vector4;
+	public static create(xyzw: VectorLike): Vector4;
 	public static create<T extends VectorType>(
 		this: T,
 		x: VectorLike | number,
