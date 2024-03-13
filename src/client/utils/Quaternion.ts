@@ -1,4 +1,4 @@
-import { Vector3 } from './Vector3';
+import { Vector3 } from '.';
 
 export class Quaternion {
 	public x: number;
