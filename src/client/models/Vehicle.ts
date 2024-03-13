@@ -37,12 +37,13 @@ export class Vehicle extends BaseEntity {
 	}
 
 	public static fromHandle(handle: number): Vehicle | null {
+		if (!DoesEntityExist(handle)) return null;
 		return new Vehicle(handle);
 	}
 
-	public static fromNetworkId(networkId: number, errorOnInvalid = false): Vehicle | null {
-		if (errorOnInvalid && NetworkDoesEntityExistWithNetworkId(networkId)) {
-			throw new Error(`Entity with ${networkId} doesn't exist`);
+	public static fromNetworkId(networkId: number): Vehicle | null {
+		if (!NetworkDoesEntityExistWithNetworkId(networkId)) {
+			return null;
 		}
 		return new Vehicle(NetworkGetEntityFromNetworkId(networkId));
 	}
@@ -257,15 +258,8 @@ export class Vehicle extends BaseEntity {
 		SetVehicleHasMutedSirens(this.handle, value);
 	}
 
-	/**
-	 * @deprecated use {@HasMutedSirens} instead.
-	 */
-	public set IsSirenSilent(value: boolean) {
-		SetVehicleHasMutedSirens(this.handle, value);
-	}
-
-	public soundHorn(duration: number): void {
-		StartVehicleHorn(this.handle, duration, Game.generateHash('HELDDOWN'), false);
+	public soundHorn(duration: number, mode = Game.generateHash('HELDDOWN')): void {
+		StartVehicleHorn(this.handle, duration, mode, false);
 	}
 
 	public get IsWanted(): boolean {
