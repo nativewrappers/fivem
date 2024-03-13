@@ -187,9 +187,10 @@ export class Vector {
 		let sum = 0;
 
 		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
-			const value = obj[key];
-
-			if (value) sum += value * value;
+			if (key in obj) {
+				const value = obj[key]!;
+				sum += value * value;
+			}
 		}
 
 		return Math.sqrt(sum);
@@ -269,13 +270,14 @@ export class Vector {
 		return Vector.divide(this, v);
 	}
 
-	public toArray(): [number, number] {
-		return [this.x, this.y];
+	public toArray() {
+		return [...this];
 	}
 
-	public replace(v: VectorLike) {
-		this.x = v.x;
-		this.y = v.y;
+	public replace<T extends VectorLike>(v: T): void {
+		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
+			if (key in this && key in v) this[key] = v[key] as number;
+		}
 	}
 
 	public get Length(): number {
