@@ -1,13 +1,31 @@
 // Adapted from https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 
-import type { MsgpackBuffer } from '@common/types';
+// import type { MsgpackBuffer } from '@common/types';
 
-type VectorObject = {
+export interface Vec2 {
+	x: number;
+	y: number;
+}
+
+export interface Vec3 {
+	x: number;
+	y: number;
+	z: number;
+}
+
+export interface Vec4 {
+	x: number;
+	y: number;
+	z: number;
+	w: number;
+}
+
+interface VectorObject {
 	x: number;
 	y: number;
 	z?: number;
 	w?: number;
-};
+}
 
 type VectorArray = [number, number, number?, number?] | number[];
 type VectorType = typeof Vector;
@@ -15,6 +33,8 @@ type VectorLike = VectorObject | Vector;
 type VectorKeys = keyof VectorObject;
 
 export class Vector {
+	public type = 'vec';
+
 	public static create<T extends VectorType>(
 		this: T,
 		x: VectorLike | number,
@@ -22,16 +42,18 @@ export class Vector {
 		z?: number,
 		w?: number,
 	): InstanceType<T> {
-		if (!y && typeof x === 'number') return new Vector(x, x) as InstanceType<T>;
+		if (y === undefined && typeof x === 'number') return new Vector2(x, x) as InstanceType<T>;
 		if (typeof x === 'object') ({ x, y, z, w } = x);
 
 		const name =
-			this.name === 'Vector' ? `Vector${[x, y, z, w].filter(Boolean).length}` : this.name;
+			this.name === 'Vector'
+				? `Vector${[x, y, z, w].filter(arg => arg !== undefined).length}`
+				: this.name;
 
 		switch (name) {
 			default:
 			case 'Vector':
-				return new Vector(x, y) as InstanceType<T>;
+				return new Vector2(x, y) as InstanceType<T>;
 			case 'Vector3':
 				return new Vector3(x, y, z) as InstanceType<T>;
 			case 'Vector4':
@@ -39,24 +61,24 @@ export class Vector {
 		}
 	}
 
-	public static fromBuffer({ buffer }: MsgpackBuffer) {
-		const arr: number[] = [];
+	// public static fromBuffer({ buffer }: MsgpackBuffer) {
+	// 	const arr: number[] = [];
 
-		for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
+	// 	for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
 
-		return this.fromArray(arr);
-	}
+	// 	return this.fromArray(arr);
+	// }
 
 	public static clone<T extends VectorType>(this: T, obj: VectorLike) {
 		return this.create(obj);
 	}
 
-	private static operate<T extends VectorType>(
+	private static operate<T extends VectorType, U extends VectorLike>(
 		this: T,
-		a: VectorLike,
+		a: U,
 		b: VectorLike | number,
 		operator: (x: number, y: number) => number,
-	) {
+	): U {
 		let { x, y, z, w } = a;
 		const isNumber = typeof b === 'number';
 
@@ -66,29 +88,45 @@ export class Vector {
 		if (z) z = operator(z, isNumber ? b : b.z ?? 0);
 		if (w) w = operator(w, isNumber ? b : b.w ?? 0);
 
-		return this.create(x, y, z, w);
+		return this.create(x, y, z, w) as U;
 	}
 
-	public static add<T extends VectorType>(this: T, a: VectorLike, b: VectorLike | number) {
-		return this.operate(a, b, (x, y) => x + y);
+	public static add<T extends VectorType, U extends VectorLike>(
+		this: T,
+		a: U,
+		b: VectorLike | number,
+	): U {
+		return this.operate(a, b, (x, y) => x + y) as U;
 	}
 
-	public static subtract<T extends VectorType>(this: T, a: VectorLike, b: VectorLike | number) {
-		return this.operate(a, b, (x, y) => x - y);
+	public static subtract<T extends VectorType, U extends VectorLike>(
+		this: T,
+		a: U,
+		b: VectorLike | number,
+	): U {
+		return this.operate(a, b, (x, y) => x - y) as U;
 	}
 
-	public static multiply<T extends VectorType>(this: T, a: VectorLike, b: VectorLike | number) {
-		return this.operate(a, b, (x, y) => x * y);
+	public static multiply<T extends VectorType, U extends VectorLike>(
+		this: T,
+		a: U,
+		b: VectorLike | number,
+	): U {
+		return this.operate(a, b, (x, y) => x * y) as U;
 	}
 
-	public static divide<T extends VectorType>(this: T, a: VectorLike, b: VectorLike | number) {
+	public static divide<T extends VectorType, U extends VectorLike>(
+		this: T,
+		a: U,
+		b: VectorLike | number,
+	): U {
 		return this.operate(a, b, (x, y) => x / y);
 	}
 
-	public static dotProduct<T extends VectorType>(
+	public static dotProduct<T extends VectorType, U extends VectorLike>(
 		this: T,
-		a: InstanceType<T>,
-		b: InstanceType<T>,
+		a: U,
+		b: U,
 	): number {
 		let result = 0;
 
@@ -160,13 +198,7 @@ export class Vector {
 		public y: number = x,
 		public z?: number,
 		public w?: number,
-	) {
-		this.size = size;
-		this.x = x;
-		this.y = y;
-		this.z = z;
-		this.w = w;
-	}
+	) {}
 
 	*[Symbol.iterator](): Iterator<[string, number]> {
 		yield ['x', this.x];
@@ -178,7 +210,7 @@ export class Vector {
 
 	public toString() {
 		const { x, y, z, w } = this;
-		return `${this.constructor.name}(${x}, ${y}${z ? `, ${z}` : ''}${w ? `, ${w}` : ''})`;
+		return `${this.type}(${[x, y, z, w].filter(val => val !== undefined).join(', ')})`;
 	}
 
 	public toJSON() {
@@ -196,7 +228,7 @@ export class Vector {
 	 * @returns Euclidean magnitude with another vector.
 	 */
 	public distanceSquared(v: VectorLike): number {
-		const w: Vector = this.subtract(v);
+		const w = this.subtract(v);
 		return Vector.dotProduct(w, w);
 	}
 
@@ -219,15 +251,15 @@ export class Vector {
 	}
 
 	public add(v: VectorLike | number) {
-		return Vector.add(this, v);
+		return Vector.add(this, v) as this;
 	}
 
 	public subtract(v: VectorLike) {
-		return Vector.subtract(this, v);
+		return Vector.subtract(this, v) as this;
 	}
 
 	public multiply(v: VectorLike | number) {
-		return Vector.multiply(this, v);
+		return Vector.multiply(this, v) as this;
 	}
 
 	public divide(v: VectorLike | number) {
@@ -238,7 +270,7 @@ export class Vector {
 		return [this.x, this.y];
 	}
 
-	public replace(v: VectorLike): void {
+	public replace(v: VectorLike) {
 		this.x = v.x;
 		this.y = v.y;
 	}
@@ -253,24 +285,43 @@ export class Vector {
 }
 
 export class Vector2 extends Vector {
+	public type = 'vec2';
+
 	constructor(x: number, y = x) {
 		super(2, x, y);
 	}
+
+	public static readonly Zero: Vector2 = new Vector2(0, 0);
 }
 
-export class Vector3 extends Vector {
-	public z!: number;
+export class Vector3 extends Vector implements Vec3 {
+	public type = 'vec3';
+	public z: number;
 
 	constructor(x: number, y = x, z = y) {
 		super(3, x, y, z);
+		this.z = z;
 	}
+
+	public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 }
 
 export class Vector4 extends Vector {
-	public z!: number;
-	public w!: number;
+	public type = 'vec4';
+	public z: number;
+	public w: number;
 
 	constructor(x: number, y = x, z = y, w = z) {
 		super(4, x, y, z, w);
+		this.z = z;
+		this.w = w;
 	}
+
+	public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 }
+
+const f = Vector3.Zero;
+const m = Vector.multiply(f, new Vector2(0));
+
+console.log(f);
+console.log(m);
