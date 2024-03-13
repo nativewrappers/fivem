@@ -45,18 +45,18 @@ export class Vector {
 		if (y === undefined && typeof x === 'number') return new Vector2(x, x) as InstanceType<T>;
 		if (typeof x === 'object') ({ x, y, z, w } = x);
 
-		const name =
-			this.name === 'Vector'
-				? `Vector${[x, y, z, w].filter(arg => arg !== undefined).length}`
-				: this.name;
+		const type =
+			this instanceof Vector
+				? this.type
+				: `vec${[x, y, z, w].filter(arg => arg !== undefined).length}`;
 
-		switch (name) {
+		switch (type) {
 			default:
-			case 'Vector':
+			case 'vec':
 				return new Vector2(x, y) as InstanceType<T>;
-			case 'Vector3':
+			case 'vec3':
 				return new Vector3(x, y, z) as InstanceType<T>;
-			case 'Vector4':
+			case 'vec4':
 				return new Vector4(x, y, z, w) as InstanceType<T>;
 		}
 	}
