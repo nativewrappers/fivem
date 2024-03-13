@@ -1,6 +1,6 @@
 // Adapted from https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 
-// import type { MsgpackBuffer } from '@common/types';
+import type { MsgpackBuffer } from '@common/types';
 
 export interface Vec2 {
 	x: number;
@@ -61,13 +61,13 @@ export class Vector {
 		}
 	}
 
-	// public static fromBuffer({ buffer }: MsgpackBuffer) {
-	// 	const arr: number[] = [];
+	public static fromBuffer({ buffer }: MsgpackBuffer) {
+		const arr: number[] = [];
 
-	// 	for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
+		for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
 
-	// 	return this.fromArray(arr);
-	// }
+		return this.fromArray(arr);
+	}
 
 	public static clone<T extends VectorType>(this: T, obj: VectorLike) {
 		return this.create(obj);
