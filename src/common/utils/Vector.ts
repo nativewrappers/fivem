@@ -183,10 +183,9 @@ export class Vector {
 		let sum = 0;
 
 		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
-			if (typeof obj[key] === 'number') {
-				const value = obj[key] as number; // because it definitely isn't undefined, typescript..
-				sum += value * value;
-			}
+			const value = obj[key];
+
+			if (value) sum += value * value;
 		}
 
 		return Math.sqrt(sum);
@@ -319,9 +318,3 @@ export class Vector4 extends Vector {
 
 	public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 }
-
-const f = Vector3.Zero;
-const m = Vector.multiply(f, new Vector2(0));
-
-console.log(f);
-console.log(m);
