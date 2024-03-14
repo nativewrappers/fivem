@@ -12,15 +12,15 @@ const getClassFromArguments = (...args: any[]): any[] => {
 	for (const arg of args) {
 		switch (arg.type) {
 			case ClassTypes.Vector2: {
-				newArgs.push(Vector2.create(arg));
+				newArgs.push(Vector2.fromObject(arg));
 				continue;
 			}
 			case ClassTypes.Vector3: {
-				newArgs.push(Vector3.create(arg));
+				newArgs.push(Vector3.fromObject(arg));
 				continue;
 			}
 			case ClassTypes.Vector4: {
-				newArgs.push(Vector4.create(arg));
+				newArgs.push(Vector4.fromObject(arg));
 				continue;
 			}
 			case ClassTypes.Ped: {

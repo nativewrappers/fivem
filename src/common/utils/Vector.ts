@@ -39,15 +39,23 @@ interface VectorObject {
 	w?: number;
 }
 
+type VectorN<L extends number, T = number> = L extends 2
+	? [T, T]
+	: L extends 3
+	? [T, T, T]
+	: L extends 4
+	? [T, T, T, T]
+	: never;
+
 /**
  * An array that can be converted to a vector.
  */
-type VectorArray<T extends VectorType> = T extends typeof Vector4
-	? [number, number, number, number]
-	: T extends typeof Vector3
-	? [number, number, number]
-	: T extends typeof Vector2
-	? [number, number]
+type VectorArray<T> = T extends Vec4
+	? VectorN<4>
+	: T extends Vec3
+	? VectorN<3>
+	: T extends Vec2
+	? VectorN<2>
 	: number[];
 
 /**
@@ -65,13 +73,13 @@ type VectorKeys = keyof VectorObject;
 /**
  * Utility type to get the vector type of an object based on its component.
  */
-type InferVector<T> = T extends { z: number; w: number } | { length: 4 }
+type InferVector<T> = T extends Vec4 | VectorN<4>
 	? Vector4
-	: T extends { z: number } | { length: 3 }
+	: T extends Vec3 | VectorN<3>
 	? Vector3
-	: T extends { x: number } | { length: 1 | 2 }
+	: T extends Vec2 | VectorN<2>
 	? Vector2
-	: T;
+	: any;
 
 /**
  * A base vector class inherited by all vector classes.
@@ -90,7 +98,10 @@ export class Vector {
 	 * @param obj The object representing the vector.
 	 * @returns A new vector instance.
 	 */
-	protected static create<T extends VectorType, U extends VectorLike>(this: T, obj: U): InferVector<U>;
+	protected static create<T extends VectorType, U extends VectorLike>(
+		this: T,
+		obj: U,
+	): InferVector<U>;
 	/**
 	 * Creates a new vector based on the provided parameters.
 	 * @param x The x-component of the vector.
@@ -130,12 +141,12 @@ export class Vector {
 	 * @param msgpackBuffer The buffer containing binary data.
 	 * @returns A new vector instance.
 	 */
-	public static fromBuffer({ buffer }: MsgpackBuffer) {
-		const arr: number[] = [];
+	public static fromBuffer<T extends VectorType>(this: T, { buffer }: MsgpackBuffer) {
+		const arr: any = [];
 
 		for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
 
-		return this.fromArray(arr);
+		return this.fromArray(arr) as InstanceType<T>;
 	}
 
 	/**
@@ -352,6 +363,22 @@ export class Vector {
 	static fromArray<T extends VectorType, U extends VectorArray<T>>(this: T, primitive: U) {
 		const [x, y, z, w] = primitive;
 		return this.create(x, y, z, w) as InferVector<U>;
+	}
+
+	/**
+	 * Creates a vector from an array or object containing vector components.
+	 * @param primitive The object to use as a vector.
+	 */
+	static fromObject<T extends VectorType, U extends InferVector<T> | VectorArray<T>>(
+		this: T,
+		primitive: U,
+	) {
+		if (Array.isArray(primitive))
+			return this.fromArray(primitive as VectorArray<T>) as InstanceType<T>;
+
+		const { x, y, z, w } = primitive;
+
+		return this.create(x, y, z, w) as InstanceType<T>;
 	}
 
 	/**
@@ -626,3 +653,6 @@ export class Vector4 extends Vector {
 		return Vector.crossProduct(this, v);
 	}
 }
+
+const vec = Vector3.fromObject([1, 2, 3]);
+const vec2 = Vector3.fromObject({ x: 1, y: 2, z: 3 });
