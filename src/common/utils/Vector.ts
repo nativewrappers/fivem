@@ -82,15 +82,15 @@ export class Vector {
 	 */
 	public type = 'vec';
 
-	public static create(x: number, y?: number): Vector2;
-	public static create(x: number, y?: number, z?: number): Vector3;
-	public static create(x: number, y?: number, z?: number, w?: number): Vector4;
+	protected static create(x: number, y?: number): Vector2;
+	protected static create(x: number, y?: number, z?: number): Vector3;
+	protected static create(x: number, y?: number, z?: number, w?: number): Vector4;
 	/**
 	 * Creates a new vector based on the provided vector-like object.
 	 * @param obj The object representing the vector.
 	 * @returns A new vector instance.
 	 */
-	public static create<T extends VectorType, U extends VectorLike>(this: T, obj: U): InferVector<U>;
+	protected static create<T extends VectorType, U extends VectorLike>(this: T, obj: U): InferVector<U>;
 	/**
 	 * Creates a new vector based on the provided parameters.
 	 * @param x The x-component of the vector.
@@ -99,7 +99,7 @@ export class Vector {
 	 * @param w The w-component of the vector (optional, defaults to the value of z).
 	 * @returns A new vector instance.
 	 */
-	public static create<T extends VectorType, U extends VectorLike>(
+	protected static create<T extends VectorType, U extends VectorLike>(
 		this: T,
 		x: U | number,
 		y?: number,
