@@ -42,7 +42,13 @@ interface VectorObject {
 /**
  * An array that can be converted to a vector.
  */
-type VectorArray = [number, number, number?, number?] | number[];
+type VectorArray<T extends VectorType> = T extends typeof Vector4
+	? [number, number, number, number]
+	: T extends typeof Vector3
+	? [number, number, number]
+	: T extends typeof Vector2
+	? [number, number]
+	: number[];
 
 /**
  * The constructor type of the Vector class.
@@ -59,11 +65,13 @@ type VectorKeys = keyof VectorObject;
 /**
  * Utility type to get the vector type of an object based on its component.
  */
-type InferVector<T> = T extends { z: number; w: number }
+type InferVector<T> = T extends { z: number; w: number } | { length: 4 }
 	? Vector4
-	: T extends { z: number }
+	: T extends { z: number } | { length: 3 }
 	? Vector3
-	: Vector2;
+	: T extends { x: number } | { length: 1 | 2 }
+	? Vector2
+	: T;
 
 /**
  * A base vector class inherited by all vector classes.
@@ -74,14 +82,6 @@ export class Vector {
 	 */
 	public type = 'vec';
 
-	/**
-	 * Creates a new vector based on the provided parameters.
-	 * @param x The x-component of the vector.
-	 * @param y The y-component of the vector (optional, defaults to the value of x).
-	 * @param z The z-component of the vector (optional, defaults to the value of y).
-	 * @param w The w-component of the vector (optional, defaults to the value of z).
-	 * @returns A new vector instance.
-	 */
 	public static create(x: number, y?: number): Vector2;
 	public static create(x: number, y?: number, z?: number): Vector3;
 	public static create(x: number, y?: number, z?: number, w?: number): Vector4;
@@ -90,10 +90,18 @@ export class Vector {
 	 * @param obj The object representing the vector.
 	 * @returns A new vector instance.
 	 */
-	public static create<T>(obj: T): InferVector<T>;
-	public static create<T extends VectorType>(
+	public static create<T extends VectorType, U extends VectorLike>(this: T, obj: U): InferVector<U>;
+	/**
+	 * Creates a new vector based on the provided parameters.
+	 * @param x The x-component of the vector.
+	 * @param y The y-component of the vector (optional, defaults to the value of x).
+	 * @param z The z-component of the vector (optional, defaults to the value of y).
+	 * @param w The w-component of the vector (optional, defaults to the value of z).
+	 * @returns A new vector instance.
+	 */
+	public static create<T extends VectorType, U extends VectorLike>(
 		this: T,
-		x: VectorLike | number,
+		x: U | number,
 		y?: number,
 		z?: number,
 		w?: number,
@@ -341,31 +349,20 @@ export class Vector {
 	 * Creates a vector from an array of numbers.
 	 * @param primitive An array of numbers (usually returned by a native).
 	 */
-	static fromArray<T extends VectorType>(this: T, primitive: VectorArray): InstanceType<T> {
+	static fromArray<T extends VectorType, U extends VectorArray<T>>(this: T, primitive: U) {
 		const [x, y, z, w] = primitive;
-
-		switch (
-			this.name === 'Vector' ? `Vector${primitive.length < 2 ? 2 : primitive.length}` : this.name
-		) {
-			case 'Vector':
-				return new Vector(x, y) as InstanceType<T>;
-			case 'Vector3':
-				return new Vector3(x, y, z) as InstanceType<T>;
-			default:
-			case 'Vector4':
-				return new Vector4(x, y, z, w) as InstanceType<T>;
-		}
+		return this.create(x, y, z, w) as InferVector<U>;
 	}
 
 	/**
 	 * Creates an array of vectors from an array of number arrays
 	 * @param primitives A multi-dimensional array of number arrays
 	 */
-	public static fromArrays<T extends VectorType>(
+	public static fromArrays<T extends VectorType, U extends VectorArray<T>[]>(
 		this: T,
-		primitives: VectorArray[],
-	): InstanceType<T>[] {
-		return primitives.map(this.fromArray) as InstanceType<T>[];
+		primitives: U,
+	) {
+		return primitives.map(this.fromArray);
 	}
 
 	/**
