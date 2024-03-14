@@ -39,6 +39,9 @@ interface VectorObject {
 	w?: number;
 }
 
+/**
+ * Represents a vector of variable dimensions.
+ */
 type VectorN<L extends number, T = number> = L extends 2
 	? [T, T]
 	: L extends 3
@@ -68,6 +71,9 @@ type VectorType = typeof Vector;
  */
 type VectorLike = VectorObject | Vector;
 
+/**
+ * Represents the keys of a vector object.
+ */
 type VectorKeys = keyof VectorObject;
 
 /**
@@ -653,6 +659,3 @@ export class Vector4 extends Vector {
 		return Vector.crossProduct(this, v);
 	}
 }
-
-const vec = Vector3.fromObject([1, 2, 3]);
-const vec2 = Vector3.fromObject({ x: 1, y: 2, z: 3 });
