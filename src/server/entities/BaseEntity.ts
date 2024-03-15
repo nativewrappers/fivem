@@ -10,6 +10,18 @@ export class BaseEntity {
 	protected type = ClassTypes.Entity;
 	constructor(protected handle: number) {}
 
+	static fromNetworkId(networkId: number): BaseEntity | null {
+		const ent = NetworkGetEntityFromNetworkId(networkId);
+		if (ent === 0) return null;
+		return new BaseEntity(ent);
+	}
+
+	static fromStateBagName(stateBagName: string): BaseEntity | null {
+		const ent = GetEntityFromStateBagName(stateBagName);
+		if (ent === 0) return null;
+		return new BaseEntity(ent);
+	}
+
 	public get State(): StateBagInterface {
 		return cfx.Entity(this.handle).state;
 	}
@@ -30,8 +42,14 @@ export class BaseEntity {
 		return this.handle !== 0 && DoesEntityExist(this.handle);
 	}
 
-	public get AttachedTo(): number {
-		return GetEntityAttachedTo(this.handle);
+	/**
+	 * @returns the entity that the calling entity is attached to, or null if
+	 * there is none
+	 */
+	public get AttachedTo(): BaseEntity | null {
+		const ent = GetEntityAttachedTo(this.handle);
+		if (ent === 0) return null;
+		return new BaseEntity(ent);
 	}
 
 	public get Position(): Vector3 {
@@ -109,6 +127,8 @@ export class BaseEntity {
 	}
 
 	public delete() {
-		DeleteEntity(this.handle);
+		if (this.Exists) {
+			DeleteEntity(this.handle);
+		}
 	}
 }

@@ -21,12 +21,16 @@ export class Vehicle extends BaseEntity {
 		}
 	}
 
-	public static fromNetworkId(netId: number): Vehicle {
-		return new Vehicle(NetworkGetEntityFromNetworkId(netId));
+	static fromNetworkId(networkId: number): Vehicle | null {
+		const ent = NetworkGetEntityFromNetworkId(networkId);
+		if (ent === 0) return null;
+		return new Vehicle(ent);
 	}
 
-	public static fromHandle(handle: number): Vehicle {
-		return new Vehicle(handle);
+	static fromStateBagName(stateBageName: string): Vehicle | null {
+		const ent = GetEntityFromStateBagName(stateBageName);
+		if (ent === 0) return null;
+		return new Vehicle(ent);
 	}
 
 	public get IsEngineRunning(): boolean {
@@ -106,7 +110,6 @@ export class Vehicle extends BaseEntity {
 	}
 
 	public get LightsState(): [boolean, boolean] {
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		const [_, lightsOn, highbeansOn] = GetVehicleLightsState(this.handle);
 		return [lightsOn, highbeansOn];
 	}
@@ -176,7 +179,7 @@ export class Vehicle extends BaseEntity {
 	}
 
 	public get MaxHealth(): number {
-		return GetPedMaxHealth(this.handle);
+		return GetEntityMaxHealth(this.handle);
 	}
 
 	public get ScriptTaskCommand(): Hash {

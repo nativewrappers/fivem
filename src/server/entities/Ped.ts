@@ -1,6 +1,7 @@
 import { ClassTypes } from '../enum/ClassTypes';
 import { Hash } from '../type/Hash';
 import { BaseEntity } from './BaseEntity';
+import { Vehicle } from './Vehicle';
 
 export class Ped extends BaseEntity {
 	protected type = ClassTypes.Ped;
@@ -18,16 +19,20 @@ export class Ped extends BaseEntity {
 		}
 	}
 
-	public static fromNetworkId(netId: number): Ped {
-		return new Ped(NetworkGetEntityFromNetworkId(netId));
+	public static fromNetworkId(netId: number): Ped | null {
+		const ent = NetworkGetEntityFromNetworkId(netId);
+		if (ent === 0) return null;
+		return new Ped(ent);
+	}
+
+	public static fromStateBagName(stateBagName: string): Ped | null {
+		const handle = GetEntityFromStateBagName(stateBagName);
+		if (handle === 0) return null;
+		return new Ped(handle);
 	}
 
 	public static fromSource(source: number): Ped {
 		return new Ped(GetPlayerPed(source as any));
-	}
-
-	public static fromHandle(handle: number): Ped {
-		return new Ped(handle);
 	}
 
 	public get Armour(): number {
@@ -58,7 +63,7 @@ export class Ped extends BaseEntity {
 		return GetPedSourceOfDamage(this.handle);
 	}
 
-	public get DeathCause(): number {
+	public get DeathCause(): Hash {
 		return GetPedCauseOfDeath(this.handle);
 	}
 
@@ -66,19 +71,26 @@ export class Ped extends BaseEntity {
 		return GetSelectedPedWeapon(this.handle);
 	}
 
-	public get Vehicle(): number {
-		return GetVehiclePedIsIn(this.handle, false);
+	/**
+	 * @returns the current vehicle the ped is in, or null if it doesn't exist
+	 */
+	public get CurrentVehicle(): Vehicle | null {
+		const vehicle = GetVehiclePedIsIn(this.handle, false);
+		if (vehicle === 0) return null;
+		return new Vehicle(vehicle);
 	}
 
-	public get LastVehicle(): number {
-		return GetVehiclePedIsIn(this.handle, true);
+	public get LastVehicle(): Vehicle | null {
+		const vehicle = GetVehiclePedIsIn(this.handle, false);
+		if (vehicle === 0) return null;
+		return new Vehicle(GetVehiclePedIsIn(this.handle, true));
 	}
 
 	public get IsPlayer(): boolean {
 		return IsPedAPlayer(this.handle);
 	}
 
-	public specificTaskType(index: number): number {
+	public getSpecificTaskType(index: number): number {
 		return GetPedSpecificTaskType(this.handle, index);
 	}
 }
