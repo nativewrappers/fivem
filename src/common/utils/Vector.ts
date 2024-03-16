@@ -645,6 +645,13 @@ export class Vector4 extends Vector {
 	}
 
 	/**
+	 * @returns returns the x, y, z values of the Vec4
+	 */
+	public toVec3Array(): [number, number, number] {
+		return [this.x, this.y, this.z];
+	}
+
+	/**
 	 * @see Vector.addZ
 	 */
 	public addZ(z: number) {
