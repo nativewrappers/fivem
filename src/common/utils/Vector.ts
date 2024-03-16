@@ -13,28 +13,21 @@ export interface Vec2 {
 /**
  * Represents a 3-dimensional vector.
  */
-export interface Vec3 {
-	x: number;
-	y: number;
+export interface Vec3 extends Vec2 {
 	z: number;
 }
 
 /**
  * Represents a 4-dimensional vector.
  */
-export interface Vec4 {
-	x: number;
-	y: number;
-	z: number;
+export interface Vec4 extends Vec3 {
 	w: number;
 }
 
 /**
  * An object with vector components.
  */
-interface VectorObject {
-	x: number;
-	y: number;
+export interface Vec extends Vec2 {
 	z?: number;
 	w?: number;
 }
@@ -69,12 +62,12 @@ type VectorType = typeof Vector;
 /**
  * Represents an object or class that can be treated as a vector.
  */
-type VectorLike = VectorObject | Vector;
+type VectorLike = Vec | Vector;
 
 /**
  * Represents the keys of a vector object.
  */
-type VectorKeys = keyof VectorObject;
+type VectorKeys = keyof Vec;
 
 /**
  * Utility type to get the vector type of an object based on its component.
@@ -329,7 +322,7 @@ export class Vector {
 	 * @param b - The second vector.
 	 * @returns A new vector perpendicular to both input vectors.
 	 */
-	public static crossProduct<T extends VectorType, U extends VectorObject>(this: T, a: U, b: U) {
+	public static crossProduct<T extends VectorType, U extends Vec>(this: T, a: U, b: U) {
 		const { x: ax, y: ay, z: az, w: aw } = a;
 		const { x: bx, y: by, z: bz } = b;
 
