@@ -523,8 +523,8 @@ export class Vector {
 	/**
 	 * Converts the vector to an array of its components.
 	 */
-	public toArray() {
-		return [...this];
+	public toArray<T extends this>() {
+		return [...this] as VectorArray<T>;
 	}
 
 	/**
