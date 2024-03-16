@@ -223,8 +223,6 @@ export class Vector {
 	 * @returns A new vector with the y-component incremented.
 	 */
 	public static addY<T extends VectorType, U extends VectorLike>(this: T, obj: U, y: number) {
-		if (typeof obj.y !== 'number') return;
-
 		const vec = this.clone(obj);
 		vec.y += y;
 
@@ -238,8 +236,6 @@ export class Vector {
 	 * @returns A new vector with the z-component incremented.
 	 */
 	public static addZ<T extends VectorType, U extends VectorLike>(this: T, obj: U, z: number) {
-		if (typeof obj.z !== 'number') return;
-
 		const vec = this.clone(obj);
 		vec.z! += z;
 
@@ -253,8 +249,6 @@ export class Vector {
 	 * @returns A new vector with the w-component incremented.
 	 */
 	public static addW<T extends VectorType, U extends VectorLike>(this: T, obj: U, w: number) {
-		if (typeof obj.w !== 'number') return;
-
 		const vec = this.clone(obj);
 		vec.w! += w;
 
