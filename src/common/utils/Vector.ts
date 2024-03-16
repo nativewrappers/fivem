@@ -180,8 +180,8 @@ export class Vector {
 		let { x, y, z, w } = a;
 		const isNumber = typeof b === 'number';
 
-		x = operator(x, isNumber ? b : b.x);
-		y = operator(y, isNumber ? b : b.y);
+		x = operator(x, isNumber ? b : b.x ?? 0);
+		y = operator(y, isNumber ? b : b.y ?? 0);
 
 		if (z) z = operator(z, isNumber ? b : b.z ?? 0);
 		if (w) w = operator(w, isNumber ? b : b.w ?? 0);
