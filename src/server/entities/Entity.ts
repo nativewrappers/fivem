@@ -1,8 +1,8 @@
 import { BaseEntity } from './BaseEntity';
 
 export class Entity extends BaseEntity {
-	constructor(private handle: number) {
-		super(this);
+	constructor(handle: number) {
+		super(handle);
 	}
 	public static fromNetworkId(netId: number): Entity {
 		return new Entity(NetworkGetEntityFromNetworkId(netId));
