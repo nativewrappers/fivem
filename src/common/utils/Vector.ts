@@ -573,10 +573,6 @@ export class Vector2 extends Vector {
 	constructor(x: number, y = x) {
 		super(2, x, y);
 	}
-
-	public toArray(): [number, number] {
-		return [this.x, this.y];
-	}
 }
 
 /**
@@ -612,10 +608,6 @@ export class Vector3 extends Vector implements Vec3 {
 	public crossProduct(v: VectorLike) {
 		return Vector.crossProduct(this, v);
 	}
-
-	public toArray(): [number, number, number] {
-		return [this.x, this.y, this.z];
-	}
 }
 /**
  * Represents a 4-dimensional vector.
@@ -638,17 +630,6 @@ export class Vector4 extends Vector {
 		super(4, x, y, z, w);
 		this.z = z;
 		this.w = w;
-	}
-
-	public toArray(): [number, number, number, number] {
-		return [this.x, this.y, this.z, this.w];
-	}
-
-	/**
-	 * @returns returns the x, y, z values of the Vec4
-	 */
-	public toVec3Array(): [number, number, number] {
-		return [this.x, this.y, this.z];
 	}
 
 	/**
