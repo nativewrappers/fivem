@@ -514,6 +514,35 @@ export class Vehicle extends BaseEntity {
 		return this.getPedOnSeat(VehicleSeat.Driver);
 	}
 
+	// while ghosted use entity index, it doesn't look like you can ghost
+	// anything but players and vehicles
+	public get Ghosted() {
+		// actual name is IS_ENTITY_A_GHOST
+		return IsEntityGhostedToLocalPlayer(this.handle);
+	}
+
+	public set GhostedForGhostPlayers(isGhostedForGhostPlayers: boolean) {
+		// actual name is SET_ENTITY_GHOSTED_FOR_GHOST_PLAYERS
+		NetworkSetEntityGhostedWithOwner(this.handle, isGhostedForGhostPlayers);
+	}
+
+	public set Ghosted(isGhosted: boolean) {
+		SetNetworkVehicleAsGhost(this.Handle, isGhosted);
+	}
+
+	static set GhostAlpha(alpha: number) {
+		SetGhostedEntityAlpha(alpha);
+	}
+
+	public get IsInGhostCollision() {
+		// actual name is IS_ENTITY_IN_GHOST_COLLISION
+		return N_0x7ef7649b64d7ff10(this.handle);
+	}
+
+	static resetGhostAlpha() {
+		ResetGhostedEntityAlpha();
+	}
+
 	public get Occupants(): Ped[] {
 		const driver = this.Driver;
 

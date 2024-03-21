@@ -23,6 +23,24 @@ export abstract class Game {
 		return hash;
 	}
 
+	public static setLocalPlayerGhosted(isGhosted: boolean, inverseGhost: boolean) {
+		// @ts-ignore
+		SetLocalPlayerAsGhost(isGhosted, inverseGhost);
+	}
+
+	public static setGhostAlpha(alpha: number) {
+		SetGhostedEntityAlpha(alpha);
+	}
+
+	static resetGhostAlpha() {
+		ResetGhostedEntityAlpha();
+	}
+
+	static setGhostingInverted(isInverted: boolean) {
+		// actual name is SET_INVERT_GHOSTING
+		N_0xd7b6c73cad419bcf(isInverted);
+	}
+
 	/**
 	 * Gets the game language
 	 */

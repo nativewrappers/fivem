@@ -115,10 +115,19 @@ export class Player {
 		return IsPlayerDead(this.handle);
 	}
 
-	// Should this even be here?
-	// public set DisableFiring(value: boolean) {
-	//   DisablePlayerFiring(this.handle, value);
-	// }
+	public set DisableFiring(value: boolean) {
+	  DisablePlayerFiring(this.handle, value);
+	}
+
+	public set Ghosted(isGhosted: boolean) {
+		// if we're the local player then use the local version of the native
+		if (this.Handle === 128) {
+			SetLocalPlayerAsGhost(isGhosted);
+		} else {
+			// actual name is SET_REMOTE_PLAYER_AS_GHOST
+			SetRelationshipToPlayer(this.handle, isGhosted);
+		}
+	}
 
 	public get EntityPlayerIsAimingAt(): BaseEntity | null {
 		const [entityHit, entity] = GetEntityPlayerIsFreeAimingAt(this.handle);
