@@ -13,28 +13,21 @@ export interface Vec2 {
 /**
  * Represents a 3-dimensional vector.
  */
-export interface Vec3 {
-	x: number;
-	y: number;
+export interface Vec3 extends Vec2 {
 	z: number;
 }
 
 /**
  * Represents a 4-dimensional vector.
  */
-export interface Vec4 {
-	x: number;
-	y: number;
-	z: number;
+export interface Vec4 extends Vec3 {
 	w: number;
 }
 
 /**
  * An object with vector components.
  */
-interface VectorObject {
-	x: number;
-	y: number;
+export interface Vec extends Vec2 {
 	z?: number;
 	w?: number;
 }
@@ -69,12 +62,12 @@ type VectorType = typeof Vector;
 /**
  * Represents an object or class that can be treated as a vector.
  */
-type VectorLike = VectorObject | Vector;
+type VectorLike = Vec | Vector;
 
 /**
  * Represents the keys of a vector object.
  */
-type VectorKeys = keyof VectorObject;
+type VectorKeys = keyof Vec;
 
 /**
  * Utility type to get the vector type of an object based on its component.
@@ -235,7 +228,7 @@ export class Vector {
 	 * @param z - The value to add to the z-component.
 	 * @returns A new vector with the z-component incremented.
 	 */
-	public static addZ<T extends VectorType, U extends VectorLike>(this: T, obj: U, z: number) {
+	public static addZ<T extends VectorType, U extends Vec3 | Vec4>(this: T, obj: U, z: number) {
 		const vec = this.clone(obj);
 		vec.z! += z;
 
@@ -248,7 +241,7 @@ export class Vector {
 	 * @param w - The value to add to the w-component.
 	 * @returns A new vector with the w-component incremented.
 	 */
-	public static addW<T extends VectorType, U extends VectorLike>(this: T, obj: U, w: number) {
+	public static addW<T extends VectorType, U extends Vec4>(this: T, obj: U, w: number) {
 		const vec = this.clone(obj);
 		vec.w! += w;
 
@@ -310,12 +303,9 @@ export class Vector {
 	): number {
 		let result = 0;
 
-		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
-			const v1 = a[key];
-			const v2 = b[key];
-
-			if (v1 && v2) result += v1 * v2;
-			else if (v1 || v2) {
+		for (const key of ['x', 'y', 'z', 'w'] as (keyof U)[]) {
+			if (key in a && key in b) result += (a[key] as number) * (b[key] as number);
+			else {
 				throw new Error('Vectors must have the same dimensions');
 			}
 		}
@@ -329,8 +319,8 @@ export class Vector {
 	 * @param b - The second vector.
 	 * @returns A new vector perpendicular to both input vectors.
 	 */
-	public static crossProduct<T extends VectorType, U extends VectorObject>(this: T, a: U, b: U) {
-		const { x: ax, y: ay, z: az, w: aw } = a;
+	public static crossProduct<T extends VectorType, U extends Vec3 | Vec4>(this: T, a: U, b: U) {
+		const { x: ax, y: ay, z: az, w: aw } = a as Vec;
 		const { x: bx, y: by, z: bz } = b;
 
 		if (
@@ -400,9 +390,9 @@ export class Vector {
 	public static Length<T extends VectorType, U extends VectorLike>(this: T, obj: U): number {
 		let sum = 0;
 
-		for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
+		for (const key of ['x', 'y', 'z', 'w'] as (keyof U)[]) {
 			if (key in obj) {
-				const value = obj[key]!;
+				const value = obj[key] as number;
 				sum += value * value;
 			}
 		}
@@ -530,8 +520,8 @@ export class Vector {
 	/**
 	 * Converts the vector to an array of its components.
 	 */
-	public toArray() {
-		return [...this];
+	public toArray<T extends this>() {
+		return [...this] as VectorArray<T>;
 	}
 
 	/**
@@ -605,7 +595,7 @@ export class Vector3 extends Vector implements Vec3 {
 	/**
 	 * @see Vector.crossProduct
 	 */
-	public crossProduct(v: VectorLike) {
+	public crossProduct(v: Vec3 | Vec4) {
 		return Vector.crossProduct(this, v);
 	}
 }
@@ -649,7 +639,7 @@ export class Vector4 extends Vector {
 	/**
 	 * @see Vector.crossProduct
 	 */
-	public crossProduct(v: VectorLike) {
+	public crossProduct(v: Vec3 | Vec4) {
 		return Vector.crossProduct(this, v);
 	}
 }
