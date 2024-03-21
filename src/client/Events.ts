@@ -1,5 +1,4 @@
-/* eslint-disable */
-import { ClassTypes } from './enums/ClassTypes';
+import { ClassTypes } from '../common/utils/ClassTypes';
 import { Ped } from './models/Ped';
 import { Vector2, Vector3, Vector4 } from './utils';
 import { Player } from './models/Player';

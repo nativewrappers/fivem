@@ -12,7 +12,7 @@ import { WeaponHash } from '../hashes';
 import { Tasks } from '../Tasks';
 import { PedBoneCollection, Vehicle } from './';
 import { WeaponCollection } from '../weapon/WeaponCollection';
-import { ClassTypes } from '../enums/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { BaseEntity } from './BaseEntity';
 
 export class Ped extends BaseEntity {

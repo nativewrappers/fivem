@@ -6,7 +6,7 @@ import { Quaternion, Vector3 } from '../utils';
 import { EntityBoneCollection } from './';
 import { EntityBone } from './EntityBone';
 import cfx, { StateBagChangeHandler } from '../cfx';
-import { ClassTypes } from '../enums/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 
 export class BaseEntity {
     public static fromNetworkId(networkId: number): BaseEntity | null {
@@ -15,10 +15,8 @@ export class BaseEntity {
 
 	public static fromStateBagName(stateBagName: string): BaseEntity | null {
 		const entity = GetEntityFromStateBagName(stateBagName);
-		if (entity !== 0) {
-			return new BaseEntity(entity);
-		}
-		return null;
+		if (entity === 0) return null;
+		return new BaseEntity(entity);
 	}
 
     protected handle: number;

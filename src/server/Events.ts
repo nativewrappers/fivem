@@ -1,15 +1,16 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Ped, Prop, Vehicle, Entity } from './entities';
 import { Player } from './entities/Player';
-import { ClassTypes } from './enum/ClassTypes';
+import { ClassTypes } from '../common/utils/ClassTypes';
 import { Vector2, Vector3, Vector4 } from './utils';
 
 export type NetEvent = (player: Player, ...args: any[]) => void;
+export type LocalEvent = (...args: any[]) => void;
 
 const getClassFromArguments = (...args: any[]): any[] => {
 	const newArgs: any[] = [];
 
 	for (const arg of args) {
+		if (!arg.type) continue;
 		switch (arg.type) {
 			case ClassTypes.Vector2: {
 				newArgs.push(Vector2.fromObject(arg));
@@ -78,11 +79,9 @@ export class Events {
 	/**
 	 * An on wrapper that properly converts the classes
 	 */
-	static on = (eventName: string, event: NetEvent) => {
+	static on = (eventName: string, event: LocalEvent) => {
 		on(eventName, (...args: any[]) => {
-			const ply = new Player(source);
-
-			event(ply, ...getClassFromArguments(...args));
+			event(...getClassFromArguments(...args));
 		});
 	};
 }

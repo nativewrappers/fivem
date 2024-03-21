@@ -1,4 +1,4 @@
-import { ClassTypes } from '../enum/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { Hash } from '../type/Hash';
 import { BaseEntity } from './BaseEntity';
 import { Vehicle } from './Vehicle';

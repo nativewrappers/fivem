@@ -1,5 +1,5 @@
 import { Ped, Prop, Vehicle } from './';
-import { ClassTypes } from '../enums/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { BaseEntity } from './BaseEntity';
 
 // export class Entity extends BaseEntity {

@@ -1,4 +1,4 @@
-import { ClassTypes } from '../enum/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { VehicleLockStatus } from '../enum/VehicleLockStatus';
 import { VehicleType } from '../enum/VehicleType';
 import { Hash } from '../type/Hash';

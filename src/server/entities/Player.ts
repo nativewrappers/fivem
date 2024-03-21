@@ -1,5 +1,5 @@
 import cfx from '../cfx';
-import { ClassTypes } from '../enum/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { cleanPlayerName } from '../utils';
 import { Vector3 } from '../utils';
 import { Ped } from './Ped';
@@ -161,7 +161,6 @@ export class Player {
 		DropPlayer(this.Src, reason);
 	}
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	public emit(eventName: string, ...args: any[]): void {
 		TriggerClientEvent(eventName, this.source, ...args);
 	}

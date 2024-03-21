@@ -1,6 +1,7 @@
 // Adapted from https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 
 import type { MsgpackBuffer } from '@common/types';
+import { ClassTypes } from './ClassTypes';
 
 /**
  * Represents a 2-dimensional vector.
@@ -87,7 +88,7 @@ export class Vector {
 	/**
 	 * The type identifier for vectors.
 	 */
-	public type = 'vec';
+	public type = ClassTypes.Vector2;
 
 	protected static create(x: number, y?: number): Vector2;
 	protected static create(x: number, y?: number, z?: number): Vector3;
@@ -126,11 +127,11 @@ export class Vector {
 
 		switch (type) {
 			default:
-			case 'vec':
+			case ClassTypes.Vector2:
 				return new Vector2(x, y) as InstanceType<T>;
-			case 'vec3':
+			case ClassTypes.Vector3:
 				return new Vector3(x, y, z) as InstanceType<T>;
-			case 'vec4':
+			case ClassTypes.Vector4:
 				return new Vector4(x, y, z, w) as InstanceType<T>;
 		}
 	}
@@ -551,7 +552,7 @@ export class Vector {
  * Represents a 2-dimensional vector.
  */
 export class Vector2 extends Vector {
-	public type = 'vec2';
+	public type = ClassTypes.Vector2;
 
 	public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -569,7 +570,7 @@ export class Vector2 extends Vector {
  * Represents a 3-dimensional vector.
  */
 export class Vector3 extends Vector implements Vec3 {
-	public type = 'vec3';
+	public type = ClassTypes.Vector3;
 	public z: number;
 
 	public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
@@ -603,7 +604,7 @@ export class Vector3 extends Vector implements Vec3 {
  * Represents a 4-dimensional vector.
  */
 export class Vector4 extends Vector {
-	public type = 'vec4';
+	public type = ClassTypes.Vector4;
 	public z: number;
 	public w: number;
 

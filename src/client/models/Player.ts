@@ -1,6 +1,6 @@
-import { Prop, Vehicle, Model, Color } from '..';
+import { Model, Color } from '..';
 import cfx, { StateBagChangeHandler } from '../cfx';
-import { ClassTypes } from '../enums/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { BaseEntity, Ped } from './';
 
 export class Player {

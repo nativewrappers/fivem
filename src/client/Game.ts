@@ -489,7 +489,9 @@ export abstract class Game {
 	}
 
 	public get LastVehicle(): Vehicle | null {
-		return new Vehicle(GetPlayersLastVehicle());
+		const vehicle = GetPlayersLastVehicle();
+		if (vehicle === 0) return null;
+		return new Vehicle(vehicle);
 	}
 
 	public static getWaypointBlip(): Blip | null {

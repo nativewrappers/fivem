@@ -1,4 +1,4 @@
-import { ClassTypes } from '../enum/ClassTypes';
+import { ClassTypes } from '../../common/utils/ClassTypes';
 import { BaseEntity } from './BaseEntity';
 
 export class Prop extends BaseEntity {
