@@ -123,7 +123,11 @@ export class Vector {
 		const type =
 			this instanceof Vector
 				? this.type
-				: `vec${[x, y, z, w].filter(arg => arg !== undefined).length}`;
+				// 3 here is an offset to have it point to the right ClassType
+				// Vector2 starts at position 5 so 3 + 2 = 5
+				// Vector3 starts at position 6 so 3 + 3 = 6
+				// Vector4 starts at position 7 so 3 + 4 = 7
+				: [x, y, z, w].filter(arg => arg !== undefined).length + 3;
 
 		switch (type) {
 			default:
