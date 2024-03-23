@@ -10,7 +10,10 @@ const getClassFromArguments = (...args: any[]): any[] => {
 	const newArgs: any[] = [];
 
 	for (const arg of args) {
-		if (!arg.type) continue;
+		if (!arg.type) {
+			newArgs.push(arg);
+			continue;
+		};
 		switch (arg.type) {
 			case ClassTypes.Vector2: {
 				newArgs.push(Vector2.fromObject(arg));
