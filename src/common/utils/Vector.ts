@@ -120,22 +120,16 @@ export class Vector {
 		if (y === undefined && typeof x === 'number') return new Vector2(x, x) as InstanceType<T>;
 		if (typeof x === 'object') ({ x, y, z, w } = x);
 
-		const type =
-			this instanceof Vector
-				? this.type
-				// 3 here is an offset to have it point to the right ClassType
-				// Vector2 starts at position 5 so 3 + 2 = 5
-				// Vector3 starts at position 6 so 3 + 3 = 6
-				// Vector4 starts at position 7 so 3 + 4 = 7
-				: [x, y, z, w].filter(arg => arg !== undefined).length + 3;
+		const size =
+			this instanceof Vector ? this.size : [x, y, z, w].filter(arg => arg !== undefined).length;
 
-		switch (type) {
+		switch (size) {
 			default:
-			case ClassTypes.Vector2:
+			case 2:
 				return new Vector2(x, y) as InstanceType<T>;
-			case ClassTypes.Vector3:
+			case 3:
 				return new Vector3(x, y, z) as InstanceType<T>;
-			case ClassTypes.Vector4:
+			case 4:
 				return new Vector4(x, y, z, w) as InstanceType<T>;
 		}
 	}
