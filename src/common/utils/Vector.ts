@@ -425,12 +425,7 @@ export class Vector {
 	}
 
 	public toString() {
-		const { x, y, z, w } = this;
-		return `${this.type}(${[x, y, z, w].filter(val => val !== undefined).join(', ')})`;
-	}
-
-	public toJSON() {
-		return this.toString();
+		return `vector${this.size}(${this.toArray().join(', ')})`;
 	}
 
 	/**
