@@ -309,10 +309,11 @@ export class Vector {
 		let result = 0;
 
 		for (const key of ['x', 'y', 'z', 'w'] as (keyof U)[]) {
-			if (key in a && key in b) result += (a[key] as number) * (b[key] as number);
-			else {
-				throw new Error('Vectors must have the same dimensions');
-			}
+			const x = a[key] as number | undefined;
+			const y = b[key] as number | undefined;
+
+			if (!!x && !!y) result += x * y;
+			else if (x || y) throw new Error('Vectors must have the same dimensions');
 		}
 
 		return result;
