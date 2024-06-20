@@ -1,0 +1,162 @@
+[@nativewrappers/fivem](../../README.md) / [server](../README.md) / Game
+
+# Class: `abstract` Game
+
+## Constructors
+
+### new Game()
+
+```ts
+new Game(): Game
+```
+
+#### Returns
+
+[`Game`](Game.md)
+
+## Properties
+
+| Property | Modifier | Type | Default value |
+| :------ | :------ | :------ | :------ |
+| `hashCache` | `static` | `Map`\<`string`, `number`\> | `...` |
+
+## Accessors
+
+### GameBuild
+
+```ts
+get static GameBuild(): number
+```
+
+#### Returns
+
+`number`
+
+#### Source
+
+[src/server/Game.ts:30](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L30)
+
+***
+
+### GameName
+
+```ts
+get static GameName(): string
+```
+
+#### Returns
+
+`string`
+
+#### Source
+
+[src/server/Game.ts:34](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L34)
+
+***
+
+### GameTime
+
+```ts
+get static GameTime(): number
+```
+
+Gets how many milliseconds the game has been open this session
+
+#### Returns
+
+`number`
+
+#### Source
+
+[src/server/Game.ts:26](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L26)
+
+***
+
+### RegisteredCommands
+
+```ts
+get static RegisteredCommands(): [{
+  name: string;
+ }]
+```
+
+#### Returns
+
+[\{
+  `name`: `string`;
+ \}]
+
+#### Source
+
+[src/server/Game.ts:56](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L56)
+
+## Methods
+
+### PlayerList()
+
+```ts
+static PlayerList(): IterableIterator<Player>
+```
+
+Get an iterable list of players currently on the server.
+
+#### Returns
+
+`IterableIterator`\<[`Player`](Player.md)\>
+
+Iterable list of Player objects.
+
+#### Source
+
+[src/server/Game.ts:64](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L64)
+
+***
+
+### generateHash()
+
+```ts
+static generateHash(input): number
+```
+
+Calculate the Jenkins One At A Time (joaat) has from the given string.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| `input` | `string` | The input string to calculate the hash |
+
+#### Returns
+
+`number`
+
+#### Source
+
+[src/server/Game.ts:11](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L11)
+
+***
+
+### registerCommand()
+
+```ts
+static registerCommand(
+   name, 
+   handler, 
+   restricted): void
+```
+
+#### Parameters
+
+| Parameter | Type | Default value |
+| :------ | :------ | :------ |
+| `name` | `string` | `undefined` |
+| `handler` | (`player`, `args`) => `void` | `undefined` |
+| `restricted` | `boolean` | `false` |
+
+#### Returns
+
+`void`
+
+#### Source
+
+[src/server/Game.ts:38](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Game.ts#L38)
