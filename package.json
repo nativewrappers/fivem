@@ -37,20 +37,21 @@
 		"build": "pnpm run delete && tsc --build && tsc-alias && pnpm run copy-data",
 		"copy-data": "cp package.json lib/package.json && cp README.md lib/README.md",
 		"watch": "tsc --watch",
-		"ci": "pnpm run prettier && pnpm run build",
+		"ci": "pnpm run prettier && pnpm run build && pnpm typedoc",
 		"prettier": "prettier */**/*.ts --check",
 		"prettier-fix": "prettier */**/*.ts --write"
 	},
 	"devDependencies": {
 		"@citizenfx/client": "2.0.7604-1",
 		"@citizenfx/server": "2.0.7604-1",
-		"@types/node": "^16.18.87",
+		"@types/node": "^16.18.100",
 		"buffer": "^6.0.3",
 		"prettier": "^2.8.8",
 		"prettier-linter-helpers": "^1.0.0",
-		"typedoc": "^0.25.11",
+		"tsc-alias": "^1.8.10",
+		"typedoc": "^0.25.13",
 		"typedoc-fivemjs-theme": "^0.2.7",
-		"typescript": "^5.4.2",
-		"tsc-alias": "^1.8.8"
+		"typescript": "^5.4.5",
+		"typedoc-plugin-markdown": "^4.0.3"
 	}
 }

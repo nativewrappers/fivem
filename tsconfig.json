@@ -1,24 +1,24 @@
 {
-	"compilerOptions": {
-		"rootDir": "./src",
-		"baseUrl": "./src",
-		"outDir": "./lib",
-		"declarationDir": "./lib",
-		"target": "es2021",
-		"module": "es2020",
-		"moduleResolution": "bundler",
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
-		"declaration": true,
-		"strict": true,
-		"strictNullChecks": true,
-		"skipLibCheck": true,
-		"types": ["@citizenfx/server", "@citizenfx/client", "@types/node"],
-		"paths": {
-			"@common/*": ["./common/*"]
-		}
-	},
-	"include": [],
-	"exclude": ["lib", "**/examples/"],
-	"references": [{ "path": "./src/server" }, { "path": "./src/client" }]
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "outDir": "./lib",
+    "declarationDir": "./lib",
+    "target": "es2021",
+    "module": "es2020",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "types": ["@citizenfx/server", "@citizenfx/client", "@types/node"],
+    "paths": {
+      "@common/*": ["./common/*"]
+    }
+  },
+  "include": [],
+  "exclude": ["lib", "**/examples/"],
+  "references": [{ "path": "./src/common" }, { "path": "./src/server" }, { "path": "./src/client" }]
 }
