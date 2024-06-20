@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      typedoc-plugin-markdown:
-        specifier: ^4.0.3
-        version: 4.0.3(typedoc@0.25.13(typescript@5.4.5))
     devDependencies:
       '@citizenfx/client':
         specifier: 2.0.7604-1
@@ -39,6 +35,9 @@ importers:
       typedoc-fivemjs-theme:
         specifier: ^0.2.7
         version: 0.2.7
+      typedoc-plugin-markdown:
+        specifier: ^4.0.3
+        version: 4.0.3(typedoc@0.25.13(typescript@5.4.5))
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
