@@ -1,15 +1,15 @@
 export class MenuControl {
-	private _enabled: boolean;
+  private _enabled: boolean;
 
-	constructor(enabled = true) {
-		this._enabled = enabled;
-	}
+  constructor(enabled = true) {
+    this._enabled = enabled;
+  }
 
-	public get Enabled(): boolean {
-		return this._enabled;
-	}
+  public get Enabled(): boolean {
+    return this._enabled;
+  }
 
-	public set Enabled(value: boolean) {
-		this._enabled = value;
-	}
+  public set Enabled(value: boolean) {
+    this._enabled = value;
+  }
 }

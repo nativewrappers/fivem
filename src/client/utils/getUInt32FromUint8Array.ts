@@ -6,4 +6,4 @@
  * @param end - The end of the specified portion of the array
  */
 export const getUInt32FromUint8Array = (buffer: Uint8Array, start: number, end: number): number =>
-	new Uint32Array(buffer.slice(start, end).buffer)[0];
+  new Uint32Array(buffer.slice(start, end).buffer)[0];

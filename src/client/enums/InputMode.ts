@@ -1,4 +1,4 @@
 export enum InputMode {
-	MouseAndKeyboard = 0,
-	GamePad = 2,
+  MouseAndKeyboard = 0,
+  GamePad = 2,
 }
