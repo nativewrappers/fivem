@@ -27,7 +27,7 @@ jobs:
           pnpm install --frozen-lockfile
           git config --global user.name "GitHub Actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          pnpm version ${{ github.ref_name }}
+          pnpm version ${{ github.ref_name }} --git-tag-version false
           pnpm run ci
           git add .
           git commit -am '${{ github.ref_name }}'
