@@ -2,7 +2,7 @@ name: 'Publish Package'
 on:
   push:
     tags:
-      - '*'
+      - '*.*.*'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +14,7 @@ jobs:
 
       - uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: 9
 
       - uses: actions/setup-node@v4
         with:
@@ -29,6 +29,9 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           pnpm version ${{ github.ref_name }}
           pnpm run ci
+          git add .
+          git commit -am '${{ github.ref_name }}'
+          git push
 
       # because we update the package version pnpm will get mad over an unclean branch
       # we don't want a bunch of version bump commits so just ignore the git checks
