@@ -504,16 +504,49 @@ export class BaseEntity {
   }
 
   /**
-   * @param offset: the amount to offset from the entity
-   * @returns the offset position from the entity in world coords
-   */
+    * @deprecated use [[getAbsolutePositionOffset]]
+    */
   public getOffsetPosition(offset: Vector3): Vector3 {
     return Vector3.fromArray(
       GetOffsetFromEntityInWorldCoords(this.handle, offset.x, offset.y, offset.z),
     );
   }
 
+  /**
+   * @param offset: the amount to offset from the entity
+   * @returns the offset position from the entity in world coords
+   */
+  public getAbsolutePositionOffset(offset: Vector3): Vector3 {
+    return Vector3.fromArray(
+      GetOffsetFromEntityInWorldCoords(this.handle, offset.x, offset.y, offset.z),
+    );
+  }
+
+  /**
+   * @deprecated use [[getRelativePositionOffset]] instead
+   */
   public getPositionOffset(worldCoords: Vector3): Vector3 {
+    return this.getRelativePositionOffset(worldCoords);
+  }
+
+  // TODO: Better example
+  /**
+    * @example
+    * ```typescript
+    * const ply = Game.PlayerPed;
+    * const plyPos = ply.Position;
+    * const bag = await World.createProp(new Model('ba_prop_battle_bag_01b'), plyPos, true, true, true);
+    * bag.attachToBone(
+    *     ply.Bones.getBone(64113),
+    *     new Vector3(0.12, -0.25, 0.0),
+    *     new Vector3(105.0, 50.0, 190.0)
+    * )
+    * const offset = bag.getRelativePositionOffset(plyPos);
+    * ```
+    * @param worldCoords: the offset given the world coords
+    * @returns the offset position from the entity in relative coords
+    */
+  public getRelativePositionOffset(worldCoords: Vector3): Vector3 {
     return Vector3.fromArray(
       GetOffsetFromEntityGivenWorldCoords(this.handle, worldCoords.x, worldCoords.y, worldCoords.z),
     );
