@@ -12,7 +12,7 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
   private _colors: Color[] = [];
   private _bar: Rectangle[] = [];
 
-  private _lastColor: Color = Color.empty;
+  private _lastColor: Color = Color.Transparent;
 
   private readonly _leftArrow: Sprite;
   private readonly _rightArrow: Sprite;
@@ -29,12 +29,12 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
     this.background = new Sprite('commonmenu', 'gradient_bgd', new Point(), new Size(431, 112));
     this._leftArrow = new Sprite('commonmenu', 'arrowleft', new Point(), new Size(30, 30));
     this._rightArrow = new Sprite('commonmenu', 'arrowright', new Point(), new Size(30, 30));
-    this._selectedRectangle = new Rectangle(new Point(), new Size(44.5, 8), Color.white);
+    this._selectedRectangle = new Rectangle(new Point(), new Size(44.5, 8), Color.White);
     this._text = new Text(
       '',
       new Point(),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Centered,
     );

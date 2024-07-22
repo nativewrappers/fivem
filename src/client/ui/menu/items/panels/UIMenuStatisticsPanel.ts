@@ -10,7 +10,7 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
 
   constructor(item?: UIMenuStatisticsPanelItem[] | UIMenuStatisticsPanelItem, divider = true) {
     super();
-    this.background = new Rectangle(new Point(), new Size(431, 47), new Color(170, 0, 0, 0));
+    this.background = new Rectangle(new Point(), new Size(431, 47), new Color(0, 0, 0, 170));
     if (item) {
       this.addItem(item);
     }

@@ -341,13 +341,13 @@ export class UIMenuItem {
     }
   }
 
-  public static defaultBackColor = Color.empty;
-  public static defaultHighlightedBackColor = Color.white;
-  public static defaultHoveredBackColor = new Color(20, 255, 255, 255);
+  public static defaultBackColor = Color.Transparent;
+  public static defaultHighlightedBackColor = Color.White;
+  public static defaultHoveredBackColor = new Color(255, 255, 255, 25);
 
-  public static defaultForeColor = Color.whiteSmoke;
+  public static defaultForeColor = Color.WhiteSmoke;
   public static defaultHoveredForeColor = UIMenuItem.defaultForeColor;
-  public static defaultHighlightedForeColor = Color.black;
+  public static defaultHighlightedForeColor = Color.Black;
 
   public readonly id: string = Crypto.uuidv4();
 
@@ -1076,10 +1076,10 @@ export class UIMenuItem {
       case BadgeStyle.BrandRune:
         return selected
           ? enabled
-            ? Color.black
+            ? Color.Black
             : Color.fromRgb(50, 50, 50)
           : enabled
-          ? Color.white
+          ? Color.White
           : Color.fromRgb(109, 109, 109);
       case BadgeStyle.GlobeBlue:
         return enabled ? Color.fromRgb(10, 103, 166) : Color.fromRgb(11, 62, 117);
@@ -1092,7 +1092,7 @@ export class UIMenuItem {
       case BadgeStyle.GlobeYellow:
         return enabled ? Color.fromRgb(232, 207, 14) : Color.fromRgb(131, 133, 12);
       default:
-        return enabled ? Color.white : Color.fromRgb(109, 109, 109);
+        return enabled ? Color.White : Color.fromRgb(109, 109, 109);
     }
   }
 
@@ -1124,7 +1124,7 @@ export class UIMenuItem {
         : this.hovered
         ? UIMenuItem.defaultHoveredForeColor
         : this._foreColor
-      : new Color(255, 163, 159, 148);
+      : new Color(163, 159, 148);
 
     if (this.supportsLeftBadge && this._leftBadge !== BadgeStyle.None) {
       const widthOffset = UIMenuItem.getBadgeSpriteWidthOffset(this.badgeLeft);

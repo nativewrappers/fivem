@@ -86,7 +86,7 @@ export class Menu {
     this._offset = offset;
 
     // Create everything
-    this._mainMenu = new Container(new Point(), new Size(700, 500), Color.transparent);
+    this._mainMenu = new Container(new Point(), new Size(700, 500), Color.Transparent);
     this._logo = new Sprite(
       spriteLibrary || '',
       spriteName || '',
@@ -98,20 +98,20 @@ export class Menu {
         title || '',
         new Point(431 / 2 + this._offset.X, 20 + this._offset.Y),
         1.15,
-        Color.white,
+        Color.White,
         1,
         Alignment.Centered,
       )),
       (this._subtitleResRectangle = new Rectangle(
         new Point(this._offset.X, 107 + this._offset.Y),
         new Size(431, 37),
-        Color.black,
+        Color.Black,
       )),
       (this._subtitle = new Text(
         subtitle || '',
         new Point(8 + this._offset.X, 110 + this._offset.Y),
         0.35,
-        Color.white,
+        Color.White,
         0,
         Alignment.Left,
       )),
@@ -125,7 +125,7 @@ export class Menu {
       '',
       new Point(425 + this._offset.X, 110 + this._offset.Y),
       0.35,
-      Color.white,
+      Color.White,
       0,
       Alignment.Right,
     );
@@ -138,7 +138,7 @@ export class Menu {
     );
     const extraRectanglePos = new Point(this._offset.X);
     const extraRectangleSize = new Size(431, 18);
-    const extraRectangleColor = new Color(200, 0, 0, 0);
+    const extraRectangleColor = new Color(0, 0, 0, 200);
     this._extraRectangleUp = new Rectangle(
       extraRectanglePos,
       extraRectangleSize,
@@ -150,7 +150,7 @@ export class Menu {
       { ...extraRectangleColor },
     );
 
-    this._descriptionBar = new Rectangle(new Point(this._offset.X), new Size(431, 4), Color.black);
+    this._descriptionBar = new Rectangle(new Point(this._offset.X), new Size(431, 4), Color.Black);
     this._descriptionRectangle = new Sprite(
       'commonmenu',
       'gradient_bgd',
@@ -161,7 +161,7 @@ export class Menu {
       'Description',
       new Point(this._offset.X + 8),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Left,
     );
@@ -732,7 +732,7 @@ export class Menu {
         })();
       }
     } else {
-      this._extraRectangleUp.color = new Color(200, 0, 0, 0);
+      this._extraRectangleUp.color = new Color(0, 0, 0, 200);
     }
 
     if (this._mousePressed) {
@@ -754,7 +754,7 @@ export class Menu {
         })();
       }
     } else {
-      this._extraRectangleDown.color = new Color(200, 0, 0, 0);
+      this._extraRectangleDown.color = new Color(0, 0, 0, 200);
     }
   }
 

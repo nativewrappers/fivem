@@ -17,14 +17,14 @@ export class Sprite {
     pos?: Point,
     size?: Size,
     heading = 0,
-    color = Color.white,
+    color = Color.White,
   ) {
     this._textureDict = textureDict;
     this.textureName = textureName;
     this.pos = pos || new Point();
     this.size = size || new Size();
     this.heading = heading || 0;
-    this.color = color || Color.white;
+    this.color = color || Color.White;
     this.visible = true;
   }
 

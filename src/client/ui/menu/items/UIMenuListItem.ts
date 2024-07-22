@@ -34,7 +34,7 @@ export class UIMenuListItem extends UIMenuItem {
       '',
       new Point(),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Right,
     );
@@ -131,7 +131,7 @@ export class UIMenuListItem extends UIMenuItem {
       ? this.selected
         ? this.HighlightedForeColor
         : this.ForeColor
-      : new Color(255, 163, 159, 148);
+      : new Color(163, 159, 148);
 
     if (this._arrowOnlyOnSelected && !this.selected) {
       this._itemText.pos.X += this._rightArrow.size.width / 2;

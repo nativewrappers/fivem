@@ -223,7 +223,7 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
           value,
           new Point(),
           0.35,
-          Color.white,
+          Color.White,
           Font.ChaletLondon,
           Alignment.Centered,
         );

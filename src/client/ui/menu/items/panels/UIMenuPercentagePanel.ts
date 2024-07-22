@@ -27,7 +27,7 @@ export class UIMenuPercentagePanel extends AbstractUIMenuPanel {
       '',
       new Point(),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Centered,
     );
@@ -35,7 +35,7 @@ export class UIMenuPercentagePanel extends AbstractUIMenuPanel {
       '',
       new Point(),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Centered,
     );
@@ -43,7 +43,7 @@ export class UIMenuPercentagePanel extends AbstractUIMenuPanel {
       '',
       new Point(),
       0.35,
-      Color.white,
+      Color.White,
       Font.ChaletLondon,
       Alignment.Centered,
     );

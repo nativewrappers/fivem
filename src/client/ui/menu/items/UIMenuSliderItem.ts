@@ -38,9 +38,9 @@ export class UIMenuSliderItem extends UIMenuItem {
     arrowOnlyOnSelected = false,
   ) {
     super(text, description);
-    this._background = new Rectangle(new Point(), new Size(150, 9), new Color(255, 4, 32, 57));
-    this._slider = new Rectangle(new Point(), new Size(75, 9), new Color(255, 57, 116, 200));
-    this._divider = new Rectangle(new Point(), new Size(2.5, 20), Color.whiteSmoke);
+    this._background = new Rectangle(new Point(), new Size(150, 9), new Color(4, 32, 57));
+    this._slider = new Rectangle(new Point(), new Size(75, 9), new Color(57, 116, 200));
+    this._divider = new Rectangle(new Point(), new Size(2.5, 20), Color.WhiteSmoke);
     this._leftArrow = new Sprite('commonmenutu', 'arrowleft', new Point(), new Size(15, 15));
     this._rightArrow = new Sprite('commonmenutu', 'arrowright', new Point(), new Size(15, 15));
     this._leftSliderBadgeSprite = new Sprite('', '');
@@ -92,7 +92,7 @@ export class UIMenuSliderItem extends UIMenuItem {
   }
 
   public set BackgroundColor(value: Color) {
-    this._background.color = value || new Color(255, 4, 32, 57);
+    this._background.color = value || new Color(4, 32, 57);
   }
 
   public get SliderColor(): Color {
@@ -100,7 +100,7 @@ export class UIMenuSliderItem extends UIMenuItem {
   }
 
   public set SliderColor(value: Color) {
-    this._slider.color = value || new Color(255, 57, 116, 200);
+    this._slider.color = value || new Color(57, 116, 200);
   }
 
   public get DividerColor(): Color {
@@ -108,7 +108,7 @@ export class UIMenuSliderItem extends UIMenuItem {
   }
 
   public set DividerColor(value: Color) {
-    this._divider.color = value || Color.whiteSmoke;
+    this._divider.color = value || Color.WhiteSmoke;
   }
 
   public get LeftSliderBadge(): BadgeStyle {
@@ -206,9 +206,9 @@ export class UIMenuSliderItem extends UIMenuItem {
 
     this._leftArrow.color = this.enabled
       ? this.selected
-        ? Color.black
-        : Color.whiteSmoke
-      : new Color(255, 163, 159, 148);
+        ? Color.Black
+        : Color.WhiteSmoke
+      : new Color(163, 159, 148);
     this._rightArrow.color = this._leftArrow.color;
 
     this._background.draw(undefined, Menu.screenResolution);

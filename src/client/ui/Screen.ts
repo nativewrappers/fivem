@@ -73,7 +73,7 @@ export abstract class Screen {
     iconSet: string,
     icon: string,
     bgColor: HudColor = HudColor.NONE,
-    flashColor: Color = Color.empty,
+    flashColor: Color = Color.Transparent,
     blinking = false,
     type: NotificationType = NotificationType.Default,
     showInBrief = true,
@@ -91,7 +91,7 @@ export abstract class Screen {
       SetNotificationBackgroundColor(Number(bgColor));
     }
 
-    if (flashColor !== Color.empty && blinking) {
+    if (flashColor !== Color.Transparent && blinking) {
       SetNotificationFlashColor(flashColor.r, flashColor.g, flashColor.b, flashColor.a);
     }
 

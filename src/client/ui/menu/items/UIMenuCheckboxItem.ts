@@ -71,6 +71,6 @@ export class UIMenuCheckboxItem extends UIMenuItem {
   }
 
   private _getSpriteColor(): Color {
-    return this.enabled ? Color.white : Color.fromRgb(109, 109, 109);
+    return this.enabled ? Color.White : Color.fromRgb(109, 109, 109);
   }
 }

@@ -4,13 +4,13 @@ export { PointF } from './PointF';
 export { Crypto } from './Crypto';
 export { Point } from './Point';
 export { Size } from './Size';
-export { Color } from './Color';
 
 export {
   Vector2,
   Vector3,
   Vector4,
   Maths,
+  Color,
   Quaternion,
   Delay,
   enumValues,

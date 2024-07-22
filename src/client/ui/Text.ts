@@ -7,7 +7,7 @@ export class Text implements IDrawable {
     caption: string,
     pos: Point,
     scale = 1,
-    color = Color.white,
+    color = Color.White,
     font = Font.ChaletLondon,
     alignment = Alignment.Left,
     dropShadow = false,
@@ -55,6 +55,7 @@ export class Text implements IDrawable {
   public static addLongString(str: string): void {
     const strLen = 99;
     for (let i = 0; i < str.length; i += strLen) {
+      // TODO: Fix deprecation warning
       const substr = str.substr(i, Math.min(strLen, str.length - i));
       AddTextComponentSubstringPlayerName(substr);
     }
@@ -86,7 +87,7 @@ export class Text implements IDrawable {
     caption: string,
     pos: Point,
     scale = 1,
-    color = Color.white,
+    color = Color.White,
     font = Font.ChaletLondon,
     alignment = Alignment.Left,
     dropShadow = false,

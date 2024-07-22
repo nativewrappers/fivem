@@ -107,7 +107,7 @@ export class Timerbar {
       new Point(Screen.ScaledWidth * 0.918 - safeZoneX, Screen.Height * 0.984 - safeZoneY),
       new Size(Screen.ScaledWidth * 0.165, Screen.Height * 0.035),
       0,
-      new Color(160, 255, 255, 255),
+      new Color(255, 255, 255, 160),
     );
     if (!this.sprite.IsTextureDictionaryLoaded) {
       this.sprite.loadTextureDictionary();
