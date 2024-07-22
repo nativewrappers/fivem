@@ -22,14 +22,6 @@ new World(): World
 
 [`World`](World.md)
 
-## Properties
-
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `cloudHatDict` | `private` | `Map`\<[`CloudHat`](../enumerations/CloudHat.md), `string`\> | `...` |
-| `currentCloudHat` | `private` | [`CloudHat`](../enumerations/CloudHat.md) | `CloudHat.Clear` |
-| `weatherDict` | `private` | `string`[] | `...` |
-
 ## Accessors
 
 ### Blackout
@@ -43,12 +35,12 @@ Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `value` | `boolean` | On or off. |
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:101](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L101)
+[src/client/World.ts:101](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L101)
 
 ***
 
@@ -69,7 +61,7 @@ Set the current cloud hat.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `value` | [`CloudHat`](../enumerations/CloudHat.md) | The type of cloud hat. |
 
 #### Returns
@@ -78,9 +70,9 @@ Set the current cloud hat.
 
 The current cloud hat type.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:110](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L110)
+[src/client/World.ts:110](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L110)
 
 ***
 
@@ -101,7 +93,7 @@ Set opacity of current cloud hat between 0-1.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `value` | `number` | Opacity between 0.0 and 1.0 |
 
 #### Returns
@@ -110,9 +102,9 @@ Set opacity of current cloud hat between 0-1.
 
 The current cloud opacity between 0.0 and 1.0
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:135](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L135)
+[src/client/World.ts:135](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L135)
 
 ***
 
@@ -133,7 +125,7 @@ Set the current date of the world.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `date` | `Date` |
 
 #### Returns
@@ -142,9 +134,9 @@ Set the current date of the world.
 
 The current date.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:77](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L77)
+[src/client/World.ts:77](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L77)
 
 ***
 
@@ -165,7 +157,7 @@ Set weather type instantly. Similar to World.transitionToWeather with duration 0
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Weather`](../enumerations/Weather.md) |
 
 #### Returns
@@ -174,9 +166,9 @@ Set weather type instantly. Similar to World.transitionToWeather with duration 0
 
 The Weather type
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:210](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L210)
+[src/client/World.ts:210](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L210)
 
 ***
 
@@ -206,7 +198,7 @@ World.RenderingCamera = null;
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `value` | `null` \| [`Camera`](Camera.md) | The camera to render. |
 
 #### Returns
@@ -215,9 +207,9 @@ World.RenderingCamera = null;
 
 The camera that's currently used.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L37)
+[src/client/World.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L37)
 
 ***
 
@@ -233,12 +225,12 @@ This currently does nothing
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:68](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L68)
+[src/client/World.ts:68](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L68)
 
 ***
 
@@ -259,7 +251,7 @@ Set the current weather.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `value` | [`Weather`](../enumerations/Weather.md) | Type of weather to set. |
 
 #### Returns
@@ -268,9 +260,9 @@ Set the current weather.
 
 The current type of weather.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:153](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L153)
+[src/client/World.ts:153](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L153)
 
 ***
 
@@ -291,16 +283,16 @@ Doesn't work
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `transition` | [`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`] |
 
 #### Returns
 
 [`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`]
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:260](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L260)
+[src/client/World.ts:260](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L260)
 
 ## Methods
 
@@ -319,7 +311,7 @@ Creates an ambient pickup.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `type` | [`PickupType`](../enumerations/PickupType.md) | The [[`PickupType`]] of the pickup. |
 | `position` | [`Vector3`](Vector3.md) | The position where it should be spawned. |
 | `model` | [`Model`](Model.md) | The model. |
@@ -331,9 +323,9 @@ Creates an ambient pickup.
 
 The pickup in form of a Prop.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:619](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L619)
+[src/client/World.ts:619](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L619)
 
 ***
 
@@ -353,7 +345,7 @@ Create a pickup in a specific position in the world with a specified type and va
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `type` | [`PickupType`](../enumerations/PickupType.md) | The [[`PickupType`]] of pickup. |
 | `position` | [`Vector3`](Vector3.md) | The position in the world it should be spawned. |
 | `model` | [`Model`](Model.md) | The model of the spawned pickup. |
@@ -366,9 +358,9 @@ Create a pickup in a specific position in the world with a specified type and va
 
 Pickup object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:572](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L572)
+[src/client/World.ts:572](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L572)
 
 ***
 
@@ -389,7 +381,7 @@ myStoreBlip.Sprite = BlipSprite.Store;
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | World coordinate of blip. |
 | `radius`? | `number` | (Optional) Radius of where blip should be shown. |
 
@@ -399,9 +391,9 @@ myStoreBlip.Sprite = BlipSprite.Store;
 
 Blip object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:304](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L304)
+[src/client/World.ts:304](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L304)
 
 ***
 
@@ -420,7 +412,7 @@ const cam = World.createCamera(CameraTypes.Spline, true);
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `cameraType` | [`CameraTypes`](../enumerations/CameraTypes.md) | `CameraTypes.Scripted` | the camera type to create |
 | `active` | `boolean` | `true` | unknown |
 
@@ -428,9 +420,9 @@ const cam = World.createCamera(CameraTypes.Spline, true);
 
 [`Camera`](Camera.md)
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:321](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L321)
+[src/client/World.ts:321](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L321)
 
 ***
 
@@ -454,7 +446,7 @@ const myCamera = World.createCameraWithParams(position, new Vector3(0,0,0), 180)
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `cameraType` | [`CameraTypes`](../enumerations/CameraTypes.md) | `CameraTypes.Scripted` | - |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World coordinate where the camera should render. |
 | `rotation` | [`Vector3`](Vector3.md) | `undefined` | Rotation of camera relative to world. |
@@ -466,9 +458,9 @@ const myCamera = World.createCameraWithParams(position, new Vector3(0,0,0), 180)
 
 Camera object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:338](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L338)
+[src/client/World.ts:338](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L338)
 
 ***
 
@@ -493,7 +485,7 @@ const myPed = await World.createPed(model, position);
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` | Ped model to be spawned. |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Ped spawn. |
 | `heading` | `number` | `0` | Heading of Ped when spawning. |
@@ -505,9 +497,9 @@ const myPed = await World.createPed(model, position);
 
 Ped object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:375](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L375)
+[src/client/World.ts:375](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L375)
 
 ***
 
@@ -533,7 +525,7 @@ const myBarrelProp = await World.createProp(model, position, false, true);
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` | The [[`Model`]] to spawn (must be a Prop) |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | Location of Prop |
 | `dynamic` | `boolean` | `undefined` | If set to true, the Prop will have physics otherwise it's static. |
@@ -546,9 +538,9 @@ const myBarrelProp = await World.createProp(model, position, false, true);
 
 Prop object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:540](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L540)
+[src/client/World.ts:540](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L540)
 
 ***
 
@@ -568,7 +560,7 @@ const randomPed = World.createRandomPed(position);
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | World coordinate of Ped spawn. |
 
 #### Returns
@@ -577,9 +569,9 @@ const randomPed = World.createRandomPed(position);
 
 Ped object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:400](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L400)
+[src/client/World.ts:400](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L400)
 
 ***
 
@@ -602,7 +594,7 @@ const randomVehicle = await World.createRandomVehicle(position);
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Vehicle spawn. |
 | `heading` | `number` | `0` | Heading of Vehicle when spawning. |
 | `isNetwork` | `boolean` | `true` |  |
@@ -613,9 +605,9 @@ const randomVehicle = await World.createRandomVehicle(position);
 
 Vehicle object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:446](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L446)
+[src/client/World.ts:446](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L446)
 
 ***
 
@@ -641,7 +633,7 @@ shouldLoadTextures): Promise<Rope>
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | `undefined` |
 | `rotation` | [`Vector3`](Vector3.md) | `undefined` |
 | `maxLength` | `number` | `undefined` |
@@ -660,9 +652,9 @@ shouldLoadTextures): Promise<Rope>
 
 `Promise`\<[`Rope`](Rope.md)\>
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:477](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L477)
+[src/client/World.ts:477](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L477)
 
 ***
 
@@ -687,7 +679,7 @@ const myVehicle = await World.createVehicle(model, position);
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` | Vehicle model to be spawned. |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Vehicle spawn. |
 | `heading` | `number` | `0` | Heading of Vehicle when spawning. |
@@ -699,9 +691,9 @@ const myVehicle = await World.createVehicle(model, position);
 
 Vehicle object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:419](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L419)
+[src/client/World.ts:419](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L419)
 
 ***
 
@@ -717,9 +709,9 @@ Destroys all existing cameras and sets your rendering camera back to GameplayCam
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:287](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L287)
+[src/client/World.ts:287](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L287)
 
 ***
 
@@ -738,7 +730,7 @@ Creates a light in the world with a certain length (range).
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `pos` | [`Vector3`](Vector3.md) | World coordinate where to draw the light. |
 | `color` | [`Color`](Color.md) | RGB colors of the light. |
 | `range` | `number` | How far to draw the light. |
@@ -748,9 +740,9 @@ Creates a light in the world with a certain length (range).
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:723](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L723)
+[src/client/World.ts:723](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L723)
 
 ***
 
@@ -768,7 +760,7 @@ Draws a line in the world. It's not possible to change thickness.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `start` | [`Vector3`](Vector3.md) | World coordinate of start position of line. |
 | `end` | [`Vector3`](Vector3.md) | World coordinate of end position of line. |
 | `color` | [`Color`](Color.md) | RGB color of line. |
@@ -777,9 +769,9 @@ Draws a line in the world. It's not possible to change thickness.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:820](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L820)
+[src/client/World.ts:820](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L820)
 
 ***
 
@@ -815,7 +807,7 @@ setTick(() => {
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `type` | [`MarkerType`](../enumerations/MarkerType.md) | `undefined` | Type of marker. |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | Location of marker. |
 | `direction` | [`Vector3`](Vector3.md) | `undefined` | Direction facing. |
@@ -833,9 +825,9 @@ setTick(() => {
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:673](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L673)
+[src/client/World.ts:673](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L673)
 
 ***
 
@@ -854,7 +846,7 @@ Draw polygon in the world.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `vertexA` | [`Vector3`](Vector3.md) | World coordinate of first point. |
 | `vertexB` | [`Vector3`](Vector3.md) | World coordinate of second point. |
 | `vertexC` | [`Vector3`](Vector3.md) | World coordinate of third point. |
@@ -864,9 +856,9 @@ Draw polygon in the world.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:832](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L832)
+[src/client/World.ts:832](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L832)
 
 ***
 
@@ -889,7 +881,7 @@ Creates a light in the world. More configurable than World.drawLightWithRange.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `pos` | [`Vector3`](Vector3.md) | World coordinate of spotlight. |
 | `dir` | [`Vector3`](Vector3.md) | Direction to face spotlight. |
 | `color` | [`Color`](Color.md) | RGB colors of spotlight. |
@@ -903,9 +895,9 @@ Creates a light in the world. More configurable than World.drawLightWithRange.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:744](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L744)
+[src/client/World.ts:744](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L744)
 
 ***
 
@@ -928,7 +920,7 @@ Creates a light in the world. Same as World.drawSpotlight, but also draws shadow
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `pos` | [`Vector3`](Vector3.md) | World coordinate of spotlight. |
 | `dir` | [`Vector3`](Vector3.md) | Direction to face spotlight. |
 | `color` | [`Color`](Color.md) | RGB colors of spotlight. |
@@ -942,9 +934,9 @@ Creates a light in the world. Same as World.drawSpotlight, but also draws shadow
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:784](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L784)
+[src/client/World.ts:784](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L784)
 
 ***
 
@@ -962,9 +954,9 @@ Get all [[`Ped`]] entities in your own scope.
 
 Array of Peds.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:970](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L970)
+[src/client/World.ts:970](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L970)
 
 ***
 
@@ -982,9 +974,9 @@ Get all [[`Pickup`]] entities using the GetGamePool.
 
 Array of Pickups.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:1021](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L1021)
+[src/client/World.ts:1021](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L1021)
 
 ***
 
@@ -1002,9 +994,9 @@ Get all [[`Prop`]] entities in your own scope.
 
 Array of Props.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:942](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L942)
+[src/client/World.ts:942](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L942)
 
 ***
 
@@ -1022,9 +1014,9 @@ Get all [[`Rope`]] entities in your own scope.
 
 Array of Ropes.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:956](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L956)
+[src/client/World.ts:956](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L956)
 
 ***
 
@@ -1042,9 +1034,9 @@ Get all [[`Vehicle`]] entities in your own scope.
 
 Array of Vehicles.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:984](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L984)
+[src/client/World.ts:984](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L984)
 
 ***
 
@@ -1063,7 +1055,7 @@ Gets the closest object of this model
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` |
 | `coords` | [`Vector3`](Vector3.md) | `undefined` |
 | `radius` | `number` | `25.0` |
@@ -1073,9 +1065,9 @@ Gets the closest object of this model
 
 `null` \| [`Prop`](Prop.md)
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:915](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L915)
+[src/client/World.ts:915](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L915)
 
 ***
 
@@ -1090,7 +1082,7 @@ Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `coords` | [`Vector3`](Vector3.md) |
 
 #### Returns
@@ -1099,9 +1091,9 @@ Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
 
 the closest vehicle or null
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:997](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L997)
+[src/client/World.ts:997](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L997)
 
 ***
 
@@ -1121,7 +1113,7 @@ Cast ("shoot") a ray in a certain direction to detect entities in the way.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `source` | [`Vector3`](Vector3.md) | Starting position of raycast. |
 | `direction` | [`Vector3`](Vector3.md) | Direction to cast a ray to. |
 | `maxDistance` | `number` | Max distance to cast the ray. |
@@ -1134,9 +1126,9 @@ Cast ("shoot") a ray in a certain direction to detect entities in the way.
 
 RaycastResult object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:860](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L860)
+[src/client/World.ts:860](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L860)
 
 ***
 
@@ -1151,7 +1143,7 @@ Cast a ray from the local players camera until it hits an entity
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `maxDistance` | `number` | Max distance to cast the ray. |
 | `options` | [`IntersectOptions`](../enumerations/IntersectOptions.md) | Possible entity types to detect. |
 
@@ -1161,9 +1153,9 @@ Cast a ray from the local players camera until it hits an entity
 
 RaycastResult object.
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:891](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L891)
+[src/client/World.ts:891](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L891)
 
 ***
 
@@ -1178,7 +1170,7 @@ Transition to different weather type within a certain time.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `weather` | [`Weather`](../enumerations/Weather.md) | Weather type to change to. |
 | `duration` | `number` | Time for full weather change (in milliseconds); |
 
@@ -1186,6 +1178,6 @@ Transition to different weather type within a certain time.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/World.ts:278](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/World.ts#L278)
+[src/client/World.ts:278](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/World.ts#L278)

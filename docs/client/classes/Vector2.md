@@ -21,7 +21,7 @@ Constructs a new 2D vector.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `x` | `number` | The x-component of the vector. |
 | `y`? | `number` | The y-component of the vector (optional, defaults to x). |
 
@@ -33,21 +33,21 @@ Constructs a new 2D vector.
 
 `Vector.constructor`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:275
 
 ## Properties
 
-| Property | Modifier | Type | Overrides | Inherited from |
-| :------ | :------ | :------ | :------ | :------ |
-| `size` | `public` | `number` | `Vector.size` | `Vector.size` |
-| `type` | `public` | `ClassTypes` | `Vector.type` | `Vector.type` |
-| `w?` | `public` | `number` | `Vector.w` | `Vector.w` |
-| `x` | `public` | `number` | `Vector.x` | `Vector.x` |
-| `y` | `public` | `number` | `Vector.y` | `Vector.y` |
-| `z?` | `public` | `number` | `Vector.z` | `Vector.z` |
-| `Zero` | `readonly` | [`Vector2`](Vector2.md) | - | - |
+| Property | Modifier | Type | Description | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| `size` | `public` | `number` | - | - | `Vector.size` | lib/common/utils/Vector.d.ts:53 |
+| `type` | `public` | `ClassTypes` | The type identifier for vectors. | `Vector.type` | - | lib/common/utils/Vector.d.ts:268 |
+| `w?` | `public` | `number` | - | - | `Vector.w` | lib/common/utils/Vector.d.ts:57 |
+| `x` | `public` | `number` | - | - | `Vector.x` | lib/common/utils/Vector.d.ts:54 |
+| `y` | `public` | `number` | - | - | `Vector.y` | lib/common/utils/Vector.d.ts:55 |
+| `z?` | `public` | `number` | - | - | `Vector.z` | lib/common/utils/Vector.d.ts:56 |
+| `Zero` | `readonly` | [`Vector2`](Vector2.md) | - | - | - | lib/common/utils/Vector.d.ts:269 |
 
 ## Accessors
 
@@ -65,13 +65,17 @@ Calculates the length (magnitude) of a vector.
 
 The magnitude of the vector.
 
-#### Source
+#### Inherited from
+
+`Vector.Length`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:262
 
 ## Methods
 
-### `[iterator]`()
+### \[iterator\]()
 
 ```ts
 iterator: Iterator<number, any, undefined>
@@ -85,7 +89,7 @@ iterator: Iterator<number, any, undefined>
 
 `Vector.[iterator]`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:197
 
@@ -100,22 +104,22 @@ add(v): this
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `number` \| `VectorLike` |
 
 #### Returns
 
 `this`
 
-#### Inherited from
-
-`Vector.add`
-
 #### See
 
 Vector.add
 
-#### Source
+#### Inherited from
+
+`Vector.add`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:228
 
@@ -130,22 +134,22 @@ addX(x): Vector2
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 
 #### Returns
 
 [`Vector2`](Vector2.md)
 
-#### Inherited from
-
-`Vector.addX`
-
 #### See
 
 Vector.addX
 
-#### Source
+#### Inherited from
+
+`Vector.addX`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:232
 
@@ -160,22 +164,22 @@ addY(x): Vector2
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 
 #### Returns
 
 [`Vector2`](Vector2.md)
 
-#### Inherited from
-
-`Vector.addY`
-
 #### See
 
 Vector.addY
 
-#### Source
+#### Inherited from
+
+`Vector.addY`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:236
 
@@ -191,15 +195,15 @@ clone(): Vector2
 
 [`Vector2`](Vector2.md)
 
-#### Inherited from
-
-`Vector.clone`
-
 #### See
 
 Vector.clone
 
-#### Source
+#### Inherited from
+
+`Vector.clone`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:202
 
@@ -216,7 +220,7 @@ The distance between two Vectors.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `v` | `VectorLike` | Vector to find distance between. |
 
 #### Returns
@@ -229,7 +233,7 @@ Distance between this and another vector.
 
 `Vector.distance`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:216
 
@@ -246,7 +250,7 @@ The product of the Euclidean magnitudes of this and another Vector.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `v` | `VectorLike` | Vector to find Euclidean magnitude between. |
 
 #### Returns
@@ -259,7 +263,7 @@ Euclidean magnitude with another vector.
 
 `Vector.distanceSquared`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:209
 
@@ -274,22 +278,22 @@ divide(v): this
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `number` \| `VectorLike` |
 
 #### Returns
 
 `this`
 
-#### Inherited from
-
-`Vector.divide`
-
 #### See
 
 Vector.divide
 
-#### Source
+#### Inherited from
+
+`Vector.divide`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:248
 
@@ -304,22 +308,22 @@ dotProduct(v): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `this` |
 
 #### Returns
 
 `number`
 
-#### Inherited from
-
-`Vector.dotProduct`
-
 #### See
 
 Vector.dotProduct
 
-#### Source
+#### Inherited from
+
+`Vector.dotProduct`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:224
 
@@ -334,22 +338,22 @@ multiply(v): this
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `number` \| `VectorLike` |
 
 #### Returns
 
 `this`
 
-#### Inherited from
-
-`Vector.multiply`
-
 #### See
 
 Vector.multiply
 
-#### Source
+#### Inherited from
+
+`Vector.multiply`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:244
 
@@ -365,15 +369,15 @@ normalize(): this
 
 `this`
 
-#### Inherited from
-
-`Vector.normalize`
-
 #### See
 
 Vector.normalize
 
-#### Source
+#### Inherited from
+
+`Vector.normalize`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:220
 
@@ -387,16 +391,16 @@ replace<T>(v): void
 
 Replaces the components of the vector with the components of another vector object.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `v` | `T` | The object whose components will replace the current vector's components. |
 
 #### Returns
@@ -407,7 +411,7 @@ Replaces the components of the vector with the components of another vector obje
 
 `Vector.replace`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:257
 
@@ -422,22 +426,22 @@ subtract(v): this
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `VectorLike` |
 
 #### Returns
 
 `this`
 
-#### Inherited from
-
-`Vector.subtract`
-
 #### See
 
 Vector.subtract
 
-#### Source
+#### Inherited from
+
+`Vector.subtract`
+
+#### Defined in
 
 lib/common/utils/Vector.d.ts:240
 
@@ -451,10 +455,10 @@ toArray<T>(): VectorArray<T>
 
 Converts the vector to an array of its components.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* [`Vector2`](Vector2.md) |
 
 #### Returns
@@ -465,7 +469,7 @@ Converts the vector to an array of its components.
 
 `Vector.toArray`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:252
 
@@ -485,7 +489,7 @@ toString(): string
 
 `Vector.toString`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:198
 
@@ -499,17 +503,17 @@ static Length<T, U>(this, obj): number
 
 Calculates the length (magnitude) of a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector for which to calculate the length. |
 
@@ -523,7 +527,7 @@ The magnitude of the vector.
 
 `Vector.Length`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:187
 
@@ -540,17 +544,17 @@ static add<T, U>(
 
 Adds two vectors or a scalar value to a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The first vector or scalar value. |
 | `b` | `number` \| `VectorLike` | The second vector or scalar value. |
@@ -565,7 +569,7 @@ A new vector with incremented components.
 
 `Vector.add`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:97
 
@@ -582,17 +586,17 @@ w): InferVector<U>
 
 Adds a scalar value to the w-component of a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `Vec4` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector. |
 | `w` | `number` | The value to add to the w-component. |
@@ -607,7 +611,7 @@ A new vector with the w-component incremented.
 
 `Vector.addW`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:125
 
@@ -624,17 +628,17 @@ x): InferVector<U>
 
 Adds a scalar value to the x-component of a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector. |
 | `x` | `number` | The value to add to the x-component. |
@@ -649,7 +653,7 @@ A new vector with the x-component incremented.
 
 `Vector.addX`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:104
 
@@ -666,17 +670,17 @@ y): InferVector<U>
 
 Adds a scalar value to the y-component of a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector. |
 | `y` | `number` | The value to add to the y-component. |
@@ -691,7 +695,7 @@ A new vector with the y-component incremented.
 
 `Vector.addY`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:111
 
@@ -708,17 +712,17 @@ z): InferVector<U>
 
 Adds a scalar value to the z-component of a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `Vec4` \| `Vec3` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector. |
 | `z` | `number` | The value to add to the z-component. |
@@ -733,7 +737,7 @@ A new vector with the z-component incremented.
 
 `Vector.addZ`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:118
 
@@ -747,17 +751,17 @@ static clone<T, U>(this, obj): InferVector<U>
 
 Creates a deep copy of the provided vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The vector to clone. |
 
@@ -771,7 +775,7 @@ A new vector instance that is a copy of the provided vector.
 
 `Vector.clone`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:82
 
@@ -782,13 +786,13 @@ lib/common/utils/Vector.d.ts:82
 #### create(x, y)
 
 ```ts
-static protected create(x, y?): Vector2
+protected static create(x, y?): Vector2
 ```
 
 ##### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 | `y`? | `number` |
 
@@ -800,14 +804,14 @@ static protected create(x, y?): Vector2
 
 `Vector.create`
 
-##### Source
+##### Defined in
 
 lib/common/utils/Vector.d.ts:62
 
 #### create(x, y, z)
 
 ```ts
-static protected create(
+protected static create(
    x, 
    y?, 
    z?): Vector3
@@ -816,7 +820,7 @@ static protected create(
 ##### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 | `y`? | `number` |
 | `z`? | `number` |
@@ -829,14 +833,14 @@ static protected create(
 
 `Vector.create`
 
-##### Source
+##### Defined in
 
 lib/common/utils/Vector.d.ts:63
 
 #### create(x, y, z, w)
 
 ```ts
-static protected create(
+protected static create(
    x, 
    y?, 
    z?, 
@@ -846,7 +850,7 @@ static protected create(
 ##### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 | `y`? | `number` |
 | `z`? | `number` |
@@ -860,29 +864,29 @@ static protected create(
 
 `Vector.create`
 
-##### Source
+##### Defined in
 
 lib/common/utils/Vector.d.ts:64
 
 #### create(this, obj)
 
 ```ts
-static protected create<T, U>(this, obj): InferVector<U>
+protected static create<T, U>(this, obj): InferVector<U>
 ```
 
 Creates a new vector based on the provided vector-like object.
 
-##### Type parameters
+##### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 ##### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `obj` | `U` | The object representing the vector. |
 
@@ -896,7 +900,7 @@ A new vector instance.
 
 `Vector.create`
 
-##### Source
+##### Defined in
 
 lib/common/utils/Vector.d.ts:70
 
@@ -913,17 +917,17 @@ static crossProduct<T, U>(
 
 Calculates the cross product of two vectors in three-dimensional space.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `Vec4` \| `Vec3` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The first vector. |
 | `b` | `U` | The second vector. |
@@ -938,7 +942,7 @@ A new vector perpendicular to both input vectors.
 
 `Vector.crossProduct`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:160
 
@@ -955,17 +959,17 @@ static divide<T, U>(
 
 Divides two vectors by their components, or divides a vector by a scalar value.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The vector. |
 | `b` | `number` \| `VectorLike` | The second vector or scalar vector. |
@@ -980,7 +984,7 @@ A new vector with divided components.
 
 `Vector.divide`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:146
 
@@ -997,17 +1001,17 @@ static dotProduct<T, U>(
 
 Calculates the dot product of two vectors.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The first vector. |
 | `b` | `U` | The second vector. |
@@ -1022,7 +1026,7 @@ A scalar value representing the degree of alignment between the input vectors.
 
 `Vector.dotProduct`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:153
 
@@ -1036,17 +1040,17 @@ static fromArray<T, U>(this, primitive): InferVector<U>
 
 Creates a vector from an array of numbers.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `number`[] |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `primitive` | `U` | An array of numbers (usually returned by a native). |
 
@@ -1058,7 +1062,7 @@ Creates a vector from an array of numbers.
 
 `Vector.fromArray`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:171
 
@@ -1072,17 +1076,17 @@ static fromArrays<T, U>(this, primitives): InferVector<VectorArray<T>>[]
 
 Creates an array of vectors from an array of number arrays
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorArray`\<`T`\>[] |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `primitives` | `U` | A multi-dimensional array of number arrays |
 
@@ -1094,7 +1098,7 @@ Creates an array of vectors from an array of number arrays
 
 `Vector.fromArrays`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:181
 
@@ -1108,16 +1112,16 @@ static fromBuffer<T>(this, __namedParameters): InstanceType<T>
 
 Creates a vector from binary data in a MsgpackBuffer.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `this` | `T` |
 | `__namedParameters` | `MsgpackBuffer` |
 
@@ -1131,7 +1135,7 @@ A new vector instance.
 
 `Vector.fromBuffer`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:76
 
@@ -1145,17 +1149,17 @@ static fromObject<T, U>(this, primitive): InstanceType<T>
 
 Creates a vector from an array or object containing vector components.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `any` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `primitive` | `U` | The object to use as a vector. |
 
@@ -1167,7 +1171,7 @@ Creates a vector from an array or object containing vector components.
 
 `Vector.fromObject`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:176
 
@@ -1184,17 +1188,17 @@ static multiply<T, U>(
 
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The vector. |
 | `b` | `number` \| `VectorLike` | The second vector or scalar value. |
@@ -1209,7 +1213,7 @@ A new vector with multiplied components.
 
 `Vector.multiply`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:139
 
@@ -1223,17 +1227,17 @@ static normalize<T, U>(this, a): U
 
 Normalizes a vector, producing a new vector with the same direction but with a magnitude of 1.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `this` | `T` |
 | `a` | `U` |
 
@@ -1247,7 +1251,7 @@ The new normalized vector.
 
 `Vector.normalize`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:166
 
@@ -1264,17 +1268,17 @@ static subtract<T, U>(
 
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
-#### Type parameters
+#### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `this` | `T` | - |
 | `a` | `U` | The vector. |
 | `b` | `number` \| `VectorLike` | The second vector or scalar value. |
@@ -1289,6 +1293,6 @@ A new vector with subtracted components.
 
 `Vector.subtract`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Vector.d.ts:132

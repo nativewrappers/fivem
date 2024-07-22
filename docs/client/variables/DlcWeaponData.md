@@ -8,6 +8,6 @@ DlcWeaponData: Map<WeaponHash, DlcWeaponData>;
 
 DlcWeaponData - Mapping of WeaponHash -> DlcWeaponData
 
-## Source
+## Defined in
 
-[src/client/weapon/DlcWeaponData.ts:30](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/weapon/DlcWeaponData.ts#L30)
+[src/client/weapon/DlcWeaponData.ts:30](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L30)

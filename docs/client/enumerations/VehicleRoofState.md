@@ -4,9 +4,9 @@
 
 ## Enumeration Members
 
-| Enumeration Member | Value |
-| :------ | :------ |
-| `Closed` | `0` |
-| `Closing` | `3` |
-| `Opened` | `2` |
-| `Opening` | `1` |
+| Enumeration Member | Value | Defined in |
+| ------ | ------ | ------ |
+| `Closed` | `0` | [src/client/enums/Vehicle.ts:234](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L234) |
+| `Closing` | `3` | [src/client/enums/Vehicle.ts:237](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L237) |
+| `Opened` | `2` | [src/client/enums/Vehicle.ts:236](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L236) |
+| `Opening` | `1` | [src/client/enums/Vehicle.ts:235](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L235) |

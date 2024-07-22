@@ -1,6 +1,6 @@
 [@nativewrappers/fivem](../../README.md) / [server](../README.md) / LocalEvent
 
-# Type alias: LocalEvent()
+# Type Alias: LocalEvent()
 
 ```ts
 type LocalEvent: (...args) => void;
@@ -9,13 +9,13 @@ type LocalEvent: (...args) => void;
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | ...`args` | `any`[] |
 
 ## Returns
 
 `void`
 
-## Source
+## Defined in
 
-[src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L7)
+[src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L7)

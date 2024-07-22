@@ -32,22 +32,16 @@ Draws native instructional buttons
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `buttons` | [`IButton`](../interfaces/IButton.md)[] | Array of instructional buttons to be drawn |
 
 #### Returns
 
 [`InstructionalButtons`](InstructionalButtons.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/InstructionalButtons.ts#L30)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `scaleform` | `private` | [`Scaleform`](Scaleform.md) |
+[src/client/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/InstructionalButtons.ts#L30)
 
 ## Methods
 
@@ -63,29 +57,6 @@ Renders the instructional button scaleform
 
 `Promise`\<`void`\>
 
-#### Source
+#### Defined in
 
-[src/client/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/InstructionalButtons.ts#L60)
-
-***
-
-### pushButton()
-
-```ts
-private pushButton(button, index): void
-```
-
-#### Parameters
-
-| Parameter | Type |
-| :------ | :------ |
-| `button` | [`IButton`](../interfaces/IButton.md) |
-| `index` | `number` |
-
-#### Returns
-
-`void`
-
-#### Source
-
-[src/client/ui/InstructionalButtons.ts:43](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/InstructionalButtons.ts#L43)
+[src/client/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/InstructionalButtons.ts#L60)

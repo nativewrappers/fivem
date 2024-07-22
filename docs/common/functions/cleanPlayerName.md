@@ -13,13 +13,13 @@ NOTE: this is not perfect, but took me two hours to arrive to this point.
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `original` | `string` |
 
 ## Returns
 
 `string`
 
-## Source
+## Defined in
 
-[src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/utils/cleanPlayerName.ts#L9)
+[src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/cleanPlayerName.ts#L9)

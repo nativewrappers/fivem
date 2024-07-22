@@ -17,28 +17,16 @@ Create a RaycastResult object that gets the results from a StartShapeTestRay()
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `handle` | `number` | The handle returned from StartShapeTestRay() |
 
 #### Returns
 
 [`RaycastResult`](RaycastResult.md)
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:74](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L74)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `entityHandleArg` | `private` | `null` \| [`Ped`](Ped.md) \| [`Vehicle`](Vehicle.md) \| [`Prop`](Prop.md) |
-| `handle` | `private` | `number` |
-| `hitPositionArg` | `private` | [`Vector3`](Vector3.md) |
-| `hitSomethingArg` | `private` | `boolean` |
-| `materialArg` | `private` | [`MaterialHash`](../enumerations/MaterialHash.md) |
-| `result` | `private` | `number` |
-| `surfaceNormalArg` | `private` | [`Vector3`](Vector3.md) |
+[src/client/Raycast.ts:74](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L74)
 
 ## Accessors
 
@@ -54,9 +42,9 @@ Whether we hit anything.
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:34](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L34)
+[src/client/Raycast.ts:34](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L34)
 
 ***
 
@@ -72,9 +60,9 @@ Whether the entity hit exists.
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L41)
+[src/client/Raycast.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L41)
 
 ***
 
@@ -90,9 +78,9 @@ Return the entity that was hit.
 
 `null` \| [`Ped`](Ped.md) \| [`Vehicle`](Vehicle.md) \| [`Prop`](Prop.md)
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L13)
+[src/client/Raycast.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L13)
 
 ***
 
@@ -108,9 +96,9 @@ Get the position of the entity that was hit.
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:20](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L20)
+[src/client/Raycast.ts:20](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L20)
 
 ***
 
@@ -126,9 +114,9 @@ Material type that was hit.
 
 [`MaterialHash`](../enumerations/MaterialHash.md)
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:48](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L48)
+[src/client/Raycast.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L48)
 
 ***
 
@@ -144,9 +132,9 @@ Raycast result's handle.
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:55](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L55)
+[src/client/Raycast.ts:55](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L55)
 
 ***
 
@@ -162,6 +150,6 @@ Return the vector perpendicular to the tangent plane.
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Raycast.ts:27](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Raycast.ts#L27)
+[src/client/Raycast.ts:27](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Raycast.ts#L27)

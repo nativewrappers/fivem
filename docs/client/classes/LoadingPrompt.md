@@ -40,9 +40,9 @@ get static IsActive(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/LoadingPrompt.ts#L49)
+[src/client/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L49)
 
 ## Methods
 
@@ -56,9 +56,9 @@ static hide(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/LoadingPrompt.ts#L43)
+[src/client/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L43)
 
 ***
 
@@ -73,7 +73,7 @@ Shows a loading prompt.
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `loadingText` | `string` | `''` | Text to be displayed inside loading prompt. |
 | `spinnerType` | [`LoadingSpinnerType`](../enumerations/LoadingSpinnerType.md) | `LoadingSpinnerType.RegularClockwise` | Type of spinner. |
 
@@ -81,6 +81,6 @@ Shows a loading prompt.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/LoadingPrompt.ts#L25)
+[src/client/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L25)

@@ -16,11 +16,11 @@ new MenuControls(): MenuControls
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `back` | `public` | [`MenuControl`](MenuControl.md) | `...` |
-| `down` | `public` | [`MenuControl`](MenuControl.md) | `...` |
-| `left` | `public` | [`MenuControl`](MenuControl.md) | `...` |
-| `right` | `public` | [`MenuControl`](MenuControl.md) | `...` |
-| `select` | `public` | [`MenuControl`](MenuControl.md) | `...` |
-| `up` | `public` | [`MenuControl`](MenuControl.md) | `...` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `back` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L4) |
+| `down` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L9) |
+| `left` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L6) |
+| `right` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L7) |
+| `select` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L5) |
+| `up` | `public` | [`MenuControl`](MenuControl.md) | [src/client/ui/menu/MenuControls.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControls.ts#L8) |

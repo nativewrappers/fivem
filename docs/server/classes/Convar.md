@@ -26,7 +26,7 @@ buffer(): string
 
 `string`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:2
 
@@ -41,7 +41,7 @@ get(variable, defaultVar): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `defaultVar` | `string` |
 
@@ -49,7 +49,7 @@ get(variable, defaultVar): string
 
 `string`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:3
 
@@ -64,7 +64,7 @@ getInt(variable, defaultVar): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `defaultVar` | `number` |
 
@@ -72,7 +72,7 @@ getInt(variable, defaultVar): number
 
 `number`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:4
 
@@ -87,7 +87,7 @@ set(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -95,7 +95,7 @@ set(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:5
 
@@ -110,7 +110,7 @@ setReplicated(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -118,7 +118,7 @@ setReplicated(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:6
 
@@ -133,7 +133,7 @@ setServerInfo(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -141,6 +141,6 @@ setServerInfo(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Convar.d.ts:7

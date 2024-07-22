@@ -27,16 +27,16 @@ char upperCaseNameLabel[64];
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `ammoCost` | `number` |
-| `ammoType` | `number` |
-| `defaultClipSize` | `number` |
-| `desc` | `string` |
-| `name` | `string` |
-| `simpleDesc` | `string` |
-| `unk` | `number` |
-| `upperCaseName` | `string` |
-| `validCheck` | `number` |
-| `weaponCost` | `number` |
-| `weaponHash` | `number` |
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| `ammoCost` | `number` | [src/client/weapon/DlcWeaponData.ts:35](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L35) |
+| `ammoType` | `number` | [src/client/weapon/DlcWeaponData.ts:36](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L36) |
+| `defaultClipSize` | `number` | [src/client/weapon/DlcWeaponData.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L37) |
+| `desc` | `string` | [src/client/weapon/DlcWeaponData.ts:39](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L39) |
+| `name` | `string` | [src/client/weapon/DlcWeaponData.ts:38](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L38) |
+| `simpleDesc` | `string` | [src/client/weapon/DlcWeaponData.ts:40](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L40) |
+| `unk` | `number` | [src/client/weapon/DlcWeaponData.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L33) |
+| `upperCaseName` | `string` | [src/client/weapon/DlcWeaponData.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L41) |
+| `validCheck` | `number` | [src/client/weapon/DlcWeaponData.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L31) |
+| `weaponCost` | `number` | [src/client/weapon/DlcWeaponData.ts:34](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L34) |
+| `weaponHash` | `number` | [src/client/weapon/DlcWeaponData.ts:32](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/DlcWeaponData.ts#L32) |

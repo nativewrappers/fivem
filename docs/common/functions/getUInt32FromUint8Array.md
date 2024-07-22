@@ -14,7 +14,7 @@ get uint32 from uint8 array
 ## Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `buffer` | `Uint8Array` | Uint8Array |
 | `start` | `number` | The beginning of the specified portion of the array |
 | `end` | `number` | The end of the specified portion of the array |
@@ -23,6 +23,6 @@ get uint32 from uint8 array
 
 `number`
 
-## Source
+## Defined in
 
-[src/common/utils/getUInt32FromUint8Array.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/utils/getUInt32FromUint8Array.ts#L8)
+[src/common/utils/getUInt32FromUint8Array.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/getUInt32FromUint8Array.ts#L8)

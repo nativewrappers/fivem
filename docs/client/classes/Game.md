@@ -16,10 +16,10 @@ new Game(): Game
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `cachedPlayer` | `static` | [`Player`](Player.md) | `undefined` |
-| `hashCache` | `static` | `Map`\<`string`, `number`\> | `...` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `cachedPlayer` | `static` | [`Player`](Player.md) | [src/client/Game.ts:537](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L537) |
+| `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/client/Game.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L8) |
 
 ## Accessors
 
@@ -34,12 +34,12 @@ Sets the max boundry the local player can go to before they get killed
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `vec` | [`Vector3`](Vector3.md) | the max bounds for the local player |
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:487](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L487)
+[src/client/Game.ts:487](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L487)
 
 ***
 
@@ -53,9 +53,9 @@ get LastVehicle(): null | Vehicle
 
 `null` \| [`Vehicle`](Vehicle.md)
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:491](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L491)
+[src/client/Game.ts:491](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L491)
 
 ***
 
@@ -73,9 +73,9 @@ Get current input mode.
 
 InputMode: Mouse & Keyboard or GamePad.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:251](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L251)
+[src/client/Game.ts:251](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L251)
 
 ***
 
@@ -91,9 +91,9 @@ Gets the current frame rate per second
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:77](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L77)
+[src/client/Game.ts:77](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L77)
 
 ***
 
@@ -109,9 +109,9 @@ Gets the total amount of frames rendered in this session
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:70](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L70)
+[src/client/Game.ts:70](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L70)
 
 ***
 
@@ -127,9 +127,9 @@ Gets how many milliseconds the game has been open this session
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:54](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L54)
+[src/client/Game.ts:54](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L54)
 
 ***
 
@@ -143,9 +143,9 @@ get static IsCutsceneActive(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:215](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L215)
+[src/client/Game.ts:215](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L215)
 
 ***
 
@@ -161,9 +161,9 @@ Get if a loading screen is active.
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:243](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L243)
+[src/client/Game.ts:243](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L243)
 
 ***
 
@@ -180,16 +180,16 @@ set static IsMissionActive(toggle): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:199](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L199)
+[src/client/Game.ts:199](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L199)
 
 ***
 
@@ -210,16 +210,16 @@ Force enable pause menu.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:229](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L229)
+[src/client/Game.ts:229](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L229)
 
 ***
 
@@ -236,16 +236,16 @@ set static IsRandomEventActive(toggle): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:207](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L207)
+[src/client/Game.ts:207](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L207)
 
 ***
 
@@ -261,9 +261,9 @@ Is a waypoint set on the map.
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:222](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L222)
+[src/client/Game.ts:222](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L222)
 
 ***
 
@@ -279,9 +279,9 @@ Gets the game language
 
 [`Language`](../enumerations/Language.md)
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:47](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L47)
+[src/client/Game.ts:47](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L47)
 
 ***
 
@@ -297,9 +297,9 @@ Gets the time it currently takes to render a frame, in seconds;
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:84](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L84)
+[src/client/Game.ts:84](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L84)
 
 ***
 
@@ -320,16 +320,16 @@ Set the maximum wanted level the local client can get.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:140](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L140)
+[src/client/Game.ts:140](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L140)
 
 ***
 
@@ -350,16 +350,16 @@ Toggle nightvision.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:174](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L174)
+[src/client/Game.ts:174](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L174)
 
 ***
 
@@ -375,9 +375,9 @@ Get the local player's Player object.
 
 [`Player`](Player.md)
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:91](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L91)
+[src/client/Game.ts:91](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L91)
 
 ***
 
@@ -395,9 +395,9 @@ Get the local player character's Ped object.
 
 A local player's character.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:104](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L104)
+[src/client/Game.ts:104](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L104)
 
 ***
 
@@ -418,7 +418,7 @@ Set whether PvP is enabled.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
@@ -427,9 +427,9 @@ Set whether PvP is enabled.
 
 True if enabled.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:126](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L126)
+[src/client/Game.ts:126](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L126)
 
 ***
 
@@ -450,7 +450,7 @@ Sets the player's radio station.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `station` | [`RadioStation`](../enumerations/RadioStation.md) | A radio station. |
 
 #### Returns
@@ -459,9 +459,9 @@ Sets the player's radio station.
 
 A radio station.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:260](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L260)
+[src/client/Game.ts:260](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L260)
 
 ***
 
@@ -476,12 +476,12 @@ Set whether police blips should show on minimap.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:167](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L167)
+[src/client/Game.ts:167](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L167)
 
 ***
 
@@ -502,16 +502,16 @@ Toggle thermal (heat) vision.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `toggle` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:188](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L188)
+[src/client/Game.ts:188](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L188)
 
 ***
 
@@ -526,12 +526,12 @@ Sets the time scale of the Game.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `time` | `number` | The time scale, only accepts values between 0.0 and 1.0 |
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:63](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L63)
+[src/client/Game.ts:63](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L63)
 
 ***
 
@@ -546,12 +546,12 @@ Set the multiplier of the wanted level.
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:160](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L160)
+[src/client/Game.ts:160](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L160)
 
 ***
 
@@ -568,16 +568,16 @@ set static WaypointPosition(position): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:515](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L515)
+[src/client/Game.ts:515](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L515)
 
 ## Methods
 
@@ -592,16 +592,16 @@ Disables all Controls this frame.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:398](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L398)
+[src/client/Game.ts:398](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L398)
 
 ***
 
@@ -616,7 +616,7 @@ Makes the Game Engine ignore the given Control this frame
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -624,9 +624,9 @@ Makes the Game Engine ignore the given Control this frame
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:389](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L389)
+[src/client/Game.ts:389](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L389)
 
 ***
 
@@ -641,7 +641,7 @@ Determines the game language files contain a entry for the specified GXT key
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `entry` | `string` \| `number` | The GXT key. |
 
 #### Returns
@@ -650,9 +650,9 @@ Determines the game language files contain a entry for the specified GXT key
 
 true if GXT entry exists; otherwise, false
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:464](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L464)
+[src/client/Game.ts:464](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L464)
 
 ***
 
@@ -667,16 +667,16 @@ Enables all Controls this frame.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:407](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L407)
+[src/client/Game.ts:407](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L407)
 
 ***
 
@@ -691,7 +691,7 @@ Makes the Game Engine respond to the given Control this frame
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -699,9 +699,9 @@ Makes the Game Engine respond to the given Control this frame
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:379](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L379)
+[src/client/Game.ts:379](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L379)
 
 ***
 
@@ -716,7 +716,7 @@ Get an entity object from an entity handle.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `handle` | `number` | Handle of entity |
 
 #### Returns
@@ -725,9 +725,9 @@ Get an entity object from an entity handle.
 
 A Ped, Vehicle or Prop object. `undefined` if entity handle doesn't exist.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:417](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L417)
+[src/client/Game.ts:417](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L417)
 
 ***
 
@@ -742,16 +742,16 @@ Calculate the Jenkins One At A Time (joaat) has from the given string.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `input` | `string` | The input string to calculate the hash |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L14)
+[src/client/Game.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L14)
 
 ***
 
@@ -766,7 +766,7 @@ Returns a localised string from the games language files with a specified GXT ke
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `entry` | `string` \| `number` | The GXT key. |
 
 #### Returns
@@ -775,9 +775,9 @@ Returns a localised string from the games language files with a specified GXT ke
 
 The localised string if the key exists; otherwise, empty string
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:478](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L478)
+[src/client/Game.ts:478](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L478)
 
 ***
 
@@ -790,16 +790,16 @@ static getGroundHeight(position): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:532](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L532)
+[src/client/Game.ts:532](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L532)
 
 ***
 
@@ -813,9 +813,9 @@ static getWaypointBlip(): null | Blip
 
 `null` \| [`Blip`](Blip.md)
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:497](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L497)
+[src/client/Game.ts:497](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L497)
 
 ***
 
@@ -830,7 +830,7 @@ Check whether a control is enabled this frame.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -840,9 +840,9 @@ Check whether a control is enabled this frame.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:369](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L369)
+[src/client/Game.ts:369](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L369)
 
 ***
 
@@ -857,7 +857,7 @@ Check whether a control has been pressed since last check.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -867,9 +867,9 @@ Check whether a control has been pressed since last check.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:303](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L303)
+[src/client/Game.ts:303](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L303)
 
 ***
 
@@ -884,7 +884,7 @@ Check whether a control has been released since last check.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -894,9 +894,9 @@ Check whether a control has been released since last check.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:347](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L347)
+[src/client/Game.ts:347](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L347)
 
 ***
 
@@ -911,7 +911,7 @@ Check whether a control is currently pressed.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -921,9 +921,9 @@ Check whether a control is currently pressed.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:281](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L281)
+[src/client/Game.ts:281](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L281)
 
 ***
 
@@ -938,7 +938,7 @@ Check whether a control is being released.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -948,9 +948,9 @@ Check whether a control is being released.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:325](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L325)
+[src/client/Game.ts:325](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L325)
 
 ***
 
@@ -965,7 +965,7 @@ Check whether a disabled control has been pressed since last check.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -975,9 +975,9 @@ Check whether a disabled control has been pressed since last check.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:314](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L314)
+[src/client/Game.ts:314](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L314)
 
 ***
 
@@ -992,7 +992,7 @@ Check whether a disabled control has been released since last check.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -1002,9 +1002,9 @@ Check whether a disabled control has been released since last check.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:358](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L358)
+[src/client/Game.ts:358](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L358)
 
 ***
 
@@ -1019,7 +1019,7 @@ Check whether a disabled control is currently pressed.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -1029,9 +1029,9 @@ Check whether a disabled control is currently pressed.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:292](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L292)
+[src/client/Game.ts:292](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L292)
 
 ***
 
@@ -1046,7 +1046,7 @@ Check whether a disabled control is being released.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `inputMode` | [`InputMode`](../enumerations/InputMode.md) | InputMode |
 | `control` | [`Control`](../enumerations/Control.md) | Control |
 
@@ -1056,9 +1056,9 @@ Check whether a disabled control is being released.
 
 True or False.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:336](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L336)
+[src/client/Game.ts:336](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L336)
 
 ***
 
@@ -1073,16 +1073,16 @@ Play music. Same as Audio.playSound
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `musicFile` | `string` | Music file. |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:444](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L444)
+[src/client/Game.ts:444](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L444)
 
 ***
 
@@ -1097,7 +1097,7 @@ Play a sound. Same as Audio.playSound
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `soundFile` | `string` | Name of sound |
 | `soundSet` | `string` | The set where the sound is in |
 
@@ -1105,9 +1105,9 @@ Play a sound. Same as Audio.playSound
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:435](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L435)
+[src/client/Game.ts:435](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L435)
 
 ***
 
@@ -1122,7 +1122,7 @@ Get an iterable list of players currently on server.
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `excludeLocalPlayer` | `boolean` | `false` |
 
 #### Returns
@@ -1131,9 +1131,9 @@ Get an iterable list of players currently on server.
 
 Iterable list of Player objects.
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:112](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L112)
+[src/client/Game.ts:112](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L112)
 
 ***
 
@@ -1147,9 +1147,9 @@ static removeWaypoint(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:511](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L511)
+[src/client/Game.ts:511](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L511)
 
 ***
 
@@ -1163,9 +1163,9 @@ static resetGhostAlpha(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:35](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L35)
+[src/client/Game.ts:35](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L35)
 
 ***
 
@@ -1178,16 +1178,16 @@ static setGhostAlpha(alpha): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `alpha` | `number` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:31](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L31)
+[src/client/Game.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L31)
 
 ***
 
@@ -1200,16 +1200,16 @@ static setGhostingInverted(isInverted): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `isInverted` | `boolean` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:39](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L39)
+[src/client/Game.ts:39](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L39)
 
 ***
 
@@ -1222,7 +1222,7 @@ static setLocalPlayerGhosted(isGhosted, inverseGhost): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `isGhosted` | `boolean` |
 | `inverseGhost` | `boolean` |
 
@@ -1230,9 +1230,9 @@ static setLocalPlayerGhosted(isGhosted, inverseGhost): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:26](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L26)
+[src/client/Game.ts:26](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L26)
 
 ***
 
@@ -1247,13 +1247,13 @@ Stop music. If `musicFile` is not given, last played music is stopped. Same as A
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `musicFile`? | `string` | (optional) Music file. |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Game.ts:453](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Game.ts#L453)
+[src/client/Game.ts:453](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Game.ts#L453)

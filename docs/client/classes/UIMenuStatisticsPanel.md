@@ -17,7 +17,7 @@ new UIMenuStatisticsPanel(item?, divider?): UIMenuStatisticsPanel
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `item`? | [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md) \| [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)[] | `undefined` |
 | `divider`? | `boolean` | `true` |
 
@@ -29,20 +29,18 @@ new UIMenuStatisticsPanel(item?, divider?): UIMenuStatisticsPanel
 
 [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`constructor`](AbstractUIMenuPanel.md#constructors)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:11](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L11)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L11)
 
 ## Properties
 
-| Property | Modifier | Type | Default value | Overrides | Inherited from |
-| :------ | :------ | :------ | :------ | :------ | :------ |
-| `_divider` | `private` | `boolean` | `true` | - | - |
-| `_items` | `private` | [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)[] | `[]` | - | - |
-| `background` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`background` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`background` |
-| `enabled` | `protected` | `boolean` | `true` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`enabled` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`enabled` |
-| `id` | `readonly` | `string` | `...` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`id` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`id` |
-| `parentItem` | `protected` | `undefined` \| [`UIMenuItem`](UIMenuItem.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`parentItem` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`parentItem` |
+| Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| `background` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`background` | - | [src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L6) |
+| `enabled` | `protected` | `boolean` | `true` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`enabled` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
+| `id` | `readonly` | `string` | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`id` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
+| `parentItem` | `protected` | `undefined` \| [`UIMenuItem`](UIMenuItem.md) | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`parentItem` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
 
 ## Accessors
 
@@ -59,16 +57,16 @@ set Divider(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:20](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L20)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:20](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L20)
 
 ***
 
@@ -85,16 +83,20 @@ set Enabled(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
+[`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`Enabled`](AbstractUIMenuPanel.md#enabled)
+
+#### Defined in
+
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
 
 ***
 
@@ -108,9 +110,13 @@ get Height(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
+[`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`Height`](AbstractUIMenuPanel.md#height)
+
+#### Defined in
+
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
 
 ***
 
@@ -127,16 +133,16 @@ set Items(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)[] |
 
 #### Returns
 
 [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)[]
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:28](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L28)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L28)
 
 ***
 
@@ -153,16 +159,20 @@ set ParentItem(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `undefined` \| [`UIMenuItem`](UIMenuItem.md) |
 
 #### Returns
 
 `undefined` \| [`UIMenuItem`](UIMenuItem.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
+[`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`ParentItem`](AbstractUIMenuPanel.md#parentitem)
+
+#### Defined in
+
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
 
 ***
 
@@ -176,9 +186,13 @@ get ParentMenu(): undefined | Menu
 
 `undefined` \| [`Menu`](Menu.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
+[`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`ParentMenu`](AbstractUIMenuPanel.md#parentmenu)
+
+#### Defined in
+
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
 
 ## Methods
 
@@ -191,16 +205,16 @@ addItem(item): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `item` | [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md) \| [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)[] |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:36](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L36)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:36](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L36)
 
 ***
 
@@ -218,9 +232,9 @@ draw(): void
 
 [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`draw`](AbstractUIMenuPanel.md#draw)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:65](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L65)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:65](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L65)
 
 ***
 
@@ -233,16 +247,16 @@ removeItem(itemOrIndex): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `itemOrIndex` | `number` \| [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md) |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L41)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L41)
 
 ***
 
@@ -255,7 +269,7 @@ setVerticalPosition(y): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `y` | `number` |
 
 #### Returns
@@ -266,6 +280,6 @@ setVerticalPosition(y): void
 
 [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`setVerticalPosition`](AbstractUIMenuPanel.md#setverticalposition)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:49](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L49)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanel.ts#L49)

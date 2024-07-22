@@ -13,7 +13,7 @@ new VehicleWindow(owner, index): VehicleWindow
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Vehicle`](Vehicle.md) |
 | `index` | [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md) |
 
@@ -21,16 +21,9 @@ new VehicleWindow(owner, index): VehicleWindow
 
 [`VehicleWindow`](VehicleWindow.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L8)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `_index` | `private` | [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md) |
-| `_owner` | `private` | [`Vehicle`](Vehicle.md) |
+[src/client/models/VehicleWindow.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L8)
 
 ## Accessors
 
@@ -47,16 +40,16 @@ set Index(index): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `index` | [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md) |
 
 #### Returns
 
 [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L13)
+[src/client/models/VehicleWindow.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L13)
 
 ***
 
@@ -70,9 +63,9 @@ get IsIntact(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:21](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L21)
+[src/client/models/VehicleWindow.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L21)
 
 ***
 
@@ -86,9 +79,9 @@ get Vehicle(): Vehicle
 
 [`Vehicle`](Vehicle.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:25](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L25)
+[src/client/models/VehicleWindow.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L25)
 
 ## Methods
 
@@ -102,9 +95,9 @@ remove(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:45](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L45)
+[src/client/models/VehicleWindow.ts:45](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L45)
 
 ***
 
@@ -118,9 +111,9 @@ repair(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:29](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L29)
+[src/client/models/VehicleWindow.ts:29](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L29)
 
 ***
 
@@ -134,9 +127,9 @@ rollDown(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L41)
+[src/client/models/VehicleWindow.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L41)
 
 ***
 
@@ -150,9 +143,9 @@ rollUp(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L37)
+[src/client/models/VehicleWindow.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L37)
 
 ***
 
@@ -166,6 +159,6 @@ smash(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindow.ts:33](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindow.ts#L33)
+[src/client/models/VehicleWindow.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindow.ts#L33)

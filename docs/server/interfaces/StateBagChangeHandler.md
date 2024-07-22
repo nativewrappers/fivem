@@ -2,10 +2,10 @@
 
 # Interface: StateBagChangeHandler()\<T\>
 
-## Type parameters
+## Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` |
 
 ```ts
@@ -20,7 +20,7 @@ interface StateBagChangeHandler(
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `bagName` | `string` |
 | `key` | `string` |
 | `value` | `T` |
@@ -31,6 +31,6 @@ interface StateBagChangeHandler(
 
 `void`
 
-## Source
+## Defined in
 
-[src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/cfx/StateBagChangeHandler.ts#L2)
+[src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/cfx/StateBagChangeHandler.ts#L2)

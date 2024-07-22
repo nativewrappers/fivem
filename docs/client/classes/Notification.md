@@ -13,22 +13,16 @@ new Notification(handle): Notification
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `handle` | `number` |
 
 #### Returns
 
 [`Notification`](Notification.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/Notification.ts:4](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Notification.ts#L4)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `handle` | `private` | `number` |
+[src/client/ui/Notification.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Notification.ts#L4)
 
 ## Methods
 
@@ -42,6 +36,6 @@ hide(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Notification.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Notification.ts#L8)
+[src/client/ui/Notification.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Notification.ts#L8)

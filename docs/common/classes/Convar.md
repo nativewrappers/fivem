@@ -26,9 +26,9 @@ buffer(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:2](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L2)
+[src/common/Convar.ts:2](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L2)
 
 ***
 
@@ -41,7 +41,7 @@ get(variable, defaultVar): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `defaultVar` | `string` |
 
@@ -49,9 +49,9 @@ get(variable, defaultVar): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:6](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L6)
+[src/common/Convar.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L6)
 
 ***
 
@@ -64,7 +64,7 @@ getInt(variable, defaultVar): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `defaultVar` | `number` |
 
@@ -72,9 +72,9 @@ getInt(variable, defaultVar): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:10](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L10)
+[src/common/Convar.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L10)
 
 ***
 
@@ -87,7 +87,7 @@ set(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -95,9 +95,9 @@ set(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L14)
+[src/common/Convar.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L14)
 
 ***
 
@@ -110,7 +110,7 @@ setReplicated(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -118,9 +118,9 @@ setReplicated(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:18](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L18)
+[src/common/Convar.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L18)
 
 ***
 
@@ -133,7 +133,7 @@ setServerInfo(variable, value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `variable` | `string` |
 | `value` | `string` |
 
@@ -141,6 +141,6 @@ setServerInfo(variable, value): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/common/Convar.ts:22](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/Convar.ts#L22)
+[src/common/Convar.ts:22](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/Convar.ts#L22)

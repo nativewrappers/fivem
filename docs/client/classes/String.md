@@ -29,7 +29,7 @@ static measureString(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `str` | `string` | `undefined` |
 | `font`? | [`Font`](../enumerations/Font.md) | `undefined` |
 | `scale`? | `number` | `undefined` |
@@ -39,9 +39,9 @@ static measureString(
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/utils/String.ts:33](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/utils/String.ts#L33)
+[src/client/utils/String.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L33)
 
 ***
 
@@ -57,7 +57,7 @@ static measureStringWidthNoConvert(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `input` | `string` | `undefined` |
 | `font` | [`Font`](../enumerations/Font.md) | `Font.ChaletLondon` |
 | `scale` | `number` | `0` |
@@ -66,9 +66,9 @@ static measureStringWidthNoConvert(
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/utils/String.ts:21](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/utils/String.ts#L21)
+[src/client/utils/String.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L21)
 
 ***
 
@@ -81,13 +81,13 @@ static stringToArray(input): string[]
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `input` | `string` |
 
 #### Returns
 
 `string`[]
 
-#### Source
+#### Defined in
 
-[src/client/utils/String.ts:5](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/utils/String.ts#L5)
+[src/client/utils/String.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L5)

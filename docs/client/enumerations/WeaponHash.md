@@ -4,107 +4,107 @@
 
 ## Enumeration Members
 
-| Enumeration Member | Value |
-| :------ | :------ |
-| `APPistol` | `584646201` |
-| `AdvancedRifle` | `-1357824103` |
-| `AssaultRifle` | `-1074790547` |
-| `AssaultRifleMk2` | `961495388` |
-| `AssaultSMG` | `-270015777` |
-| `AssaultShotgun` | `-494615257` |
-| `BZGas` | `-1600701090` |
-| `Ball` | `600439132` |
-| `Bat` | `-1786099057` |
-| `BattleAxe` | `-853065399` |
-| `Bottle` | `-102323637` |
-| `BullpupRifle` | `2132975508` |
-| `BullpupRifleMk2` | `-2066285827` |
-| `BullpupShotgun` | `-1654528753` |
-| `CarbineRifle` | `-2084633992` |
-| `CarbineRifleMk2` | `4208062921` |
-| `CeramicPistol` | `727643628` |
-| `CombatMG` | `2144741730` |
-| `CombatMGMk2` | `3686625920` |
-| `CombatPDW` | `171789620` |
-| `CombatPistol` | `1593441988` |
-| `CombatShotgun` | `94989220` |
-| `CompactGrenadeLauncher` | `125959754` |
-| `CompactRifle` | `1649403952` |
-| `Crowbar` | `-2067956739` |
-| `Dagger` | `-1834847097` |
-| `DoubleAction` | `-1746263880` |
-| `DoubleBarrelShotgun` | `-275439685` |
-| `EmpLauncher` | `-618237638` |
-| `FertilizerCan` | `406929569` |
-| `FireExtinguisher` | `101631238` |
-| `Firework` | `2138347493` |
-| `Flare` | `1233104067` |
-| `FlareGun` | `1198879012` |
-| `Flashlight` | `-1951375401` |
-| `GadgetPistol` | `1470379660` |
-| `GolfClub` | `1141786504` |
-| `Grenade` | `-1813897027` |
-| `GrenadeLauncher` | `-1568386805` |
-| `GrenadeLauncherSmoke` | `1305664598` |
-| `Gusenberg` | `1627465347` |
-| `Hammer` | `1317494643` |
-| `Hatchet` | `-102973651` |
-| `HazardCan` | `-1168940174` |
-| `HeavyPistol` | `-771403250` |
-| `HeavyRifle` | `-947031628` |
-| `HeavyShotgun` | `984333226` |
-| `HeavySniper` | `205991906` |
-| `HeavySniperMk2` | `177293209` |
-| `HomingLauncher` | `1672152130` |
-| `Knife` | `-1716189206` |
-| `KnuckleDuster` | `-656458692` |
-| `MG` | `-1660422300` |
-| `Machete` | `-581044007` |
-| `MachinePistol` | `-619010992` |
-| `MarksmanPistol` | `-598887786` |
-| `MarksmanRifle` | `-952879014` |
-| `MarksmanRifleMk2` | `1785463520` |
-| `MicroSMG` | `324215364` |
-| `MilitaryRifle` | `-1658906650` |
-| `MiniSMG` | `-1121678507` |
-| `Minigun` | `1119849093` |
-| `Molotov` | `615608432` |
-| `Musket` | `-1466123874` |
-| `NavyRevolver` | `-1853920116` |
-| `Nightstick` | `1737195953` |
-| `Parachute` | `-72657034` |
-| `PetrolCan` | `883325847` |
-| `PipeBomb` | `-1169823560` |
-| `Pistol` | `453432689` |
-| `Pistol50` | `-1716589765` |
-| `PistolMk2` | `3219281620` |
-| `PoolCue` | `-1810795771` |
-| `ProximityMine` | `-1420407917` |
-| `PumpShotgun` | `487013001` |
-| `PumpShotgunMk2` | `1432025498` |
-| `RPG` | `-1312131151` |
-| `Railgun` | `1834241177` |
-| `RayCarbine` | `1198256469` |
-| `RayMinigun` | `-1238556825` |
-| `RayPistol` | `-1355376991` |
-| `Revolver` | `-1045183535` |
-| `RevolverMk2` | `-879347409` |
-| `SMG` | `736523883` |
-| `SMGMk2` | `2024373456` |
-| `SNSPistol` | `-1076751822` |
-| `SNSPistolMk2` | `-2009644972` |
-| `SawnOffShotgun` | `2017895192` |
-| `SmokeGrenade` | `-37975472` |
-| `SniperRifle` | `100416529` |
-| `Snowball` | `126349499` |
-| `SpecialCarbine` | `-1063057011` |
-| `SpecialCarbineMk2` | `-1768145561` |
-| `StickyBomb` | `741814745` |
-| `StoneHatchet` | `940833800` |
-| `StunGun` | `911657153` |
-| `StunGunMp` | `1171102963` |
-| `SweeperShotgun` | `317205821` |
-| `SwitchBlade` | `-538741184` |
-| `Unarmed` | `-1569615261` |
-| `VintagePistol` | `137902532` |
-| `Wrench` | `419712736` |
+| Enumeration Member | Value | Defined in |
+| ------ | ------ | ------ |
+| `APPistol` | `584646201` | [src/client/hashes/WeaponHash.ts:26](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L26) |
+| `AdvancedRifle` | `-1357824103` | [src/client/hashes/WeaponHash.ts:77](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L77) |
+| `AssaultRifle` | `-1074790547` | [src/client/hashes/WeaponHash.ts:73](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L73) |
+| `AssaultRifleMk2` | `961495388` | [src/client/hashes/WeaponHash.ts:74](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L74) |
+| `AssaultSMG` | `-270015777` | [src/client/hashes/WeaponHash.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L48) |
+| `AssaultShotgun` | `-494615257` | [src/client/hashes/WeaponHash.ts:64](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L64) |
+| `BZGas` | `-1600701090` | [src/client/hashes/WeaponHash.ts:107](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L107) |
+| `Ball` | `600439132` | [src/client/hashes/WeaponHash.ts:113](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L113) |
+| `Bat` | `-1786099057` | [src/client/hashes/WeaponHash.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L4) |
+| `BattleAxe` | `-853065399` | [src/client/hashes/WeaponHash.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L18) |
+| `Bottle` | `-102323637` | [src/client/hashes/WeaponHash.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L5) |
+| `BullpupRifle` | `2132975508` | [src/client/hashes/WeaponHash.ts:80](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L80) |
+| `BullpupRifleMk2` | `-2066285827` | [src/client/hashes/WeaponHash.ts:81](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L81) |
+| `BullpupShotgun` | `-1654528753` | [src/client/hashes/WeaponHash.ts:65](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L65) |
+| `CarbineRifle` | `-2084633992` | [src/client/hashes/WeaponHash.ts:75](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L75) |
+| `CarbineRifleMk2` | `4208062921` | [src/client/hashes/WeaponHash.ts:76](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L76) |
+| `CeramicPistol` | `727643628` | [src/client/hashes/WeaponHash.ts:40](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L40) |
+| `CombatMG` | `2144741730` | [src/client/hashes/WeaponHash.ts:56](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L56) |
+| `CombatMGMk2` | `3686625920` | [src/client/hashes/WeaponHash.ts:57](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L57) |
+| `CombatPDW` | `171789620` | [src/client/hashes/WeaponHash.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L49) |
+| `CombatPistol` | `1593441988` | [src/client/hashes/WeaponHash.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L25) |
+| `CombatShotgun` | `94989220` | [src/client/hashes/WeaponHash.ts:70](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L70) |
+| `CompactGrenadeLauncher` | `125959754` | [src/client/hashes/WeaponHash.ts:101](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L101) |
+| `CompactRifle` | `1649403952` | [src/client/hashes/WeaponHash.ts:82](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L82) |
+| `Crowbar` | `-2067956739` | [src/client/hashes/WeaponHash.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L6) |
+| `Dagger` | `-1834847097` | [src/client/hashes/WeaponHash.ts:3](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L3) |
+| `DoubleAction` | `-1746263880` | [src/client/hashes/WeaponHash.ts:38](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L38) |
+| `DoubleBarrelShotgun` | `-275439685` | [src/client/hashes/WeaponHash.ts:68](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L68) |
+| `EmpLauncher` | `-618237638` | [src/client/hashes/WeaponHash.ts:103](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L103) |
+| `FertilizerCan` | `406929569` | [src/client/hashes/WeaponHash.ts:122](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L122) |
+| `FireExtinguisher` | `101631238` | [src/client/hashes/WeaponHash.ts:120](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L120) |
+| `Firework` | `2138347493` | [src/client/hashes/WeaponHash.ts:98](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L98) |
+| `Flare` | `1233104067` | [src/client/hashes/WeaponHash.ts:115](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L115) |
+| `FlareGun` | `1198879012` | [src/client/hashes/WeaponHash.ts:34](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L34) |
+| `Flashlight` | `-1951375401` | [src/client/hashes/WeaponHash.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L8) |
+| `GadgetPistol` | `1470379660` | [src/client/hashes/WeaponHash.ts:42](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L42) |
+| `GolfClub` | `1141786504` | [src/client/hashes/WeaponHash.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L9) |
+| `Grenade` | `-1813897027` | [src/client/hashes/WeaponHash.ts:106](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L106) |
+| `GrenadeLauncher` | `-1568386805` | [src/client/hashes/WeaponHash.ts:95](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L95) |
+| `GrenadeLauncherSmoke` | `1305664598` | [src/client/hashes/WeaponHash.ts:96](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L96) |
+| `Gusenberg` | `1627465347` | [src/client/hashes/WeaponHash.ts:58](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L58) |
+| `Hammer` | `1317494643` | [src/client/hashes/WeaponHash.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L10) |
+| `Hatchet` | `-102973651` | [src/client/hashes/WeaponHash.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L11) |
+| `HazardCan` | `-1168940174` | [src/client/hashes/WeaponHash.ts:121](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L121) |
+| `HeavyPistol` | `-771403250` | [src/client/hashes/WeaponHash.ts:32](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L32) |
+| `HeavyRifle` | `-947031628` | [src/client/hashes/WeaponHash.ts:84](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L84) |
+| `HeavyShotgun` | `984333226` | [src/client/hashes/WeaponHash.ts:67](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L67) |
+| `HeavySniper` | `205991906` | [src/client/hashes/WeaponHash.ts:88](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L88) |
+| `HeavySniperMk2` | `177293209` | [src/client/hashes/WeaponHash.ts:89](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L89) |
+| `HomingLauncher` | `1672152130` | [src/client/hashes/WeaponHash.ts:100](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L100) |
+| `Knife` | `-1716189206` | [src/client/hashes/WeaponHash.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L13) |
+| `KnuckleDuster` | `-656458692` | [src/client/hashes/WeaponHash.ts:12](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L12) |
+| `MG` | `-1660422300` | [src/client/hashes/WeaponHash.ts:55](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L55) |
+| `Machete` | `-581044007` | [src/client/hashes/WeaponHash.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L14) |
+| `MachinePistol` | `-619010992` | [src/client/hashes/WeaponHash.ts:50](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L50) |
+| `MarksmanPistol` | `-598887786` | [src/client/hashes/WeaponHash.ts:35](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L35) |
+| `MarksmanRifle` | `-952879014` | [src/client/hashes/WeaponHash.ts:90](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L90) |
+| `MarksmanRifleMk2` | `1785463520` | [src/client/hashes/WeaponHash.ts:91](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L91) |
+| `MicroSMG` | `324215364` | [src/client/hashes/WeaponHash.ts:45](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L45) |
+| `MilitaryRifle` | `-1658906650` | [src/client/hashes/WeaponHash.ts:83](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L83) |
+| `MiniSMG` | `-1121678507` | [src/client/hashes/WeaponHash.ts:51](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L51) |
+| `Minigun` | `1119849093` | [src/client/hashes/WeaponHash.ts:97](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L97) |
+| `Molotov` | `615608432` | [src/client/hashes/WeaponHash.ts:108](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L108) |
+| `Musket` | `-1466123874` | [src/client/hashes/WeaponHash.ts:66](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L66) |
+| `NavyRevolver` | `-1853920116` | [src/client/hashes/WeaponHash.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L41) |
+| `Nightstick` | `1737195953` | [src/client/hashes/WeaponHash.ts:16](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L16) |
+| `Parachute` | `-72657034` | [src/client/hashes/WeaponHash.ts:119](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L119) |
+| `PetrolCan` | `883325847` | [src/client/hashes/WeaponHash.ts:118](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L118) |
+| `PipeBomb` | `-1169823560` | [src/client/hashes/WeaponHash.ts:112](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L112) |
+| `Pistol` | `453432689` | [src/client/hashes/WeaponHash.ts:23](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L23) |
+| `Pistol50` | `-1716589765` | [src/client/hashes/WeaponHash.ts:29](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L29) |
+| `PistolMk2` | `3219281620` | [src/client/hashes/WeaponHash.ts:24](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L24) |
+| `PoolCue` | `-1810795771` | [src/client/hashes/WeaponHash.ts:19](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L19) |
+| `ProximityMine` | `-1420407917` | [src/client/hashes/WeaponHash.ts:110](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L110) |
+| `PumpShotgun` | `487013001` | [src/client/hashes/WeaponHash.ts:61](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L61) |
+| `PumpShotgunMk2` | `1432025498` | [src/client/hashes/WeaponHash.ts:62](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L62) |
+| `RPG` | `-1312131151` | [src/client/hashes/WeaponHash.ts:94](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L94) |
+| `Railgun` | `1834241177` | [src/client/hashes/WeaponHash.ts:99](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L99) |
+| `RayCarbine` | `1198256469` | [src/client/hashes/WeaponHash.ts:52](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L52) |
+| `RayMinigun` | `-1238556825` | [src/client/hashes/WeaponHash.ts:102](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L102) |
+| `RayPistol` | `-1355376991` | [src/client/hashes/WeaponHash.ts:39](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L39) |
+| `Revolver` | `-1045183535` | [src/client/hashes/WeaponHash.ts:36](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L36) |
+| `RevolverMk2` | `-879347409` | [src/client/hashes/WeaponHash.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L37) |
+| `SMG` | `736523883` | [src/client/hashes/WeaponHash.ts:46](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L46) |
+| `SMGMk2` | `2024373456` | [src/client/hashes/WeaponHash.ts:47](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L47) |
+| `SNSPistol` | `-1076751822` | [src/client/hashes/WeaponHash.ts:30](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L30) |
+| `SNSPistolMk2` | `-2009644972` | [src/client/hashes/WeaponHash.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L31) |
+| `SawnOffShotgun` | `2017895192` | [src/client/hashes/WeaponHash.ts:63](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L63) |
+| `SmokeGrenade` | `-37975472` | [src/client/hashes/WeaponHash.ts:114](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L114) |
+| `SniperRifle` | `100416529` | [src/client/hashes/WeaponHash.ts:87](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L87) |
+| `Snowball` | `126349499` | [src/client/hashes/WeaponHash.ts:111](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L111) |
+| `SpecialCarbine` | `-1063057011` | [src/client/hashes/WeaponHash.ts:78](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L78) |
+| `SpecialCarbineMk2` | `-1768145561` | [src/client/hashes/WeaponHash.ts:79](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L79) |
+| `StickyBomb` | `741814745` | [src/client/hashes/WeaponHash.ts:109](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L109) |
+| `StoneHatchet` | `940833800` | [src/client/hashes/WeaponHash.ts:20](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L20) |
+| `StunGun` | `911657153` | [src/client/hashes/WeaponHash.ts:27](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L27) |
+| `StunGunMp` | `1171102963` | [src/client/hashes/WeaponHash.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L28) |
+| `SweeperShotgun` | `317205821` | [src/client/hashes/WeaponHash.ts:69](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L69) |
+| `SwitchBlade` | `-538741184` | [src/client/hashes/WeaponHash.ts:15](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L15) |
+| `Unarmed` | `-1569615261` | [src/client/hashes/WeaponHash.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L7) |
+| `VintagePistol` | `137902532` | [src/client/hashes/WeaponHash.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L33) |
+| `Wrench` | `419712736` | [src/client/hashes/WeaponHash.ts:17](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/hashes/WeaponHash.ts#L17) |

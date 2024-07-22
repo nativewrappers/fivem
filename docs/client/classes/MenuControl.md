@@ -13,22 +13,16 @@ new MenuControl(enabled): MenuControl
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `enabled` | `boolean` | `true` |
 
 #### Returns
 
 [`MenuControl`](MenuControl.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/MenuControl.ts#L4)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `_enabled` | `private` | `boolean` |
+[src/client/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControl.ts#L4)
 
 ## Accessors
 
@@ -45,13 +39,13 @@ set Enabled(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/MenuControl.ts#L8)
+[src/client/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/MenuControl.ts#L8)

@@ -17,22 +17,16 @@ Create a relationship group. Optionally pass a group hash.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `name` | `string` | Name of the relationship group. |
 
 #### Returns
 
 [`RelationshipGroup`](RelationshipGroup.md)
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L17)
-
-## Properties
-
-| Property | Modifier | Type | Description |
-| :------ | :------ | :------ | :------ |
-| `hash` | `private` | `number` | The hash of the relationship group |
+[src/client/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L17)
 
 ## Accessors
 
@@ -50,9 +44,9 @@ Gets the hash of the relationship group.
 
 The hash of this object.
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L27)
+[src/client/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L27)
 
 ## Methods
 
@@ -70,7 +64,7 @@ Clear the relationship between this relationship group and another.
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `targetGroup` | [`RelationshipGroup`](RelationshipGroup.md) | `undefined` | The other relationship group. |
 | `relationship` | [`Relationship`](../enumerations/Relationship.md) | `undefined` | The desired relationship to clear. |
 | `biDirectionally` | `boolean` | `false` | Whether the target group should also clear the relationship. |
@@ -79,9 +73,9 @@ Clear the relationship between this relationship group and another.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:67](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L67)
+[src/client/RelationshipGroup.ts:67](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L67)
 
 ***
 
@@ -96,7 +90,7 @@ Get the relationship between two relationship groups.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `targetGroup` | [`RelationshipGroup`](RelationshipGroup.md) | The other relationship group. |
 
 #### Returns
@@ -105,9 +99,9 @@ Get the relationship between two relationship groups.
 
 The relationship
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L37)
+[src/client/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L37)
 
 ***
 
@@ -123,9 +117,9 @@ Remove this relationship group from the game. This will not delete this object.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:82](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L82)
+[src/client/RelationshipGroup.ts:82](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L82)
 
 ***
 
@@ -143,7 +137,7 @@ Set the relationship group between this relationship group and another one.
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `targetGroup` | [`RelationshipGroup`](RelationshipGroup.md) | `undefined` | The other relationship group. |
 | `relationship` | [`Relationship`](../enumerations/Relationship.md) | `undefined` | The desired relationship. |
 | `biDirectionally` | `boolean` | `false` | If target group should have same relationship towards this. |
@@ -152,6 +146,6 @@ Set the relationship group between this relationship group and another one.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/RelationshipGroup.ts:48](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/RelationshipGroup.ts#L48)
+[src/client/RelationshipGroup.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/RelationshipGroup.ts#L48)

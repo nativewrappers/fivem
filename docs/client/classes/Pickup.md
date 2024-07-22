@@ -13,22 +13,16 @@ new Pickup(handle): Pickup
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `handle` | `number` |
 
 #### Returns
 
 [`Pickup`](Pickup.md)
 
-#### Source
+#### Defined in
 
-[src/client/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Pickup.ts#L6)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `handle` | `private` | `number` |
+[src/client/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Pickup.ts#L6)
 
 ## Accessors
 
@@ -42,9 +36,9 @@ get IsCollected(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Pickup.ts#L14)
+[src/client/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Pickup.ts#L14)
 
 ***
 
@@ -58,9 +52,9 @@ get Position(): Vector3
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Pickup.ts#L10)
+[src/client/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Pickup.ts#L10)
 
 ## Methods
 
@@ -74,9 +68,9 @@ delete(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Pickup.ts#L18)
+[src/client/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Pickup.ts#L18)
 
 ***
 
@@ -90,6 +84,6 @@ exists(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Pickup.ts#L22)
+[src/client/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Pickup.ts#L22)

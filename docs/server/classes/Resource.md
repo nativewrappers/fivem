@@ -13,22 +13,22 @@ new Resource(name): Resource
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `name` | `string` |
 
 #### Returns
 
 [`Resource`](Resource.md)
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:3
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `name` | `string` |
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| `name` | `string` | lib/common/Resource.d.ts:2 |
 
 ## Methods
 
@@ -41,7 +41,7 @@ getMetadata(metadataKey, index): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `metadataKey` | `string` |
 | `index` | `number` |
 
@@ -49,7 +49,7 @@ getMetadata(metadataKey, index): string
 
 `string`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:4
 
@@ -65,7 +65,7 @@ getPath(): string
 
 `string`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:5
 
@@ -80,14 +80,14 @@ loadFile(fileName): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `fileName` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:6
 
@@ -105,7 +105,7 @@ saveFile(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `fileName` | `string` |
 | `data` | `string` |
 | `length` | `number` |
@@ -114,7 +114,7 @@ saveFile(
 
 `boolean`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:7
 
@@ -130,7 +130,7 @@ scheduleTick(): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:8
 
@@ -146,7 +146,7 @@ start(): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:9
 
@@ -162,7 +162,7 @@ stop(): void
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:10
 
@@ -178,7 +178,7 @@ static resourceCount(): number
 
 `number`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:13
 
@@ -193,14 +193,14 @@ static startResource(name): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `name` | `string` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:11
 
@@ -215,13 +215,13 @@ static stopResource(name): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `name` | `string` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
 lib/common/Resource.d.ts:12

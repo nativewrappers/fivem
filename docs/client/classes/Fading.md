@@ -32,9 +32,9 @@ Gets whether the screen is faded in
 
 True or false
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L10)
+[src/client/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L10)
 
 ***
 
@@ -52,9 +52,9 @@ Gets whether the screen is faded out
 
 True or false
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L19)
+[src/client/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L19)
 
 ***
 
@@ -72,9 +72,9 @@ Gets whether the screen is currently fading in
 
 True or false
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L28)
+[src/client/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L28)
 
 ***
 
@@ -92,9 +92,9 @@ Gets whether the screen is currently fading out
 
 True or false
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L37)
+[src/client/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L37)
 
 ## Methods
 
@@ -109,16 +109,16 @@ Fade in the screen for a certain duration.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `duration` | `number` | Time to fade in |
 
 #### Returns
 
 `Promise`\<`void`\>
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L46)
+[src/client/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L46)
 
 ***
 
@@ -133,13 +133,13 @@ Fade out the screen for a certain duration.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `duration` | `number` | Time to fade out |
 
 #### Returns
 
 `Promise`\<`void`\>
 
-#### Source
+#### Defined in
 
-[src/client/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Fading.ts#L64)
+[src/client/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L64)

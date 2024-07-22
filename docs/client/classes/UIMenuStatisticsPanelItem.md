@@ -13,7 +13,7 @@ new UIMenuStatisticsPanelItem(name, percentage): UIMenuStatisticsPanelItem
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `name` | `string` | `undefined` |
 | `percentage` | `number` | `0` |
 
@@ -21,19 +21,19 @@ new UIMenuStatisticsPanelItem(name, percentage): UIMenuStatisticsPanelItem
 
 [`UIMenuStatisticsPanelItem`](UIMenuStatisticsPanelItem.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L13)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L13)
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `activeBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` |
-| `backgroundBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` |
-| `divider` | `readonly` | [`Rectangle`](Rectangle.md)[] | `[]` |
-| `id` | `readonly` | `string` | `...` |
-| `text` | `readonly` | [`Text`](Text.md) | `undefined` |
+| Property | Modifier | Type | Default value | Defined in |
+| ------ | ------ | ------ | ------ | ------ |
+| `activeBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L9) |
+| `backgroundBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L10) |
+| `divider` | `readonly` | [`Rectangle`](Rectangle.md)[] | `[]` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L11) |
+| `id` | `readonly` | `string` | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L6) |
+| `text` | `readonly` | [`Text`](Text.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L8) |
 
 ## Accessors
 
@@ -50,16 +50,16 @@ set Name(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:28](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L28)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L28)
 
 ***
 
@@ -76,13 +76,13 @@ set Percentage(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:36](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L36)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:36](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L36)

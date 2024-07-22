@@ -17,7 +17,7 @@ new PedBone(owner, boneId): PedBone
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Ped`](Ped.md) |
 | `boneId` | [`Bone`](../enumerations/Bone.md) |
 
@@ -29,16 +29,16 @@ new PedBone(owner, boneId): PedBone
 
 [`EntityBone`](EntityBone.md).[`constructor`](EntityBone.md#constructors)
 
-#### Source
+#### Defined in
 
-[src/client/models/PedBone.ts:5](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBone.ts#L5)
+[src/client/models/PedBone.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBone.ts#L5)
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `index` | `readonly` | `number` | [`EntityBone`](EntityBone.md).`index` |
-| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBone`](EntityBone.md).`owner` |
+| Property | Modifier | Type | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ |
+| `index` | `readonly` | `number` | [`EntityBone`](EntityBone.md).`index` | [src/client/models/EntityBone.ts:26](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L26) |
+| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBone`](EntityBone.md).`owner` | [src/client/models/EntityBone.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L25) |
 
 ## Accessors
 
@@ -52,9 +52,13 @@ get Index(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/client/models/EntityBone.ts:5](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBone.ts#L5)
+[`EntityBone`](EntityBone.md).[`Index`](EntityBone.md#index)
+
+#### Defined in
+
+[src/client/models/EntityBone.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L5)
 
 ***
 
@@ -68,9 +72,13 @@ get IsValid(): boolean
 
 `boolean`
 
-#### Source
+#### Overrides
 
-[src/client/models/PedBone.ts:9](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBone.ts#L9)
+[`EntityBone`](EntityBone.md).[`IsValid`](EntityBone.md#isvalid)
+
+#### Defined in
+
+[src/client/models/PedBone.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBone.ts#L9)
 
 ***
 
@@ -84,9 +92,13 @@ get Owner(): BaseEntity
 
 [`BaseEntity`](BaseEntity.md)
 
-#### Source
+#### Inherited from
 
-[src/client/models/EntityBone.ts:9](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBone.ts#L9)
+[`EntityBone`](EntityBone.md).[`Owner`](EntityBone.md#owner)
+
+#### Defined in
+
+[src/client/models/EntityBone.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L9)
 
 ***
 
@@ -100,9 +112,13 @@ get Position(): Vector3
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Inherited from
 
-[src/client/models/EntityBone.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBone.ts#L13)
+[`EntityBone`](EntityBone.md).[`Position`](EntityBone.md#position)
+
+#### Defined in
+
+[src/client/models/EntityBone.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L13)
 
 ***
 
@@ -116,6 +132,10 @@ get Rotation(): Vector3
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Inherited from
 
-[src/client/models/EntityBone.ts:17](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBone.ts#L17)
+[`EntityBone`](EntityBone.md).[`Rotation`](EntityBone.md#rotation)
+
+#### Defined in
+
+[src/client/models/EntityBone.ts:17](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBone.ts#L17)

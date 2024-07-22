@@ -26,9 +26,9 @@ get static InvokingResource(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L67)
+[src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L67)
 
 ## Methods
 
@@ -42,9 +42,9 @@ static cancel(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L59)
+[src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L59)
 
 ***
 
@@ -59,7 +59,7 @@ An on wrapper that properly converts the classes
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `eventName` | `string` |
 | `event` | [`LocalEvent`](../type-aliases/LocalEvent.md) |
 
@@ -67,9 +67,9 @@ An on wrapper that properly converts the classes
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L85)
+[src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L85)
 
 ***
 
@@ -84,7 +84,7 @@ An onNet wrapper that properly converts the type into the correct type
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `eventName` | `string` |
 | `event` | [`NetEvent`](../type-aliases/NetEvent.md) |
 
@@ -92,9 +92,9 @@ An onNet wrapper that properly converts the type into the correct type
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L74)
+[src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L74)
 
 ***
 
@@ -108,6 +108,6 @@ static wasCanceled(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L63)
+[src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L63)

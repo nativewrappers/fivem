@@ -28,7 +28,7 @@ static clamp(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `num` | `number` |
 | `min` | `number` |
 | `max` | `number` |
@@ -37,7 +37,7 @@ static clamp(
 
 `number`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Maths.d.ts:2
 
@@ -52,7 +52,7 @@ static getRandomInt(min, max): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `min` | `number` |
 | `max` | `number` |
 
@@ -60,6 +60,6 @@ static getRandomInt(min, max): number
 
 `number`
 
-#### Source
+#### Defined in
 
 lib/common/utils/Maths.d.ts:3

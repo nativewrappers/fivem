@@ -13,23 +13,22 @@ new Player(source): Player
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `source` | `number` |
 
 #### Returns
 
 [`Player`](Player.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:9](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L9)
+[src/server/entities/Player.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L9)
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `source` | `private` | `number` | `undefined` |
-| `type` | `protected` | `ClassTypes` | `ClassTypes.Player` |
+| Property | Modifier | Type | Default value | Defined in |
+| ------ | ------ | ------ | ------ | ------ |
+| `type` | `protected` | `ClassTypes` | `ClassTypes.Player` | [src/server/entities/Player.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L8) |
 
 ## Accessors
 
@@ -43,9 +42,9 @@ get AirDragMultiplier(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:136](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L136)
+[src/server/entities/Player.ts:136](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L136)
 
 ***
 
@@ -59,9 +58,9 @@ get CamerRotation(): Vector3
 
 [`Vector3`](../../client/classes/Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:57](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L57)
+[src/server/entities/Player.ts:57](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L57)
 
 ***
 
@@ -75,9 +74,9 @@ get Endpoint(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:53](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L53)
+[src/server/entities/Player.ts:53](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L53)
 
 ***
 
@@ -91,9 +90,9 @@ get Exists(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:22](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L22)
+[src/server/entities/Player.ts:22](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L22)
 
 ***
 
@@ -107,9 +106,9 @@ get Identifiers(): string[]
 
 `string`[]
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:49](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L49)
+[src/server/entities/Player.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L49)
 
 ***
 
@@ -123,9 +122,9 @@ get IsEvadingWanted(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:120](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L120)
+[src/server/entities/Player.ts:120](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L120)
 
 ***
 
@@ -142,16 +141,16 @@ set IsMuted(isMuted): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `isMuted` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:144](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L144)
+[src/server/entities/Player.ts:144](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L144)
 
 ***
 
@@ -165,9 +164,9 @@ get IsUsingSuperJump(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:140](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L140)
+[src/server/entities/Player.ts:140](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L140)
 
 ***
 
@@ -183,9 +182,9 @@ Returns the time since the last player UDP message
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:64](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L64)
+[src/server/entities/Player.ts:64](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L64)
 
 ***
 
@@ -199,9 +198,9 @@ get MaxArmour(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:68](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L68)
+[src/server/entities/Player.ts:68](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L68)
 
 ***
 
@@ -215,9 +214,9 @@ get MaxHealth(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:72](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L72)
+[src/server/entities/Player.ts:72](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L72)
 
 ***
 
@@ -231,9 +230,9 @@ get MeleeModifier(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:76](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L76)
+[src/server/entities/Player.ts:76](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L76)
 
 ***
 
@@ -249,9 +248,9 @@ get Name(): string
 
 the players name
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:83](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L83)
+[src/server/entities/Player.ts:83](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L83)
 
 ***
 
@@ -265,9 +264,9 @@ get Ped(): Ped
 
 [`Ped`](Ped.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L41)
+[src/server/entities/Player.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L41)
 
 ***
 
@@ -283,9 +282,9 @@ get Ping(): number
 
 the players round trip ping
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:97](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L97)
+[src/server/entities/Player.ts:97](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L97)
 
 ***
 
@@ -301,9 +300,9 @@ get RoutingBucket(): number
 
 the current routhing bucket the player is in, default is 0
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:104](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L104)
+[src/server/entities/Player.ts:104](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L104)
 
 ***
 
@@ -317,9 +316,9 @@ get Source(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:26](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L26)
+[src/server/entities/Player.ts:26](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L26)
 
 ***
 
@@ -335,9 +334,9 @@ Returns the player source casted as a string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L37)
+[src/server/entities/Player.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L37)
 
 ***
 
@@ -351,9 +350,9 @@ get State(): StateBagInterface
 
 `StateBagInterface`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:30](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L30)
+[src/server/entities/Player.ts:30](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L30)
 
 ***
 
@@ -367,9 +366,9 @@ get Team(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:108](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L108)
+[src/server/entities/Player.ts:108](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L108)
 
 ***
 
@@ -383,9 +382,9 @@ get Tokens(): string[]
 
 `string`[]
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:45](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L45)
+[src/server/entities/Player.ts:45](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L45)
 
 ***
 
@@ -399,9 +398,9 @@ get WantedLevel(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:116](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L116)
+[src/server/entities/Player.ts:116](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L116)
 
 ***
 
@@ -415,9 +414,9 @@ get WantedPosition(): Vector3
 
 [`Vector3`](../../client/classes/Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:112](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L112)
+[src/server/entities/Player.ts:112](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L112)
 
 ***
 
@@ -431,9 +430,9 @@ get WeaponDamageModifier(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:124](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L124)
+[src/server/entities/Player.ts:124](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L124)
 
 ***
 
@@ -447,9 +446,9 @@ get WeaponDefenseModifier(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:128](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L128)
+[src/server/entities/Player.ts:128](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L128)
 
 ***
 
@@ -463,9 +462,9 @@ get WeaponDefenseModifier2(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:132](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L132)
+[src/server/entities/Player.ts:132](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L132)
 
 ## Methods
 
@@ -478,16 +477,16 @@ drop(reason): void
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `reason` | `string` | `'No reason specified'` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:160](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L160)
+[src/server/entities/Player.ts:160](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L160)
 
 ***
 
@@ -500,7 +499,7 @@ emit(eventName, ...args): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `eventName` | `string` |
 | ...`args` | `any`[] |
 
@@ -508,9 +507,9 @@ emit(eventName, ...args): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:164](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L164)
+[src/server/entities/Player.ts:164](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L164)
 
 ***
 
@@ -526,9 +525,9 @@ filteredName(): string
 
 the players name with any color code unicode, etc removed, this can lead to there being no name at all
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:90](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L90)
+[src/server/entities/Player.ts:90](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L90)
 
 ***
 
@@ -541,16 +540,16 @@ isAceAllowed(object): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `object` | `string` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:152](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L152)
+[src/server/entities/Player.ts:152](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L152)
 
 ***
 
@@ -563,16 +562,16 @@ timeInPersuit(lastPursuit): number
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `lastPursuit` | `boolean` | `false` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:156](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L156)
+[src/server/entities/Player.ts:156](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L156)
 
 ***
 
@@ -590,6 +589,6 @@ Get an interable list of players currently on the server
 
 Iterable list of Players.
 
-#### Source
+#### Defined in
 
-[src/server/entities/Player.ts:15](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Player.ts#L15)
+[src/server/entities/Player.ts:15](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Player.ts#L15)

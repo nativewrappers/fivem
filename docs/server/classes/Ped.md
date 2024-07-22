@@ -17,7 +17,7 @@ new Ped(handle): Ped
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `handle` | `number` |
 
 #### Returns
@@ -28,16 +28,16 @@ new Ped(handle): Ped
 
 `BaseEntity.constructor`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L8)
+[src/server/entities/Ped.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L8)
 
 ## Properties
 
-| Property | Modifier | Type | Default value | Overrides | Inherited from |
-| :------ | :------ | :------ | :------ | :------ | :------ |
-| `handle` | `protected` | `number` | `undefined` | `BaseEntity.handle` | `BaseEntity.handle` |
-| `type` | `protected` | `ClassTypes` | `ClassTypes.Ped` | `BaseEntity.type` | `BaseEntity.type` |
+| Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L11) |
+| `type` | `protected` | `ClassTypes` | `ClassTypes.Ped` | `BaseEntity.type` | - | [src/server/entities/Ped.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L7) |
 
 ## Accessors
 
@@ -51,9 +51,9 @@ get Armour(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:38](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L38)
+[src/server/entities/Ped.ts:38](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L38)
 
 ***
 
@@ -70,9 +70,13 @@ get AttachedTo(): null | BaseEntity
 the entity that the calling entity is attached to, or null if
 there is none
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:49](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L49)
+`BaseEntity.AttachedTo`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L49)
 
 ***
 
@@ -86,9 +90,9 @@ get CauseOfDeath(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:42](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L42)
+[src/server/entities/Ped.ts:42](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L42)
 
 ***
 
@@ -104,9 +108,9 @@ get CurrentVehicle(): null | Vehicle
 
 the current vehicle the ped is in, or null if it doesn't exist
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:77](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L77)
+[src/server/entities/Ped.ts:77](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L77)
 
 ***
 
@@ -120,9 +124,9 @@ get DeathCause(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:66](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L66)
+[src/server/entities/Ped.ts:66](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L66)
 
 ***
 
@@ -136,9 +140,9 @@ get DesiredHeading(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:46](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L46)
+[src/server/entities/Ped.ts:46](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L46)
 
 ***
 
@@ -152,9 +156,13 @@ get Exists(): boolean
 
 `boolean`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L41)
+`BaseEntity.Exists`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L41)
 
 ***
 
@@ -168,9 +176,13 @@ get FirstOwner(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L37)
+`BaseEntity.FirstOwner`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L37)
 
 ***
 
@@ -184,9 +196,13 @@ get Handle(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:29](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L29)
+`BaseEntity.Handle`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:29](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L29)
 
 ***
 
@@ -200,9 +216,13 @@ get Heading(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:59](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L59)
+`BaseEntity.Heading`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:59](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L59)
 
 ***
 
@@ -216,9 +236,13 @@ get Health(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:67](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L67)
+`BaseEntity.Health`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:67](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L67)
 
 ***
 
@@ -232,9 +256,13 @@ get IsNoLongerNeeded(): boolean
 
 `boolean`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:125](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L125)
+`BaseEntity.IsNoLongerNeeded`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:125](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L125)
 
 ***
 
@@ -248,9 +276,9 @@ get IsPlayer(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:89](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L89)
+[src/server/entities/Ped.ts:89](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L89)
 
 ***
 
@@ -264,9 +292,13 @@ get IsVisible(): boolean
 
 `boolean`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L117)
+`BaseEntity.IsVisible`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L117)
 
 ***
 
@@ -280,9 +312,9 @@ get LastSourceOfDamage(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:62](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L62)
+[src/server/entities/Ped.ts:62](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L62)
 
 ***
 
@@ -296,9 +328,9 @@ get LastVehicle(): null | Vehicle
 
 `null` \| [`Vehicle`](Vehicle.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:83](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L83)
+[src/server/entities/Ped.ts:83](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L83)
 
 ***
 
@@ -312,9 +344,13 @@ get MaxHealth(): number
 
 `number`
 
-#### Source
+#### Overrides
 
-[src/server/entities/Ped.ts:50](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L50)
+`BaseEntity.MaxHealth`
+
+#### Defined in
+
+[src/server/entities/Ped.ts:50](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L50)
 
 ***
 
@@ -328,9 +364,13 @@ get Model(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:75](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L75)
+`BaseEntity.Model`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:75](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L75)
 
 ***
 
@@ -344,9 +384,13 @@ get NetworkId(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:121](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L121)
+`BaseEntity.NetworkId`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:121](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L121)
 
 ***
 
@@ -360,9 +404,13 @@ get Owner(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:33](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L33)
+`BaseEntity.Owner`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L33)
 
 ***
 
@@ -376,9 +424,13 @@ get PopulationType(): PopulationType
 
 `PopulationType`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:79](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L79)
+`BaseEntity.PopulationType`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:79](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L79)
 
 ***
 
@@ -392,9 +444,13 @@ get Position(): Vector3
 
 [`Vector3`](../../client/classes/Vector3.md)
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:55](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L55)
+`BaseEntity.Position`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:55](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L55)
 
 ***
 
@@ -408,9 +464,13 @@ get PositionAndHeading(): Vector4
 
 [`Vector4`](../../client/classes/Vector4.md)
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:63](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L63)
+`BaseEntity.PositionAndHeading`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:63](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L63)
 
 ***
 
@@ -424,9 +484,13 @@ get Rotation(): Vector3
 
 [`Vector3`](../../client/classes/Vector3.md)
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:83](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L83)
+`BaseEntity.Rotation`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:83](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L83)
 
 ***
 
@@ -440,9 +504,13 @@ get RotationVelocity(): Vector3
 
 [`Vector3`](../../client/classes/Vector3.md)
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:87](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L87)
+`BaseEntity.RotationVelocity`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:87](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L87)
 
 ***
 
@@ -456,9 +524,13 @@ get RoutingBucket(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:91](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L91)
+`BaseEntity.RoutingBucket`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:91](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L91)
 
 ***
 
@@ -474,9 +546,13 @@ get Script(): string
 
 The script that made the entity
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:98](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L98)
+`BaseEntity.Script`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:98](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L98)
 
 ***
 
@@ -490,9 +566,13 @@ get Speed(): number
 
 `number`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:102](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L102)
+`BaseEntity.Speed`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:102](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L102)
 
 ***
 
@@ -506,9 +586,13 @@ get State(): StateBagInterface
 
 `StateBagInterface`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:25](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L25)
+`BaseEntity.State`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L25)
 
 ***
 
@@ -522,9 +606,9 @@ get TaskCommand(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:54](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L54)
+[src/server/entities/Ped.ts:54](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L54)
 
 ***
 
@@ -538,9 +622,9 @@ get TaskStage(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:58](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L58)
+[src/server/entities/Ped.ts:58](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L58)
 
 ***
 
@@ -554,9 +638,13 @@ get Type(): eEntityType
 
 `eEntityType`
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:106](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L106)
+`BaseEntity.Type`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:106](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L106)
 
 ***
 
@@ -572,9 +660,13 @@ get Velocity(): Vector3
 
 the entitys velocity, if the entity is a ped it will return Vector3(0, 0, 0)
 
-#### Source
+#### Inherited from
 
-[src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L113)
+`BaseEntity.Velocity`
+
+#### Defined in
+
+[src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L113)
 
 ***
 
@@ -588,9 +680,9 @@ get Weapon(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:70](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L70)
+[src/server/entities/Ped.ts:70](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L70)
 
 ## Methods
 
@@ -608,9 +700,9 @@ delete(): void
 
 `BaseEntity.delete`
 
-#### Source
+#### Defined in
 
-[src/server/entities/BaseEntity.ts:129](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/BaseEntity.ts#L129)
+[src/server/entities/BaseEntity.ts:129](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/BaseEntity.ts#L129)
 
 ***
 
@@ -623,16 +715,16 @@ getSpecificTaskType(index): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `index` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:93](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L93)
+[src/server/entities/Ped.ts:93](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L93)
 
 ***
 
@@ -650,9 +742,9 @@ Get an interable list of peds currently on the server
 
 Iterable list of Peds.
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:16](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L16)
+[src/server/entities/Ped.ts:16](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L16)
 
 ***
 
@@ -665,7 +757,7 @@ static fromNetworkId(netId): null | Ped
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `netId` | `number` |
 
 #### Returns
@@ -676,9 +768,9 @@ static fromNetworkId(netId): null | Ped
 
 `BaseEntity.fromNetworkId`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:22](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L22)
+[src/server/entities/Ped.ts:22](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L22)
 
 ***
 
@@ -691,16 +783,16 @@ static fromSource(source): Ped
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `source` | `number` |
 
 #### Returns
 
 [`Ped`](Ped.md)
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:34](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L34)
+[src/server/entities/Ped.ts:34](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L34)
 
 ***
 
@@ -713,7 +805,7 @@ static fromStateBagName(stateBagName): null | Ped
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `stateBagName` | `string` |
 
 #### Returns
@@ -724,6 +816,6 @@ static fromStateBagName(stateBagName): null | Ped
 
 `BaseEntity.fromStateBagName`
 
-#### Source
+#### Defined in
 
-[src/server/entities/Ped.ts:28](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/entities/Ped.ts#L28)
+[src/server/entities/Ped.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/entities/Ped.ts#L28)

@@ -13,13 +13,13 @@ NOTE: this is not perfect, but took me two hours to arrive to this point.
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `original` | `string` |
 
 ## Returns
 
 `string`
 
-## Source
+## Defined in
 
 lib/common/utils/cleanPlayerName.d.ts:6

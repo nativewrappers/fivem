@@ -16,10 +16,9 @@ new Audio(): Audio
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `audioFlags` | `private` | `string`[] | `...` |
-| `cachedMusicFile` | `static` | `string` | `undefined` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `cachedMusicFile` | `static` | `string` | [src/client/Audio.ts:87](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L87) |
 
 ## Methods
 
@@ -32,16 +31,16 @@ static hasSoundFinished(soundId): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `soundId` | `number` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:52](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L52)
+[src/client/Audio.ts:52](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L52)
 
 ***
 
@@ -54,16 +53,16 @@ static playMusic(musicFile): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `musicFile` | `string` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:68](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L68)
+[src/client/Audio.ts:68](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L68)
 
 ***
 
@@ -76,7 +75,7 @@ static playSound(soundFile, soundSet): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `soundFile` | `string` |
 | `soundSet` | `string` |
 
@@ -84,9 +83,9 @@ static playSound(soundFile, soundSet): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:64](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L64)
+[src/client/Audio.ts:64](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L64)
 
 ***
 
@@ -103,7 +102,7 @@ static playSoundAt(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | `undefined` |
 | `sound` | `string` | `undefined` |
 | `set`? | `string` | `undefined` |
@@ -113,9 +112,9 @@ static playSoundAt(
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:6](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L6)
+[src/client/Audio.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L6)
 
 ***
 
@@ -132,7 +131,7 @@ static playSoundFromEntity(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `entity` | [`BaseEntity`](BaseEntity.md) | `undefined` |
 | `sound` | `string` | `undefined` |
 | `set`? | `string` | `undefined` |
@@ -142,9 +141,9 @@ static playSoundFromEntity(
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:27](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L27)
+[src/client/Audio.ts:27](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L27)
 
 ***
 
@@ -160,7 +159,7 @@ static playSoundFrontEnd(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `sound` | `string` | `undefined` |
 | `set`? | `string` | `undefined` |
 | `generateSoundId`? | `boolean` | `true` |
@@ -169,9 +168,9 @@ static playSoundFrontEnd(
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:38](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L38)
+[src/client/Audio.ts:38](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L38)
 
 ***
 
@@ -184,16 +183,16 @@ static releaseSound(soundId): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `soundId` | `number` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:48](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L48)
+[src/client/Audio.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L48)
 
 ***
 
@@ -206,7 +205,7 @@ static setAudioFlag(flag, toggle): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `flag` | `string` \| [`AudioFlag`](../enumerations/AudioFlag.md) |
 | `toggle` | `boolean` |
 
@@ -214,9 +213,9 @@ static setAudioFlag(flag, toggle): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:56](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L56)
+[src/client/Audio.ts:56](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L56)
 
 ***
 
@@ -229,16 +228,16 @@ static stopMusic(musicFile?): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `musicFile`? | `string` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:76](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L76)
+[src/client/Audio.ts:76](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L76)
 
 ***
 
@@ -251,13 +250,13 @@ static stopSound(soundId): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `soundId` | `number` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Audio.ts:44](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Audio.ts#L44)
+[src/client/Audio.ts:44](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Audio.ts#L44)

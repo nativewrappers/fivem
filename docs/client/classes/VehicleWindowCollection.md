@@ -13,23 +13,16 @@ new VehicleWindowCollection(owner): VehicleWindowCollection
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Vehicle`](Vehicle.md) |
 
 #### Returns
 
 [`VehicleWindowCollection`](VehicleWindowCollection.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:12](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L12)
-
-## Properties
-
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `_owner` | `private` | [`Vehicle`](Vehicle.md) | `undefined` |
-| `_vehicleWindows` | `private` | `Map`\<[`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md), [`VehicleWindow`](VehicleWindow.md)\> | `...` |
+[src/client/models/VehicleWindowCollection.ts:12](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L12)
 
 ## Accessors
 
@@ -43,9 +36,9 @@ get AreAllWindowsIntact(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:36](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L36)
+[src/client/models/VehicleWindowCollection.ts:36](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L36)
 
 ## Methods
 
@@ -59,9 +52,9 @@ getAllWindows(): (undefined | null | VehicleWindow)[]
 
 (`undefined` \| `null` \| [`VehicleWindow`](VehicleWindow.md))[]
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:23](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L23)
+[src/client/models/VehicleWindowCollection.ts:23](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L23)
 
 ***
 
@@ -74,16 +67,16 @@ getWindow(index): undefined | VehicleWindow
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `index` | [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md) |
 
 #### Returns
 
 `undefined` \| [`VehicleWindow`](VehicleWindow.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:16](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L16)
+[src/client/models/VehicleWindowCollection.ts:16](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L16)
 
 ***
 
@@ -96,16 +89,16 @@ hasWindow(window): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `window` | [`VehicleWindowIndex`](../enumerations/VehicleWindowIndex.md) |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:52](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L52)
+[src/client/models/VehicleWindowCollection.ts:52](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L52)
 
 ***
 
@@ -119,9 +112,9 @@ rollDownAllWindows(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:40](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L40)
+[src/client/models/VehicleWindowCollection.ts:40](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L40)
 
 ***
 
@@ -135,6 +128,6 @@ rollUpAllWindows(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleWindowCollection.ts:46](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleWindowCollection.ts#L46)
+[src/client/models/VehicleWindowCollection.ts:46](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleWindowCollection.ts#L46)

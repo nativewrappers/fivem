@@ -26,6 +26,6 @@ static uuidv4(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/utils/Crypto.ts:2](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/utils/Crypto.ts#L2)
+[src/client/utils/Crypto.ts:2](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/Crypto.ts#L2)

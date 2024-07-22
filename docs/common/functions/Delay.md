@@ -9,13 +9,13 @@ function Delay(milliseconds): Promise<void>
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `milliseconds` | `number` |
 
 ## Returns
 
 `Promise`\<`void`\>
 
-## Source
+## Defined in
 
-[src/common/utils/index.ts:11](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/utils/index.ts#L11)
+[src/common/utils/index.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/index.ts#L11)

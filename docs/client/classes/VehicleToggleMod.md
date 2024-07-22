@@ -13,7 +13,7 @@ new VehicleToggleMod(owner, modType): VehicleToggleMod
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Vehicle`](Vehicle.md) |
 | `modType` | [`VehicleToggleModType`](../enumerations/VehicleToggleModType.md) |
 
@@ -21,16 +21,9 @@ new VehicleToggleMod(owner, modType): VehicleToggleMod
 
 [`VehicleToggleMod`](VehicleToggleMod.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L8)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `_modType` | `private` | [`VehicleToggleModType`](../enumerations/VehicleToggleModType.md) |
-| `_owner` | `private` | [`Vehicle`](Vehicle.md) |
+[src/client/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L8)
 
 ## Accessors
 
@@ -47,16 +40,16 @@ set IsInstalled(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L21)
+[src/client/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L21)
 
 ***
 
@@ -70,9 +63,9 @@ get LocalizedModTypeName(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L29)
+[src/client/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L29)
 
 ***
 
@@ -89,16 +82,16 @@ set ModType(modType): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `modType` | [`VehicleToggleModType`](../enumerations/VehicleToggleModType.md) |
 
 #### Returns
 
 [`VehicleToggleModType`](../enumerations/VehicleToggleModType.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L13)
+[src/client/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L13)
 
 ***
 
@@ -112,9 +105,9 @@ get Vehicle(): Vehicle
 
 [`Vehicle`](Vehicle.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L33)
+[src/client/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L33)
 
 ## Methods
 
@@ -128,6 +121,6 @@ remove(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleToggleMod.ts#L37)
+[src/client/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleToggleMod.ts#L37)

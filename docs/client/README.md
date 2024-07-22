@@ -7,7 +7,7 @@
 ### Enumerations
 
 | Enumeration | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [Alignment](enumerations/Alignment.md) | - |
 | [AmmoType](enumerations/AmmoType.md) | - |
 | [AnimationFlags](enumerations/AnimationFlags.md) | - |
@@ -88,7 +88,7 @@
 ### Classes
 
 | Class | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [AbstractUIMenuPanel](classes/AbstractUIMenuPanel.md) | - |
 | [Audio](classes/Audio.md) | - |
 | [BaseEntity](classes/BaseEntity.md) | - |
@@ -172,19 +172,19 @@
 ### Interfaces
 
 | Interface | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [DlcWeaponComponentData](interfaces/DlcWeaponComponentData.md) | DlcWeaponComponentData refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/DlcWeaponStructs.cs#L130 refer2: https://docs.fivem.net/natives/?_0x6CF598A2957C2BF8 p0 seems to be the weapon index p1 seems to be the weapon component index struct DlcComponentData{ int attachBone; int padding1; int bActiveByDefault; int padding2; int unk; int padding3; int componentHash; int padding4; int unk2; int padding5; int componentCost; int padding6; char nameLabel[64]; char descLabel[64]; }; |
 | [DlcWeaponData](interfaces/DlcWeaponData.md) | DlcWeaponData refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/DlcWeaponStructs.cs#L10 refer2: https://docs.fivem.net/natives/?_0xBF0FD6E56C964FCB |
 | [IButton](interfaces/IButton.md) | - |
 | [IDrawable](interfaces/IDrawable.md) | - |
 | [InvertAxis](interfaces/InvertAxis.md) | - |
-| [WeaponComponentHudStats](interfaces/WeaponComponentHudStats.md) | WeaponComponentHudStats refer: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L976    [StructLayout(LayoutKind.Explicit, Size = 0x28)]    [SecuritySafeCritical]    internal struct UnsafeWeaponComponentHudStats    { 			[FieldOffset(0x00)] private int hudDamage; 			[FieldOffset(0x08)] private int hudSpeed; 			[FieldOffset(0x10)] private int hudCapacity; 			[FieldOffset(0x18)] private int hudAccuracy; 			[FieldOffset(0x20)] private int hudRange; |
+| [WeaponComponentHudStats](interfaces/WeaponComponentHudStats.md) | WeaponComponentHudStats refer: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L976 [StructLayout(LayoutKind.Explicit, Size = 0x28)] [SecuritySafeCritical] internal struct UnsafeWeaponComponentHudStats { 			[FieldOffset(0x00)] private int hudDamage; 			[FieldOffset(0x08)] private int hudSpeed; 			[FieldOffset(0x10)] private int hudCapacity; 			[FieldOffset(0x18)] private int hudAccuracy; 			[FieldOffset(0x20)] private int hudRange; |
 | [WeaponHudStats](interfaces/WeaponHudStats.md) | WeaponHudStats refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L900 refer2: https://docs.fivem.net/natives/?_0xD92C739EE34C9EBA // members should be aligned to 8 bytes by default but it's best to use alignas here, just to be sure struct WeaponHudStatsData { 	alignas(8) uint8_t hudDamage; // 0x0000 	alignas(8) uint8_t hudSpeed; // 0x0008 	alignas(8) uint8_t hudCapacity; // 0x0010 	alignas(8) uint8_t hudAccuracy; // 0x0018 	alignas(8) uint8_t hudRange; // 0x0020 }; |
 
 ### Variables
 
 | Variable | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [DlcWeaponComponentData](variables/DlcWeaponComponentData.md) | DlcWeaponComponentData |
 | [DlcWeaponData](variables/DlcWeaponData.md) | DlcWeaponData - Mapping of WeaponHash -> DlcWeaponData |
 | [WeaponComponentHudStats](variables/WeaponComponentHudStats.md) | Mapping of WeaponComponentHash -> WeaponComponentHudStats |
@@ -193,12 +193,12 @@
 ### Functions
 
 | Function | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [Delay](functions/Delay.md) | - |
-| [LoadAnimDict](functions/LoadAnimDict.md) | A utility to load an animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used. |
-| [LoadAnimDictArray](functions/LoadAnimDictArray.md) | A utility to load multiple animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used. |
-| [RemoveAnimDictArray](functions/RemoveAnimDictArray.md) | A utility to unload multiple animation dictionary |
+| [LoadAnimDict](functions/LoadAnimDict.md) | - |
+| [LoadAnimDictArray](functions/LoadAnimDictArray.md) | - |
+| [RemoveAnimDictArray](functions/RemoveAnimDictArray.md) | - |
 | [Wait](functions/Wait.md) | - |
 | [enumValues](functions/enumValues.md) | EnumValues - iterate over enum values Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208 |
-| [getStringFromUInt8Array](functions/getStringFromUInt8Array.md) | get string from uint8 array |
-| [getUInt32FromUint8Array](functions/getUInt32FromUint8Array.md) | get uint32 from uint8 array |
+| [getStringFromUInt8Array](functions/getStringFromUInt8Array.md) | - |
+| [getUInt32FromUint8Array](functions/getUInt32FromUint8Array.md) | - |

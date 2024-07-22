@@ -7,7 +7,7 @@
 ### Classes
 
 | Class | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [Color](classes/Color.md) | - |
 | [Convar](classes/Convar.md) | - |
 | [Entity](classes/Entity.md) | - |
@@ -23,21 +23,21 @@
 ### Interfaces
 
 | Interface | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [StateBagChangeHandler](interfaces/StateBagChangeHandler.md) | - |
 
 ### Type Aliases
 
 | Type alias | Description |
-| :------ | :------ |
+| ------ | ------ |
 | [LocalEvent](type-aliases/LocalEvent.md) | - |
 | [NetEvent](type-aliases/NetEvent.md) | - |
 
 ### Functions
 
 | Function | Description |
-| :------ | :------ |
-| [cleanPlayerName](functions/cleanPlayerName.md) | Cleans up a player name and returns one version to be displayed, and one pure version to be used for fuzzy matching. In case the name has no ascii characters, the pure name will be "empty name". NOTE: this is not perfect, but took me two hours to arrive to this point. |
+| ------ | ------ |
+| [cleanPlayerName](functions/cleanPlayerName.md) | - |
 
 ## References
 

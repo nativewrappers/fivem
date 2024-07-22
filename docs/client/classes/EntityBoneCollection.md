@@ -17,24 +17,22 @@ new EntityBoneCollection(owner): EntityBoneCollection
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`BaseEntity`](BaseEntity.md) |
 
 #### Returns
 
 [`EntityBoneCollection`](EntityBoneCollection.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/EntityBoneCollection.ts:10](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBoneCollection.ts#L10)
+[src/client/models/EntityBoneCollection.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L10)
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `_collection` | `private` | `undefined` \| `Enumerator`\<[`EntityBone`](EntityBone.md)\> | `undefined` |
-| `_currentIndex` | `private` | `number` | `-1` |
-| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | `undefined` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/client/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L5) |
 
 ## Accessors
 
@@ -48,9 +46,9 @@ get Core(): EntityBone
 
 [`EntityBone`](EntityBone.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/EntityBoneCollection.ts:25](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBoneCollection.ts#L25)
+[src/client/models/EntityBoneCollection.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L25)
 
 ## Methods
 
@@ -63,7 +61,7 @@ getBone(boneIndex?, boneName?): EntityBone
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `boneIndex`? | `number` |
 | `boneName`? | `string` |
 
@@ -71,9 +69,9 @@ getBone(boneIndex?, boneName?): EntityBone
 
 [`EntityBone`](EntityBone.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/EntityBoneCollection.ts:18](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBoneCollection.ts#L18)
+[src/client/models/EntityBoneCollection.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L18)
 
 ***
 
@@ -86,13 +84,13 @@ hasBone(name): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `name` | `string` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/EntityBoneCollection.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBoneCollection.ts#L14)
+[src/client/models/EntityBoneCollection.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L14)

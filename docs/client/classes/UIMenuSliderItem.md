@@ -23,7 +23,7 @@ new UIMenuSliderItem(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `text` | `string` | `undefined` |
 | `items` | `unknown`[] | `undefined` |
 | `startIndex` | `number` | `0` |
@@ -39,54 +39,41 @@ new UIMenuSliderItem(
 
 [`UIMenuItem`](UIMenuItem.md).[`constructor`](UIMenuItem.md#constructors)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:32](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L32)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:32](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L32)
 
 ## Properties
 
-| Property | Modifier | Type | Default value | Overrides | Inherited from |
-| :------ | :------ | :------ | :------ | :------ | :------ |
-| `_arrowOnlyOnSelected` | `private` | `boolean` | `false` | - | - |
-| `_background` | `private` | [`Rectangle`](Rectangle.md) | `undefined` | - | - |
-| `_divider` | `private` | [`Rectangle`](Rectangle.md) | `undefined` | - | - |
-| `_index` | `private` | `number` | `0` | - | - |
-| `_items` | `private` | `unknown`[] | `[]` | - | - |
-| `_leftArrow` | `private` | [`Sprite`](Sprite.md) | `undefined` | - | - |
-| `_leftSliderBadge` | `private` | [`BadgeStyle`](../enumerations/BadgeStyle.md) | `BadgeStyle.None` | - | - |
-| `_leftSliderBadgeSprite` | `private` | [`Sprite`](Sprite.md) | `undefined` | - | - |
-| `_rightArrow` | `private` | [`Sprite`](Sprite.md) | `undefined` | - | - |
-| `_rightSliderBadge` | `private` | [`BadgeStyle`](../enumerations/BadgeStyle.md) | `BadgeStyle.None` | - | - |
-| `_rightSliderBadgeSprite` | `private` | [`Sprite`](Sprite.md) | `undefined` | - | - |
-| `_showDivider` | `private` | `boolean` | `true` | - | - |
-| `_slider` | `private` | [`Rectangle`](Rectangle.md) | `undefined` | - | - |
-| `activated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `...` | [`UIMenuItem`](UIMenuItem.md).`activated` | [`UIMenuItem`](UIMenuItem.md).`activated` |
-| `badgeLeft` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`badgeLeft` | [`UIMenuItem`](UIMenuItem.md).`badgeLeft` |
-| `badgeRight` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`badgeRight` | [`UIMenuItem`](UIMenuItem.md).`badgeRight` |
-| `enabled` | `public` | `boolean` | `true` | [`UIMenuItem`](UIMenuItem.md).`enabled` | [`UIMenuItem`](UIMenuItem.md).`enabled` |
-| `hovered` | `public` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`hovered` | [`UIMenuItem`](UIMenuItem.md).`hovered` |
-| `id` | `readonly` | `string` | `...` | [`UIMenuItem`](UIMenuItem.md).`id` | [`UIMenuItem`](UIMenuItem.md).`id` |
-| `labelText` | `readonly` | [`Text`](Text.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`labelText` | [`UIMenuItem`](UIMenuItem.md).`labelText` |
-| `offset` | `public` | [`Point`](Point.md) | `...` | [`UIMenuItem`](UIMenuItem.md).`offset` | [`UIMenuItem`](UIMenuItem.md).`offset` |
-| `panelActivated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `...` | [`UIMenuItem`](UIMenuItem.md).`panelActivated` | [`UIMenuItem`](UIMenuItem.md).`panelActivated` |
-| `parent` | `public` | `undefined` \| [`Menu`](Menu.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`parent` | [`UIMenuItem`](UIMenuItem.md).`parent` |
-| `rectangle` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`rectangle` | [`UIMenuItem`](UIMenuItem.md).`rectangle` |
-| `selected` | `public` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`selected` | [`UIMenuItem`](UIMenuItem.md).`selected` |
-| `selectedSprite` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`selectedSprite` | [`UIMenuItem`](UIMenuItem.md).`selectedSprite` |
-| `sliderChanged` | `readonly` | [`LiteEvent`](LiteEvent.md) | `...` | - | - |
-| `sliderSelected` | `readonly` | [`LiteEvent`](LiteEvent.md) | `...` | - | - |
-| `supportsDescription` | `protected` | `boolean` | `true` | [`UIMenuItem`](UIMenuItem.md).`supportsDescription` | [`UIMenuItem`](UIMenuItem.md).`supportsDescription` |
-| `supportsLeftBadge` | `protected` | `boolean` | `true` | [`UIMenuItem`](UIMenuItem.md).`supportsLeftBadge` | [`UIMenuItem`](UIMenuItem.md).`supportsLeftBadge` |
-| `supportsPanels` | `protected` | `boolean` | `true` | [`UIMenuItem`](UIMenuItem.md).`supportsPanels` | [`UIMenuItem`](UIMenuItem.md).`supportsPanels` |
-| `supportsRightBadge` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightBadge` | [`UIMenuItem`](UIMenuItem.md).`supportsRightBadge` |
-| `supportsRightLabel` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightLabel` | [`UIMenuItem`](UIMenuItem.md).`supportsRightLabel` |
-| `text` | `readonly` | [`Text`](Text.md) | `undefined` | [`UIMenuItem`](UIMenuItem.md).`text` | [`UIMenuItem`](UIMenuItem.md).`text` |
-| `defaultBackColor` | `static` | [`Color`](Color.md) | `Color.empty` | [`UIMenuItem`](UIMenuItem.md).`defaultBackColor` | [`UIMenuItem`](UIMenuItem.md).`defaultBackColor` |
-| `defaultForeColor` | `static` | [`Color`](Color.md) | `Color.whiteSmoke` | [`UIMenuItem`](UIMenuItem.md).`defaultForeColor` | [`UIMenuItem`](UIMenuItem.md).`defaultForeColor` |
-| `defaultHighlightedBackColor` | `static` | [`Color`](Color.md) | `Color.white` | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedBackColor` | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedBackColor` |
-| `defaultHighlightedForeColor` | `static` | [`Color`](Color.md) | `Color.black` | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedForeColor` | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedForeColor` |
-| `defaultHoveredBackColor` | `static` | [`Color`](Color.md) | `...` | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredBackColor` | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredBackColor` |
-| `defaultHoveredForeColor` | `static` | [`Color`](Color.md) | `UIMenuItem.defaultForeColor` | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredForeColor` | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredForeColor` |
+| Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| `activated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`activated` | [src/client/ui/menu/items/UIMenuItem.ts:361](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L361) |
+| `badgeLeft` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeLeft` | [src/client/ui/menu/items/UIMenuItem.ts:374](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L374) |
+| `badgeRight` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeRight` | [src/client/ui/menu/items/UIMenuItem.ts:375](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L375) |
+| `enabled` | `public` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`enabled` | [src/client/ui/menu/items/UIMenuItem.ts:354](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L354) |
+| `hovered` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`hovered` | [src/client/ui/menu/items/UIMenuItem.ts:356](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L356) |
+| `id` | `readonly` | `string` | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`id` | [src/client/ui/menu/items/UIMenuItem.ts:352](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L352) |
+| `labelText` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`labelText` | [src/client/ui/menu/items/UIMenuItem.ts:377](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L377) |
+| `offset` | `public` | [`Point`](Point.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`offset` | [src/client/ui/menu/items/UIMenuItem.ts:358](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L358) |
+| `panelActivated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`panelActivated` | [src/client/ui/menu/items/UIMenuItem.ts:362](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L362) |
+| `parent` | `public` | `undefined` \| [`Menu`](Menu.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`parent` | [src/client/ui/menu/items/UIMenuItem.ts:359](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L359) |
+| `rectangle` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`rectangle` | [src/client/ui/menu/items/UIMenuItem.ts:370](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L370) |
+| `selected` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`selected` | [src/client/ui/menu/items/UIMenuItem.ts:355](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L355) |
+| `selectedSprite` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`selectedSprite` | [src/client/ui/menu/items/UIMenuItem.ts:372](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L372) |
+| `sliderChanged` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | - | [src/client/ui/menu/items/UIMenuSliderItem.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L7) |
+| `sliderSelected` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | - | [src/client/ui/menu/items/UIMenuSliderItem.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L8) |
+| `supportsDescription` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsDescription` | [src/client/ui/menu/items/UIMenuItem.ts:364](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L364) |
+| `supportsLeftBadge` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsLeftBadge` | [src/client/ui/menu/items/UIMenuItem.ts:366](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L366) |
+| `supportsPanels` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsPanels` | [src/client/ui/menu/items/UIMenuItem.ts:365](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L365) |
+| `supportsRightBadge` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightBadge` | - | [src/client/ui/menu/items/UIMenuSliderItem.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L10) |
+| `supportsRightLabel` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightLabel` | - | [src/client/ui/menu/items/UIMenuSliderItem.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L11) |
+| `text` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`text` | [src/client/ui/menu/items/UIMenuItem.ts:371](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L371) |
+| `defaultBackColor` | `static` | [`Color`](Color.md) | `Color.empty` | - | [`UIMenuItem`](UIMenuItem.md).`defaultBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:344](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L344) |
+| `defaultForeColor` | `static` | [`Color`](Color.md) | `Color.whiteSmoke` | - | [`UIMenuItem`](UIMenuItem.md).`defaultForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:348](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L348) |
+| `defaultHighlightedBackColor` | `static` | [`Color`](Color.md) | `Color.white` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:345](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L345) |
+| `defaultHighlightedForeColor` | `static` | [`Color`](Color.md) | `Color.black` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:350](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L350) |
+| `defaultHoveredBackColor` | `static` | [`Color`](Color.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:346](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L346) |
+| `defaultHoveredForeColor` | `static` | [`Color`](Color.md) | `UIMenuItem.defaultForeColor` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:349](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L349) |
 
 ## Accessors
 
@@ -103,16 +90,16 @@ set ArrowOnlyOnSelected(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:82](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L82)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:82](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L82)
 
 ***
 
@@ -129,16 +116,20 @@ set BackColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:439](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L439)
+[`UIMenuItem`](UIMenuItem.md).[`BackColor`](UIMenuItem.md#backcolor)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:439](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L439)
 
 ***
 
@@ -155,16 +146,16 @@ set BackgroundColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:90](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L90)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:90](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L90)
 
 ***
 
@@ -181,16 +172,20 @@ set Description(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:420](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L420)
+[`UIMenuItem`](UIMenuItem.md).[`Description`](UIMenuItem.md#description)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:420](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L420)
 
 ***
 
@@ -207,16 +202,16 @@ set DividerColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:106](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L106)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:106](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L106)
 
 ***
 
@@ -233,16 +228,20 @@ set ForeColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:459](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L459)
+[`UIMenuItem`](UIMenuItem.md).[`ForeColor`](UIMenuItem.md#forecolor)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:459](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L459)
 
 ***
 
@@ -256,9 +255,13 @@ get FormattedDescription(): string
 
 `string`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:435](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L435)
+[`UIMenuItem`](UIMenuItem.md).[`FormattedDescription`](UIMenuItem.md#formatteddescription)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:435](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L435)
 
 ***
 
@@ -275,16 +278,20 @@ set HighlightedBackColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:449](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L449)
+[`UIMenuItem`](UIMenuItem.md).[`HighlightedBackColor`](UIMenuItem.md#highlightedbackcolor)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:449](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L449)
 
 ***
 
@@ -301,16 +308,20 @@ set HighlightedForeColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:469](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L469)
+[`UIMenuItem`](UIMenuItem.md).[`HighlightedForeColor`](UIMenuItem.md#highlightedforecolor)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:469](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L469)
 
 ***
 
@@ -327,16 +338,16 @@ set Index(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:54](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L54)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:54](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L54)
 
 ***
 
@@ -350,9 +361,13 @@ get IsMouseInBounds(): boolean
 
 `boolean`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:525](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L525)
+[`UIMenuItem`](UIMenuItem.md).[`IsMouseInBounds`](UIMenuItem.md#ismouseinbounds)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:525](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L525)
 
 ***
 
@@ -366,9 +381,9 @@ get IsMouseInBoundsOfLeftArrow(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:136](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L136)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:136](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L136)
 
 ***
 
@@ -382,9 +397,9 @@ get IsMouseInBoundsOfRightArrow(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:142](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L142)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:142](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L142)
 
 ***
 
@@ -398,9 +413,9 @@ get Item(): unknown
 
 `unknown`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:62](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L62)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:62](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L62)
 
 ***
 
@@ -417,16 +432,16 @@ set Items(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `unknown`[] |
 
 #### Returns
 
 `unknown`[]
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:66](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L66)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:66](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L66)
 
 ***
 
@@ -443,16 +458,20 @@ set LeftBadge(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
 
 [`BadgeStyle`](../enumerations/BadgeStyle.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:477](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L477)
+[`UIMenuItem`](UIMenuItem.md).[`LeftBadge`](UIMenuItem.md#leftbadge)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:477](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L477)
 
 ***
 
@@ -469,16 +488,16 @@ set LeftSliderBadge(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
 
 [`BadgeStyle`](../enumerations/BadgeStyle.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:114](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L114)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:114](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L114)
 
 ***
 
@@ -495,16 +514,20 @@ set Panels(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md)[] |
 
 #### Returns
 
 [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md)[]
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:531](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L531)
+[`UIMenuItem`](UIMenuItem.md).[`Panels`](UIMenuItem.md#panels)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:531](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L531)
 
 ***
 
@@ -521,16 +544,20 @@ set RightBadge(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
 
 [`BadgeStyle`](../enumerations/BadgeStyle.md)
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:494](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L494)
+[`UIMenuItem`](UIMenuItem.md).[`RightBadge`](UIMenuItem.md#rightbadge)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:494](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L494)
 
 ***
 
@@ -547,16 +574,20 @@ set RightLabel(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:511](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L511)
+[`UIMenuItem`](UIMenuItem.md).[`RightLabel`](UIMenuItem.md#rightlabel)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:511](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L511)
 
 ***
 
@@ -573,16 +604,16 @@ set RightSliderBadge(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
 
 [`BadgeStyle`](../enumerations/BadgeStyle.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:125](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L125)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:125](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L125)
 
 ***
 
@@ -599,16 +630,16 @@ set ShowDivider(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:74](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L74)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:74](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L74)
 
 ***
 
@@ -625,16 +656,16 @@ set SliderColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | [`Color`](Color.md) |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:98](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L98)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:98](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L98)
 
 ***
 
@@ -651,16 +682,20 @@ set Text(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Inherited from
 
-[src/client/ui/menu/items/UIMenuItem.ts:412](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L412)
+[`UIMenuItem`](UIMenuItem.md).[`Text`](UIMenuItem.md#text)
+
+#### Defined in
+
+[src/client/ui/menu/items/UIMenuItem.ts:412](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L412)
 
 ## Methods
 
@@ -673,7 +708,7 @@ addEvent(event, ...args): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `event` | `string` |
 | ...`args` | `unknown`[] |
 
@@ -685,9 +720,9 @@ addEvent(event, ...args): void
 
 [`UIMenuItem`](UIMenuItem.md).[`addEvent`](UIMenuItem.md#addevent)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:575](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L575)
+[src/client/ui/menu/items/UIMenuItem.ts:575](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L575)
 
 ***
 
@@ -700,7 +735,7 @@ addPanel(panel): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `panel` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md) \| [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md)[] |
 
 #### Returns
@@ -711,9 +746,9 @@ addPanel(panel): void
 
 [`UIMenuItem`](UIMenuItem.md).[`addPanel`](UIMenuItem.md#addpanel)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:545](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L545)
+[src/client/ui/menu/items/UIMenuItem.ts:545](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L545)
 
 ***
 
@@ -726,7 +761,7 @@ badgeToColor(badge): Color
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `badge` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
@@ -737,9 +772,9 @@ badgeToColor(badge): Color
 
 [`UIMenuItem`](UIMenuItem.md).[`badgeToColor`](UIMenuItem.md#badgetocolor)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:979](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L979)
+[src/client/ui/menu/items/UIMenuItem.ts:979](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L979)
 
 ***
 
@@ -752,7 +787,7 @@ badgeToTextureName(badge): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `badge` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
@@ -763,9 +798,9 @@ badgeToTextureName(badge): string
 
 [`UIMenuItem`](UIMenuItem.md).[`badgeToTextureName`](UIMenuItem.md#badgetotexturename)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:616](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L616)
+[src/client/ui/menu/items/UIMenuItem.ts:616](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L616)
 
 ***
 
@@ -783,9 +818,9 @@ draw(): void
 
 [`UIMenuItem`](UIMenuItem.md).[`draw`](UIMenuItem.md#draw)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:166](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L166)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:166](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L166)
 
 ***
 
@@ -798,7 +833,7 @@ findPanelIndex(panel): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `panel` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md) |
 
 #### Returns
@@ -809,9 +844,9 @@ findPanelIndex(panel): number
 
 [`UIMenuItem`](UIMenuItem.md).[`findPanelIndex`](UIMenuItem.md#findpanelindex)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:556](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L556)
+[src/client/ui/menu/items/UIMenuItem.ts:556](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L556)
 
 ***
 
@@ -829,9 +864,9 @@ fireEvent(): void
 
 [`UIMenuItem`](UIMenuItem.md).[`fireEvent`](UIMenuItem.md#fireevent)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:579](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L579)
+[src/client/ui/menu/items/UIMenuItem.ts:579](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L579)
 
 ***
 
@@ -849,9 +884,9 @@ formatDescription(): void
 
 [`UIMenuItem`](UIMenuItem.md).[`formatDescription`](UIMenuItem.md#formatdescription)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:585](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L585)
+[src/client/ui/menu/items/UIMenuItem.ts:585](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L585)
 
 ***
 
@@ -864,16 +899,16 @@ indexToItem(index): unknown
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `index` | `number` |
 
 #### Returns
 
 `unknown`
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:148](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L148)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:148](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L148)
 
 ***
 
@@ -886,7 +921,7 @@ removePanel(panelOrIndex): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `panelOrIndex` | `number` \| [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md) |
 
 #### Returns
@@ -897,9 +932,9 @@ removePanel(panelOrIndex): void
 
 [`UIMenuItem`](UIMenuItem.md).[`removePanel`](UIMenuItem.md#removepanel)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:564](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L564)
+[src/client/ui/menu/items/UIMenuItem.ts:564](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L564)
 
 ***
 
@@ -912,7 +947,7 @@ setVerticalPosition(y): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `y` | `number` |
 
 #### Returns
@@ -923,9 +958,9 @@ setVerticalPosition(y): void
 
 [`UIMenuItem`](UIMenuItem.md).[`setVerticalPosition`](UIMenuItem.md#setverticalposition)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuSliderItem.ts:152](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuSliderItem.ts#L152)
+[src/client/ui/menu/items/UIMenuSliderItem.ts:152](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuSliderItem.ts#L152)
 
 ***
 
@@ -938,7 +973,7 @@ static badgeToTextureDict(badge): string
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `badge` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
@@ -949,9 +984,9 @@ static badgeToTextureDict(badge): string
 
 [`UIMenuItem`](UIMenuItem.md).[`badgeToTextureDict`](UIMenuItem.md#badgetotexturedict)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:7](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L7)
+[src/client/ui/menu/items/UIMenuItem.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L7)
 
 ***
 
@@ -964,7 +999,7 @@ static getBadgeSize(badge): Size
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `badge` | [`BadgeStyle`](../enumerations/BadgeStyle.md) |
 
 #### Returns
@@ -975,9 +1010,9 @@ static getBadgeSize(badge): Size
 
 [`UIMenuItem`](UIMenuItem.md).[`getBadgeSize`](UIMenuItem.md#getbadgesize)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:182](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L182)
+[src/client/ui/menu/items/UIMenuItem.ts:182](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L182)
 
 ***
 
@@ -990,7 +1025,7 @@ static getBadgeSpriteHeightOffset(sprite): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `sprite` | [`Sprite`](Sprite.md) |
 
 #### Returns
@@ -1001,9 +1036,9 @@ static getBadgeSpriteHeightOffset(sprite): number
 
 [`UIMenuItem`](UIMenuItem.md).[`getBadgeSpriteHeightOffset`](UIMenuItem.md#getbadgespriteheightoffset)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:178](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L178)
+[src/client/ui/menu/items/UIMenuItem.ts:178](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L178)
 
 ***
 
@@ -1016,7 +1051,7 @@ static getBadgeSpriteWidthOffset(sprite): number
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `sprite` | [`Sprite`](Sprite.md) |
 
 #### Returns
@@ -1027,6 +1062,6 @@ static getBadgeSpriteWidthOffset(sprite): number
 
 [`UIMenuItem`](UIMenuItem.md).[`getBadgeSpriteWidthOffset`](UIMenuItem.md#getbadgespritewidthoffset)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:174](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/items/UIMenuItem.ts#L174)
+[src/client/ui/menu/items/UIMenuItem.ts:174](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/items/UIMenuItem.ts#L174)

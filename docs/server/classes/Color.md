@@ -17,7 +17,7 @@ new Color(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `r` | `number` |
 | `g` | `number` |
 | `b` | `number` |
@@ -27,18 +27,18 @@ new Color(
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Color.d.ts:9
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
-| `g` | `number` |
-| `r` | `number` |
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| `a` | `number` | lib/common/utils/Color.d.ts:5 |
+| `b` | `number` | lib/common/utils/Color.d.ts:8 |
+| `g` | `number` | lib/common/utils/Color.d.ts:7 |
+| `r` | `number` | lib/common/utils/Color.d.ts:6 |
 
 ## Methods
 
@@ -55,7 +55,7 @@ static fromArgb(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `a` | `number` |
 | `r` | `number` |
 | `g` | `number` |
@@ -65,7 +65,7 @@ static fromArgb(
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Color.d.ts:2
 
@@ -80,14 +80,14 @@ static fromArray(primitive): Color
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `primitive` | [`number`, `number`, `number`] \| `number`[] |
 
 #### Returns
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Color.d.ts:4
 
@@ -105,7 +105,7 @@ static fromRgb(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `r` | `number` |
 | `g` | `number` |
 | `b` | `number` |
@@ -114,6 +114,6 @@ static fromRgb(
 
 [`Color`](Color.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Color.d.ts:3

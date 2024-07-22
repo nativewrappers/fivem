@@ -13,14 +13,14 @@ new Quaternion(value): Quaternion
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 [`Quaternion`](Quaternion.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Quaternion.d.ts:7
 
@@ -33,7 +33,7 @@ new Quaternion(vector, w): Quaternion
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `vector` | [`Vector3`](Vector3.md) |
 | `w` | `number` |
 
@@ -41,7 +41,7 @@ new Quaternion(vector, w): Quaternion
 
 [`Quaternion`](Quaternion.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Quaternion.d.ts:8
 
@@ -58,7 +58,7 @@ new Quaternion(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `x` | `number` |
 | `y` | `number` |
 | `z` | `number` |
@@ -68,15 +68,15 @@ new Quaternion(
 
 [`Quaternion`](Quaternion.md)
 
-#### Source
+#### Defined in
 
 lib/common/utils/Quaternion.d.ts:9
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `w` | `number` |
-| `x` | `number` |
-| `y` | `number` |
-| `z` | `number` |
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| `w` | `number` | lib/common/utils/Quaternion.d.ts:6 |
+| `x` | `number` | lib/common/utils/Quaternion.d.ts:3 |
+| `y` | `number` | lib/common/utils/Quaternion.d.ts:4 |
+| `z` | `number` | lib/common/utils/Quaternion.d.ts:5 |

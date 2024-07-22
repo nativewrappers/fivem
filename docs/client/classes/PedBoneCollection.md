@@ -17,7 +17,7 @@ new PedBoneCollection(owner): PedBoneCollection
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Ped`](Ped.md) |
 
 #### Returns
@@ -28,15 +28,15 @@ new PedBoneCollection(owner): PedBoneCollection
 
 [`EntityBoneCollection`](EntityBoneCollection.md).[`constructor`](EntityBoneCollection.md#constructors)
 
-#### Source
+#### Defined in
 
-[src/client/models/PedBoneCollection.ts:4](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBoneCollection.ts#L4)
+[src/client/models/PedBoneCollection.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBoneCollection.ts#L4)
 
 ## Properties
 
-| Property | Modifier | Type | Inherited from |
-| :------ | :------ | :------ | :------ |
-| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBoneCollection`](EntityBoneCollection.md).`owner` |
+| Property | Modifier | Type | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ |
+| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBoneCollection`](EntityBoneCollection.md).`owner` | [src/client/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L5) |
 
 ## Accessors
 
@@ -50,9 +50,13 @@ get Core(): PedBone
 
 [`PedBone`](PedBone.md)
 
-#### Source
+#### Overrides
 
-[src/client/models/PedBoneCollection.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBoneCollection.ts#L8)
+[`EntityBoneCollection`](EntityBoneCollection.md).[`Core`](EntityBoneCollection.md#core)
+
+#### Defined in
+
+[src/client/models/PedBoneCollection.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBoneCollection.ts#L8)
 
 ***
 
@@ -66,9 +70,9 @@ get LastDamaged(): PedBone
 
 [`PedBone`](PedBone.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/PedBoneCollection.ts:12](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBoneCollection.ts#L12)
+[src/client/models/PedBoneCollection.ts:12](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBoneCollection.ts#L12)
 
 ## Methods
 
@@ -82,9 +86,9 @@ clearLastDamaged(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/PedBoneCollection.ts:17](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBoneCollection.ts#L17)
+[src/client/models/PedBoneCollection.ts:17](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBoneCollection.ts#L17)
 
 ***
 
@@ -97,7 +101,7 @@ getBone(boneIndex?, boneName?): PedBone
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `boneIndex`? | `number` |
 | `boneName`? | `string` |
 
@@ -109,9 +113,9 @@ getBone(boneIndex?, boneName?): PedBone
 
 [`EntityBoneCollection`](EntityBoneCollection.md).[`getBone`](EntityBoneCollection.md#getbone)
 
-#### Source
+#### Defined in
 
-[src/client/models/PedBoneCollection.ts:21](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/PedBoneCollection.ts#L21)
+[src/client/models/PedBoneCollection.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/PedBoneCollection.ts#L21)
 
 ***
 
@@ -124,7 +128,7 @@ hasBone(name): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `name` | `string` |
 
 #### Returns
@@ -135,6 +139,6 @@ hasBone(name): boolean
 
 [`EntityBoneCollection`](EntityBoneCollection.md).[`hasBone`](EntityBoneCollection.md#hasbone)
 
-#### Source
+#### Defined in
 
-[src/client/models/EntityBoneCollection.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/EntityBoneCollection.ts#L14)
+[src/client/models/EntityBoneCollection.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/EntityBoneCollection.ts#L14)

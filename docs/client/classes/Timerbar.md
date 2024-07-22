@@ -24,7 +24,7 @@ new Timerbar(title, useProgressBar): Timerbar
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `title` | `string` | `undefined` |
 | `useProgressBar` | `boolean` | `false` |
 
@@ -32,24 +32,9 @@ new Timerbar(title, useProgressBar): Timerbar
 
 [`Timerbar`](Timerbar.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:91](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L91)
-
-## Properties
-
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `isVisible` | `private` | `boolean` | `false` |
-| `pbarBgColor` | `private` | `number`[] | `...` |
-| `pbarFgColor` | `private` | `number`[] | `...` |
-| `pbarValue` | `private` | `number` | `0.0` |
-| `sprite` | `private` | `null` \| [`Sprite`](Sprite.md) | `undefined` |
-| `text` | `private` | `string` | `''` |
-| `textColor` | `private` | `number`[] | `...` |
-| `title` | `private` | `string` | `''` |
-| `usePlayerStyle` | `private` | `boolean` | `false` |
-| `useProgressBar` | `private` | `boolean` | `false` |
+[src/client/ui/Timerbar.ts:91](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L91)
 
 ## Accessors
 
@@ -66,16 +51,16 @@ set PlayerStyle(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:212](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L212)
+[src/client/ui/Timerbar.ts:212](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L212)
 
 ***
 
@@ -92,16 +77,16 @@ set Progress(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:140](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L140)
+[src/client/ui/Timerbar.ts:140](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L140)
 
 ***
 
@@ -118,16 +103,16 @@ set ProgressbarBgColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` \| `number`[] |
 
 #### Returns
 
 `number` \| `number`[]
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:182](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L182)
+[src/client/ui/Timerbar.ts:182](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L182)
 
 ***
 
@@ -144,16 +129,16 @@ set ProgressbarFgColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` \| `number`[] |
 
 #### Returns
 
 `number` \| `number`[]
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:195](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L195)
+[src/client/ui/Timerbar.ts:195](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L195)
 
 ***
 
@@ -167,9 +152,9 @@ get Sprite(): null | Sprite
 
 `null` \| [`Sprite`](Sprite.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:216](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L216)
+[src/client/ui/Timerbar.ts:216](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L216)
 
 ***
 
@@ -186,16 +171,16 @@ set Text(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:128](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L128)
+[src/client/ui/Timerbar.ts:128](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L128)
 
 ***
 
@@ -212,16 +197,16 @@ set TextColor(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` \| `number`[] |
 
 #### Returns
 
 `number` \| `number`[]
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:169](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L169)
+[src/client/ui/Timerbar.ts:169](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L169)
 
 ***
 
@@ -238,16 +223,16 @@ set Title(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:120](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L120)
+[src/client/ui/Timerbar.ts:120](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L120)
 
 ***
 
@@ -261,9 +246,9 @@ get UseProgressBar(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:136](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L136)
+[src/client/ui/Timerbar.ts:136](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L136)
 
 ***
 
@@ -280,13 +265,13 @@ set Visible(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Timerbar.ts:148](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Timerbar.ts#L148)
+[src/client/ui/Timerbar.ts:148](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Timerbar.ts#L148)

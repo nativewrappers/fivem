@@ -19,7 +19,7 @@ new Sprite(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `textureDict` | `string` | `undefined` |
 | `textureName` | `string` | `undefined` |
 | `pos`? | [`Point`](Point.md) | `undefined` |
@@ -31,21 +31,20 @@ new Sprite(
 
 [`Sprite`](Sprite.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L14)
+[src/client/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L14)
 
 ## Properties
 
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `_textureDict` | `private` | `string` |
-| `color` | `public` | [`Color`](Color.md) |
-| `heading` | `public` | `number` |
-| `pos` | `public` | [`Point`](Point.md) |
-| `size` | `public` | [`Size`](Size.md) |
-| `textureName` | `public` | `string` |
-| `visible` | `public` | `boolean` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `color` | `public` | [`Color`](Color.md) | [src/client/ui/Sprite.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L9) |
+| `heading` | `public` | `number` | [src/client/ui/Sprite.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L8) |
+| `pos` | `public` | [`Point`](Point.md) | [src/client/ui/Sprite.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L6) |
+| `size` | `public` | [`Size`](Size.md) | [src/client/ui/Sprite.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L7) |
+| `textureName` | `public` | `string` | [src/client/ui/Sprite.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L5) |
+| `visible` | `public` | `boolean` | [src/client/ui/Sprite.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L10) |
 
 ## Accessors
 
@@ -59,9 +58,9 @@ get IsTextureDictionaryLoaded(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Sprite.ts:51](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L51)
+[src/client/ui/Sprite.ts:51](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L51)
 
 ***
 
@@ -78,16 +77,16 @@ set TextureDict(v): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `v` | `string` |
 
 #### Returns
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Sprite.ts:47](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L47)
+[src/client/ui/Sprite.ts:47](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L47)
 
 ## Methods
 
@@ -102,16 +101,16 @@ draw(resolution?): void
 ##### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `resolution`? | [`Size`](Size.md) |
 
 ##### Returns
 
 `void`
 
-##### Source
+##### Defined in
 
-[src/client/ui/Sprite.ts:55](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L55)
+[src/client/ui/Sprite.ts:55](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L55)
 
 #### draw(textureDictionary, textureName, pos, size, heading, color, loadTexture, resolution)
 
@@ -130,7 +129,7 @@ draw(
 ##### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `textureDictionary`? | `string` |
 | `textureName`? | `string` |
 | `pos`? | [`Point`](Point.md) |
@@ -144,9 +143,9 @@ draw(
 
 `void`
 
-##### Source
+##### Defined in
 
-[src/client/ui/Sprite.ts:56](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L56)
+[src/client/ui/Sprite.ts:56](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L56)
 
 ***
 
@@ -160,6 +159,6 @@ loadTextureDictionary(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Sprite.ts:31](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Sprite.ts#L31)
+[src/client/ui/Sprite.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Sprite.ts#L31)

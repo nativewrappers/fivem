@@ -15,22 +15,16 @@ new ParticleEffectAsset(assetName): ParticleEffectAsset
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `assetName` | `string` |
 
 #### Returns
 
 [`ParticleEffectAsset`](ParticleEffectAsset.md)
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L18)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `assetName` | `private` | `string` |
+[src/client/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L18)
 
 ## Accessors
 
@@ -46,9 +40,9 @@ Returns the name of the asset. Same as AssetName.
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L12)
+[src/client/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L12)
 
 ***
 
@@ -64,9 +58,9 @@ Get the name of the particle effect.
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L25)
+[src/client/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L25)
 
 ***
 
@@ -82,9 +76,9 @@ Get whether the particle effect has loaded into game memory.
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L32)
+[src/client/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L32)
 
 ## Methods
 
@@ -100,9 +94,9 @@ Allow game engine to safely unload particle effect model from memory.
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L139)
+[src/client/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L139)
 
 ***
 
@@ -117,32 +111,16 @@ Load a particle effect into the game memory.
 #### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `timeout` | `number` | Max time to load Particle Effect |
 
 #### Returns
 
 `Promise`\<`boolean`\>
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L119)
-
-***
-
-### setNextCall()
-
-```ts
-private setNextCall(): boolean
-```
-
-#### Returns
-
-`boolean`
-
-#### Source
-
-[src/client/ParticleEffectAsset.ts:147](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L147)
+[src/client/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L119)
 
 ***
 
@@ -162,20 +140,20 @@ Start a particle effect at a world position.
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `effectName` | `string` | `undefined` | Name of effect. |
 | `pos` | [`Vector3`](Vector3.md) | `undefined` | - |
-| `rot` | [`Vector3`](Vector3.md) | `undefined` | Rotation from entity position. |
+| `rot` | [`Vector3`](Vector3.md) | `...` | Rotation from entity position. |
 | `scale` | `number` | `1.0` | Size of the effect. |
-| `invertAxis` | [`InvertAxis`](../interfaces/InvertAxis.md) | `undefined` | Which axis to invert (default none). |
+| `invertAxis` | [`InvertAxis`](../interfaces/InvertAxis.md) | `...` | Which axis to invert (default none). |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L44)
+[src/client/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L44)
 
 ***
 
@@ -196,21 +174,21 @@ Start a particle effect on an entity
 #### Parameters
 
 | Parameter | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
+| ------ | ------ | ------ | ------ |
 | `effectName` | `string` | `undefined` | Name of effect. |
 | `entity` | [`BaseEntity`](BaseEntity.md) | `undefined` | Entity to use effect on. |
-| `off` | [`Vector3`](Vector3.md) | `undefined` | Offset from entity position. |
-| `rot` | [`Vector3`](Vector3.md) | `undefined` | Rotation from entity position. |
+| `off` | [`Vector3`](Vector3.md) | `...` | Offset from entity position. |
+| `rot` | [`Vector3`](Vector3.md) | `...` | Rotation from entity position. |
 | `scale` | `number` | `1.0` | Size of the effect. |
-| `invertAxis` | [`InvertAxis`](../interfaces/InvertAxis.md) | `undefined` | Which axis to invert (default none). |
+| `invertAxis` | [`InvertAxis`](../interfaces/InvertAxis.md) | `...` | Which axis to invert (default none). |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L84)
+[src/client/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L84)
 
 ***
 
@@ -224,6 +202,6 @@ toString(): string
 
 `string`
 
-#### Source
+#### Defined in
 
-[src/client/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ParticleEffectAsset.ts#L143)
+[src/client/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ParticleEffectAsset.ts#L143)

@@ -13,7 +13,7 @@ new VehicleDoor(owner, index): VehicleDoor
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `owner` | [`Vehicle`](Vehicle.md) |
 | `index` | [`VehicleDoorIndex`](../enumerations/VehicleDoorIndex.md) |
 
@@ -21,16 +21,9 @@ new VehicleDoor(owner, index): VehicleDoor
 
 [`VehicleDoor`](VehicleDoor.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L8)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `_index` | `private` | [`VehicleDoorIndex`](../enumerations/VehicleDoorIndex.md) |
-| `_owner` | `private` | [`Vehicle`](Vehicle.md) |
+[src/client/models/VehicleDoor.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L8)
 
 ## Accessors
 
@@ -47,16 +40,16 @@ set AngleRatio(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:21](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L21)
+[src/client/models/VehicleDoor.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L21)
 
 ***
 
@@ -69,12 +62,12 @@ set CanBeBroken(value): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `value` | `boolean` |
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:29](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L29)
+[src/client/models/VehicleDoor.ts:29](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L29)
 
 ***
 
@@ -91,16 +84,16 @@ set Index(index): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `index` | [`VehicleDoorIndex`](../enumerations/VehicleDoorIndex.md) |
 
 #### Returns
 
 [`VehicleDoorIndex`](../enumerations/VehicleDoorIndex.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:13](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L13)
+[src/client/models/VehicleDoor.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L13)
 
 ***
 
@@ -114,9 +107,9 @@ get IsBroken(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:41](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L41)
+[src/client/models/VehicleDoor.ts:41](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L41)
 
 ***
 
@@ -130,9 +123,9 @@ get IsFullyOpen(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:37](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L37)
+[src/client/models/VehicleDoor.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L37)
 
 ***
 
@@ -146,9 +139,9 @@ get IsOpen(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:33](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L33)
+[src/client/models/VehicleDoor.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L33)
 
 ***
 
@@ -162,9 +155,9 @@ get Vehicle(): Vehicle
 
 [`Vehicle`](Vehicle.md)
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:45](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L45)
+[src/client/models/VehicleDoor.ts:45](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L45)
 
 ## Methods
 
@@ -177,16 +170,16 @@ break(stayInTheWorld): void
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `stayInTheWorld` | `boolean` | `true` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:57](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L57)
+[src/client/models/VehicleDoor.ts:57](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L57)
 
 ***
 
@@ -199,16 +192,16 @@ close(instantly): void
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `instantly` | `boolean` | `false` |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:53](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L53)
+[src/client/models/VehicleDoor.ts:53](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L53)
 
 ***
 
@@ -221,7 +214,7 @@ open(loose, instantly): void
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `loose` | `boolean` | `false` |
 | `instantly` | `boolean` | `false` |
 
@@ -229,6 +222,6 @@ open(loose, instantly): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/models/VehicleDoor.ts:49](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/models/VehicleDoor.ts#L49)
+[src/client/models/VehicleDoor.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/models/VehicleDoor.ts#L49)

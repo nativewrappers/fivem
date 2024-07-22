@@ -11,25 +11,25 @@ function enumValues<T>(enumObj): IterableIterator<T>
 EnumValues - iterate over enum values
 Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208
 
-### Type parameters
+### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* `string` |
 
 ### Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `enumObj` | `object` |  |
 
 ### Returns
 
 `IterableIterator`\<`T`\>
 
-### Source
+### Defined in
 
-[src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/utils/enumValues.ts#L7)
+[src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/enumValues.ts#L7)
 
 ## enumValues(enumObj)
 
@@ -37,22 +37,22 @@ Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issueco
 function enumValues<T>(enumObj): IterableIterator<Exclude<T, string>>
 ```
 
-### Type parameters
+### Type Parameters
 
-| Type parameter |
-| :------ |
+| Type Parameter |
+| ------ |
 | `T` *extends* `string` \| `number` |
 
 ### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `enumObj` | `object` |
 
 ### Returns
 
 `IterableIterator`\<`Exclude`\<`T`, `string`\>\>
 
-### Source
+### Defined in
 
-[src/common/utils/enumValues.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/common/utils/enumValues.ts#L8)
+[src/common/utils/enumValues.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/enumValues.ts#L8)

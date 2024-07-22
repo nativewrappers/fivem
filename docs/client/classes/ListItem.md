@@ -13,7 +13,7 @@ new ListItem(name, value): ListItem
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `name` | `string` | `undefined` |
 | `value` | `unknown` | `null` |
 
@@ -21,14 +21,14 @@ new ListItem(name, value): ListItem
 
 [`ListItem`](ListItem.md)
 
-#### Source
+#### Defined in
 
-[src/client/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/menu/modules/ListItem.ts#L9)
+[src/client/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/modules/ListItem.ts#L9)
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `id` | `readonly` | `string` | `...` |
-| `name` | `public` | `string` | `undefined` |
-| `value` | `public` | `unknown` | `undefined` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `id` | `readonly` | `string` | [src/client/ui/menu/modules/ListItem.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/modules/ListItem.ts#L4) |
+| `name` | `public` | `string` | [src/client/ui/menu/modules/ListItem.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/modules/ListItem.ts#L6) |
+| `value` | `public` | `unknown` | [src/client/ui/menu/modules/ListItem.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/menu/modules/ListItem.ts#L7) |

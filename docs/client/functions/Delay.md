@@ -9,13 +9,13 @@ function Delay(milliseconds): Promise<void>
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `milliseconds` | `number` |
 
 ## Returns
 
 `Promise`\<`void`\>
 
-## Source
+## Defined in
 
 lib/common/utils/index.d.ts:9

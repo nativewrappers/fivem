@@ -17,10 +17,10 @@ struct WeaponHudStatsData
 
 ## Properties
 
-| Property | Type |
-| :------ | :------ |
-| `hudAccuracy` | `number` |
-| `hudCapacity` | `number` |
-| `hudDamage` | `number` |
-| `hudRange` | `number` |
-| `hudSpeed` | `number` |
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| `hudAccuracy` | `number` | [src/client/weapon/WeaponHudStats.ts:23](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/WeaponHudStats.ts#L23) |
+| `hudCapacity` | `number` | [src/client/weapon/WeaponHudStats.ts:22](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/WeaponHudStats.ts#L22) |
+| `hudDamage` | `number` | [src/client/weapon/WeaponHudStats.ts:20](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/WeaponHudStats.ts#L20) |
+| `hudRange` | `number` | [src/client/weapon/WeaponHudStats.ts:24](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/WeaponHudStats.ts#L24) |
+| `hudSpeed` | `number` | [src/client/weapon/WeaponHudStats.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weapon/WeaponHudStats.ts#L21) |

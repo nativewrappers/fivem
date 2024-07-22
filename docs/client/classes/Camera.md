@@ -13,23 +13,22 @@ new Camera(handle): Camera
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `handle` | `number` |
 
 #### Returns
 
 [`Camera`](Camera.md)
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:24](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L24)
+[src/client/Camera.ts:24](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L24)
 
 ## Properties
 
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `handle` | `private` | `number` | `undefined` |
-| `shakeNames` | `readonly` | `string`[] | `...` |
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| `shakeNames` | `readonly` | `string`[] | [src/client/Camera.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L8) |
 
 ## Accessors
 
@@ -42,12 +41,12 @@ set DepthOfFieldStrength(strength): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `strength` | `number` |
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:142](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L142)
+[src/client/Camera.ts:142](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L142)
 
 ***
 
@@ -66,16 +65,16 @@ set Direction(direction): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `direction` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:61](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L61)
+[src/client/Camera.ts:61](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L61)
 
 ***
 
@@ -92,16 +91,16 @@ set FarClip(farClip): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `farClip` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:122](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L122)
+[src/client/Camera.ts:122](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L122)
 
 ***
 
@@ -118,16 +117,16 @@ set FarDepthOfField(farDepthOfField): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `farDepthOfField` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:134](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L134)
+[src/client/Camera.ts:134](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L134)
 
 ***
 
@@ -144,16 +143,16 @@ set FieldOfView(fieldOfView): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `fieldOfView` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:106](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L106)
+[src/client/Camera.ts:106](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L106)
 
 ***
 
@@ -167,9 +166,9 @@ get ForwardVector(): Vector3
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:83](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L83)
+[src/client/Camera.ts:83](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L83)
 
 ***
 
@@ -183,9 +182,9 @@ get Handle(): number
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:28](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L28)
+[src/client/Camera.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L28)
 
 ***
 
@@ -202,16 +201,16 @@ set IsActive(active): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `active` | `boolean` |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:32](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L32)
+[src/client/Camera.ts:32](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L32)
 
 ***
 
@@ -225,9 +224,9 @@ get IsInterpolating(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:229](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L229)
+[src/client/Camera.ts:229](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L229)
 
 ***
 
@@ -241,9 +240,9 @@ get IsShaking(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:158](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L158)
+[src/client/Camera.ts:158](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L158)
 
 ***
 
@@ -256,12 +255,12 @@ set MotionBlurStrength(strength): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `strength` | `number` |
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:146](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L146)
+[src/client/Camera.ts:146](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L146)
 
 ***
 
@@ -278,16 +277,16 @@ set NearClip(nearClip): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `nearClip` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:114](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L114)
+[src/client/Camera.ts:114](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L114)
 
 ***
 
@@ -300,12 +299,12 @@ set NearDepthOfField(nearDepthOfField): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `nearDepthOfField` | `number` |
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:130](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L130)
+[src/client/Camera.ts:130](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L130)
 
 ***
 
@@ -322,16 +321,16 @@ set Position(position): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:40](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L40)
+[src/client/Camera.ts:40](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L40)
 
 ***
 
@@ -348,16 +347,16 @@ set Rotation(rotation): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `rotation` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:48](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L48)
+[src/client/Camera.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L48)
 
 ***
 
@@ -370,12 +369,12 @@ set ShakeAmplitude(amplitude): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `amplitude` | `number` |
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:162](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L162)
+[src/client/Camera.ts:162](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L162)
 
 ## Methods
 
@@ -388,7 +387,7 @@ attachTo(object, offset): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `object` | [`BaseEntity`](BaseEntity.md) \| [`PedBone`](PedBone.md) |
 | `offset` | [`Vector3`](Vector3.md) |
 
@@ -396,9 +395,9 @@ attachTo(object, offset): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:233](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L233)
+[src/client/Camera.ts:233](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L233)
 
 ***
 
@@ -412,9 +411,9 @@ delete(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:253](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L253)
+[src/client/Camera.ts:253](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L253)
 
 ***
 
@@ -428,9 +427,9 @@ detach(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:249](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L249)
+[src/client/Camera.ts:249](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L249)
 
 ***
 
@@ -444,9 +443,9 @@ exists(): boolean
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:257](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L257)
+[src/client/Camera.ts:257](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L257)
 
 ***
 
@@ -463,7 +462,7 @@ interpTo(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `to` | [`Camera`](Camera.md) |
 | `duration` | `number` |
 | `easePosition` | `boolean` |
@@ -473,9 +472,9 @@ interpTo(
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:214](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L214)
+[src/client/Camera.ts:214](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L214)
 
 ***
 
@@ -492,7 +491,7 @@ rotation): Promise<void>
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `animName` | `string` |
 | `animDict` | `string` |
 | `position` | [`Vector3`](Vector3.md) |
@@ -502,9 +501,9 @@ rotation): Promise<void>
 
 `Promise`\<`void`\>
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:166](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L166)
+[src/client/Camera.ts:166](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L166)
 
 ***
 
@@ -517,7 +516,7 @@ pointAt(target, offset): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `target` | [`BaseEntity`](BaseEntity.md) \| [`Vector3`](Vector3.md) \| [`PedBone`](PedBone.md) |
 | `offset` | [`Vector3`](Vector3.md) |
 
@@ -525,9 +524,9 @@ pointAt(target, offset): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:189](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L189)
+[src/client/Camera.ts:189](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L189)
 
 ***
 
@@ -540,7 +539,7 @@ shake(shakeType, amplitude): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `shakeType` | [`CameraShake`](../enumerations/CameraShake.md) |
 | `amplitude` | `number` |
 
@@ -548,9 +547,9 @@ shake(shakeType, amplitude): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:150](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L150)
+[src/client/Camera.ts:150](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L150)
 
 ***
 
@@ -564,9 +563,9 @@ stopPointing(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:210](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L210)
+[src/client/Camera.ts:210](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L210)
 
 ***
 
@@ -580,6 +579,6 @@ stopShaking(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/Camera.ts:154](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Camera.ts#L154)
+[src/client/Camera.ts:154](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Camera.ts#L154)

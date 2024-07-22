@@ -1,6 +1,6 @@
 [@nativewrappers/fivem](../../README.md) / [server](../README.md) / NetEvent
 
-# Type alias: NetEvent()
+# Type Alias: NetEvent()
 
 ```ts
 type NetEvent: (player, ...args) => void;
@@ -9,7 +9,7 @@ type NetEvent: (player, ...args) => void;
 ## Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `player` | [`Player`](../classes/Player.md) |
 | ...`args` | `any`[] |
 
@@ -17,6 +17,6 @@ type NetEvent: (player, ...args) => void;
 
 `void`
 
-## Source
+## Defined in
 
-[src/server/Events.ts:6](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/server/Events.ts#L6)
+[src/server/Events.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/server/Events.ts#L6)

@@ -14,35 +14,7 @@ new Effects(): Effects
 
 [`Effects`](Effects.md)
 
-## Properties
-
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `effects` | `private` | `string`[] | `...` |
-
 ## Methods
-
-### effectToString()
-
-```ts
-static private effectToString(screenEffect): string
-```
-
-#### Parameters
-
-| Parameter | Type |
-| :------ | :------ |
-| `screenEffect` | [`ScreenEffect`](../enumerations/ScreenEffect.md) |
-
-#### Returns
-
-`string`
-
-#### Source
-
-[src/client/ui/Effects.ts:104](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Effects.ts#L104)
-
-***
 
 ### isActive()
 
@@ -53,16 +25,16 @@ static isActive(screenEffect): boolean
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `screenEffect` | [`ScreenEffect`](../enumerations/ScreenEffect.md) |
 
 #### Returns
 
 `boolean`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Effects.ts:16](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Effects.ts#L16)
+[src/client/ui/Effects.ts:16](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Effects.ts#L16)
 
 ***
 
@@ -78,7 +50,7 @@ static start(
 #### Parameters
 
 | Parameter | Type | Default value |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `effectName` | [`ScreenEffect`](../enumerations/ScreenEffect.md) | `undefined` |
 | `duration` | `number` | `0` |
 | `looped` | `boolean` | `false` |
@@ -87,9 +59,9 @@ static start(
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Effects.ts:4](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Effects.ts#L4)
+[src/client/ui/Effects.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Effects.ts#L4)
 
 ***
 
@@ -102,13 +74,13 @@ static stop(screenEffect?): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `screenEffect`? | [`ScreenEffect`](../enumerations/ScreenEffect.md) |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/ui/Effects.ts:8](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/ui/Effects.ts#L8)
+[src/client/ui/Effects.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Effects.ts#L8)

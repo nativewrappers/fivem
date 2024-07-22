@@ -6,15 +6,15 @@ List of possible entity intersections. Used for raycasting.
 
 ## Enumeration Members
 
-| Enumeration Member | Value |
-| :------ | :------ |
-| `Everything` | `-1` |
-| `Foliage` | `256` |
-| `None` | `0` |
-| `Objects` | `16` |
-| `Peds` | `8` |
-| `PedsSimpleCollision` | `4` |
-| `Unk3` | `128` |
-| `Vehicles` | `2` |
-| `Water` | `32` |
-| `World` | `1` |
+| Enumeration Member | Value | Defined in |
+| ------ | ------ | ------ |
+| `Everything` | `-1` | [src/client/enums/IntersectOptions.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L5) |
+| `Foliage` | `256` | [src/client/enums/IntersectOptions.ts:14](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L14) |
+| `None` | `0` | [src/client/enums/IntersectOptions.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L6) |
+| `Objects` | `16` | [src/client/enums/IntersectOptions.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L11) |
+| `Peds` | `8` | [src/client/enums/IntersectOptions.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L10) |
+| `PedsSimpleCollision` | `4` | [src/client/enums/IntersectOptions.ts:9](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L9) |
+| `Unk3` | `128` | [src/client/enums/IntersectOptions.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L13) |
+| `Vehicles` | `2` | [src/client/enums/IntersectOptions.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L8) |
+| `Water` | `32` | [src/client/enums/IntersectOptions.ts:12](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L12) |
+| `World` | `1` | [src/client/enums/IntersectOptions.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/IntersectOptions.ts#L7) |

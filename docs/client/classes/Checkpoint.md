@@ -13,26 +13,16 @@ new Checkpoint(handle): Checkpoint
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `handle` | `number` |
 
 #### Returns
 
 [`Checkpoint`](Checkpoint.md)
 
-#### Source
+#### Defined in
 
-[src/client/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Checkpoint.ts#L11)
-
-## Properties
-
-| Property | Modifier | Type | Default value |
-| :------ | :------ | :------ | :------ |
-| `handle` | `private` | `number` | `undefined` |
-| `icon` | `private` | [`CheckpointIcon`](../enumerations/CheckpointIcon.md) | `CheckpointIcon.Empty` |
-| `position` | `private` | [`Vector3`](Vector3.md) | `...` |
-| `radius` | `private` | `number` | `0` |
-| `targetPosition` | `private` | [`Vector3`](Vector3.md) | `...` |
+[src/client/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Checkpoint.ts#L11)
 
 ## Accessors
 
@@ -49,16 +39,16 @@ set Icon(icon): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `icon` | [`CheckpointIcon`](../enumerations/CheckpointIcon.md) |
 
 #### Returns
 
 [`CheckpointIcon`](../enumerations/CheckpointIcon.md)
 
-#### Source
+#### Defined in
 
-[src/client/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Checkpoint.ts#L31)
+[src/client/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Checkpoint.ts#L31)
 
 ***
 
@@ -75,16 +65,16 @@ set Position(position): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Checkpoint.ts#L15)
+[src/client/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Checkpoint.ts#L15)
 
 ***
 
@@ -101,16 +91,16 @@ set Radius(radius): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `radius` | `number` |
 
 #### Returns
 
 `number`
 
-#### Source
+#### Defined in
 
-[src/client/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Checkpoint.ts#L48)
+[src/client/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Checkpoint.ts#L48)
 
 ***
 
@@ -127,13 +117,13 @@ set TargetPosition(targetPosition): void
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `targetPosition` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 [`Vector3`](Vector3.md)
 
-#### Source
+#### Defined in
 
-[src/client/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/Checkpoint.ts#L23)
+[src/client/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/Checkpoint.ts#L23)

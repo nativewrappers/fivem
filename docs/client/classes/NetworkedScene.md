@@ -21,7 +21,7 @@ new NetworkedScene(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `pos` | [`Vector3`](Vector3.md) |
 | `rot` | [`Vector3`](Vector3.md) |
 | `rotationOrder` | `number` |
@@ -35,15 +35,9 @@ new NetworkedScene(
 
 [`NetworkedScene`](NetworkedScene.md)
 
-#### Source
+#### Defined in
 
-[src/client/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/NetworkedScene.ts#L5)
-
-## Properties
-
-| Property | Modifier | Type |
-| :------ | :------ | :------ |
-| `scene` | `private` | `number` |
+[src/client/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/NetworkedScene.ts#L5)
 
 ## Methods
 
@@ -62,7 +56,7 @@ addEntity(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `entity` | [`BaseEntity`](BaseEntity.md) |
 | `animDict` | `string` |
 | `animName` | `string` |
@@ -74,9 +68,9 @@ addEntity(
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/NetworkedScene.ts#L56)
+[src/client/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/NetworkedScene.ts#L56)
 
 ***
 
@@ -98,7 +92,7 @@ addPed(
 #### Parameters
 
 | Parameter | Type |
-| :------ | :------ |
+| ------ | ------ |
 | `ped` | [`Ped`](Ped.md) |
 | `animDict` | `string` |
 | `animName` | `string` |
@@ -113,9 +107,9 @@ addPed(
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/NetworkedScene.ts#L31)
+[src/client/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/NetworkedScene.ts#L31)
 
 ***
 
@@ -129,9 +123,9 @@ start(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/NetworkedScene.ts#L75)
+[src/client/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/NetworkedScene.ts#L75)
 
 ***
 
@@ -145,6 +139,6 @@ stop(): void
 
 `void`
 
-#### Source
+#### Defined in
 
-[src/client/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/NetworkedScene.ts#L79)
+[src/client/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/NetworkedScene.ts#L79)

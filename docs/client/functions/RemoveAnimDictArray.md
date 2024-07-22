@@ -11,13 +11,13 @@ A utility to unload multiple animation dictionary
 ## Parameters
 
 | Parameter | Type | Description |
-| :------ | :------ | :------ |
+| ------ | ------ | ------ |
 | `animDict` | `string`[] | the animation dictionaries to unload |
 
 ## Returns
 
 `void`
 
-## Source
+## Defined in
 
-[src/client/utils/Animations.ts:62](https://github.com/nativewrappers/fivem/blob/dc30be651dd1d99507081f19ee3707fad2d3aa44/src/client/utils/Animations.ts#L62)
+[src/client/utils/Animations.ts:62](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/Animations.ts#L62)
