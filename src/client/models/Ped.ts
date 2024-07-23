@@ -706,12 +706,8 @@ export class Ped extends BaseEntity {
     return new Ped(ClonePed(this.handle, false, false, false));
   }
 
-  public exists(ped?: Ped): boolean {
-    if (!ped) {
-      return super.exists() && GetEntityType(this.handle) === 1;
-    }
-
-    return ped?.exists() ?? false;
+  public exists(): boolean {
+    return super.exists() && GetEntityType(this.handle) === 1;
   }
 
   public isFacingPed(ped: Ped, angle = 25.0): boolean {
