@@ -24,9 +24,9 @@ export class Ped extends BaseEntity {
     return new Ped(handle);
   }
 
-  public static fromNetworkId(networkId: number, errorOnInvalid = false): Ped | null {
-    if (errorOnInvalid && NetworkDoesEntityExistWithNetworkId(networkId)) {
-      throw new Error(`Entity with ${networkId} doesn't exist`);
+  public static fromNetworkId(networkId: number): Ped | null {
+    if (!NetworkDoesEntityExistWithNetworkId(networkId)) {
+      return null;
     }
 
     return new Ped(NetworkGetEntityFromNetworkId(networkId));

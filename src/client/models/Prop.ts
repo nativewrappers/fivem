@@ -10,9 +10,9 @@ export class Prop extends BaseEntity {
     return new Prop(handle);
   }
 
-  public static fromNetworkId(networkId: number, errorOnInvalid = false): Prop | null {
-    if (errorOnInvalid && NetworkDoesEntityExistWithNetworkId(networkId)) {
-      throw new Error(`Entity with ${networkId} doesn't exist`);
+  public static fromNetworkId(networkId: number): Prop | null {
+    if (!NetworkDoesEntityExistWithNetworkId(networkId)) {
+      return null;
     }
 
     return new Prop(NetworkGetEntityFromNetworkId(networkId));
