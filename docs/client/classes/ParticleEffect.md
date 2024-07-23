@@ -27,20 +27,20 @@ Creates a particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:26](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L26)
+[src/client/ParticleEffect.ts:26](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L26)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `asset` | `readonly` | [`ParticleEffectAsset`](ParticleEffectAsset.md) | `undefined` | [src/client/ParticleEffect.ts:10](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L10) |
-| `color` | `protected` | [`Color`](Color.md) | `Color.Transparent` | [src/client/ParticleEffect.ts:14](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L14) |
-| `effectName` | `readonly` | `string` | `undefined` | [src/client/ParticleEffect.ts:11](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L11) |
-| `invertAxis` | `protected` | [`InvertAxis`](../interfaces/InvertAxis.md) | `undefined` | [src/client/ParticleEffect.ts:17](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L17) |
-| `offset` | `protected` | [`Vector3`](Vector3.md) | `undefined` | [src/client/ParticleEffect.ts:12](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L12) |
-| `range` | `protected` | `number` | `1.0` | [src/client/ParticleEffect.ts:16](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L16) |
-| `rotation` | `protected` | [`Vector3`](Vector3.md) | `undefined` | [src/client/ParticleEffect.ts:13](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L13) |
-| `scale` | `protected` | `number` | `1.0` | [src/client/ParticleEffect.ts:15](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L15) |
+| `asset` | `readonly` | [`ParticleEffectAsset`](ParticleEffectAsset.md) | `undefined` | [src/client/ParticleEffect.ts:10](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L10) |
+| `color` | `protected` | [`Color`](Color.md) | `Color.Transparent` | [src/client/ParticleEffect.ts:14](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L14) |
+| `effectName` | `readonly` | `string` | `undefined` | [src/client/ParticleEffect.ts:11](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L11) |
+| `invertAxis` | `protected` | [`InvertAxis`](../interfaces/InvertAxis.md) | `undefined` | [src/client/ParticleEffect.ts:17](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L17) |
+| `offset` | `protected` | [`Vector3`](Vector3.md) | `undefined` | [src/client/ParticleEffect.ts:12](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L12) |
+| `range` | `protected` | `number` | `1.0` | [src/client/ParticleEffect.ts:16](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L16) |
+| `rotation` | `protected` | [`Vector3`](Vector3.md) | `undefined` | [src/client/ParticleEffect.ts:13](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L13) |
+| `scale` | `protected` | `number` | `1.0` | [src/client/ParticleEffect.ts:15](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L15) |
 
 ## Accessors
 
@@ -58,7 +58,7 @@ Get the name of the particle effect asset. Same as ParticleEffect.AssetName.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:132](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L132)
+[src/client/ParticleEffect.ts:132](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L132)
 
 ***
 
@@ -76,7 +76,7 @@ Get the name of the particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:139](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L139)
+[src/client/ParticleEffect.ts:139](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L139)
 
 ***
 
@@ -94,7 +94,7 @@ Get the particle effect handle.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:35](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L35)
+[src/client/ParticleEffect.ts:35](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L35)
 
 ***
 
@@ -124,7 +124,7 @@ Set the inverted axis of the particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:102](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L102)
+[src/client/ParticleEffect.ts:102](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L102)
 
 ***
 
@@ -142,7 +142,7 @@ Get whether particle effect is currently active.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:42](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L42)
+[src/client/ParticleEffect.ts:42](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L42)
 
 ***
 
@@ -172,7 +172,7 @@ Set the range of the particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:87](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L87)
+[src/client/ParticleEffect.ts:87](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L87)
 
 ***
 
@@ -202,7 +202,7 @@ Set the rotation of the particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:61](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L61)
+[src/client/ParticleEffect.ts:61](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L61)
 
 ## Methods
 
@@ -227,7 +227,7 @@ Set a paramaeter of a particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:123](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L123)
+[src/client/ParticleEffect.ts:123](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L123)
 
 ***
 
@@ -243,7 +243,7 @@ abstract start(): boolean
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:46](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L46)
+[src/client/ParticleEffect.ts:46](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L46)
 
 ***
 
@@ -261,7 +261,7 @@ Stop a particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:51](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L51)
+[src/client/ParticleEffect.ts:51](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L51)
 
 ***
 
@@ -279,4 +279,4 @@ Return the particle effect as string. `AssetName`\`EffectName`.
 
 #### Defined in
 
-[src/client/ParticleEffect.ts:146](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ParticleEffect.ts#L146)
+[src/client/ParticleEffect.ts:146](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ParticleEffect.ts#L146)

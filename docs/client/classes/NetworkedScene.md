@@ -37,7 +37,7 @@ new NetworkedScene(
 
 #### Defined in
 
-[src/client/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/NetworkedScene.ts#L5)
+[src/client/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/NetworkedScene.ts#L5)
 
 ## Methods
 
@@ -70,7 +70,7 @@ addEntity(
 
 #### Defined in
 
-[src/client/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/NetworkedScene.ts#L56)
+[src/client/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/NetworkedScene.ts#L56)
 
 ***
 
@@ -109,7 +109,7 @@ addPed(
 
 #### Defined in
 
-[src/client/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/NetworkedScene.ts#L31)
+[src/client/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/NetworkedScene.ts#L31)
 
 ***
 
@@ -125,7 +125,7 @@ start(): void
 
 #### Defined in
 
-[src/client/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/NetworkedScene.ts#L75)
+[src/client/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/NetworkedScene.ts#L75)
 
 ***
 
@@ -141,4 +141,4 @@ stop(): void
 
 #### Defined in
 
-[src/client/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/NetworkedScene.ts#L79)
+[src/client/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/NetworkedScene.ts#L79)

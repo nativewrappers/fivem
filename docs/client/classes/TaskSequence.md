@@ -22,7 +22,7 @@ new TaskSequence(handle?): TaskSequence
 
 #### Defined in
 
-[src/client/TaskSequence.ts:10](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L10)
+[src/client/TaskSequence.ts:11](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L11)
 
 ## Accessors
 
@@ -38,7 +38,7 @@ get AddTask(): undefined | null | Tasks
 
 #### Defined in
 
-[src/client/TaskSequence.ts:44](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L44)
+[src/client/TaskSequence.ts:45](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L45)
 
 ***
 
@@ -54,7 +54,7 @@ get Count(): number
 
 #### Defined in
 
-[src/client/TaskSequence.ts:57](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L57)
+[src/client/TaskSequence.ts:58](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L58)
 
 ***
 
@@ -70,7 +70,7 @@ get Handle(): number
 
 #### Defined in
 
-[src/client/TaskSequence.ts:40](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L40)
+[src/client/TaskSequence.ts:41](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L41)
 
 ***
 
@@ -86,7 +86,7 @@ get IsClosed(): boolean
 
 #### Defined in
 
-[src/client/TaskSequence.ts:53](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L53)
+[src/client/TaskSequence.ts:54](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L54)
 
 ## Methods
 
@@ -108,7 +108,7 @@ close(repeat): void
 
 #### Defined in
 
-[src/client/TaskSequence.ts:31](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L31)
+[src/client/TaskSequence.ts:32](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L32)
 
 ***
 
@@ -124,4 +124,4 @@ dispose(): void
 
 #### Defined in
 
-[src/client/TaskSequence.ts:26](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/TaskSequence.ts#L26)
+[src/client/TaskSequence.ts:27](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/TaskSequence.ts#L27)

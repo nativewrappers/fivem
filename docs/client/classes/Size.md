@@ -23,11 +23,11 @@ new Size(w, h): Size
 
 #### Defined in
 
-[src/client/utils/Size.ts:4](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/Size.ts#L4)
+[src/client/utils/Size.ts:4](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/Size.ts#L4)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `height` | `public` | `number` | [src/client/utils/Size.ts:3](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/Size.ts#L3) |
-| `width` | `public` | `number` | [src/client/utils/Size.ts:2](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/Size.ts#L2) |
+| `height` | `public` | `number` | [src/client/utils/Size.ts:3](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/Size.ts#L3) |
+| `width` | `public` | `number` | [src/client/utils/Size.ts:2](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/Size.ts#L2) |

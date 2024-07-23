@@ -19,4 +19,4 @@ type NetEvent: (player, ...args) => void;
 
 ## Defined in
 
-[src/server/Events.ts:6](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/server/Events.ts#L6)
+[src/server/Events.ts:6](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/server/Events.ts#L6)

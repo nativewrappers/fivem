@@ -26,7 +26,7 @@ Create a RaycastResult object that gets the results from a StartShapeTestRay()
 
 #### Defined in
 
-[src/client/Raycast.ts:74](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L74)
+[src/client/Raycast.ts:74](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L74)
 
 ## Accessors
 
@@ -44,7 +44,7 @@ Whether we hit anything.
 
 #### Defined in
 
-[src/client/Raycast.ts:34](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L34)
+[src/client/Raycast.ts:34](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L34)
 
 ***
 
@@ -62,7 +62,7 @@ Whether the entity hit exists.
 
 #### Defined in
 
-[src/client/Raycast.ts:41](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L41)
+[src/client/Raycast.ts:41](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L41)
 
 ***
 
@@ -80,7 +80,7 @@ Return the entity that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:13](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L13)
+[src/client/Raycast.ts:13](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L13)
 
 ***
 
@@ -98,7 +98,7 @@ Get the position of the entity that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:20](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L20)
+[src/client/Raycast.ts:20](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L20)
 
 ***
 
@@ -116,7 +116,7 @@ Material type that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:48](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L48)
+[src/client/Raycast.ts:48](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L48)
 
 ***
 
@@ -134,7 +134,7 @@ Raycast result's handle.
 
 #### Defined in
 
-[src/client/Raycast.ts:55](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L55)
+[src/client/Raycast.ts:55](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L55)
 
 ***
 
@@ -152,4 +152,4 @@ Return the vector perpendicular to the tangent plane.
 
 #### Defined in
 
-[src/client/Raycast.ts:27](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/Raycast.ts#L27)
+[src/client/Raycast.ts:27](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/Raycast.ts#L27)
