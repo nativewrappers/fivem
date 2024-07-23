@@ -31,15 +31,15 @@ new PointF(
 
 #### Defined in
 
-[src/common/utils/PointF.ts:13](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/PointF.ts#L13)
+[src/common/utils/PointF.ts:13](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/PointF.ts#L13)
 
 ## Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `x` | `number` | [src/common/utils/PointF.ts:4](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/PointF.ts#L4) |
-| `y` | `number` | [src/common/utils/PointF.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/PointF.ts#L5) |
-| `z` | `number` | [src/common/utils/PointF.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/PointF.ts#L6) |
+| `x` | `number` | [src/common/utils/PointF.ts:4](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/PointF.ts#L4) |
+| `y` | `number` | [src/common/utils/PointF.ts:5](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/PointF.ts#L5) |
+| `z` | `number` | [src/common/utils/PointF.ts:6](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/PointF.ts#L6) |
 
 ## Methods
 
@@ -55,4 +55,4 @@ static empty(): PointF
 
 #### Defined in
 
-[src/common/utils/PointF.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/PointF.ts#L10)
+[src/common/utils/PointF.ts:10](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/PointF.ts#L10)

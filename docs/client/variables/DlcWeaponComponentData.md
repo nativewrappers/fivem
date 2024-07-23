@@ -10,4 +10,4 @@ DlcWeaponComponentData
 
 ## Defined in
 
-[src/client/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/weaponComponent/DlcWeaponComponentData.ts#L28)
+[src/client/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/weaponComponent/DlcWeaponComponentData.ts#L28)

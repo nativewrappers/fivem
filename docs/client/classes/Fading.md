@@ -34,7 +34,7 @@ True or false
 
 #### Defined in
 
-[src/client/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L10)
+[src/client/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L10)
 
 ***
 
@@ -54,7 +54,7 @@ True or false
 
 #### Defined in
 
-[src/client/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L19)
+[src/client/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L19)
 
 ***
 
@@ -74,7 +74,7 @@ True or false
 
 #### Defined in
 
-[src/client/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L28)
+[src/client/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L28)
 
 ***
 
@@ -94,7 +94,7 @@ True or false
 
 #### Defined in
 
-[src/client/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L37)
+[src/client/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L37)
 
 ## Methods
 
@@ -118,7 +118,7 @@ Fade in the screen for a certain duration.
 
 #### Defined in
 
-[src/client/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L46)
+[src/client/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L46)
 
 ***
 
@@ -142,4 +142,4 @@ Fade out the screen for a certain duration.
 
 #### Defined in
 
-[src/client/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/Fading.ts#L64)
+[src/client/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/Fading.ts#L64)

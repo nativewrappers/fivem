@@ -8,7 +8,6 @@
 
 | Class | Description |
 | ------ | ------ |
-| [Color](classes/Color.md) | - |
 | [Convar](classes/Convar.md) | - |
 | [Entity](classes/Entity.md) | - |
 | [Events](classes/Events.md) | - |
@@ -40,6 +39,12 @@
 | [cleanPlayerName](functions/cleanPlayerName.md) | - |
 
 ## References
+
+### Color
+
+Re-exports [Color](../client/classes/Color.md)
+
+***
 
 ### Delay
 

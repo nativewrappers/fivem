@@ -39,7 +39,7 @@ static clamp(
 
 #### Defined in
 
-[src/common/utils/Maths.ts:2](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/Maths.ts#L2)
+[src/common/utils/Maths.ts:2](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/Maths.ts#L2)
 
 ***
 
@@ -62,4 +62,4 @@ static getRandomInt(min, max): number
 
 #### Defined in
 
-[src/common/utils/Maths.ts:6](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/Maths.ts#L6)
+[src/common/utils/Maths.ts:6](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/Maths.ts#L6)

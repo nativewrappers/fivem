@@ -41,7 +41,7 @@ static measureString(
 
 #### Defined in
 
-[src/client/utils/String.ts:33](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L33)
+[src/client/utils/String.ts:33](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/String.ts#L33)
 
 ***
 
@@ -68,7 +68,7 @@ static measureStringWidthNoConvert(
 
 #### Defined in
 
-[src/client/utils/String.ts:21](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L21)
+[src/client/utils/String.ts:21](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/String.ts#L21)
 
 ***
 
@@ -90,4 +90,4 @@ static stringToArray(input): string[]
 
 #### Defined in
 
-[src/client/utils/String.ts:5](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/utils/String.ts#L5)
+[src/client/utils/String.ts:5](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/utils/String.ts#L5)

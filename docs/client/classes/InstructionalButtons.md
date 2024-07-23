@@ -41,7 +41,7 @@ Draws native instructional buttons
 
 #### Defined in
 
-[src/client/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/InstructionalButtons.ts#L30)
+[src/client/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/InstructionalButtons.ts#L30)
 
 ## Methods
 
@@ -59,4 +59,4 @@ Renders the instructional button scaleform
 
 #### Defined in
 
-[src/client/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/InstructionalButtons.ts#L60)
+[src/client/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/InstructionalButtons.ts#L60)

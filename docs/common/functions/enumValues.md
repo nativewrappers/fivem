@@ -29,7 +29,7 @@ Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issueco
 
 ### Defined in
 
-[src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/enumValues.ts#L7)
+[src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/enumValues.ts#L7)
 
 ## enumValues(enumObj)
 
@@ -55,4 +55,4 @@ function enumValues<T>(enumObj): IterableIterator<Exclude<T, string>>
 
 ### Defined in
 
-[src/common/utils/enumValues.ts:8](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/common/utils/enumValues.ts#L8)
+[src/common/utils/enumValues.ts:8](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/common/utils/enumValues.ts#L8)
