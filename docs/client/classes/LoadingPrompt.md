@@ -42,7 +42,7 @@ get static IsActive(): boolean
 
 #### Defined in
 
-[src/client/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L49)
+[src/client/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/LoadingPrompt.ts#L49)
 
 ## Methods
 
@@ -58,7 +58,7 @@ static hide(): void
 
 #### Defined in
 
-[src/client/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L43)
+[src/client/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/LoadingPrompt.ts#L43)
 
 ***
 
@@ -83,4 +83,4 @@ Shows a loading prompt.
 
 #### Defined in
 
-[src/client/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/ui/LoadingPrompt.ts#L25)
+[src/client/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/ui/LoadingPrompt.ts#L25)

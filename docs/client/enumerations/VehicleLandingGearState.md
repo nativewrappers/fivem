@@ -6,7 +6,7 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Closing` | `1` | [src/client/enums/Vehicle.ts:210](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L210) |
-| `Deployed` | `0` | [src/client/enums/Vehicle.ts:209](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L209) |
-| `Opening` | `2` | [src/client/enums/Vehicle.ts:211](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L211) |
-| `Retracted` | `3` | [src/client/enums/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/87bcb6b348baa538f549670f784fcd3ed14240d8/src/client/enums/Vehicle.ts#L212) |
+| `Closing` | `1` | [src/client/enums/Vehicle.ts:210](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/enums/Vehicle.ts#L210) |
+| `Deployed` | `0` | [src/client/enums/Vehicle.ts:209](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/enums/Vehicle.ts#L209) |
+| `Opening` | `2` | [src/client/enums/Vehicle.ts:211](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/enums/Vehicle.ts#L211) |
+| `Retracted` | `3` | [src/client/enums/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/09478da418b400a28e2cc17ab86f47c957997aed/src/client/enums/Vehicle.ts#L212) |
