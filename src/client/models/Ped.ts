@@ -36,7 +36,7 @@ export class Ped extends BaseEntity {
   private pedBones: PedBoneCollection | undefined;
   private weapons: WeaponCollection | undefined;
 
-  private readonly speechModifierNames: string[] = [
+  private static readonly speechModifierNames: string[] = [
     'SPEECH_PARAMS_STANDARD',
     'SPEECH_PARAMS_ALLOW_REPEAT',
     'SPEECH_PARAMS_BEAT',
@@ -580,15 +580,15 @@ export class Ped extends BaseEntity {
     voiceName = '',
     modifier: SpeechModifier = SpeechModifier.Standard,
   ): void {
-    if (Number(modifier) >= 0 && Number(modifier) < this.speechModifierNames.length) {
+    if (Number(modifier) >= 0 && Number(modifier) < Ped.speechModifierNames.length) {
       if (voiceName === '') {
-        PlayAmbientSpeech1(this.handle, speechName, this.speechModifierNames[Number(modifier)]);
+        PlayAmbientSpeech1(this.handle, speechName, Ped.speechModifierNames[Number(modifier)]);
       } else {
         PlayAmbientSpeechWithVoice(
           this.handle,
           speechName,
           voiceName,
-          this.speechModifierNames[Number(modifier)],
+          Ped.speechModifierNames[Number(modifier)],
           false,
         );
       }
