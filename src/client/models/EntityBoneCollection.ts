@@ -4,9 +4,6 @@ import type { BaseEntity } from './BaseEntity';
 export class EntityBoneCollection {
   protected readonly owner: BaseEntity;
 
-  private readonly _collection: Enumerator<EntityBone> | undefined;
-  private _currentIndex = -1;
-
   constructor(owner: BaseEntity) {
     this.owner = owner;
   }
