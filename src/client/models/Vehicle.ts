@@ -48,10 +48,10 @@ export class Vehicle extends BaseEntity {
     return new Vehicle(NetworkGetEntityFromNetworkId(networkId));
   }
 
-  private _doors: VehicleDoorCollection | undefined;
-  private _mods: VehicleModCollection | undefined;
-  private _wheels: VehicleWheelCollection | undefined;
-  private _windows: VehicleWindowCollection | undefined;
+  private _doors?: VehicleDoorCollection;
+  private _mods?: VehicleModCollection;
+  private _wheels?: VehicleWheelCollection;
+  private _windows?: VehicleWindowCollection;
   protected type = ClassTypes.Vehicle;
 
   constructor(handle: number) {

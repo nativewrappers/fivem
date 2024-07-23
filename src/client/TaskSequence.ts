@@ -1,6 +1,7 @@
 import { Ped } from './models/Ped';
 import { Tasks } from './Tasks';
 
+// TODO: Figure out why this uses 'null ped'
 export class TaskSequence {
   private static nullPed: Ped;
   private handle = 0;

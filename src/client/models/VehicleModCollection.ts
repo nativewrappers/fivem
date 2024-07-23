@@ -72,6 +72,7 @@ export class VehicleModCollection {
     SetVehicleModKit(this._owner.Handle, 0);
   }
 
+  // TODO: This should return always return a  number
   public get Livery(): number | undefined {
     const modCount = this.getMod(VehicleModType.Livery)?.ModCount;
     if (modCount !== undefined && modCount > 0) {
@@ -80,8 +81,7 @@ export class VehicleModCollection {
     return GetVehicleLivery(this._owner.Handle);
   }
 
-  public set Livery(value: number | undefined) {
-    if (value === undefined) return;
+  public set Livery(value: number) {
     const mod = this.getMod(VehicleModType.Livery);
     if (mod !== undefined && mod.ModCount > 0) {
       mod.Index = value;

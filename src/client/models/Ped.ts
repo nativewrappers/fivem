@@ -33,8 +33,8 @@ export class Ped extends BaseEntity {
   }
 
   protected type = ClassTypes.Ped;
-  private pedBones: PedBoneCollection | undefined;
-  private weapons: WeaponCollection | undefined;
+  private pedBones?: PedBoneCollection;
+  private weapons?: WeaponCollection;
 
   private static readonly speechModifierNames: string[] = [
     'SPEECH_PARAMS_STANDARD',
@@ -475,7 +475,7 @@ export class Ped extends BaseEntity {
     SetPedMotionBlur(this.handle, value);
   }
 
-  public get Task(): Tasks | undefined {
+  public get Task(): Tasks {
     if (!this.tasks) {
       this.tasks = new Tasks(this);
     }

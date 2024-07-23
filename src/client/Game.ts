@@ -90,7 +90,7 @@ export abstract class Game {
    */
   public static get Player(): Player {
     const handle = PlayerId();
-    if (typeof this.cachedPlayer === 'undefined' || handle !== this.cachedPlayer.Handle) {
+    if (this.cachedPlayer === undefined || handle !== this.cachedPlayer.Handle) {
       this.cachedPlayer = new Player(handle);
     }
 

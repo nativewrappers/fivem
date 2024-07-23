@@ -5,7 +5,7 @@ import { BaseEntity, Ped } from './';
 
 export class Player {
   private handle: number;
-  private ped: Ped | undefined;
+  private ped?: Ped;
   private pvp = false;
   private stateBagCookies: number[] = [];
   private source: number;

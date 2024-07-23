@@ -24,8 +24,8 @@ export class Menu {
 
   public visible = false;
 
-  public parentMenu: Menu | undefined;
-  public parentItem: UIMenuItem | undefined;
+  public parentMenu?: Menu;
+  public parentItem?: UIMenuItem;
   public items: UIMenuItem[] = [];
   public children: Map<string, Menu> = new Map();
 
@@ -382,7 +382,7 @@ export class Menu {
     if (!this.children.has(releaseFrom.id)) {
       return false;
     }
-    const menu: Menu | undefined = this.children.get(releaseFrom.id);
+    const menu = this.children.get(releaseFrom.id);
     if (menu instanceof Menu) {
       menu.parentItem = undefined;
       menu.parentMenu = undefined;

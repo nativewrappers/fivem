@@ -6,17 +6,17 @@ import { Menu } from '../../';
 export abstract class AbstractUIMenuPanel {
   public readonly id: string = Crypto.uuidv4();
 
-  protected parentItem: UIMenuItem | undefined;
+  protected parentItem?: UIMenuItem;
   protected enabled = true;
 
-  protected readonly background: Sprite | Rectangle | undefined;
+  protected readonly background?: Sprite | Rectangle;
 
   public get ParentMenu(): Menu | undefined {
     return this.parentItem ? this.parentItem.parent : undefined;
   }
 
   public get ParentItem(): UIMenuItem | undefined {
-    return this.parentItem ?? undefined;
+    return this.parentItem;
   }
 
   public set ParentItem(value: UIMenuItem | undefined) {

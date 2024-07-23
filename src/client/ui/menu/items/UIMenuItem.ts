@@ -356,7 +356,7 @@ export class UIMenuItem {
   public hovered = false;
 
   public offset: Point = new Point(0, 0);
-  public parent: Menu | undefined;
+  public parent?: Menu;
 
   public readonly activated = new LiteEvent();
   public readonly panelActivated = new LiteEvent();

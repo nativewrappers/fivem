@@ -13,10 +13,10 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
   private _lockXAxis = false;
   private _lockYAxis = false;
 
-  private _topText: Text | undefined;
-  private _leftText: Text | undefined;
-  private _rightText: Text | undefined;
-  private _bottomText: Text | undefined;
+  private _topText?: Text;
+  private _leftText?: Text;
+  private _rightText?: Text;
+  private _bottomText?: Text;
 
   private _lastCirclePosition: Point;
 

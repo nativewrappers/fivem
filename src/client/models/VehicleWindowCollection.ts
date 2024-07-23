@@ -13,14 +13,17 @@ export class VehicleWindowCollection {
     this._owner = owner;
   }
 
-  public getWindow(index: VehicleWindowIndex): VehicleWindow | undefined {
-    if (!this._vehicleWindows.has(index)) {
-      this._vehicleWindows.set(index, new VehicleWindow(this._owner, index));
+  public getWindow(index: VehicleWindowIndex): VehicleWindow {
+    let window = this._vehicleWindows.get(index);
+    if (!window) {
+      const vehicleWindow = new VehicleWindow(this._owner, index);
+      this._vehicleWindows.set(index, vehicleWindow);
+      return vehicleWindow;
     }
-    return this._vehicleWindows.get(index);
+    return window;
   }
 
-  public getAllWindows(): (VehicleWindow | null | undefined)[] {
+  public getAllWindows(): (VehicleWindow | null)[] {
     return Object.keys(VehicleWindowIndex)
       .filter(key => !isNaN(Number(key)))
       .map(key => {
@@ -50,7 +53,6 @@ export class VehicleWindowCollection {
   }
 
   public hasWindow(window: VehicleWindowIndex): boolean {
-    if (this._owner.Bones === undefined) return false;
     switch (window) {
       case VehicleWindowIndex.FrontLeftWindow:
         return this._owner.Bones.hasBone('window_lf');
