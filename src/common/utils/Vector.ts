@@ -290,6 +290,74 @@ export class Vector {
   }
 
   /**
+   * Performs an operation between a vector and either another vector or scalar value converting the vector into absolute values.
+   * @param a - The first vector.
+   * @param b - The second vector or scalar value.
+   * @param operator - The function defining the operation to perform.
+   * @returns A new vector resulting from the operation.
+   */
+  private static operateAbsolute<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+    b: VectorLike | number,
+    operator: (x: number, y: number) => number,
+  ): U {
+    let { x, y, z, w } = a;
+    const isNumber = typeof b === 'number';
+
+    x = operator(Math.abs(x), isNumber ? b : Math.abs(b.x ?? 0));
+    y = operator(Math.abs(y), isNumber ? b : Math.abs(b.y ?? 0));
+
+    if (z) z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
+    if (w) w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
+
+    return this.create(x, y, z, w) as unknown as U;
+  }
+
+
+  /**
+   * Subtracts one vector from another or subtracts a scalar value from a vector.
+   * @param a - The vector.
+   * @param b - The second vector or scalar value.
+   * @returns A new vector with subtracted components.
+   */
+  public static subtractAbsolute<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+    b: VectorLike | number,
+  ): U {
+    return this.operateAbsolute(a, b, (x, y) => x - y) as U;
+  }
+
+  /**
+   * Multiplies two vectors by their components, or multiplies a vector by a scalar value.
+   * @param a - The vector.
+   * @param b - The second vector or scalar value.
+   * @returns A new vector with multiplied components.
+   */
+  public static multiplyAbsolute<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+    b: VectorLike | number,
+  ): U {
+    return this.operateAbsolute(a, b, (x, y) => x * y) as U;
+  }
+
+  /**
+   * Divides two vectors by their components, or divides a vector by a scalar value
+   * @param a - The vector.
+   * @param b - The second vector or scalar vector.
+   * @returns A new vector with divided components.
+   */
+  public static divideAbsolute<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+    b: VectorLike | number,
+  ): U {
+    return this.operateAbsolute(a, b, (x, y) => x / y);
+  }
+
+  /**
    * Calculates the dot product of two vectors.
    * @param a - The first vector.
    * @param b - The second vector.
@@ -510,6 +578,27 @@ export class Vector {
    */
   public divide(v: VectorLike | number) {
     return Vector.divide(this, v);
+  }
+
+  /**
+   * @see Vector.subtractAbsolute
+   */
+  public subtractAbsolute(v: VectorLike) {
+    return Vector.subtractAbsolute(this, v);
+  }
+
+  /**
+   * @see Vector.multiply
+   */
+  public multiplyAbsolute(v: VectorLike | number) {
+    return Vector.multiplyAbsolute(this, v);
+  }
+
+  /**
+   * @see Vector.divide
+   */
+  public divideAbsolute(v: VectorLike | number) {
+    return Vector.divideAbsolute(this, v);
   }
 
   /**
