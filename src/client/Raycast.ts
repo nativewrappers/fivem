@@ -40,7 +40,7 @@ abstract class RaycastResult {
    * Whether the entity hit exists.
    */
   public get DidHitEntity(): boolean {
-    return this.entityHandleArg?.Handle !== 0;
+    return this.entityHandleArg !== null && this.entityHandleArg.Handle !== 0;
   }
 
   /**
