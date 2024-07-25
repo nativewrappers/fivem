@@ -316,6 +316,20 @@ export class Vector {
 
 
   /**
+   * Adds two vectors or a scalar value to a vector.
+   * @param a - The first vector or scalar value.
+   * @param b - The second vector or scalar value.
+   * @returns A new vector with incremented components.
+   */
+  public static addAbsolute<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+    b: VectorLike | number,
+  ): U {
+    return this.operateAbsolute(a, b, (x, y) => x + y) as U;
+  }
+
+  /**
    * Subtracts one vector from another or subtracts a scalar value from a vector.
    * @param a - The vector.
    * @param b - The second vector or scalar value.
@@ -578,6 +592,13 @@ export class Vector {
    */
   public divide(v: VectorLike | number) {
     return Vector.divide(this, v);
+  }
+
+  /**
+    * @see Vector.addAbsolute
+    */
+  public addAbsolute(v: VectorLike) {
+    return Vector.addAbsolute(this, v);
   }
 
   /**
