@@ -85,10 +85,9 @@ type InferVector<T> = T extends Vec4 | VectorN<4>
  * A base vector class inherited by all vector classes.
  */
 export class Vector {
-  /**
-   * The type identifier for vectors.
-   */
-  protected type = ClassTypes.Vector2;
+  // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
+  // TO EXIST
+  public type = ClassTypes.Vector2;
 
   protected static create(x: number, y?: number): Vector2;
   protected static create(x: number, y?: number, z?: number): Vector3;
@@ -180,6 +179,7 @@ export class Vector {
 
     return this.create(x, y, z, w) as unknown as U;
   }
+
 
   /**
    * Adds two vectors or a scalar value to a vector.
@@ -635,7 +635,7 @@ export class Vector {
  * Represents a 2-dimensional vector.
  */
 export class Vector2 extends Vector {
-  public type = ClassTypes.Vector2;
+  public readonly type = ClassTypes.Vector2;
 
   public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -653,7 +653,9 @@ export class Vector2 extends Vector {
  * Represents a 3-dimensional vector.
  */
 export class Vector3 extends Vector implements Vec3 {
-  protected type = ClassTypes.Vector3;
+  // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
+  // TO EXIST
+  public readonly type = ClassTypes.Vector3;
   public z: number;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
@@ -694,7 +696,9 @@ export class Vector3 extends Vector implements Vec3 {
  * Represents a 4-dimensional vector.
  */
 export class Vector4 extends Vector {
-  protected type = ClassTypes.Vector4;
+  // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
+  // TO EXIST
+  public readonly type = ClassTypes.Vector4;
   public z: number;
   public w: number;
 
