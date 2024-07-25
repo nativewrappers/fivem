@@ -635,7 +635,9 @@ export class Vector {
  * Represents a 2-dimensional vector.
  */
 export class Vector2 extends Vector {
-  public readonly type = ClassTypes.Vector2;
+  // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
+  // TO EXIST, CHANGING IT WILL BREAK STUFF
+  public type = ClassTypes.Vector2;
 
   public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -654,8 +656,8 @@ export class Vector2 extends Vector {
  */
 export class Vector3 extends Vector implements Vec3 {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
-  // TO EXIST
-  public readonly type = ClassTypes.Vector3;
+  // TO EXIST, CHANGING IT WILL BREAK STUFF
+  public type = ClassTypes.Vector3;
   public z: number;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
@@ -697,8 +699,8 @@ export class Vector3 extends Vector implements Vec3 {
  */
 export class Vector4 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
-  // TO EXIST
-  public readonly type = ClassTypes.Vector4;
+  // TO EXIST, CHANGING IT WILL BREAK STUFF
+  public type = ClassTypes.Vector4;
   public z: number;
   public w: number;
 
