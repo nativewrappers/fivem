@@ -24,7 +24,7 @@ new ParticleEffectAsset(assetName): ParticleEffectAsset
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L18)
+[src/client/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L18)
 
 ## Accessors
 
@@ -42,7 +42,7 @@ Returns the name of the asset. Same as AssetName.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L12)
+[src/client/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L12)
 
 ***
 
@@ -60,7 +60,7 @@ Get the name of the particle effect.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L25)
+[src/client/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L25)
 
 ***
 
@@ -78,7 +78,7 @@ Get whether the particle effect has loaded into game memory.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L32)
+[src/client/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L32)
 
 ## Methods
 
@@ -96,7 +96,7 @@ Allow game engine to safely unload particle effect model from memory.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L139)
+[src/client/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L139)
 
 ***
 
@@ -120,7 +120,7 @@ Load a particle effect into the game memory.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L119)
+[src/client/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L119)
 
 ***
 
@@ -153,7 +153,7 @@ Start a particle effect at a world position.
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L44)
+[src/client/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L44)
 
 ***
 
@@ -188,7 +188,7 @@ Start a particle effect on an entity
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L84)
+[src/client/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L84)
 
 ***
 
@@ -204,4 +204,4 @@ toString(): string
 
 #### Defined in
 
-[src/client/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ParticleEffectAsset.ts#L143)
+[src/client/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ParticleEffectAsset.ts#L143)

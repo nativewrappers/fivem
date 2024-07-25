@@ -6,10 +6,10 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `AllowRotation` | `32` | [src/client/enums/AnimationFlags.ts:6](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L6) |
-| `CancelableWithMovement` | `128` | [src/client/enums/AnimationFlags.ts:7](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L7) |
-| `Loop` | `1` | [src/client/enums/AnimationFlags.ts:3](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L3) |
-| `None` | `0` | [src/client/enums/AnimationFlags.ts:2](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L2) |
-| `RagdollOnCollision` | `4194304` | [src/client/enums/AnimationFlags.ts:8](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L8) |
-| `StayInEndFrame` | `2` | [src/client/enums/AnimationFlags.ts:4](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L4) |
-| `UpperBodyOnly` | `16` | [src/client/enums/AnimationFlags.ts:5](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/enums/AnimationFlags.ts#L5) |
+| `AllowRotation` | `32` | [src/client/enums/AnimationFlags.ts:6](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L6) |
+| `CancelableWithMovement` | `128` | [src/client/enums/AnimationFlags.ts:7](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L7) |
+| `Loop` | `1` | [src/client/enums/AnimationFlags.ts:3](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L3) |
+| `None` | `0` | [src/client/enums/AnimationFlags.ts:2](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L2) |
+| `RagdollOnCollision` | `4194304` | [src/client/enums/AnimationFlags.ts:8](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L8) |
+| `StayInEndFrame` | `2` | [src/client/enums/AnimationFlags.ts:4](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L4) |
+| `UpperBodyOnly` | `16` | [src/client/enums/AnimationFlags.ts:5](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/AnimationFlags.ts#L5) |

@@ -23,7 +23,7 @@ new VehicleMod(owner, modType): VehicleMod
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:8](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L8)
+[src/client/models/VehicleMod.ts:8](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L8)
 
 ## Accessors
 
@@ -49,7 +49,7 @@ set Index(value): void
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:21](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L21)
+[src/client/models/VehicleMod.ts:21](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L21)
 
 ***
 
@@ -65,7 +65,7 @@ get ModCount(): number
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:37](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L37)
+[src/client/models/VehicleMod.ts:37](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L37)
 
 ***
 
@@ -91,7 +91,7 @@ set ModType(modType): void
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:13](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L13)
+[src/client/models/VehicleMod.ts:13](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L13)
 
 ***
 
@@ -117,7 +117,7 @@ set Variation(value): void
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:29](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L29)
+[src/client/models/VehicleMod.ts:29](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L29)
 
 ***
 
@@ -133,7 +133,7 @@ get Vehicle(): Vehicle
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:41](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L41)
+[src/client/models/VehicleMod.ts:41](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L41)
 
 ## Methods
 
@@ -149,4 +149,4 @@ remove(): void
 
 #### Defined in
 
-[src/client/models/VehicleMod.ts:45](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleMod.ts#L45)
+[src/client/models/VehicleMod.ts:45](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/models/VehicleMod.ts#L45)

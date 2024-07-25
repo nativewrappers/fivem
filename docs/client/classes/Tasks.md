@@ -22,7 +22,7 @@ new Tasks(ped): Tasks
 
 #### Defined in
 
-[src/client/Tasks.ts:17](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L17)
+[src/client/Tasks.ts:17](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L17)
 
 ## Methods
 
@@ -45,7 +45,7 @@ achieveHeading(heading, timeout): void
 
 #### Defined in
 
-[src/client/Tasks.ts:21](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L21)
+[src/client/Tasks.ts:21](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L21)
 
 ***
 
@@ -68,7 +68,7 @@ aimAt(target, duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:29](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L29)
+[src/client/Tasks.ts:29](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L29)
 
 ***
 
@@ -90,7 +90,7 @@ arrest(ped): void
 
 #### Defined in
 
-[src/client/Tasks.ts:35](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L35)
+[src/client/Tasks.ts:35](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L35)
 
 ***
 
@@ -112,7 +112,7 @@ blockTemporaryEvents(block): void
 
 #### Defined in
 
-[src/client/Tasks.ts:25](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L25)
+[src/client/Tasks.ts:25](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L25)
 
 ***
 
@@ -134,7 +134,7 @@ chaseWithGroundVehicle(target): void
 
 #### Defined in
 
-[src/client/Tasks.ts:59](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L59)
+[src/client/Tasks.ts:59](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L59)
 
 ***
 
@@ -157,7 +157,7 @@ chaseWithHelicopter(target, offset): void
 
 #### Defined in
 
-[src/client/Tasks.ts:63](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L63)
+[src/client/Tasks.ts:63](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L63)
 
 ***
 
@@ -180,7 +180,7 @@ chaseWithPlane(target, offset): void
 
 #### Defined in
 
-[src/client/Tasks.ts:67](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L67)
+[src/client/Tasks.ts:67](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L67)
 
 ***
 
@@ -202,7 +202,7 @@ chatTo(ped): void
 
 #### Defined in
 
-[src/client/Tasks.ts:39](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L39)
+[src/client/Tasks.ts:39](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L39)
 
 ***
 
@@ -218,7 +218,7 @@ clearAll(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:458](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L458)
+[src/client/Tasks.ts:458](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L458)
 
 ***
 
@@ -234,7 +234,7 @@ clearAllImmediately(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:462](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L462)
+[src/client/Tasks.ts:462](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L462)
 
 ***
 
@@ -257,7 +257,7 @@ clearAnimation(animDict, animName): void
 
 #### Defined in
 
-[src/client/Tasks.ts:474](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L474)
+[src/client/Tasks.ts:474](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L474)
 
 ***
 
@@ -273,7 +273,7 @@ clearLookAt(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:466](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L466)
+[src/client/Tasks.ts:466](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L466)
 
 ***
 
@@ -289,7 +289,7 @@ clearSecondary(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:470](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L470)
+[src/client/Tasks.ts:470](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L470)
 
 ***
 
@@ -305,7 +305,7 @@ climb(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:47](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L47)
+[src/client/Tasks.ts:47](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L47)
 
 ***
 
@@ -321,7 +321,7 @@ climbLadder(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:51](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L51)
+[src/client/Tasks.ts:51](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L51)
 
 ***
 
@@ -343,7 +343,7 @@ cower(duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:55](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L55)
+[src/client/Tasks.ts:55](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L55)
 
 ***
 
@@ -370,7 +370,7 @@ cruiseWithVehicle(
 
 #### Defined in
 
-[src/client/Tasks.ts:71](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L71)
+[src/client/Tasks.ts:71](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L71)
 
 ***
 
@@ -401,7 +401,7 @@ driveTo(
 
 #### Defined in
 
-[src/client/Tasks.ts:79](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L79)
+[src/client/Tasks.ts:79](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L79)
 
 ***
 
@@ -430,7 +430,7 @@ enterAnyVehicle(
 
 #### Defined in
 
-[src/client/Tasks.ts:98](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L98)
+[src/client/Tasks.ts:98](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L98)
 
 ***
 
@@ -453,7 +453,7 @@ fightAgainst(target, duration?): void
 
 #### Defined in
 
-[src/client/Tasks.ts:106](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L106)
+[src/client/Tasks.ts:106](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L106)
 
 ***
 
@@ -476,7 +476,7 @@ fightAgainstHatedTargets(radius, duration?): void
 
 #### Defined in
 
-[src/client/Tasks.ts:114](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L114)
+[src/client/Tasks.ts:114](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L114)
 
 ***
 
@@ -499,7 +499,7 @@ fleeFrom(pedOrPosition, duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:122](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L122)
+[src/client/Tasks.ts:122](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L122)
 
 ***
 
@@ -521,7 +521,7 @@ followPointRoute(points): void
 
 #### Defined in
 
-[src/client/Tasks.ts:139](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L139)
+[src/client/Tasks.ts:139](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L139)
 
 ***
 
@@ -554,7 +554,7 @@ followToOffsetFromEntity(
 
 #### Defined in
 
-[src/client/Tasks.ts:147](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L147)
+[src/client/Tasks.ts:147](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L147)
 
 ***
 
@@ -583,7 +583,7 @@ goTo(
 
 #### Defined in
 
-[src/client/Tasks.ts:168](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L168)
+[src/client/Tasks.ts:168](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L168)
 
 ***
 
@@ -610,7 +610,7 @@ goToEntity(
 
 #### Defined in
 
-[src/client/Tasks.ts:195](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L195)
+[src/client/Tasks.ts:195](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L195)
 
 ***
 
@@ -626,7 +626,7 @@ guardCurrentPosition(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:212](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L212)
+[src/client/Tasks.ts:212](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L212)
 
 ***
 
@@ -648,7 +648,7 @@ handsUp(duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:216](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L216)
+[src/client/Tasks.ts:216](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L216)
 
 ***
 
@@ -675,7 +675,7 @@ isPlayingAnim(
 
 #### Defined in
 
-[src/client/Tasks.ts:454](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L454)
+[src/client/Tasks.ts:454](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L454)
 
 ***
 
@@ -691,7 +691,7 @@ jump(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:43](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L43)
+[src/client/Tasks.ts:43](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L43)
 
 ***
 
@@ -718,7 +718,7 @@ landPlane(
 
 #### Defined in
 
-[src/client/Tasks.ts:220](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L220)
+[src/client/Tasks.ts:220](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L220)
 
 ***
 
@@ -741,7 +741,7 @@ lookAt(targetOrPosition, duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:254](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L254)
+[src/client/Tasks.ts:254](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L254)
 
 ***
 
@@ -763,7 +763,7 @@ parachuteTo(position): void
 
 #### Defined in
 
-[src/client/Tasks.ts:269](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L269)
+[src/client/Tasks.ts:269](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L269)
 
 ***
 
@@ -794,7 +794,7 @@ parkVehicle(
 
 #### Defined in
 
-[src/client/Tasks.ts:273](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L273)
+[src/client/Tasks.ts:273](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L273)
 
 ***
 
@@ -816,7 +816,7 @@ performSequence(sequence): void
 
 #### Defined in
 
-[src/client/Tasks.ts:293](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L293)
+[src/client/Tasks.ts:293](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L293)
 
 ***
 
@@ -851,7 +851,7 @@ flags): Promise<void>
 
 #### Defined in
 
-[src/client/Tasks.ts:304](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L304)
+[src/client/Tasks.ts:304](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L304)
 
 ***
 
@@ -867,7 +867,7 @@ putAwayMobilePhone(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:424](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L424)
+[src/client/Tasks.ts:424](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L424)
 
 ***
 
@@ -883,7 +883,7 @@ putAwayParachute(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:420](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L420)
+[src/client/Tasks.ts:420](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L420)
 
 ***
 
@@ -905,7 +905,7 @@ reactAndFlee(ped): void
 
 #### Defined in
 
-[src/client/Tasks.ts:332](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L332)
+[src/client/Tasks.ts:332](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L332)
 
 ***
 
@@ -921,7 +921,7 @@ reloadWeapon(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:336](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L336)
+[src/client/Tasks.ts:336](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L336)
 
 ***
 
@@ -948,7 +948,7 @@ shootAt(
 
 #### Defined in
 
-[src/client/Tasks.ts:340](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L340)
+[src/client/Tasks.ts:340](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L340)
 
 ***
 
@@ -970,7 +970,7 @@ shuffleToNextVehicleSeat(vehicle): void
 
 #### Defined in
 
-[src/client/Tasks.ts:358](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L358)
+[src/client/Tasks.ts:358](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L358)
 
 ***
 
@@ -986,7 +986,7 @@ skyDive(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:362](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L362)
+[src/client/Tasks.ts:362](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L362)
 
 ***
 
@@ -1013,7 +1013,7 @@ slideTo(
 
 #### Defined in
 
-[src/client/Tasks.ts:366](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L366)
+[src/client/Tasks.ts:366](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L366)
 
 ***
 
@@ -1035,7 +1035,7 @@ standStill(duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:370](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L370)
+[src/client/Tasks.ts:370](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L370)
 
 ***
 
@@ -1068,7 +1068,7 @@ startScenario(
 
 #### Defined in
 
-[src/client/Tasks.ts:374](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L374)
+[src/client/Tasks.ts:374](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L374)
 
 ***
 
@@ -1084,7 +1084,7 @@ swapWeapon(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:395](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L395)
+[src/client/Tasks.ts:395](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L395)
 
 ***
 
@@ -1107,7 +1107,7 @@ turnTo(targetOrPosition, duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:399](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L399)
+[src/client/Tasks.ts:399](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L399)
 
 ***
 
@@ -1129,7 +1129,7 @@ useMobilePhone(duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:416](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L416)
+[src/client/Tasks.ts:416](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L416)
 
 ***
 
@@ -1145,7 +1145,7 @@ useParachute(): void
 
 #### Defined in
 
-[src/client/Tasks.ts:412](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L412)
+[src/client/Tasks.ts:412](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L412)
 
 ***
 
@@ -1167,7 +1167,7 @@ vehicleChase(target): void
 
 #### Defined in
 
-[src/client/Tasks.ts:428](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L428)
+[src/client/Tasks.ts:428](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L428)
 
 ***
 
@@ -1189,7 +1189,7 @@ vehicleShootAtPed(target): void
 
 #### Defined in
 
-[src/client/Tasks.ts:432](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L432)
+[src/client/Tasks.ts:432](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L432)
 
 ***
 
@@ -1211,7 +1211,7 @@ wait(duration): void
 
 #### Defined in
 
-[src/client/Tasks.ts:436](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L436)
+[src/client/Tasks.ts:436](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L436)
 
 ***
 
@@ -1234,7 +1234,7 @@ wanderAround(position?, radius?): void
 
 #### Defined in
 
-[src/client/Tasks.ts:440](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L440)
+[src/client/Tasks.ts:440](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L440)
 
 ***
 
@@ -1257,7 +1257,7 @@ warpIntoVehicle(vehicle, seat): void
 
 #### Defined in
 
-[src/client/Tasks.ts:446](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L446)
+[src/client/Tasks.ts:446](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L446)
 
 ***
 
@@ -1280,7 +1280,7 @@ warpOutOfVehicle(vehicle, flags): void
 
 #### Defined in
 
-[src/client/Tasks.ts:450](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L450)
+[src/client/Tasks.ts:450](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L450)
 
 ***
 
@@ -1302,4 +1302,4 @@ static everyoneLeaveVehicle(vehicle): void
 
 #### Defined in
 
-[src/client/Tasks.ts:102](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/Tasks.ts#L102)
+[src/client/Tasks.ts:102](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Tasks.ts#L102)
