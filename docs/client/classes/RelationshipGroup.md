@@ -26,7 +26,7 @@ Create a relationship group. Optionally pass a group hash.
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L17)
+[src/client/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L17)
 
 ## Accessors
 
@@ -46,7 +46,7 @@ The hash of this object.
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L27)
+[src/client/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L27)
 
 ## Methods
 
@@ -75,7 +75,7 @@ Clear the relationship between this relationship group and another.
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:67](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L67)
+[src/client/RelationshipGroup.ts:67](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L67)
 
 ***
 
@@ -101,7 +101,7 @@ The relationship
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L37)
+[src/client/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L37)
 
 ***
 
@@ -119,7 +119,7 @@ Remove this relationship group from the game. This will not delete this object.
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:82](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L82)
+[src/client/RelationshipGroup.ts:82](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L82)
 
 ***
 
@@ -148,4 +148,4 @@ Set the relationship group between this relationship group and another one.
 
 #### Defined in
 
-[src/client/RelationshipGroup.ts:48](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/RelationshipGroup.ts#L48)
+[src/client/RelationshipGroup.ts:48](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/RelationshipGroup.ts#L48)

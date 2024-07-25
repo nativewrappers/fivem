@@ -38,7 +38,7 @@ emit(...args): void
 
 #### Defined in
 
-[src/client/utils/LiteEvent.ts:20](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L20)
+[src/client/utils/LiteEvent.ts:20](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L20)
 
 ***
 
@@ -54,7 +54,7 @@ expose(): LiteEvent
 
 #### Defined in
 
-[src/client/utils/LiteEvent.ts:26](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L26)
+[src/client/utils/LiteEvent.ts:26](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L26)
 
 ***
 
@@ -78,7 +78,7 @@ off(handler): void
 
 ##### Defined in
 
-[src/client/utils/LiteEvent.ts:6](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L6)
+[src/client/utils/LiteEvent.ts:6](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L6)
 
 #### off(handler)
 
@@ -98,7 +98,7 @@ off(handler): void
 
 ##### Defined in
 
-[src/client/utils/LiteEvent.ts:16](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L16)
+[src/client/utils/LiteEvent.ts:16](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L16)
 
 ***
 
@@ -122,7 +122,7 @@ on(handler): void
 
 ##### Defined in
 
-[src/client/utils/LiteEvent.ts:5](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L5)
+[src/client/utils/LiteEvent.ts:5](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L5)
 
 #### on(handler)
 
@@ -142,4 +142,4 @@ on(handler): void
 
 ##### Defined in
 
-[src/client/utils/LiteEvent.ts:12](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/utils/LiteEvent.ts#L12)
+[src/client/utils/LiteEvent.ts:12](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/utils/LiteEvent.ts#L12)

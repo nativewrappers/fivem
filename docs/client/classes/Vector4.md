@@ -41,19 +41,19 @@ Constructs a new 4D vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:315
+lib/common/utils/Vector.d.ts:357
 
 ## Properties
 
-| Property | Modifier | Type | Description | Overrides | Inherited from | Defined in |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| `size` | `public` | `number` | - | - | `Vector.size` | lib/common/utils/Vector.d.ts:53 |
-| `type` | `public` | `ClassTypes` | The type identifier for vectors. | `Vector.type` | - | lib/common/utils/Vector.d.ts:304 |
-| `w` | `public` | `number` | - | `Vector.w` | - | lib/common/utils/Vector.d.ts:306 |
-| `x` | `public` | `number` | - | - | `Vector.x` | lib/common/utils/Vector.d.ts:54 |
-| `y` | `public` | `number` | - | - | `Vector.y` | lib/common/utils/Vector.d.ts:55 |
-| `z` | `public` | `number` | - | `Vector.z` | - | lib/common/utils/Vector.d.ts:305 |
-| `Zero` | `readonly` | [`Vector4`](Vector4.md) | - | - | - | lib/common/utils/Vector.d.ts:307 |
+| Property | Modifier | Type | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| `size` | `public` | `number` | - | `Vector.size` | lib/common/utils/Vector.d.ts:53 |
+| `type` | `public` | `ClassTypes` | `Vector.type` | - | lib/common/utils/Vector.d.ts:346 |
+| `w` | `public` | `number` | `Vector.w` | - | lib/common/utils/Vector.d.ts:348 |
+| `x` | `public` | `number` | - | `Vector.x` | lib/common/utils/Vector.d.ts:54 |
+| `y` | `public` | `number` | - | `Vector.y` | lib/common/utils/Vector.d.ts:55 |
+| `z` | `public` | `number` | `Vector.z` | - | lib/common/utils/Vector.d.ts:347 |
+| `Zero` | `readonly` | [`Vector4`](Vector4.md) | - | - | lib/common/utils/Vector.d.ts:349 |
 
 ## Accessors
 
@@ -77,7 +77,7 @@ The magnitude of the vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:262
+lib/common/utils/Vector.d.ts:300
 
 ## Methods
 
@@ -97,7 +97,7 @@ iterator: Iterator<number, any, undefined>
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:197
+lib/common/utils/Vector.d.ts:223
 
 ***
 
@@ -127,7 +127,7 @@ Vector.add
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:228
+lib/common/utils/Vector.d.ts:254
 
 ***
 
@@ -153,7 +153,7 @@ Vector.addW
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:323
+lib/common/utils/Vector.d.ts:365
 
 ***
 
@@ -183,7 +183,7 @@ Vector.addX
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:232
+lib/common/utils/Vector.d.ts:258
 
 ***
 
@@ -213,7 +213,7 @@ Vector.addY
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:236
+lib/common/utils/Vector.d.ts:262
 
 ***
 
@@ -239,7 +239,7 @@ Vector.addZ
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:319
+lib/common/utils/Vector.d.ts:361
 
 ***
 
@@ -263,7 +263,7 @@ Vector.clone
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:202
+lib/common/utils/Vector.d.ts:228
 
 ***
 
@@ -289,7 +289,7 @@ Vector.crossProduct
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:327
+lib/common/utils/Vector.d.ts:369
 
 ***
 
@@ -319,7 +319,7 @@ Distance between this and another vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:216
+lib/common/utils/Vector.d.ts:242
 
 ***
 
@@ -349,7 +349,7 @@ Euclidean magnitude with another vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:209
+lib/common/utils/Vector.d.ts:235
 
 ***
 
@@ -379,7 +379,37 @@ Vector.divide
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:248
+lib/common/utils/Vector.d.ts:274
+
+***
+
+### divideAbsolute()
+
+```ts
+divideAbsolute(v): this
+```
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `v` | `number` \| `VectorLike` |
+
+#### Returns
+
+`this`
+
+#### See
+
+Vector.divide
+
+#### Inherited from
+
+`Vector.divideAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:286
 
 ***
 
@@ -409,7 +439,7 @@ Vector.dotProduct
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:224
+lib/common/utils/Vector.d.ts:250
 
 ***
 
@@ -439,7 +469,37 @@ Vector.multiply
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:244
+lib/common/utils/Vector.d.ts:270
+
+***
+
+### multiplyAbsolute()
+
+```ts
+multiplyAbsolute(v): this
+```
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `v` | `number` \| `VectorLike` |
+
+#### Returns
+
+`this`
+
+#### See
+
+Vector.multiply
+
+#### Inherited from
+
+`Vector.multiplyAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:282
 
 ***
 
@@ -463,7 +523,7 @@ Vector.normalize
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:220
+lib/common/utils/Vector.d.ts:246
 
 ***
 
@@ -497,7 +557,7 @@ Replaces the components of the vector with the components of another vector obje
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:257
+lib/common/utils/Vector.d.ts:295
 
 ***
 
@@ -527,7 +587,37 @@ Vector.subtract
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:240
+lib/common/utils/Vector.d.ts:266
+
+***
+
+### subtractAbsolute()
+
+```ts
+subtractAbsolute(v): this
+```
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `v` | `VectorLike` |
+
+#### Returns
+
+`this`
+
+#### See
+
+Vector.subtractAbsolute
+
+#### Inherited from
+
+`Vector.subtractAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:278
 
 ***
 
@@ -555,7 +645,7 @@ Converts the vector to an array of its components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:252
+lib/common/utils/Vector.d.ts:290
 
 ***
 
@@ -575,7 +665,43 @@ toString(): string
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:198
+lib/common/utils/Vector.d.ts:224
+
+***
+
+### toVec2()
+
+```ts
+toVec2(): Vector2
+```
+
+#### Returns
+
+[`Vector2`](Vector2.md)
+
+the x and y values as Vec2
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:373
+
+***
+
+### toVec3()
+
+```ts
+toVec3(): Vector3
+```
+
+#### Returns
+
+[`Vector3`](Vector3.md)
+
+the x and y values as Vec3
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:377
 
 ***
 
@@ -613,7 +739,7 @@ The magnitude of the vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:187
+lib/common/utils/Vector.d.ts:213
 
 ***
 
@@ -655,7 +781,7 @@ A new vector with incremented components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:97
+lib/common/utils/Vector.d.ts:94
 
 ***
 
@@ -697,7 +823,7 @@ A new vector with the w-component incremented.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:125
+lib/common/utils/Vector.d.ts:122
 
 ***
 
@@ -739,7 +865,7 @@ A new vector with the x-component incremented.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:104
+lib/common/utils/Vector.d.ts:101
 
 ***
 
@@ -781,7 +907,7 @@ A new vector with the y-component incremented.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:111
+lib/common/utils/Vector.d.ts:108
 
 ***
 
@@ -823,7 +949,7 @@ A new vector with the z-component incremented.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:118
+lib/common/utils/Vector.d.ts:115
 
 ***
 
@@ -861,7 +987,7 @@ A new vector instance that is a copy of the provided vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:82
+lib/common/utils/Vector.d.ts:79
 
 ***
 
@@ -890,7 +1016,7 @@ protected static create(x, y?): Vector2
 
 ##### Defined in
 
-lib/common/utils/Vector.d.ts:62
+lib/common/utils/Vector.d.ts:59
 
 #### create(x, y, z)
 
@@ -919,7 +1045,7 @@ protected static create(
 
 ##### Defined in
 
-lib/common/utils/Vector.d.ts:63
+lib/common/utils/Vector.d.ts:60
 
 #### create(x, y, z, w)
 
@@ -950,7 +1076,7 @@ protected static create(
 
 ##### Defined in
 
-lib/common/utils/Vector.d.ts:64
+lib/common/utils/Vector.d.ts:61
 
 #### create(this, obj)
 
@@ -986,7 +1112,7 @@ A new vector instance.
 
 ##### Defined in
 
-lib/common/utils/Vector.d.ts:70
+lib/common/utils/Vector.d.ts:67
 
 ***
 
@@ -1028,7 +1154,7 @@ A new vector perpendicular to both input vectors.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:160
+lib/common/utils/Vector.d.ts:186
 
 ***
 
@@ -1070,7 +1196,49 @@ A new vector with divided components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:146
+lib/common/utils/Vector.d.ts:143
+
+***
+
+### divideAbsolute()
+
+```ts
+static divideAbsolute<T, U>(
+   this, 
+   a, 
+   b): U
+```
+
+Divides two vectors by their components, or divides a vector by a scalar value
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* *typeof* `Vector` |
+| `U` *extends* `VectorLike` |
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `this` | `T` | - |
+| `a` | `U` | The vector. |
+| `b` | `number` \| `VectorLike` | The second vector or scalar vector. |
+
+#### Returns
+
+`U`
+
+A new vector with divided components.
+
+#### Inherited from
+
+`Vector.divideAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:172
 
 ***
 
@@ -1112,7 +1280,7 @@ A scalar value representing the degree of alignment between the input vectors.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:153
+lib/common/utils/Vector.d.ts:179
 
 ***
 
@@ -1148,7 +1316,7 @@ Creates a vector from an array of numbers.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:171
+lib/common/utils/Vector.d.ts:197
 
 ***
 
@@ -1184,7 +1352,7 @@ Creates an array of vectors from an array of number arrays
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:181
+lib/common/utils/Vector.d.ts:207
 
 ***
 
@@ -1221,7 +1389,7 @@ A new vector instance.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:76
+lib/common/utils/Vector.d.ts:73
 
 ***
 
@@ -1257,7 +1425,7 @@ Creates a vector from an array or object containing vector components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:176
+lib/common/utils/Vector.d.ts:202
 
 ***
 
@@ -1299,7 +1467,49 @@ A new vector with multiplied components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:139
+lib/common/utils/Vector.d.ts:136
+
+***
+
+### multiplyAbsolute()
+
+```ts
+static multiplyAbsolute<T, U>(
+   this, 
+   a, 
+   b): U
+```
+
+Multiplies two vectors by their components, or multiplies a vector by a scalar value.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* *typeof* `Vector` |
+| `U` *extends* `VectorLike` |
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `this` | `T` | - |
+| `a` | `U` | The vector. |
+| `b` | `number` \| `VectorLike` | The second vector or scalar value. |
+
+#### Returns
+
+`U`
+
+A new vector with multiplied components.
+
+#### Inherited from
+
+`Vector.multiplyAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:165
 
 ***
 
@@ -1337,7 +1547,7 @@ The new normalized vector.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:166
+lib/common/utils/Vector.d.ts:192
 
 ***
 
@@ -1379,4 +1589,46 @@ A new vector with subtracted components.
 
 #### Defined in
 
-lib/common/utils/Vector.d.ts:132
+lib/common/utils/Vector.d.ts:129
+
+***
+
+### subtractAbsolute()
+
+```ts
+static subtractAbsolute<T, U>(
+   this, 
+   a, 
+   b): U
+```
+
+Subtracts one vector from another or subtracts a scalar value from a vector.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* *typeof* `Vector` |
+| `U` *extends* `VectorLike` |
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `this` | `T` | - |
+| `a` | `U` | The vector. |
+| `b` | `number` \| `VectorLike` | The second vector or scalar value. |
+
+#### Returns
+
+`U`
+
+A new vector with subtracted components.
+
+#### Inherited from
+
+`Vector.subtractAbsolute`
+
+#### Defined in
+
+lib/common/utils/Vector.d.ts:158

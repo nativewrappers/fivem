@@ -36,7 +36,7 @@
 | [HudColor](enumerations/HudColor.md) | - |
 | [HudComponent](enumerations/HudComponent.md) | - |
 | [InputMode](enumerations/InputMode.md) | - |
-| [IntersectOptions](enumerations/IntersectOptions.md) | List of possible entity intersections. Used for raycasting. |
+| [IntersectFlags](enumerations/IntersectFlags.md) | List of possible entity intersections. Used for raycasting. |
 | [InvertAxisFlags](enumerations/InvertAxisFlags.md) | - |
 | [Language](enumerations/Language.md) | - |
 | [LeaveVehicleFlags](enumerations/LeaveVehicleFlags.md) | - |
@@ -56,6 +56,7 @@
 | [Relationship](enumerations/Relationship.md) | - |
 | [RopeType](enumerations/RopeType.md) | - |
 | [ScreenEffect](enumerations/ScreenEffect.md) | - |
+| [ShapeTestOptions](enumerations/ShapeTestOptions.md) | - |
 | [SpeechModifier](enumerations/SpeechModifier.md) | - |
 | [VehicleClass](enumerations/VehicleClass.md) | - |
 | [VehicleColor](enumerations/VehicleColor.md) | - |
@@ -90,6 +91,7 @@
 | Class | Description |
 | ------ | ------ |
 | [AbstractUIMenuPanel](classes/AbstractUIMenuPanel.md) | - |
+| [AsynchronousRaycastResult](classes/AsynchronousRaycastResult.md) | - |
 | [Audio](classes/Audio.md) | - |
 | [BaseEntity](classes/BaseEntity.md) | - |
 | [Blip](classes/Blip.md) | - |
@@ -129,7 +131,6 @@
 | [PointF](classes/PointF.md) | - |
 | [Prop](classes/Prop.md) | - |
 | [Quaternion](classes/Quaternion.md) | - |
-| [RaycastResult](classes/RaycastResult.md) | Class that represents the result of a raycast. |
 | [Rectangle](classes/Rectangle.md) | - |
 | [RelationshipGroup](classes/RelationshipGroup.md) | Class to create and manage a relationship group. Useful to manage behavior between Peds. |
 | [Rope](classes/Rope.md) | Class to manage invisible ropes between entities. |
@@ -138,6 +139,7 @@
 | [Size](classes/Size.md) | - |
 | [Sprite](classes/Sprite.md) | - |
 | [String](classes/String.md) | - |
+| [SynchronousRaycastResult](classes/SynchronousRaycastResult.md) | - |
 | [TaskSequence](classes/TaskSequence.md) | - |
 | [Tasks](classes/Tasks.md) | - |
 | [Text](classes/Text.md) | - |
@@ -187,6 +189,7 @@
 | ------ | ------ |
 | [DlcWeaponComponentData](variables/DlcWeaponComponentData.md) | DlcWeaponComponentData |
 | [DlcWeaponData](variables/DlcWeaponData.md) | DlcWeaponData - Mapping of WeaponHash -> DlcWeaponData |
+| [SHAPE\_TEST\_DEFAULT](variables/SHAPE_TEST_DEFAULT.md) | - |
 | [WeaponComponentHudStats](variables/WeaponComponentHudStats.md) | Mapping of WeaponComponentHash -> WeaponComponentHudStats |
 | [WeaponHudStats](variables/WeaponHudStats.md) | Mapping of WeaponHash -> WeaponHudStats |
 

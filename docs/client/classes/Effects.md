@@ -34,7 +34,7 @@ static isActive(screenEffect): boolean
 
 #### Defined in
 
-[src/client/ui/Effects.ts:16](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/Effects.ts#L16)
+[src/client/ui/Effects.ts:16](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/Effects.ts#L16)
 
 ***
 
@@ -61,7 +61,7 @@ static start(
 
 #### Defined in
 
-[src/client/ui/Effects.ts:4](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/Effects.ts#L4)
+[src/client/ui/Effects.ts:4](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/Effects.ts#L4)
 
 ***
 
@@ -83,4 +83,4 @@ static stop(screenEffect?): void
 
 #### Defined in
 
-[src/client/ui/Effects.ts:8](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/Effects.ts#L8)
+[src/client/ui/Effects.ts:8](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/Effects.ts#L8)

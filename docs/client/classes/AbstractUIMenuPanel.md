@@ -25,10 +25,10 @@ new AbstractUIMenuPanel(): AbstractUIMenuPanel
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `background?` | `readonly` | [`Rectangle`](Rectangle.md) \| [`Sprite`](Sprite.md) | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:12](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L12) |
-| `enabled` | `protected` | `boolean` | `true` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
-| `id` | `readonly` | `string` | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
-| `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
+| `background?` | `readonly` | [`Rectangle`](Rectangle.md) \| [`Sprite`](Sprite.md) | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:12](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L12) |
+| `enabled` | `protected` | `boolean` | `true` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
+| `id` | `readonly` | `string` | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
+| `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
 
 ## Accessors
 
@@ -54,7 +54,7 @@ set Enabled(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
 
 ***
 
@@ -70,7 +70,7 @@ get Height(): number
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
 
 ***
 
@@ -96,7 +96,7 @@ set ParentItem(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
 
 ***
 
@@ -112,7 +112,7 @@ get ParentMenu(): undefined | Menu
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
 
 ## Methods
 
@@ -128,7 +128,7 @@ draw(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:42](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L42)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:42](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L42)
 
 ***
 
@@ -150,4 +150,4 @@ setVerticalPosition(y): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:38](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L38)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:38](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L38)

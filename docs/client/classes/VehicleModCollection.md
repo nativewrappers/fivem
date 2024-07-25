@@ -22,7 +22,7 @@ new VehicleModCollection(owner): VehicleModCollection
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:28](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L28)
+[src/client/models/VehicleModCollection.ts:28](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L28)
 
 ## Accessors
 
@@ -48,7 +48,7 @@ set ColorCombination(value): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:157](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L157)
+[src/client/models/VehicleModCollection.ts:157](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L157)
 
 ***
 
@@ -64,7 +64,7 @@ get ColorCombinationCount(): number
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:165](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L165)
+[src/client/models/VehicleModCollection.ts:165](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L165)
 
 ***
 
@@ -90,7 +90,7 @@ set CustomPrimaryColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:243](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L243)
+[src/client/models/VehicleModCollection.ts:243](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L243)
 
 ***
 
@@ -116,7 +116,7 @@ set CustomSecondaryColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:252](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L252)
+[src/client/models/VehicleModCollection.ts:252](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L252)
 
 ***
 
@@ -134,7 +134,7 @@ set DashboardColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:145](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L145)
+[src/client/models/VehicleModCollection.ts:145](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L145)
 
 ***
 
@@ -150,7 +150,7 @@ get HasAllNeonLights(): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:219](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L219)
+[src/client/models/VehicleModCollection.ts:219](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L219)
 
 ***
 
@@ -166,7 +166,7 @@ get IsPrimaryColorCustom(): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:261](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L261)
+[src/client/models/VehicleModCollection.ts:261](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L261)
 
 ***
 
@@ -182,7 +182,7 @@ get IsSecondaryColorCustom(): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:265](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L265)
+[src/client/models/VehicleModCollection.ts:265](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L265)
 
 ***
 
@@ -208,7 +208,7 @@ set LicensePlate(text): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:289](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L289)
+[src/client/models/VehicleModCollection.ts:289](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L289)
 
 ***
 
@@ -234,7 +234,7 @@ set LicensePlateStyle(style): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:277](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L277)
+[src/client/models/VehicleModCollection.ts:277](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L277)
 
 ***
 
@@ -250,7 +250,7 @@ get LicensePlateType(): LicensePlateType
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:285](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L285)
+[src/client/models/VehicleModCollection.ts:285](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L285)
 
 ***
 
@@ -276,7 +276,7 @@ set Livery(value): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:76](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L76)
+[src/client/models/VehicleModCollection.ts:76](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L76)
 
 ***
 
@@ -292,7 +292,7 @@ get LiveryCount(): number
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:93](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L93)
+[src/client/models/VehicleModCollection.ts:93](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L93)
 
 ***
 
@@ -318,7 +318,7 @@ set NeonLightsColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:178](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L178)
+[src/client/models/VehicleModCollection.ts:178](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L178)
 
 ***
 
@@ -344,7 +344,7 @@ set PearlescentColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:133](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L133)
+[src/client/models/VehicleModCollection.ts:133](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L133)
 
 ***
 
@@ -370,7 +370,7 @@ set PrimaryColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:109](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L109)
+[src/client/models/VehicleModCollection.ts:109](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L109)
 
 ***
 
@@ -396,7 +396,7 @@ set RimColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:125](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L125)
+[src/client/models/VehicleModCollection.ts:125](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L125)
 
 ***
 
@@ -422,7 +422,7 @@ set SecondaryColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:117](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L117)
+[src/client/models/VehicleModCollection.ts:117](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L117)
 
 ***
 
@@ -448,7 +448,7 @@ set TireSmokeColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:169](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L169)
+[src/client/models/VehicleModCollection.ts:169](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L169)
 
 ***
 
@@ -466,7 +466,7 @@ set TrimColor(color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:141](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L141)
+[src/client/models/VehicleModCollection.ts:141](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L141)
 
 ***
 
@@ -492,7 +492,7 @@ set WheelType(type): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:63](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L63)
+[src/client/models/VehicleModCollection.ts:63](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L63)
 
 ***
 
@@ -518,7 +518,7 @@ set WindowTint(tint): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:101](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L101)
+[src/client/models/VehicleModCollection.ts:101](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L101)
 
 ## Methods
 
@@ -534,7 +534,7 @@ areAllNeonLightsOn(): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:195](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L195)
+[src/client/models/VehicleModCollection.ts:195](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L195)
 
 ***
 
@@ -550,7 +550,7 @@ clearCustomPrimaryColor(): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:269](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L269)
+[src/client/models/VehicleModCollection.ts:269](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L269)
 
 ***
 
@@ -566,7 +566,7 @@ clearCustomSecondaryColor(): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:273](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L273)
+[src/client/models/VehicleModCollection.ts:273](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L273)
 
 ***
 
@@ -582,7 +582,7 @@ getAllMods(): (undefined | null | VehicleMod)[]
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:50](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L50)
+[src/client/models/VehicleModCollection.ts:50](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L50)
 
 ***
 
@@ -604,7 +604,7 @@ getMod(modType): undefined | VehicleMod
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:36](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L36)
+[src/client/models/VehicleModCollection.ts:36](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L36)
 
 ***
 
@@ -626,7 +626,7 @@ getToggleMod(modType): undefined | VehicleToggleMod
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:43](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L43)
+[src/client/models/VehicleModCollection.ts:43](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L43)
 
 ***
 
@@ -648,7 +648,7 @@ hasNeonLight(light): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:227](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L227)
+[src/client/models/VehicleModCollection.ts:227](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L227)
 
 ***
 
@@ -670,7 +670,7 @@ hasVehicleMod(type): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:32](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L32)
+[src/client/models/VehicleModCollection.ts:32](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L32)
 
 ***
 
@@ -686,7 +686,7 @@ installModKit(): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:71](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L71)
+[src/client/models/VehicleModCollection.ts:71](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L71)
 
 ***
 
@@ -708,7 +708,7 @@ isNeonLightsOn(light): boolean
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:187](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L187)
+[src/client/models/VehicleModCollection.ts:187](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L187)
 
 ***
 
@@ -730,7 +730,7 @@ setAllNeonLightsOn(on): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:211](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L211)
+[src/client/models/VehicleModCollection.ts:211](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L211)
 
 ***
 
@@ -753,7 +753,7 @@ setModColor1(paintType, color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:149](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L149)
+[src/client/models/VehicleModCollection.ts:149](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L149)
 
 ***
 
@@ -776,7 +776,7 @@ setModColor2(paintType, color): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:153](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L153)
+[src/client/models/VehicleModCollection.ts:153](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L153)
 
 ***
 
@@ -799,4 +799,4 @@ setNeonLightsOn(light, on): void
 
 #### Defined in
 
-[src/client/models/VehicleModCollection.ts:191](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/models/VehicleModCollection.ts#L191)
+[src/client/models/VehicleModCollection.ts:191](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/models/VehicleModCollection.ts#L191)

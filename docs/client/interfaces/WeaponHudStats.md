@@ -19,8 +19,8 @@ struct WeaponHudStatsData
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `hudAccuracy` | `number` | [src/client/weapon/WeaponHudStats.ts:23](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/weapon/WeaponHudStats.ts#L23) |
-| `hudCapacity` | `number` | [src/client/weapon/WeaponHudStats.ts:22](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/weapon/WeaponHudStats.ts#L22) |
-| `hudDamage` | `number` | [src/client/weapon/WeaponHudStats.ts:20](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/weapon/WeaponHudStats.ts#L20) |
-| `hudRange` | `number` | [src/client/weapon/WeaponHudStats.ts:24](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/weapon/WeaponHudStats.ts#L24) |
-| `hudSpeed` | `number` | [src/client/weapon/WeaponHudStats.ts:21](https://github.com/nativewrappers/fivem/blob/48a3f351defb1a6508113ef71a8290d8cb1a458c/src/client/weapon/WeaponHudStats.ts#L21) |
+| `hudAccuracy` | `number` | [src/client/weapon/WeaponHudStats.ts:23](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/weapon/WeaponHudStats.ts#L23) |
+| `hudCapacity` | `number` | [src/client/weapon/WeaponHudStats.ts:22](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/weapon/WeaponHudStats.ts#L22) |
+| `hudDamage` | `number` | [src/client/weapon/WeaponHudStats.ts:20](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/weapon/WeaponHudStats.ts#L20) |
+| `hudRange` | `number` | [src/client/weapon/WeaponHudStats.ts:24](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/weapon/WeaponHudStats.ts#L24) |
+| `hudSpeed` | `number` | [src/client/weapon/WeaponHudStats.ts:21](https://github.com/nativewrappers/fivem/blob/6b247f1270087bcd3ee455389e3e7f1c86c9b619/src/client/weapon/WeaponHudStats.ts#L21) |
