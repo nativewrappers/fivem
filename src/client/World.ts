@@ -4,10 +4,11 @@ import { Camera } from './Camera';
 import {
   CameraTypes,
   CloudHat,
-  IntersectOptions,
+  IntersectFlags,
   MarkerType,
   PickupType,
   RopeType,
+  SHAPE_TEST_DEFAULT,
   Weather,
 } from './enums';
 import { GameplayCamera } from './GameplayCamera';
@@ -15,7 +16,7 @@ import { VehicleHash } from './hashes';
 import { Ped, Vehicle } from './models';
 import type { BaseEntity } from './models/BaseEntity';
 import { Pickup } from './Pickup';
-import { RaycastResult } from './Raycast';
+import { AsynchronousRaycastResult, SynchronousRaycastResult } from './Raycast';
 import { Rope } from './Rope';
 import { Color, Maths, Vector3, Wait } from './utils';
 
@@ -847,36 +848,69 @@ export abstract class World {
     );
   }
 
+  // TODO: Add a raycast option for every type.
   /**
-   * Cast ("shoot") a ray in a certain direction to detect entities in the way.
+   * Cast a ray from {@param start} to {@param end}.
    *
-   * @param source Starting position of raycast.
-   * @param direction Direction to cast a ray to.
-   * @param maxDistance Max distance to cast the ray.
+   * @param start Starting position of raycast.
+   * @param end Direction to cast a ray to.
+   * @param losFlags The entity type(s) that the raycast should intersect with
+   * defaults to {@enum IntersectFlags.All}
    * @param options Possible entity types to detect.
    * @param ignoreEntity An entity to ignore (usually player's Ped).
-   * @returns RaycastResult object.
+   * @returns {@see SynchronousRaycastResult} object.
+   */
+  public static expensiveRaycast(
+    start: Vector3,
+    end: Vector3,
+    losFlags = IntersectFlags.All,
+    shapeTestOptions = SHAPE_TEST_DEFAULT,
+    ignoreEntity?: BaseEntity,
+  ): SynchronousRaycastResult {
+    return new SynchronousRaycastResult(
+      StartExpensiveSynchronousShapeTestLosProbe(
+        start.x,
+        start.y,
+        start.z,
+        end.x,
+        end.y,
+        end.z,
+        losFlags,
+        ignoreEntity?.Handle ?? 0,
+        shapeTestOptions,
+      ),
+    );
+  }
+
+  /**
+   * Cast a ray from {@param start} to {@param end} and returns the first hit
+   * entity or coordinate .
+   *
+   * @param start starting position of raycast.
+   * @param end the ending position to raycast to.
+   * @param losFlags The entity type(s) that the raycast should intersect with defaults to {@enum IntersectFlags.All}
+   * @param shapeTestOptions shape test collision modifiers defaults to ignoring glass, see through, and no collided entities
+   * @param ignoreEntity An entity to ignore (usually player's Ped).
+   * @returns {@see AsynchronousRaycastResult} object that must be awaited to get its results.
    */
   public static raycast(
-    source: Vector3,
-    direction: Vector3,
-    maxDistance: number,
-    options: IntersectOptions,
-    ignoreEntity: BaseEntity,
-  ): RaycastResult {
-    const target = Vector3.add(source, Vector3.multiply(direction, maxDistance));
-
-    return new RaycastResult(
-      StartExpensiveSynchronousShapeTestLosProbe(
-        source.x,
-        source.y,
-        source.z,
-        target.x,
-        target.y,
-        target.z,
-        Number(options),
-        ignoreEntity.Handle,
-        7,
+    start: Vector3,
+    end: Vector3,
+    losFlags = IntersectFlags.All,
+    shapeTestOptions = SHAPE_TEST_DEFAULT,
+    ignoreEntity?: BaseEntity,
+  ): AsynchronousRaycastResult {
+    return new AsynchronousRaycastResult(
+      StartShapeTestLosProbe(
+        start.x,
+        start.y,
+        start.z,
+        end.x,
+        end.y,
+        end.z,
+        losFlags,
+        ignoreEntity?.Handle ?? 0,
+        shapeTestOptions,
       ),
     );
   }
@@ -885,15 +919,18 @@ export abstract class World {
    * Cast a ray from the local players camera until it hits an entity
    *
    * @param maxDistance Max distance to cast the ray.
-   * @param options Possible entity types to detect.
-   * @returns RaycastResult object.
+   * @param flags Possible entity types to detect.
+   * @returns SynchronousRaycast object.
    */
-  public static raycastPlayerCamera(maxDistance: number, options: IntersectOptions): RaycastResult {
+  public static raycastPlayerCamera(
+    maxDistance: number,
+    flags: IntersectFlags,
+  ): SynchronousRaycastResult {
     const camera = GameplayCamera.Position;
     const direction = GameplayCamera.ForwardVector;
 
     const destination = direction.multiply(maxDistance).add(camera);
-    return new RaycastResult(
+    return new SynchronousRaycastResult(
       StartExpensiveSynchronousShapeTestLosProbe(
         camera.x,
         camera.y,
@@ -901,7 +938,7 @@ export abstract class World {
         destination.x,
         destination.y,
         destination.z,
-        Number(options),
+        flags,
         PlayerPedId(),
         7,
       ),

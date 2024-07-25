@@ -1,12 +1,13 @@
+import { ShapeTestStatus } from './enums/RaycastEnums';
 import { Game } from './Game';
 import { MaterialHash } from './hashes';
 import { Ped, Prop, Vehicle } from './models';
-import { Vector3 } from './utils';
+import { Delay, Vector3 } from './utils';
 
 /**
  * Class that represents the result of a raycast.
  */
-export class RaycastResult {
+abstract class RaycastResult {
   /**
    * Return the entity that was hit.
    */
@@ -56,15 +57,45 @@ export class RaycastResult {
     return this.result;
   }
 
+  /**
+   * @returns if the shape test handle was already discarded
+   */
+  public get WasDiscarded(): boolean {
+    return this.result === ShapeTestStatus.Discarded;
+  }
+
+  /**
+   * NOTE: These will not be updated unless polled by `resolve` or the shape
+   * test is synchronous
+   * @returns if the raycast has been marked as ready by the engine
+   */
+  public get HasResolved(): boolean {
+    return this.result === ShapeTestStatus.Ready;
+  }
+
+  protected applyShapeTestResults() {
+    const [result, hit, endCoords, surfaceNormal, materialHash, entityHit] =
+      GetShapeTestResultIncludingMaterial(this.handle);
+
+    this.result = result;
+
+    if (!this.HasResolved || this.WasDiscarded) return;
+    this.hitSomethingArg = hit;
+    this.hitPositionArg = Vector3.fromArray(endCoords);
+    this.surfaceNormalArg = Vector3.fromArray(surfaceNormal);
+    this.materialArg = materialHash;
+    if (entityHit !== 0) {
+      this.entityHandleArg = Game.entityFromHandle(entityHit);
+    }
+  }
+
   private handle: number;
   private hitPositionArg: Vector3;
   private hitSomethingArg: boolean;
   private entityHandleArg: Ped | Vehicle | Prop | null;
   private surfaceNormalArg: Vector3;
   private materialArg: MaterialHash;
-  private result: number;
-
-  // FIXME: This only works with StartExpensiveSynchronousShapeTestLosProbe, this should have some getter you have to await afterwards for all of the data
+  private result: ShapeTestStatus;
 
   /**
    * Create a RaycastResult object that gets the results from a StartShapeTestRay()
@@ -78,15 +109,32 @@ export class RaycastResult {
     this.entityHandleArg = null;
     this.surfaceNormalArg = new Vector3(0, 0, 0);
     this.materialArg = 0;
+    this.result = ShapeTestStatus.NotReady;
+  }
+}
 
-    const [result, hit, endCoords, surfaceNormal, materialHash, entityHit] =
-      GetShapeTestResultIncludingMaterial(this.handle);
-    this.hitSomethingArg = hit;
-    this.hitPositionArg = Vector3.fromArray(endCoords);
-    this.surfaceNormalArg = Vector3.fromArray(surfaceNormal);
-    this.materialArg = materialHash;
-    this.entityHandleArg = Game.entityFromHandle(entityHit);
+export class SynchronousRaycastResult extends RaycastResult {
+  constructor(handle: number) {
+    super(handle);
+    // if we're using a synchronous call then we want to instantly update our
+    // data, if its invalid then the caller can deal with it.
+    this.applyShapeTestResults();
+  }
+}
 
-    this.result = result;
+export class AsynchronousRaycastResult extends RaycastResult {
+  /**
+   * waits until the shape test handle is valid and then sets the expected
+   * values on the RaycastResult
+   */
+  public async resolve(timeoutInMs = 1000) {
+    const timeout = GetGameTimer() + timeoutInMs;
+    // this has to be polled every frame or the engien will mark the field shape
+    // test handle as discarded
+    while (!this.HasResolved && !this.WasDiscarded) {
+      this.applyShapeTestResults();
+      if (timeout < GetGameTimer()) break;
+      await Delay(0);
+    }
   }
 }

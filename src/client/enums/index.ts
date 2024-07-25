@@ -20,7 +20,7 @@ export { HelmetType } from './HelmetType';
 export { HudColor } from './HudColor';
 export { HudComponent } from './HudComponent';
 export { InputMode } from './InputMode';
-export { IntersectOptions } from './IntersectOptions';
+export { IntersectFlags, ShapeTestOptions, SHAPE_TEST_DEFAULT } from './RaycastEnums';
 export { InvertAxis, InvertAxisFlags } from './InvertAxis';
 export { Language } from './Language';
 export { LeaveVehicleFlags } from './LeaveVehicleFlags';
