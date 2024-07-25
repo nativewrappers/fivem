@@ -88,7 +88,7 @@ export class Vector {
   /**
    * The type identifier for vectors.
    */
-  public type = ClassTypes.Vector2;
+  protected type = ClassTypes.Vector2;
 
   protected static create(x: number, y?: number): Vector2;
   protected static create(x: number, y?: number, z?: number): Vector3;
@@ -564,7 +564,7 @@ export class Vector2 extends Vector {
  * Represents a 3-dimensional vector.
  */
 export class Vector3 extends Vector implements Vec3 {
-  public type = ClassTypes.Vector3;
+  protected type = ClassTypes.Vector3;
   public z: number;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
@@ -598,7 +598,7 @@ export class Vector3 extends Vector implements Vec3 {
  * Represents a 4-dimensional vector.
  */
 export class Vector4 extends Vector {
-  public type = ClassTypes.Vector4;
+  protected type = ClassTypes.Vector4;
   public z: number;
   public w: number;
 
