@@ -682,6 +682,13 @@ export class Vector3 extends Vector implements Vec3 {
   public crossProduct(v: Vec3 | Vec4) {
     return Vector.crossProduct(this, v);
   }
+
+  /**
+    * @returns the x and y values as Vec2
+    */
+  public toVec2() {
+    return new Vector2(this.x, this.y);
+  }
 }
 /**
  * Represents a 4-dimensional vector.
@@ -725,5 +732,19 @@ export class Vector4 extends Vector {
    */
   public crossProduct(v: Vec3 | Vec4) {
     return Vector.crossProduct(this, v);
+  }
+
+  /**
+    * @returns the x and y values as Vec2
+    */
+  public toVec2() {
+    return new Vector2(this.x, this.y);
+  }
+
+  /**
+    * @returns the x and y values as Vec3
+    */
+  public toVec3() {
+    return new Vector3(this.x, this.y, this.z);
   }
 }
