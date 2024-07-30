@@ -22,7 +22,7 @@ new Pickup(handle): Pickup
 
 #### Defined in
 
-[src/client/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Pickup.ts#L6)
+[src/client/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Pickup.ts#L6)
 
 ## Accessors
 
@@ -38,7 +38,7 @@ get IsCollected(): boolean
 
 #### Defined in
 
-[src/client/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Pickup.ts#L14)
+[src/client/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Pickup.ts#L14)
 
 ***
 
@@ -54,7 +54,7 @@ get Position(): Vector3
 
 #### Defined in
 
-[src/client/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Pickup.ts#L10)
+[src/client/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Pickup.ts#L10)
 
 ## Methods
 
@@ -70,7 +70,7 @@ delete(): void
 
 #### Defined in
 
-[src/client/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Pickup.ts#L18)
+[src/client/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Pickup.ts#L18)
 
 ***
 
@@ -86,4 +86,4 @@ exists(): boolean
 
 #### Defined in
 
-[src/client/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/Pickup.ts#L22)
+[src/client/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Pickup.ts#L22)

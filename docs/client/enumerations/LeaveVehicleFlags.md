@@ -6,11 +6,11 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `BailOut` | `4096` | [src/client/enums/LeaveVehicleFlags.ts:7](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L7) |
-| `BailOut2` | `4160` | [src/client/enums/LeaveVehicleFlags.ts:8](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L8) |
-| `LeaveDoorOpen` | `256` | [src/client/enums/LeaveVehicleFlags.ts:6](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L6) |
-| `None` | `0` | [src/client/enums/LeaveVehicleFlags.ts:2](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L2) |
-| `Normal` | `1` | [src/client/enums/LeaveVehicleFlags.ts:3](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L3) |
-| `PassengerSeatNormal` | `262144` | [src/client/enums/LeaveVehicleFlags.ts:9](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L9) |
-| `SlowerNone` | `64` | [src/client/enums/LeaveVehicleFlags.ts:5](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L5) |
-| `WarpOut` | `16` | [src/client/enums/LeaveVehicleFlags.ts:4](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/LeaveVehicleFlags.ts#L4) |
+| `BailOut` | `4096` | [src/client/enums/LeaveVehicleFlags.ts:7](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L7) |
+| `BailOut2` | `4160` | [src/client/enums/LeaveVehicleFlags.ts:8](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L8) |
+| `LeaveDoorOpen` | `256` | [src/client/enums/LeaveVehicleFlags.ts:6](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L6) |
+| `None` | `0` | [src/client/enums/LeaveVehicleFlags.ts:2](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L2) |
+| `Normal` | `1` | [src/client/enums/LeaveVehicleFlags.ts:3](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L3) |
+| `PassengerSeatNormal` | `262144` | [src/client/enums/LeaveVehicleFlags.ts:9](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L9) |
+| `SlowerNone` | `64` | [src/client/enums/LeaveVehicleFlags.ts:5](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L5) |
+| `WarpOut` | `16` | [src/client/enums/LeaveVehicleFlags.ts:4](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/LeaveVehicleFlags.ts#L4) |

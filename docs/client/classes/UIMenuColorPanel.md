@@ -31,16 +31,16 @@ new UIMenuColorPanel(title, colors): UIMenuColorPanel
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:27](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L27)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:27](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L27)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| `background` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`background` | - | [src/client/ui/menu/items/panels/UIMenuColorPanel.ts:8](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L8) |
-| `enabled` | `protected` | `boolean` | `true` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`enabled` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
-| `id` | `readonly` | `string` | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`id` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
-| `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`parentItem` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
+| `background` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`background` | - | [src/client/ui/menu/items/panels/UIMenuColorPanel.ts:8](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L8) |
+| `enabled` | `protected` | `boolean` | `true` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`enabled` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
+| `id` | `readonly` | `string` | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`id` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
+| `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).`parentItem` | [src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
 
 ## Accessors
 
@@ -66,7 +66,7 @@ set Color(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:72](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L72)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:72](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L72)
 
 ***
 
@@ -92,7 +92,7 @@ set Colors(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:54](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L54)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:54](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L54)
 
 ***
 
@@ -122,7 +122,7 @@ set Enabled(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
 
 ***
 
@@ -142,7 +142,7 @@ get Height(): number
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
 
 ***
 
@@ -168,7 +168,7 @@ set Index(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:85](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L85)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:85](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L85)
 
 ***
 
@@ -198,7 +198,7 @@ set ParentItem(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
 
 ***
 
@@ -218,7 +218,7 @@ get ParentMenu(): undefined | Menu
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
+[src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
 
 ***
 
@@ -244,7 +244,7 @@ set Title(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:45](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L45)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:45](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L45)
 
 ## Methods
 
@@ -264,7 +264,7 @@ draw(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:134](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L134)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:134](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L134)
 
 ***
 
@@ -290,7 +290,7 @@ setVerticalPosition(y): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:123](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L123)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:123](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L123)
 
 ***
 
@@ -306,4 +306,4 @@ updateParentItem(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:106](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L106)
+[src/client/ui/menu/items/panels/UIMenuColorPanel.ts:106](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/menu/items/panels/UIMenuColorPanel.ts#L106)

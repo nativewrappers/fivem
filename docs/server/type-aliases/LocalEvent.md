@@ -18,4 +18,4 @@ type LocalEvent: (...args) => void;
 
 ## Defined in
 
-[src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/server/Events.ts#L7)
+[src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/server/Events.ts#L7)

@@ -6,11 +6,11 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Blue` | `3` | [src/client/enums/Blip.ts:5](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L5) |
-| `FranklinGreen` | `43` | [src/client/enums/Blip.ts:7](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L7) |
-| `Green` | `2` | [src/client/enums/Blip.ts:4](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L4) |
-| `MichaelBlue` | `42` | [src/client/enums/Blip.ts:6](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L6) |
-| `Red` | `1` | [src/client/enums/Blip.ts:3](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L3) |
-| `TrevorOrange` | `44` | [src/client/enums/Blip.ts:8](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L8) |
-| `White` | `0` | [src/client/enums/Blip.ts:2](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L2) |
-| `Yellow` | `66` | [src/client/enums/Blip.ts:9](https://github.com/nativewrappers/fivem/blob/76a4f0a0bbabe839eed05afc2b892d754096c3d3/src/client/enums/Blip.ts#L9) |
+| `Blue` | `3` | [src/client/enums/Blip.ts:5](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L5) |
+| `FranklinGreen` | `43` | [src/client/enums/Blip.ts:7](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L7) |
+| `Green` | `2` | [src/client/enums/Blip.ts:4](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L4) |
+| `MichaelBlue` | `42` | [src/client/enums/Blip.ts:6](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L6) |
+| `Red` | `1` | [src/client/enums/Blip.ts:3](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L3) |
+| `TrevorOrange` | `44` | [src/client/enums/Blip.ts:8](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L8) |
+| `White` | `0` | [src/client/enums/Blip.ts:2](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L2) |
+| `Yellow` | `66` | [src/client/enums/Blip.ts:9](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/enums/Blip.ts#L9) |
