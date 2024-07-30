@@ -507,7 +507,7 @@ export class BaseEntity {
    * @param offset: the amount to offset from the entity
    * @returns the offset position from the entity in world coords
    */
-  public getAbsolutePositionOffset(worldCoords: Vector3): Vector3 {
+  public getOffsetInRelativeCoords(worldCoords: Vector3): Vector3 {
     return Vector3.fromArray(
       GetOffsetFromEntityGivenWorldCoords(this.handle, worldCoords.x, worldCoords.y, worldCoords.z),
     );
@@ -530,24 +530,24 @@ export class BaseEntity {
     * @param worldCoords: the offset given the world coords
     * @returns the offset position from the entity in relative coords
     */
-  public getRelativePositionOffset(offset: Vector3): Vector3 {
+  public getOffsetInWorldCoords(offset: Vector3): Vector3 {
     return Vector3.fromArray(
       GetOffsetFromEntityInWorldCoords(this.handle, offset.x, offset.y, offset.z),
     );
   }
 
   /**
-   * @deprecated use [[getAbsolutePositionOffset]] instead
+   * @deprecated use [[getOffsetInRelativeCoords]] instead
    */
   public getPositionOffset(worldCoords: Vector3): Vector3 {
-    return this.getAbsolutePositionOffset(worldCoords);
+    return this.getOffsetInRelativeCoords(worldCoords);
   }
 
   /**
-    * @deprecated use [[getRelativePositionOffset]]
+    * @deprecated use [[getOffsetInWorldCoords]]
     */
   public getOffsetPosition(offset: Vector3): Vector3 {
-    return this.getRelativePositionOffset(offset);
+    return this.getOffsetInWorldCoords(offset);
   }
 
 
