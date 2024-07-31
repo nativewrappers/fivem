@@ -42,13 +42,13 @@ export class TaskSequence {
     return this.handle;
   }
 
-  public get AddTask(): Tasks | null | undefined {
+  public get AddTask(): Tasks {
     if (this.isClosed) {
       throw new Error("You can't add tasks to a closed sequence!");
     }
 
     this.count += 1;
-    return TaskSequence.nullPed?.Task;
+    return TaskSequence.nullPed.Task;
   }
 
   public get IsClosed(): boolean {
