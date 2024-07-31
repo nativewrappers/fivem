@@ -23,14 +23,14 @@ new Point(x, y): Point
 
 #### Defined in
 
-[src/client/utils/Point.ts:26](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/utils/Point.ts#L26)
+[src/client/utils/Point.ts:26](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/utils/Point.ts#L26)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `X` | `public` | `number` | [src/client/utils/Point.ts:23](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/utils/Point.ts#L23) |
-| `Y` | `public` | `number` | [src/client/utils/Point.ts:24](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/utils/Point.ts#L24) |
+| `X` | `public` | `number` | [src/client/utils/Point.ts:23](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/utils/Point.ts#L23) |
+| `Y` | `public` | `number` | [src/client/utils/Point.ts:24](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/utils/Point.ts#L24) |
 
 ## Methods
 
@@ -52,4 +52,4 @@ static parse(arg): Point
 
 #### Defined in
 
-[src/client/utils/Point.ts:2](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/utils/Point.ts#L2)
+[src/client/utils/Point.ts:2](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/utils/Point.ts#L2)

@@ -26,7 +26,7 @@ Creates a model object based on the hash key or model string.
 
 #### Defined in
 
-[src/client/Model.ts:20](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L20)
+[src/client/Model.ts:20](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L20)
 
 ## Accessors
 
@@ -46,7 +46,7 @@ This model min & max dimensions.
 
 #### Defined in
 
-[src/client/Model.ts:191](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L191)
+[src/client/Model.ts:191](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L191)
 
 ***
 
@@ -66,7 +66,7 @@ The hash key.
 
 #### Defined in
 
-[src/client/Model.ts:33](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L33)
+[src/client/Model.ts:33](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L33)
 
 ***
 
@@ -86,7 +86,7 @@ Whether this model is a bicycle.
 
 #### Defined in
 
-[src/client/Model.ts:78](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L78)
+[src/client/Model.ts:78](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L78)
 
 ***
 
@@ -106,7 +106,7 @@ Whether this model is a motorbike.
 
 #### Defined in
 
-[src/client/Model.ts:87](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L87)
+[src/client/Model.ts:87](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L87)
 
 ***
 
@@ -126,7 +126,7 @@ Whether this model is a boat.
 
 #### Defined in
 
-[src/client/Model.ts:96](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L96)
+[src/client/Model.ts:96](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L96)
 
 ***
 
@@ -146,7 +146,7 @@ Whether this model is a car.
 
 #### Defined in
 
-[src/client/Model.ts:105](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L105)
+[src/client/Model.ts:105](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L105)
 
 ***
 
@@ -166,7 +166,7 @@ Whether this model is a cargobob.
 
 #### Defined in
 
-[src/client/Model.ts:114](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L114)
+[src/client/Model.ts:114](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L114)
 
 ***
 
@@ -186,7 +186,7 @@ Whether this model collision is loaded.
 
 #### Defined in
 
-[src/client/Model.ts:69](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L69)
+[src/client/Model.ts:69](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L69)
 
 ***
 
@@ -206,7 +206,7 @@ Whether this model is a helicopter.
 
 #### Defined in
 
-[src/client/Model.ts:128](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L128)
+[src/client/Model.ts:128](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L128)
 
 ***
 
@@ -226,7 +226,7 @@ Whether this model is in cd image.
 
 #### Defined in
 
-[src/client/Model.ts:51](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L51)
+[src/client/Model.ts:51](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L51)
 
 ***
 
@@ -246,7 +246,7 @@ Whether this model is loaded.
 
 #### Defined in
 
-[src/client/Model.ts:60](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L60)
+[src/client/Model.ts:60](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L60)
 
 ***
 
@@ -266,7 +266,7 @@ Whether this model is a Ped.
 
 #### Defined in
 
-[src/client/Model.ts:137](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L137)
+[src/client/Model.ts:137](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L137)
 
 ***
 
@@ -286,7 +286,7 @@ Whether this model is a plane.
 
 #### Defined in
 
-[src/client/Model.ts:146](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L146)
+[src/client/Model.ts:146](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L146)
 
 ***
 
@@ -306,7 +306,7 @@ Whether this model is a prop.
 
 #### Defined in
 
-[src/client/Model.ts:155](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L155)
+[src/client/Model.ts:155](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L155)
 
 ***
 
@@ -326,7 +326,7 @@ Whether this model is a quadbike.
 
 #### Defined in
 
-[src/client/Model.ts:164](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L164)
+[src/client/Model.ts:164](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L164)
 
 ***
 
@@ -346,7 +346,7 @@ Whether this model is a train.
 
 #### Defined in
 
-[src/client/Model.ts:173](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L173)
+[src/client/Model.ts:173](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L173)
 
 ***
 
@@ -366,7 +366,7 @@ Whether this model is valid.
 
 #### Defined in
 
-[src/client/Model.ts:42](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L42)
+[src/client/Model.ts:42](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L42)
 
 ***
 
@@ -386,7 +386,7 @@ Whether this model is a Vehicle.
 
 #### Defined in
 
-[src/client/Model.ts:182](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L182)
+[src/client/Model.ts:182](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L182)
 
 ## Methods
 
@@ -404,7 +404,7 @@ Sets the model as no longer needed allowing the game engine to free memory.
 
 #### Defined in
 
-[src/client/Model.ts:223](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L223)
+[src/client/Model.ts:223](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L223)
 
 ***
 
@@ -428,4 +428,4 @@ Request and load the model with a specified timeout. Default timeout is 1000 (re
 
 #### Defined in
 
-[src/client/Model.ts:203](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/Model.ts#L203)
+[src/client/Model.ts:203](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Model.ts#L203)

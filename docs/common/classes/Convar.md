@@ -28,7 +28,7 @@ buffer(): string
 
 #### Defined in
 
-[src/common/Convar.ts:2](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L2)
+[src/common/Convar.ts:2](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L2)
 
 ***
 
@@ -51,7 +51,7 @@ get(variable, defaultVar): string
 
 #### Defined in
 
-[src/common/Convar.ts:6](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L6)
+[src/common/Convar.ts:6](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L6)
 
 ***
 
@@ -74,7 +74,7 @@ getInt(variable, defaultVar): number
 
 #### Defined in
 
-[src/common/Convar.ts:10](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L10)
+[src/common/Convar.ts:10](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L10)
 
 ***
 
@@ -97,7 +97,7 @@ set(variable, value): void
 
 #### Defined in
 
-[src/common/Convar.ts:14](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L14)
+[src/common/Convar.ts:14](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L14)
 
 ***
 
@@ -120,7 +120,7 @@ setReplicated(variable, value): void
 
 #### Defined in
 
-[src/common/Convar.ts:18](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L18)
+[src/common/Convar.ts:18](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L18)
 
 ***
 
@@ -143,4 +143,4 @@ setServerInfo(variable, value): void
 
 #### Defined in
 
-[src/common/Convar.ts:22](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/common/Convar.ts#L22)
+[src/common/Convar.ts:22](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/Convar.ts#L22)

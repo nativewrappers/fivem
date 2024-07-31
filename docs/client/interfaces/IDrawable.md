@@ -6,9 +6,9 @@
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `color?` | [`Color`](../classes/Color.md) | [src/client/ui/interfaces/IDrawable.ts:6](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/interfaces/IDrawable.ts#L6) |
-| `pos` | [`Point`](../classes/Point.md) | [src/client/ui/interfaces/IDrawable.ts:4](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/interfaces/IDrawable.ts#L4) |
-| `size?` | [`Size`](../classes/Size.md) | [src/client/ui/interfaces/IDrawable.ts:5](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/interfaces/IDrawable.ts#L5) |
+| `color?` | [`Color`](../classes/Color.md) | [src/client/ui/interfaces/IDrawable.ts:6](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/interfaces/IDrawable.ts#L6) |
+| `pos` | [`Point`](../classes/Point.md) | [src/client/ui/interfaces/IDrawable.ts:4](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/interfaces/IDrawable.ts#L4) |
+| `size?` | [`Size`](../classes/Size.md) | [src/client/ui/interfaces/IDrawable.ts:5](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/interfaces/IDrawable.ts#L5) |
 
 ## Methods
 
@@ -31,4 +31,4 @@ draw(offset?, resolution?): void
 
 #### Defined in
 
-[src/client/ui/interfaces/IDrawable.ts:7](https://github.com/nativewrappers/fivem/blob/a8f3fbc0f47fb5552a00c18a4d0c12645ae62f70/src/client/ui/interfaces/IDrawable.ts#L7)
+[src/client/ui/interfaces/IDrawable.ts:7](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/interfaces/IDrawable.ts#L7)
