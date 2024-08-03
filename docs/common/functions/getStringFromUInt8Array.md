@@ -25,4 +25,4 @@ get string from uint8 array
 
 ## Defined in
 
-[src/common/utils/getStringFromUInt8Array.ts:8](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/common/utils/getStringFromUInt8Array.ts#L8)
+[src/common/utils/getStringFromUInt8Array.ts:8](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/utils/getStringFromUInt8Array.ts#L8)

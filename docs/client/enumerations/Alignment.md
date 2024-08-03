@@ -6,6 +6,6 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Centered` | `1` | [src/client/enums/Alignment.ts:3](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/enums/Alignment.ts#L3) |
-| `Left` | `0` | [src/client/enums/Alignment.ts:2](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/enums/Alignment.ts#L2) |
-| `Right` | `2` | [src/client/enums/Alignment.ts:4](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/enums/Alignment.ts#L4) |
+| `Centered` | `1` | [src/client/enums/Alignment.ts:3](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/Alignment.ts#L3) |
+| `Left` | `0` | [src/client/enums/Alignment.ts:2](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/Alignment.ts#L2) |
+| `Right` | `2` | [src/client/enums/Alignment.ts:4](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/Alignment.ts#L4) |

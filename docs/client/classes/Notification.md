@@ -22,7 +22,7 @@ new Notification(handle): Notification
 
 #### Defined in
 
-[src/client/ui/Notification.ts:4](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/Notification.ts#L4)
+[src/client/ui/Notification.ts:4](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Notification.ts#L4)
 
 ## Methods
 
@@ -38,4 +38,4 @@ hide(): void
 
 #### Defined in
 
-[src/client/ui/Notification.ts:8](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/ui/Notification.ts#L8)
+[src/client/ui/Notification.ts:8](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Notification.ts#L8)

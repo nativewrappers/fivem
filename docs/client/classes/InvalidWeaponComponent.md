@@ -24,15 +24,15 @@ new InvalidWeaponComponent(): InvalidWeaponComponent
 
 #### Defined in
 
-[src/client/weaponComponent/InvalidWeaponComponent.ts:8](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/InvalidWeaponComponent.ts#L8)
+[src/client/weaponComponent/InvalidWeaponComponent.ts:8](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/InvalidWeaponComponent.ts#L8)
 
 ## Properties
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `componentHash` | `readonly` | [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md) | `WeaponComponent.componentHash` | [src/client/weaponComponent/WeaponComponent.ts:19](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L19) |
-| `owner` | `readonly` | [`Ped`](Ped.md) | `WeaponComponent.owner` | [src/client/weaponComponent/WeaponComponent.ts:17](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L17) |
-| `weapon` | `readonly` | [`Weapon`](Weapon.md) | `WeaponComponent.weapon` | [src/client/weaponComponent/WeaponComponent.ts:18](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L18) |
+| `componentHash` | `readonly` | [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md) | `WeaponComponent.componentHash` | [src/client/weaponComponent/WeaponComponent.ts:19](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L19) |
+| `owner` | `readonly` | [`Ped`](Ped.md) | `WeaponComponent.owner` | [src/client/weaponComponent/WeaponComponent.ts:17](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L17) |
+| `weapon` | `readonly` | [`Weapon`](Weapon.md) | `WeaponComponent.weapon` | [src/client/weaponComponent/WeaponComponent.ts:18](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L18) |
 
 ## Accessors
 
@@ -66,7 +66,7 @@ check ped has weapon component
 
 #### Defined in
 
-[src/client/weaponComponent/InvalidWeaponComponent.ts:13](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/InvalidWeaponComponent.ts#L13)
+[src/client/weaponComponent/InvalidWeaponComponent.ts:13](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/InvalidWeaponComponent.ts#L13)
 
 ***
 
@@ -88,7 +88,7 @@ get component attachment point
 
 #### Defined in
 
-[src/client/weaponComponent/WeaponComponent.ts:91](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L91)
+[src/client/weaponComponent/WeaponComponent.ts:91](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L91)
 
 ***
 
@@ -110,7 +110,7 @@ get component hash
 
 #### Defined in
 
-[src/client/weaponComponent/WeaponComponent.ts:41](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L41)
+[src/client/weaponComponent/WeaponComponent.ts:41](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L41)
 
 ***
 
@@ -132,7 +132,7 @@ get component display name / label
 
 #### Defined in
 
-[src/client/weaponComponent/InvalidWeaponComponent.ts:20](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/InvalidWeaponComponent.ts#L20)
+[src/client/weaponComponent/InvalidWeaponComponent.ts:20](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/InvalidWeaponComponent.ts#L20)
 
 ***
 
@@ -154,7 +154,7 @@ get component hud stats
 
 #### Defined in
 
-[src/client/weaponComponent/WeaponComponent.ts:100](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L100)
+[src/client/weaponComponent/WeaponComponent.ts:100](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L100)
 
 ***
 
@@ -176,7 +176,7 @@ Check WeaponComponent is invalid or not
 
 #### Defined in
 
-[src/client/weaponComponent/WeaponComponent.ts:32](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L32)
+[src/client/weaponComponent/WeaponComponent.ts:32](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L32)
 
 ***
 
@@ -198,7 +198,7 @@ get component localized name
 
 #### Defined in
 
-[src/client/weaponComponent/InvalidWeaponComponent.ts:24](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/InvalidWeaponComponent.ts#L24)
+[src/client/weaponComponent/InvalidWeaponComponent.ts:24](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/InvalidWeaponComponent.ts#L24)
 
 ## Methods
 
@@ -227,7 +227,7 @@ get component attachment point by WeaponHash and WeaponComponentHash
 
 #### Defined in
 
-[src/client/weaponComponent/InvalidWeaponComponent.ts:28](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/InvalidWeaponComponent.ts#L28)
+[src/client/weaponComponent/InvalidWeaponComponent.ts:28](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/InvalidWeaponComponent.ts#L28)
 
 ***
 
@@ -256,4 +256,4 @@ get component display name / label by hash
 
 #### Defined in
 
-[src/client/weaponComponent/WeaponComponent.ts:112](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/weaponComponent/WeaponComponent.ts#L112)
+[src/client/weaponComponent/WeaponComponent.ts:112](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/weaponComponent/WeaponComponent.ts#L112)

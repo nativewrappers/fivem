@@ -40,7 +40,7 @@ Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 
 #### Defined in
 
-[src/client/World.ts:102](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L102)
+[src/client/World.ts:102](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L102)
 
 ***
 
@@ -72,7 +72,7 @@ The current cloud hat type.
 
 #### Defined in
 
-[src/client/World.ts:111](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L111)
+[src/client/World.ts:111](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L111)
 
 ***
 
@@ -104,7 +104,7 @@ The current cloud opacity between 0.0 and 1.0
 
 #### Defined in
 
-[src/client/World.ts:136](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L136)
+[src/client/World.ts:136](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L136)
 
 ***
 
@@ -136,7 +136,7 @@ The current date.
 
 #### Defined in
 
-[src/client/World.ts:78](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L78)
+[src/client/World.ts:78](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L78)
 
 ***
 
@@ -168,7 +168,7 @@ The Weather type
 
 #### Defined in
 
-[src/client/World.ts:211](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L211)
+[src/client/World.ts:211](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L211)
 
 ***
 
@@ -209,7 +209,7 @@ The camera that's currently used.
 
 #### Defined in
 
-[src/client/World.ts:38](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L38)
+[src/client/World.ts:38](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L38)
 
 ***
 
@@ -230,7 +230,7 @@ This currently does nothing
 
 #### Defined in
 
-[src/client/World.ts:69](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L69)
+[src/client/World.ts:69](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L69)
 
 ***
 
@@ -262,7 +262,7 @@ The current type of weather.
 
 #### Defined in
 
-[src/client/World.ts:154](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L154)
+[src/client/World.ts:154](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L154)
 
 ***
 
@@ -292,14 +292,14 @@ Doesn't work
 
 #### Defined in
 
-[src/client/World.ts:261](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L261)
+[src/client/World.ts:261](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L261)
 
 ## Methods
 
-### CreateAmbientPickup()
+### createAmbientPickup()
 
 ```ts
-static CreateAmbientPickup(
+static createAmbientPickup(
    type, 
    position, 
    model, 
@@ -325,42 +325,7 @@ The pickup in form of a Prop.
 
 #### Defined in
 
-[src/client/World.ts:620](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L620)
-
-***
-
-### CreatePickup()
-
-```ts
-static CreatePickup(
-   type, 
-   position, 
-   model, 
-   value, 
-rotation?): Promise<null | Pickup>
-```
-
-Create a pickup in a specific position in the world with a specified type and value.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `type` | [`PickupType`](../enumerations/PickupType.md) | The [[`PickupType`]] of pickup. |
-| `position` | [`Vector3`](Vector3.md) | The position in the world it should be spawned. |
-| `model` | [`Model`](Model.md) | The model of the spawned pickup. |
-| `value` | `number` | Give a value for the pickup when picked up. |
-| `rotation`? | [`Vector3`](Vector3.md) | If set, create a rotating pickup with this rotation. |
-
-#### Returns
-
-`Promise`\<`null` \| [`Pickup`](Pickup.md)\>
-
-Pickup object.
-
-#### Defined in
-
-[src/client/World.ts:573](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L573)
+[src/client/World.ts:663](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L663)
 
 ***
 
@@ -393,7 +358,7 @@ Blip object.
 
 #### Defined in
 
-[src/client/World.ts:305](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L305)
+[src/client/World.ts:305](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L305)
 
 ***
 
@@ -422,7 +387,7 @@ const cam = World.createCamera(CameraTypes.Spline, true);
 
 #### Defined in
 
-[src/client/World.ts:322](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L322)
+[src/client/World.ts:322](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L322)
 
 ***
 
@@ -460,7 +425,7 @@ Camera object.
 
 #### Defined in
 
-[src/client/World.ts:339](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L339)
+[src/client/World.ts:339](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L339)
 
 ***
 
@@ -471,7 +436,8 @@ static createPed(
    model, 
    position, 
    heading, 
-isNetwork): Promise<null | Ped>
+   isNetwork, 
+pinToScript): Promise<null | Ped>
 ```
 
 Create a ped at a desired location.
@@ -490,6 +456,7 @@ const myPed = await World.createPed(model, position);
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Ped spawn. |
 | `heading` | `number` | `0` | Heading of Ped when spawning. |
 | `isNetwork` | `boolean` | `true` |  |
+| `pinToScript` | `boolean` | `true` | - |
 
 #### Returns
 
@@ -499,7 +466,42 @@ Ped object.
 
 #### Defined in
 
-[src/client/World.ts:376](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L376)
+[src/client/World.ts:376](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L376)
+
+***
+
+### createPickup()
+
+```ts
+static createPickup(
+   type, 
+   position, 
+   model, 
+   value, 
+rotation?): Promise<null | Pickup>
+```
+
+Create a pickup in a specific position in the world with a specified type and value.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `type` | [`PickupType`](../enumerations/PickupType.md) | The [[`PickupType`]] of pickup. |
+| `position` | [`Vector3`](Vector3.md) | The position in the world it should be spawned. |
+| `model` | [`Model`](Model.md) | The model of the spawned pickup. |
+| `value` | `number` | Give a value for the pickup when picked up. |
+| `rotation`? | [`Vector3`](Vector3.md) | If set, create a rotating pickup with this rotation. |
+
+#### Returns
+
+`Promise`\<`null` \| [`Pickup`](Pickup.md)\>
+
+Pickup object.
+
+#### Defined in
+
+[src/client/World.ts:614](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L614)
 
 ***
 
@@ -509,9 +511,10 @@ Ped object.
 static createProp(
    model, 
    position, 
-   dynamic, 
    placeOnGround, 
-isNetwork): Promise<null | Prop>
+   isNetwork, 
+   pinToScript, 
+forceToBeObject): Promise<null | Prop>
 ```
 
 Spawns a [[`Prop`]] at the given position.
@@ -528,9 +531,10 @@ const myBarrelProp = await World.createProp(model, position, false, true);
 | ------ | ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` | The [[`Model`]] to spawn (must be a Prop) |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | Location of Prop |
-| `dynamic` | `boolean` | `undefined` | If set to true, the Prop will have physics otherwise it's static. |
 | `placeOnGround` | `boolean` | `undefined` | If set to true, sets the Prop on the ground nearest to position. |
 | `isNetwork` | `boolean` | `true` |  |
+| `pinToScript` | `boolean` | `true` | - |
+| `forceToBeObject` | `boolean` | `false` | - |
 
 #### Returns
 
@@ -540,7 +544,7 @@ Prop object.
 
 #### Defined in
 
-[src/client/World.ts:541](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L541)
+[src/client/World.ts:567](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L567)
 
 ***
 
@@ -571,7 +575,7 @@ Ped object.
 
 #### Defined in
 
-[src/client/World.ts:401](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L401)
+[src/client/World.ts:418](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L418)
 
 ***
 
@@ -596,7 +600,7 @@ const randomVehicle = await World.createRandomVehicle(position);
 | Parameter | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Vehicle spawn. |
-| `heading` | `number` | `0` | Heading of Vehicle when spawning. |
+| `heading` | `number` | `0.0` | Heading of Vehicle when spawning. |
 | `isNetwork` | `boolean` | `true` |  |
 
 #### Returns
@@ -607,7 +611,7 @@ Vehicle object.
 
 #### Defined in
 
-[src/client/World.ts:447](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L447)
+[src/client/World.ts:478](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L478)
 
 ***
 
@@ -654,7 +658,7 @@ shouldLoadTextures): Promise<Rope>
 
 #### Defined in
 
-[src/client/World.ts:478](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L478)
+[src/client/World.ts:504](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L504)
 
 ***
 
@@ -665,7 +669,8 @@ static createVehicle(
    model, 
    position, 
    heading, 
-isNetwork): Promise<null | Vehicle>
+   isNetwork, 
+pinToScript): Promise<null | Vehicle>
 ```
 
 Create a vehicle at a desired location.
@@ -682,8 +687,9 @@ const myVehicle = await World.createVehicle(model, position);
 | ------ | ------ | ------ | ------ |
 | `model` | [`Model`](Model.md) | `undefined` | Vehicle model to be spawned. |
 | `position` | [`Vector3`](Vector3.md) | `undefined` | World position (coordinates) of Vehicle spawn. |
-| `heading` | `number` | `0` | Heading of Vehicle when spawning. |
+| `heading` | `number` | `0.0` | Heading of Vehicle when spawning. |
 | `isNetwork` | `boolean` | `true` |  |
+| `pinToScript` | `boolean` | `true` | - |
 
 #### Returns
 
@@ -693,7 +699,7 @@ Vehicle object.
 
 #### Defined in
 
-[src/client/World.ts:420](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L420)
+[src/client/World.ts:437](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L437)
 
 ***
 
@@ -711,7 +717,7 @@ Destroys all existing cameras and sets your rendering camera back to GameplayCam
 
 #### Defined in
 
-[src/client/World.ts:288](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L288)
+[src/client/World.ts:288](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L288)
 
 ***
 
@@ -742,7 +748,7 @@ Creates a light in the world with a certain length (range).
 
 #### Defined in
 
-[src/client/World.ts:724](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L724)
+[src/client/World.ts:769](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L769)
 
 ***
 
@@ -771,7 +777,7 @@ Draws a line in the world. It's not possible to change thickness.
 
 #### Defined in
 
-[src/client/World.ts:821](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L821)
+[src/client/World.ts:866](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L866)
 
 ***
 
@@ -827,7 +833,7 @@ setTick(() => {
 
 #### Defined in
 
-[src/client/World.ts:674](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L674)
+[src/client/World.ts:719](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L719)
 
 ***
 
@@ -858,7 +864,7 @@ Draw polygon in the world.
 
 #### Defined in
 
-[src/client/World.ts:833](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L833)
+[src/client/World.ts:878](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L878)
 
 ***
 
@@ -897,7 +903,7 @@ Creates a light in the world. More configurable than World.drawLightWithRange.
 
 #### Defined in
 
-[src/client/World.ts:745](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L745)
+[src/client/World.ts:790](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L790)
 
 ***
 
@@ -936,7 +942,7 @@ Creates a light in the world. Same as World.drawSpotlight, but also draws shadow
 
 #### Defined in
 
-[src/client/World.ts:785](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L785)
+[src/client/World.ts:830](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L830)
 
 ***
 
@@ -971,7 +977,7 @@ Cast a ray from {@param start} to {@param end}.
 
 #### Defined in
 
-[src/client/World.ts:863](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L863)
+[src/client/World.ts:908](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L908)
 
 ***
 
@@ -991,7 +997,7 @@ Array of Peds.
 
 #### Defined in
 
-[src/client/World.ts:1007](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L1007)
+[src/client/World.ts:1052](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1052)
 
 ***
 
@@ -1011,7 +1017,7 @@ Array of Pickups.
 
 #### Defined in
 
-[src/client/World.ts:1058](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L1058)
+[src/client/World.ts:1103](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1103)
 
 ***
 
@@ -1031,7 +1037,7 @@ Array of Props.
 
 #### Defined in
 
-[src/client/World.ts:979](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L979)
+[src/client/World.ts:1024](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1024)
 
 ***
 
@@ -1051,7 +1057,7 @@ Array of Ropes.
 
 #### Defined in
 
-[src/client/World.ts:993](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L993)
+[src/client/World.ts:1038](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1038)
 
 ***
 
@@ -1071,7 +1077,7 @@ Array of Vehicles.
 
 #### Defined in
 
-[src/client/World.ts:1021](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L1021)
+[src/client/World.ts:1066](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1066)
 
 ***
 
@@ -1102,7 +1108,7 @@ Gets the closest object of this model
 
 #### Defined in
 
-[src/client/World.ts:952](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L952)
+[src/client/World.ts:997](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L997)
 
 ***
 
@@ -1128,7 +1134,7 @@ the closest vehicle or null
 
 #### Defined in
 
-[src/client/World.ts:1034](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L1034)
+[src/client/World.ts:1079](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1079)
 
 ***
 
@@ -1164,7 +1170,7 @@ entity or coordinate .
 
 #### Defined in
 
-[src/client/World.ts:896](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L896)
+[src/client/World.ts:941](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L941)
 
 ***
 
@@ -1191,7 +1197,7 @@ SynchronousRaycast object.
 
 #### Defined in
 
-[src/client/World.ts:925](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L925)
+[src/client/World.ts:970](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L970)
 
 ***
 
@@ -1216,4 +1222,4 @@ Transition to different weather type within a certain time.
 
 #### Defined in
 
-[src/client/World.ts:279](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/World.ts#L279)
+[src/client/World.ts:279](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L279)

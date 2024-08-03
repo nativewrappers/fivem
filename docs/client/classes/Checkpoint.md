@@ -22,7 +22,7 @@ new Checkpoint(handle): Checkpoint
 
 #### Defined in
 
-[src/client/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Checkpoint.ts#L11)
+[src/client/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/Checkpoint.ts#L11)
 
 ## Accessors
 
@@ -48,7 +48,7 @@ set Icon(icon): void
 
 #### Defined in
 
-[src/client/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Checkpoint.ts#L31)
+[src/client/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/Checkpoint.ts#L31)
 
 ***
 
@@ -74,7 +74,7 @@ set Position(position): void
 
 #### Defined in
 
-[src/client/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Checkpoint.ts#L15)
+[src/client/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/Checkpoint.ts#L15)
 
 ***
 
@@ -100,7 +100,7 @@ set Radius(radius): void
 
 #### Defined in
 
-[src/client/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Checkpoint.ts#L48)
+[src/client/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/Checkpoint.ts#L48)
 
 ***
 
@@ -126,4 +126,4 @@ set TargetPosition(targetPosition): void
 
 #### Defined in
 
-[src/client/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/631c6d86e9569591c88ce277255e6c3e13e943cb/src/client/Checkpoint.ts#L23)
+[src/client/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/Checkpoint.ts#L23)
