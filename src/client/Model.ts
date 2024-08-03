@@ -1,7 +1,7 @@
 import { Game } from './Game';
 import { VehicleHash } from './hashes';
 import { Dimensions } from './interfaces/Dimensions';
-import { Vector3 } from './utils';
+import { Vector3, Wait } from './utils';
 
 /**
  * Class to create and manage entity models.
@@ -197,24 +197,25 @@ export class Model {
 
   /**
    * Request and load the model with a specified timeout. Default timeout is 1000 (recommended).
+   * This function will not automatically set the model as no longer needed when
+   * done.
    *
    * @param timeout Maximum allowed time for model to load.
    */
-  public request(timeout = 1000): Promise<boolean> {
-    return new Promise(resolve => {
-      if (!this.IsInCdImage && !this.IsValid && !IsWeaponValid(this.hash)) {
-        resolve(false);
-      }
-      RequestModel(this.hash);
-      const start = GetGameTimer();
-      const interval = setInterval(() => {
-        if (this.IsLoaded || GetGameTimer() - start >= timeout) {
-          clearInterval(interval);
-          this.markAsNoLongerNeeded();
-          resolve(this.IsLoaded);
-        }
-      }, 0);
-    });
+  public async request(timeoutMs = 1000): Promise<boolean> {
+    if (!this.IsInCdImage && !this.IsValid && !IsWeaponValid(this.hash)) {
+      return false;
+    }
+    // pre-check so if its already loaded we don't add another ref
+    if (this.IsLoaded) {
+      return true;
+    }
+    RequestModel(this.hash);
+    const timeout = GetGameTimer() + timeoutMs;
+    while (!this.IsLoaded && timeout < GetGameTimer()) {
+      await Wait(0);
+    }
+    return this.IsLoaded;
   }
 
   /**

@@ -378,13 +378,30 @@ export abstract class World {
     position: Vector3,
     heading = 0,
     isNetwork = true,
+    pinToScript = true,
   ): Promise<Ped | null> {
     if (!model.IsPed || !(await model.request(1000))) {
       return null;
     }
-    return new Ped(
-      CreatePed(26, model.Hash, position.x, position.y, position.z, heading, isNetwork, false),
+
+    const ped = CreatePed(
+      -1,
+      model.Hash,
+      position.x,
+      position.y,
+      position.z,
+      heading,
+      isNetwork,
+      pinToScript,
     );
+
+    model.markAsNoLongerNeeded();
+
+    if (ped === 0) {
+      return null;
+    }
+
+    return new Ped(ped);
   }
 
   /**
@@ -420,15 +437,29 @@ export abstract class World {
   public static async createVehicle(
     model: Model,
     position: Vector3,
-    heading = 0,
+    heading = 0.0,
     isNetwork = true,
+    pinToScript = true,
   ): Promise<Vehicle | null> {
     if (!model.IsVehicle || !(await model.request(1000))) {
       return null;
     }
-    return new Vehicle(
-      CreateVehicle(model.Hash, position.x, position.y, position.z, heading, isNetwork, false),
+
+    const vehicle = CreateVehicle(
+      model.Hash,
+      position.x,
+      position.y,
+      position.z,
+      heading,
+      isNetwork,
+      pinToScript,
     );
+
+    if (vehicle === 0) {
+      return null;
+    }
+
+    return new Vehicle(vehicle);
   }
 
   /**
@@ -446,7 +477,7 @@ export abstract class World {
    */
   public static async createRandomVehicle(
     position: Vector3,
-    heading = 0,
+    heading = 0.0,
     isNetwork = true,
   ): Promise<Vehicle | null> {
     const vehicleCount: number = Object.keys(VehicleHash).length / 2; // check
@@ -455,12 +486,7 @@ export abstract class World {
     const modelHash: number = GetHashKey(randomVehicleName);
     const model = new Model(modelHash);
 
-    if (!model.IsVehicle || !(await model.request(1000))) {
-      return null;
-    }
-    return new Vehicle(
-      CreateVehicle(model.Hash, position.x, position.y, position.z, heading, isNetwork, false),
-    );
+    return this.createVehicle(model, position, heading, isNetwork, false);
   }
 
   /*
@@ -533,7 +559,7 @@ export abstract class World {
    *
    * @param model The [[`Model`]] to spawn (must be a Prop)
    * @param position Location of Prop
-   * @param dynamic If set to true, the Prop will have physics otherwise it's static.
+   * @param doorFlag If set to true, the Prop will have physics otherwise it's static.
    * @param placeOnGround If set to true, sets the Prop on the ground nearest to position.
    * @param isNetwork
    * @returns Prop object.
@@ -541,17 +567,32 @@ export abstract class World {
   public static async createProp(
     model: Model,
     position: Vector3,
-    dynamic: boolean,
     placeOnGround: boolean,
     isNetwork = true,
+    pinToScript = true,
+    forceToBeObject = false,
   ): Promise<Prop | null> {
     if (!model.IsProp || !(await model.request(1000))) {
       return null;
     }
 
-    const prop = new Prop(
-      CreateObject(model.Hash, position.x, position.y, position.z, isNetwork, true, dynamic),
+    const object = CreateObject(
+      model.Hash,
+      position.x,
+      position.y,
+      position.z,
+      isNetwork,
+      pinToScript,
+      forceToBeObject,
     );
+
+    model.markAsNoLongerNeeded();
+
+    if (object === 0) {
+      return null;
+    }
+
+    const prop = new Prop(object);
 
     if (placeOnGround) {
       prop.placeOnGround();
@@ -570,7 +611,7 @@ export abstract class World {
    * @param rotation If set, create a rotating pickup with this rotation.
    * @returns Pickup object.
    */
-  public static async CreatePickup(
+  public static async createPickup(
     type: PickupType,
     position: Vector3,
     model: Model,
@@ -601,6 +642,8 @@ export abstract class World {
     else
       handle = CreatePickup(type, position.x, position.y, position.z, 0, value, true, model.Hash);
 
+    model.markAsNoLongerNeeded();
+
     if (handle === 0) {
       return null;
     }
@@ -617,7 +660,7 @@ export abstract class World {
    * @param value The value tied to the pickup.
    * @returns The pickup in form of a Prop.
    */
-  public static async CreateAmbientPickup(
+  public static async createAmbientPickup(
     type: PickupType,
     position: Vector3,
     model: Model,
@@ -638,6 +681,8 @@ export abstract class World {
       false,
       true,
     );
+
+    model.markAsNoLongerNeeded();
 
     if (handle === 0) {
       return null;
