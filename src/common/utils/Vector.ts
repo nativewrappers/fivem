@@ -39,10 +39,10 @@ export interface Vec extends Vec2 {
 type VectorN<L extends number, T = number> = L extends 2
   ? [T, T]
   : L extends 3
-  ? [T, T, T]
-  : L extends 4
-  ? [T, T, T, T]
-  : never;
+    ? [T, T, T]
+    : L extends 4
+      ? [T, T, T, T]
+      : never;
 
 /**
  * An array that can be converted to a vector.
@@ -50,10 +50,10 @@ type VectorN<L extends number, T = number> = L extends 2
 type VectorArray<T> = T extends Vec4
   ? VectorN<4>
   : T extends Vec3
-  ? VectorN<3>
-  : T extends Vec2
-  ? VectorN<2>
-  : number[];
+    ? VectorN<3>
+    : T extends Vec2
+      ? VectorN<2>
+      : number[];
 
 /**
  * The constructor type of the Vector class.
@@ -76,10 +76,10 @@ type VectorKeys = keyof Vec;
 type InferVector<T> = T extends Vec4 | VectorN<4>
   ? Vector4
   : T extends Vec3 | VectorN<3>
-  ? Vector3
-  : T extends Vec2 | VectorN<2>
-  ? Vector2
-  : any;
+    ? Vector3
+    : T extends Vec2 | VectorN<2>
+      ? Vector2
+      : any;
 
 /**
  * A base vector class inherited by all vector classes.
@@ -171,15 +171,14 @@ export class Vector {
     let { x, y, z, w } = a;
     const isNumber = typeof b === 'number';
 
-    x = operator(x, isNumber ? b : b.x ?? 0);
-    y = operator(y, isNumber ? b : b.y ?? 0);
+    x = operator(x, isNumber ? b : (b.x ?? 0));
+    y = operator(y, isNumber ? b : (b.y ?? 0));
 
-    if (z) z = operator(z, isNumber ? b : b.z ?? 0);
-    if (w) w = operator(w, isNumber ? b : b.w ?? 0);
+    if (z) z = operator(z, isNumber ? b : (b.z ?? 0));
+    if (w) w = operator(w, isNumber ? b : (b.w ?? 0));
 
     return this.create(x, y, z, w) as unknown as U;
   }
-
 
   /**
    * Adds two vectors or a scalar value to a vector.
@@ -314,7 +313,6 @@ export class Vector {
     return this.create(x, y, z, w) as unknown as U;
   }
 
-
   /**
    * Adds two vectors or a scalar value to a vector.
    * @param a - The first vector or scalar value.
@@ -443,10 +441,12 @@ export class Vector {
    */
   static fromObject<T extends VectorType, U extends InferVector<T> | VectorArray<T>>(
     this: T,
-    primitive: U,
+    primitive: U | MsgpackBuffer,
   ) {
     if (Array.isArray(primitive))
       return this.fromArray(primitive as VectorArray<T>) as InstanceType<T>;
+
+    if ('buffer' in primitive && 'type' in primitive) return this.fromBuffer(primitive);
 
     const { x, y, z, w } = primitive;
 
@@ -595,8 +595,8 @@ export class Vector {
   }
 
   /**
-    * @see Vector.addAbsolute
-    */
+   * @see Vector.addAbsolute
+   */
   public addAbsolute(v: VectorLike) {
     return Vector.addAbsolute(this, v);
   }
@@ -709,8 +709,8 @@ export class Vector3 extends Vector implements Vec3 {
   }
 
   /**
-    * @returns the x and y values as Vec2
-    */
+   * @returns the x and y values as Vec2
+   */
   public toVec2() {
     return new Vector2(this.x, this.y);
   }
@@ -762,15 +762,15 @@ export class Vector4 extends Vector {
   }
 
   /**
-    * @returns the x and y values as Vec2
-    */
+   * @returns the x and y values as Vec2
+   */
   public toVec2() {
     return new Vector2(this.x, this.y);
   }
 
   /**
-    * @returns the x and y values as Vec3
-    */
+   * @returns the x and y values as Vec3
+   */
   public toVec3() {
     return new Vector3(this.x, this.y, this.z);
   }
