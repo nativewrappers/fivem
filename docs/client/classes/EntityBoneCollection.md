@@ -26,13 +26,13 @@ new EntityBoneCollection(owner): EntityBoneCollection
 
 #### Defined in
 
-[src/client/models/EntityBoneCollection.ts:7](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/models/EntityBoneCollection.ts#L7)
+[src/client/models/EntityBoneCollection.ts:7](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/models/EntityBoneCollection.ts#L7)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/client/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/models/EntityBoneCollection.ts#L5) |
+| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/client/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/models/EntityBoneCollection.ts#L5) |
 
 ## Accessors
 
@@ -48,7 +48,7 @@ get Core(): EntityBone
 
 #### Defined in
 
-[src/client/models/EntityBoneCollection.ts:22](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/models/EntityBoneCollection.ts#L22)
+[src/client/models/EntityBoneCollection.ts:22](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/models/EntityBoneCollection.ts#L22)
 
 ## Methods
 
@@ -71,7 +71,7 @@ getBone(boneIndex?, boneName?): EntityBone
 
 #### Defined in
 
-[src/client/models/EntityBoneCollection.ts:15](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/models/EntityBoneCollection.ts#L15)
+[src/client/models/EntityBoneCollection.ts:15](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/models/EntityBoneCollection.ts#L15)
 
 ***
 
@@ -93,4 +93,4 @@ hasBone(name): boolean
 
 #### Defined in
 
-[src/client/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/models/EntityBoneCollection.ts#L11)
+[src/client/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/models/EntityBoneCollection.ts#L11)

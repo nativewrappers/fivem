@@ -6,8 +6,8 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Deploying` | `1` | [src/client/enums/Parachute.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/Parachute.ts#L11) |
-| `FreeFalling` | `0` | [src/client/enums/Parachute.ts:10](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/Parachute.ts#L10) |
-| `Gliding` | `2` | [src/client/enums/Parachute.ts:12](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/Parachute.ts#L12) |
-| `LandingOrFallingToDoom` | `3` | [src/client/enums/Parachute.ts:13](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/Parachute.ts#L13) |
-| `None` | `-1` | [src/client/enums/Parachute.ts:9](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/Parachute.ts#L9) |
+| `Deploying` | `1` | [src/client/enums/Parachute.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Parachute.ts#L11) |
+| `FreeFalling` | `0` | [src/client/enums/Parachute.ts:10](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Parachute.ts#L10) |
+| `Gliding` | `2` | [src/client/enums/Parachute.ts:12](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Parachute.ts#L12) |
+| `LandingOrFallingToDoom` | `3` | [src/client/enums/Parachute.ts:13](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Parachute.ts#L13) |
+| `None` | `-1` | [src/client/enums/Parachute.ts:9](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Parachute.ts#L9) |

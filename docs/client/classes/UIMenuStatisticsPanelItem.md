@@ -23,17 +23,17 @@ new UIMenuStatisticsPanelItem(name, percentage): UIMenuStatisticsPanelItem
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:13](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L13)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:13](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L13)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `activeBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:9](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L9) |
-| `backgroundBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:10](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L10) |
-| `divider` | `readonly` | [`Rectangle`](Rectangle.md)[] | `[]` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L11) |
-| `id` | `readonly` | `string` | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:6](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L6) |
-| `text` | `readonly` | [`Text`](Text.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:8](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L8) |
+| `activeBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:9](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L9) |
+| `backgroundBar` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:10](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L10) |
+| `divider` | `readonly` | [`Rectangle`](Rectangle.md)[] | `[]` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L11) |
+| `id` | `readonly` | `string` | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:6](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L6) |
+| `text` | `readonly` | [`Text`](Text.md) | `undefined` | [src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:8](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L8) |
 
 ## Accessors
 
@@ -59,7 +59,7 @@ set Name(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:28](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L28)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:28](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L28)
 
 ***
 
@@ -85,4 +85,4 @@ set Percentage(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:36](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L36)
+[src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts:36](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/menu/items/panels/UIMenuStatisticsPanelItem.ts#L36)

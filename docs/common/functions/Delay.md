@@ -18,4 +18,4 @@ function Delay(milliseconds): Promise<void>
 
 ## Defined in
 
-[src/common/utils/index.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/utils/index.ts#L11)
+[src/common/utils/index.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/common/utils/index.ts#L11)

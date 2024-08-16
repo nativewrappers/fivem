@@ -6,8 +6,8 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Animated` | `"DEFAULT_ANIMATED_CAMERA"` | [src/client/enums/CameraTypes.ts:3](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/CameraTypes.ts#L3) |
-| `Scripted` | `"DEFAULT_SCRIPTED_CAMERA"` | [src/client/enums/CameraTypes.ts:2](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/CameraTypes.ts#L2) |
-| `ScriptedFly` | `"DEFAULT_SCRIPTED_FLY_CAMERA"` | [src/client/enums/CameraTypes.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/CameraTypes.ts#L5) |
-| `Spline` | `"DEFAULT_SPLINE_CAMERA"` | [src/client/enums/CameraTypes.ts:4](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/CameraTypes.ts#L4) |
-| `TimedSpline` | `"TIMED_SPLINE_CAMERA"` | [src/client/enums/CameraTypes.ts:6](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/CameraTypes.ts#L6) |
+| `Animated` | `"DEFAULT_ANIMATED_CAMERA"` | [src/client/enums/CameraTypes.ts:3](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/CameraTypes.ts#L3) |
+| `Scripted` | `"DEFAULT_SCRIPTED_CAMERA"` | [src/client/enums/CameraTypes.ts:2](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/CameraTypes.ts#L2) |
+| `ScriptedFly` | `"DEFAULT_SCRIPTED_FLY_CAMERA"` | [src/client/enums/CameraTypes.ts:5](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/CameraTypes.ts#L5) |
+| `Spline` | `"DEFAULT_SPLINE_CAMERA"` | [src/client/enums/CameraTypes.ts:4](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/CameraTypes.ts#L4) |
+| `TimedSpline` | `"TIMED_SPLINE_CAMERA"` | [src/client/enums/CameraTypes.ts:6](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/CameraTypes.ts#L6) |

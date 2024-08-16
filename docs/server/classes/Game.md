@@ -18,7 +18,7 @@ new Game(): Game
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L5) |
+| `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L5) |
 
 ## Accessors
 
@@ -34,7 +34,7 @@ get static GameBuild(): number
 
 #### Defined in
 
-[src/server/Game.ts:30](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L30)
+[src/server/Game.ts:30](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L30)
 
 ***
 
@@ -50,7 +50,7 @@ get static GameName(): string
 
 #### Defined in
 
-[src/server/Game.ts:34](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L34)
+[src/server/Game.ts:34](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L34)
 
 ***
 
@@ -68,7 +68,7 @@ Gets how many milliseconds the game has been open this session
 
 #### Defined in
 
-[src/server/Game.ts:26](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L26)
+[src/server/Game.ts:26](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L26)
 
 ***
 
@@ -88,7 +88,7 @@ get static RegisteredCommands(): [{
 
 #### Defined in
 
-[src/server/Game.ts:56](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L56)
+[src/server/Game.ts:56](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L56)
 
 ## Methods
 
@@ -108,7 +108,7 @@ Iterable list of Player objects.
 
 #### Defined in
 
-[src/server/Game.ts:64](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L64)
+[src/server/Game.ts:64](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L64)
 
 ***
 
@@ -132,7 +132,7 @@ Calculate the Jenkins One At A Time (joaat) has from the given string.
 
 #### Defined in
 
-[src/server/Game.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L11)
+[src/server/Game.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L11)
 
 ***
 
@@ -159,4 +159,4 @@ static registerCommand(
 
 #### Defined in
 
-[src/server/Game.ts:38](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/server/Game.ts#L38)
+[src/server/Game.ts:38](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/server/Game.ts#L38)

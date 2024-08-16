@@ -8,13 +8,13 @@ List of possible entity intersections. Used for raycasting.
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `All` | `511` | [src/client/enums/RaycastEnums.ts:14](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L14) |
-| `Foliage` | `256` | [src/client/enums/RaycastEnums.ts:13](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L13) |
-| `None` | `0` | [src/client/enums/RaycastEnums.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L5) |
-| `Object` | `16` | [src/client/enums/RaycastEnums.ts:10](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L10) |
-| `Ped` | `4` | [src/client/enums/RaycastEnums.ts:8](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L8) |
-| `Pickup` | `32` | [src/client/enums/RaycastEnums.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L11) |
-| `Ragdoll` | `8` | [src/client/enums/RaycastEnums.ts:9](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L9) |
-| `River` | `128` | [src/client/enums/RaycastEnums.ts:12](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L12) |
-| `Vehicles` | `2` | [src/client/enums/RaycastEnums.ts:7](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L7) |
-| `World` | `1` | [src/client/enums/RaycastEnums.ts:6](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L6) |
+| `All` | `511` | [src/client/enums/RaycastEnums.ts:14](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L14) |
+| `Foliage` | `256` | [src/client/enums/RaycastEnums.ts:13](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L13) |
+| `None` | `0` | [src/client/enums/RaycastEnums.ts:5](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L5) |
+| `Object` | `16` | [src/client/enums/RaycastEnums.ts:10](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L10) |
+| `Ped` | `4` | [src/client/enums/RaycastEnums.ts:8](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L8) |
+| `Pickup` | `32` | [src/client/enums/RaycastEnums.ts:11](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L11) |
+| `Ragdoll` | `8` | [src/client/enums/RaycastEnums.ts:9](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L9) |
+| `River` | `128` | [src/client/enums/RaycastEnums.ts:12](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L12) |
+| `Vehicles` | `2` | [src/client/enums/RaycastEnums.ts:7](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L7) |
+| `World` | `1` | [src/client/enums/RaycastEnums.ts:6](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L6) |
