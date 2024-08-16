@@ -22,13 +22,13 @@ new Resource(name): Resource
 
 #### Defined in
 
-[src/common/Resource.ts:2](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L2)
+[src/common/Resource.ts:2](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L2)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `name` | `public` | `string` | [src/common/Resource.ts:2](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L2) |
+| `name` | `public` | `string` | [src/common/Resource.ts:2](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L2) |
 
 ## Methods
 
@@ -51,7 +51,7 @@ getMetadata(metadataKey, index): string
 
 #### Defined in
 
-[src/common/Resource.ts:3](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L3)
+[src/common/Resource.ts:3](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L3)
 
 ***
 
@@ -67,7 +67,7 @@ getPath(): string
 
 #### Defined in
 
-[src/common/Resource.ts:7](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L7)
+[src/common/Resource.ts:7](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L7)
 
 ***
 
@@ -89,7 +89,7 @@ loadFile(fileName): string
 
 #### Defined in
 
-[src/common/Resource.ts:11](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L11)
+[src/common/Resource.ts:11](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L11)
 
 ***
 
@@ -116,7 +116,7 @@ saveFile(
 
 #### Defined in
 
-[src/common/Resource.ts:15](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L15)
+[src/common/Resource.ts:15](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L15)
 
 ***
 
@@ -132,7 +132,7 @@ scheduleTick(): void
 
 #### Defined in
 
-[src/common/Resource.ts:19](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L19)
+[src/common/Resource.ts:19](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L19)
 
 ***
 
@@ -148,7 +148,7 @@ start(): void
 
 #### Defined in
 
-[src/common/Resource.ts:23](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L23)
+[src/common/Resource.ts:23](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L23)
 
 ***
 
@@ -164,7 +164,7 @@ stop(): void
 
 #### Defined in
 
-[src/common/Resource.ts:27](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L27)
+[src/common/Resource.ts:27](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L27)
 
 ***
 
@@ -180,7 +180,7 @@ static resourceCount(): number
 
 #### Defined in
 
-[src/common/Resource.ts:39](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L39)
+[src/common/Resource.ts:39](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L39)
 
 ***
 
@@ -202,7 +202,7 @@ static startResource(name): void
 
 #### Defined in
 
-[src/common/Resource.ts:31](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L31)
+[src/common/Resource.ts:31](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L31)
 
 ***
 
@@ -224,4 +224,4 @@ static stopResource(name): void
 
 #### Defined in
 
-[src/common/Resource.ts:35](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/Resource.ts#L35)
+[src/common/Resource.ts:35](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/Resource.ts#L35)

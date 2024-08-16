@@ -40,7 +40,7 @@ Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 
 #### Defined in
 
-[src/client/World.ts:102](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L102)
+[src/client/World.ts:102](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L102)
 
 ***
 
@@ -72,7 +72,7 @@ The current cloud hat type.
 
 #### Defined in
 
-[src/client/World.ts:111](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L111)
+[src/client/World.ts:111](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L111)
 
 ***
 
@@ -104,7 +104,7 @@ The current cloud opacity between 0.0 and 1.0
 
 #### Defined in
 
-[src/client/World.ts:136](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L136)
+[src/client/World.ts:136](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L136)
 
 ***
 
@@ -136,7 +136,7 @@ The current date.
 
 #### Defined in
 
-[src/client/World.ts:78](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L78)
+[src/client/World.ts:78](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L78)
 
 ***
 
@@ -168,7 +168,7 @@ The Weather type
 
 #### Defined in
 
-[src/client/World.ts:211](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L211)
+[src/client/World.ts:211](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L211)
 
 ***
 
@@ -209,7 +209,7 @@ The camera that's currently used.
 
 #### Defined in
 
-[src/client/World.ts:38](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L38)
+[src/client/World.ts:38](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L38)
 
 ***
 
@@ -230,7 +230,7 @@ This currently does nothing
 
 #### Defined in
 
-[src/client/World.ts:69](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L69)
+[src/client/World.ts:69](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L69)
 
 ***
 
@@ -262,7 +262,7 @@ The current type of weather.
 
 #### Defined in
 
-[src/client/World.ts:154](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L154)
+[src/client/World.ts:154](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L154)
 
 ***
 
@@ -292,7 +292,7 @@ Doesn't work
 
 #### Defined in
 
-[src/client/World.ts:261](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L261)
+[src/client/World.ts:261](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L261)
 
 ## Methods
 
@@ -325,7 +325,7 @@ The pickup in form of a Prop.
 
 #### Defined in
 
-[src/client/World.ts:663](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L663)
+[src/client/World.ts:663](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L663)
 
 ***
 
@@ -358,7 +358,7 @@ Blip object.
 
 #### Defined in
 
-[src/client/World.ts:305](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L305)
+[src/client/World.ts:305](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L305)
 
 ***
 
@@ -387,7 +387,7 @@ const cam = World.createCamera(CameraTypes.Spline, true);
 
 #### Defined in
 
-[src/client/World.ts:322](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L322)
+[src/client/World.ts:322](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L322)
 
 ***
 
@@ -425,7 +425,7 @@ Camera object.
 
 #### Defined in
 
-[src/client/World.ts:339](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L339)
+[src/client/World.ts:339](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L339)
 
 ***
 
@@ -466,7 +466,7 @@ Ped object.
 
 #### Defined in
 
-[src/client/World.ts:376](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L376)
+[src/client/World.ts:376](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L376)
 
 ***
 
@@ -501,7 +501,7 @@ Pickup object.
 
 #### Defined in
 
-[src/client/World.ts:614](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L614)
+[src/client/World.ts:614](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L614)
 
 ***
 
@@ -544,7 +544,7 @@ Prop object.
 
 #### Defined in
 
-[src/client/World.ts:567](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L567)
+[src/client/World.ts:567](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L567)
 
 ***
 
@@ -575,7 +575,7 @@ Ped object.
 
 #### Defined in
 
-[src/client/World.ts:418](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L418)
+[src/client/World.ts:418](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L418)
 
 ***
 
@@ -611,7 +611,7 @@ Vehicle object.
 
 #### Defined in
 
-[src/client/World.ts:478](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L478)
+[src/client/World.ts:478](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L478)
 
 ***
 
@@ -658,7 +658,7 @@ shouldLoadTextures): Promise<Rope>
 
 #### Defined in
 
-[src/client/World.ts:504](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L504)
+[src/client/World.ts:504](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L504)
 
 ***
 
@@ -699,7 +699,7 @@ Vehicle object.
 
 #### Defined in
 
-[src/client/World.ts:437](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L437)
+[src/client/World.ts:437](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L437)
 
 ***
 
@@ -717,7 +717,7 @@ Destroys all existing cameras and sets your rendering camera back to GameplayCam
 
 #### Defined in
 
-[src/client/World.ts:288](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L288)
+[src/client/World.ts:288](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L288)
 
 ***
 
@@ -748,7 +748,7 @@ Creates a light in the world with a certain length (range).
 
 #### Defined in
 
-[src/client/World.ts:769](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L769)
+[src/client/World.ts:769](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L769)
 
 ***
 
@@ -777,7 +777,7 @@ Draws a line in the world. It's not possible to change thickness.
 
 #### Defined in
 
-[src/client/World.ts:866](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L866)
+[src/client/World.ts:866](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L866)
 
 ***
 
@@ -833,7 +833,7 @@ setTick(() => {
 
 #### Defined in
 
-[src/client/World.ts:719](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L719)
+[src/client/World.ts:719](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L719)
 
 ***
 
@@ -864,7 +864,7 @@ Draw polygon in the world.
 
 #### Defined in
 
-[src/client/World.ts:878](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L878)
+[src/client/World.ts:878](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L878)
 
 ***
 
@@ -903,7 +903,7 @@ Creates a light in the world. More configurable than World.drawLightWithRange.
 
 #### Defined in
 
-[src/client/World.ts:790](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L790)
+[src/client/World.ts:790](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L790)
 
 ***
 
@@ -942,7 +942,7 @@ Creates a light in the world. Same as World.drawSpotlight, but also draws shadow
 
 #### Defined in
 
-[src/client/World.ts:830](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L830)
+[src/client/World.ts:830](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L830)
 
 ***
 
@@ -977,7 +977,7 @@ Cast a ray from {@param start} to {@param end}.
 
 #### Defined in
 
-[src/client/World.ts:908](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L908)
+[src/client/World.ts:908](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L908)
 
 ***
 
@@ -997,7 +997,7 @@ Array of Peds.
 
 #### Defined in
 
-[src/client/World.ts:1052](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1052)
+[src/client/World.ts:1077](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1077)
 
 ***
 
@@ -1017,7 +1017,7 @@ Array of Pickups.
 
 #### Defined in
 
-[src/client/World.ts:1103](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1103)
+[src/client/World.ts:1128](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1128)
 
 ***
 
@@ -1037,7 +1037,7 @@ Array of Props.
 
 #### Defined in
 
-[src/client/World.ts:1024](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1024)
+[src/client/World.ts:1049](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1049)
 
 ***
 
@@ -1057,7 +1057,7 @@ Array of Ropes.
 
 #### Defined in
 
-[src/client/World.ts:1038](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1038)
+[src/client/World.ts:1063](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1063)
 
 ***
 
@@ -1077,7 +1077,7 @@ Array of Vehicles.
 
 #### Defined in
 
-[src/client/World.ts:1066](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1066)
+[src/client/World.ts:1091](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1091)
 
 ***
 
@@ -1108,7 +1108,7 @@ Gets the closest object of this model
 
 #### Defined in
 
-[src/client/World.ts:997](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L997)
+[src/client/World.ts:1022](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1022)
 
 ***
 
@@ -1134,7 +1134,7 @@ the closest vehicle or null
 
 #### Defined in
 
-[src/client/World.ts:1079](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L1079)
+[src/client/World.ts:1104](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L1104)
 
 ***
 
@@ -1170,7 +1170,40 @@ entity or coordinate .
 
 #### Defined in
 
-[src/client/World.ts:941](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L941)
+[src/client/World.ts:941](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L941)
+
+***
+
+### raycastDirection()
+
+```ts
+static raycastDirection(
+   source, 
+   direction, 
+   maxDistance, 
+   losFlags, 
+   shapeTestOptions, 
+   ignoreEntity?): AsynchronousRaycastResult
+```
+
+#### Parameters
+
+| Parameter | Type | Default value |
+| ------ | ------ | ------ |
+| `source` | [`Vector3`](Vector3.md) | `undefined` |
+| `direction` | [`Vector3`](Vector3.md) | `undefined` |
+| `maxDistance` | `number` | `undefined` |
+| `losFlags` | [`IntersectFlags`](../enumerations/IntersectFlags.md) | `IntersectFlags.All` |
+| `shapeTestOptions` | `number` | `SHAPE_TEST_DEFAULT` |
+| `ignoreEntity`? | [`BaseEntity`](BaseEntity.md) | `undefined` |
+
+#### Returns
+
+[`AsynchronousRaycastResult`](AsynchronousRaycastResult.md)
+
+#### Defined in
+
+[src/client/World.ts:963](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L963)
 
 ***
 
@@ -1197,7 +1230,7 @@ SynchronousRaycast object.
 
 #### Defined in
 
-[src/client/World.ts:970](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L970)
+[src/client/World.ts:995](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L995)
 
 ***
 
@@ -1222,4 +1255,4 @@ Transition to different weather type within a certain time.
 
 #### Defined in
 
-[src/client/World.ts:279](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/World.ts#L279)
+[src/client/World.ts:279](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/World.ts#L279)

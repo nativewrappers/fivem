@@ -1485,7 +1485,7 @@ Creates a vector from an array or object containing vector components.
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `this` | `T` | - |
-| `primitive` | `U` | The object to use as a vector. |
+| `primitive` | `U` \| `MsgpackBuffer` | The object to use as a vector. |
 
 #### Returns
 

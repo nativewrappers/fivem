@@ -28,4 +28,4 @@ static uuidv4(): string
 
 #### Defined in
 
-[src/client/utils/Crypto.ts:2](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/utils/Crypto.ts#L2)
+[src/client/utils/Crypto.ts:2](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/utils/Crypto.ts#L2)

@@ -6,7 +6,7 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `IgnoreGlass` | `1` | [src/client/enums/RaycastEnums.ts:19](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RaycastEnums.ts#L19) |
-| `IgnoreNoCollision` | `4` | [src/client/enums/RaycastEnums.ts:21](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RaycastEnums.ts#L21) |
-| `IgnoreSeeThrough` | `2` | [src/client/enums/RaycastEnums.ts:20](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RaycastEnums.ts#L20) |
-| `None` | `0` | [src/client/enums/RaycastEnums.ts:18](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RaycastEnums.ts#L18) |
+| `IgnoreGlass` | `1` | [src/client/enums/RaycastEnums.ts:19](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L19) |
+| `IgnoreNoCollision` | `4` | [src/client/enums/RaycastEnums.ts:21](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L21) |
+| `IgnoreSeeThrough` | `2` | [src/client/enums/RaycastEnums.ts:20](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L20) |
+| `None` | `0` | [src/client/enums/RaycastEnums.ts:18](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RaycastEnums.ts#L18) |

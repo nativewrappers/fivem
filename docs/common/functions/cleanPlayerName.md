@@ -22,4 +22,4 @@ NOTE: this is not perfect, but took me two hours to arrive to this point.
 
 ## Defined in
 
-[src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/common/utils/cleanPlayerName.ts#L9)
+[src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/common/utils/cleanPlayerName.ts#L9)

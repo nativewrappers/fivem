@@ -30,7 +30,7 @@ set static CursorPosition(position): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:21](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L21)
+[src/client/ui/Hud.ts:21](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L21)
 
 ***
 
@@ -56,7 +56,7 @@ set static CursorSprite(sprite): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:25](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L25)
+[src/client/ui/Hud.ts:25](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L25)
 
 ***
 
@@ -82,7 +82,7 @@ set static IsRadarVisible(toggle): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:41](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L41)
+[src/client/ui/Hud.ts:41](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L41)
 
 ***
 
@@ -108,7 +108,7 @@ set static IsVisible(toggle): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:33](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L33)
+[src/client/ui/Hud.ts:33](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L33)
 
 ***
 
@@ -126,7 +126,7 @@ set static RadarZoom(zoomLevel): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:49](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L49)
+[src/client/ui/Hud.ts:49](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L49)
 
 ## Methods
 
@@ -148,7 +148,7 @@ static hideComponentThisFrame(component): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:13](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L13)
+[src/client/ui/Hud.ts:13](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L13)
 
 ***
 
@@ -170,7 +170,7 @@ static isComponentActive(component): boolean
 
 #### Defined in
 
-[src/client/ui/Hud.ts:5](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L5)
+[src/client/ui/Hud.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L5)
 
 ***
 
@@ -192,7 +192,7 @@ static showComponentThisFrame(component): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:9](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L9)
+[src/client/ui/Hud.ts:9](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L9)
 
 ***
 
@@ -208,4 +208,4 @@ static showCursorThisFrame(): void
 
 #### Defined in
 
-[src/client/ui/Hud.ts:17](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/ui/Hud.ts#L17)
+[src/client/ui/Hud.ts:17](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/ui/Hud.ts#L17)

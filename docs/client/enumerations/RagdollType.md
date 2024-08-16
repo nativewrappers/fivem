@@ -6,7 +6,7 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `NarrowLegs` | `2` | [src/client/enums/RagdollType.ts:4](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RagdollType.ts#L4) |
-| `Normal` | `0` | [src/client/enums/RagdollType.ts:2](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RagdollType.ts#L2) |
-| `StiffLegs` | `1` | [src/client/enums/RagdollType.ts:3](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RagdollType.ts#L3) |
-| `WideLegs` | `3` | [src/client/enums/RagdollType.ts:5](https://github.com/nativewrappers/fivem/blob/d67d9a693907da5ce83f118218b601ceb38a88bc/src/client/enums/RagdollType.ts#L5) |
+| `NarrowLegs` | `2` | [src/client/enums/RagdollType.ts:4](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RagdollType.ts#L4) |
+| `Normal` | `0` | [src/client/enums/RagdollType.ts:2](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RagdollType.ts#L2) |
+| `StiffLegs` | `1` | [src/client/enums/RagdollType.ts:3](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RagdollType.ts#L3) |
+| `WideLegs` | `3` | [src/client/enums/RagdollType.ts:5](https://github.com/nativewrappers/fivem/blob/9c9296849bd5d47a19ca095df40cd4686e165154/src/client/enums/RagdollType.ts#L5) |
