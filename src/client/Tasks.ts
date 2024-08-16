@@ -14,8 +14,12 @@ import { LoadAnimDict } from './utils/Animations';
 export class Tasks {
   private ped: Ped;
 
-  constructor(ped: Ped) {
-    this.ped = ped;
+  // we take null because sequences have a null ped, if you pass null to this
+  // you betterk now what you're doing.
+  constructor(ped: Ped | null) {
+    const actualPed = ped ?? { handle: null };
+    // @ts-ignore
+    this.ped = actualPed;
   }
 
   public achieveHeading(heading: number, timeout = 0): void {
@@ -165,7 +169,15 @@ export class Tasks {
     );
   }
 
-  public goTo(position: Vector3, ignorePaths = false, timeout = -1, speed = 1): void {
+  public goTo(
+    position: Vector3,
+    ignorePaths = false,
+    timeout = -1,
+    speed = 1,
+    targetHeading = 0,
+    distanceToSlide = 0,
+    flags = 0,
+  ): void {
     if (ignorePaths) {
       TaskGoStraightToCoord(
         this.ped.Handle,
@@ -174,8 +186,8 @@ export class Tasks {
         position.z,
         speed,
         timeout,
-        0,
-        0,
+        targetHeading,
+        distanceToSlide,
       );
     } else {
       TaskFollowNavMeshToCoord(
@@ -186,8 +198,8 @@ export class Tasks {
         speed,
         timeout,
         0,
-        0,
-        0,
+        flags,
+        targetHeading,
       );
     }
   }
@@ -296,7 +308,7 @@ export class Tasks {
     }
 
     this.clearAll();
-    this.ped.BlockPermanentEvents = true;
+    // this.ped.BlockPermanentEvents = true;
 
     TaskPerformSequence(this.ped.Handle, sequence.Handle);
   }

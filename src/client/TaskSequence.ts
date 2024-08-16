@@ -1,9 +1,8 @@
-import { Ped } from './models/Ped';
 import { Tasks } from './Tasks';
 
 // TODO: Figure out why this uses 'null ped'
 export class TaskSequence {
-  private static nullPed: Ped;
+  private static nullTask: Tasks;
   private handle = 0;
   private isClosed: boolean;
   private count: number;
@@ -11,8 +10,8 @@ export class TaskSequence {
   constructor(handle?: number) {
     handle === undefined ? this.create() : (this.handle = handle);
 
-    if (!TaskSequence.nullPed) {
-      TaskSequence.nullPed = new Ped(0);
+    if (!TaskSequence.nullTask) {
+      TaskSequence.nullTask = new Tasks(null);
     }
 
     this.isClosed = false;
@@ -21,7 +20,8 @@ export class TaskSequence {
 
   private create(): void {
     // Docs generate this as 'void' even though it returns a number
-    this.handle = OpenSequenceTask(0) as unknown as number;
+    // @ts-ignore ignore the fact that OpenSequenceTask expects a paramater
+    this.handle = OpenSequenceTask() as unknown as number;
   }
 
   public dispose(): void {
@@ -48,7 +48,7 @@ export class TaskSequence {
     }
 
     this.count += 1;
-    return TaskSequence.nullPed.Task;
+    return TaskSequence.nullTask;
   }
 
   public get IsClosed(): boolean {
