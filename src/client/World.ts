@@ -11,7 +11,6 @@ import {
   SHAPE_TEST_DEFAULT,
   Weather,
 } from './enums';
-import { ShapeTestOptions, ShapeTestStatus } from './enums/RaycastEnums';
 import { GameplayCamera } from './GameplayCamera';
 import { VehicleHash } from './hashes';
 import { Ped, Vehicle } from './models';
