@@ -30,7 +30,7 @@ new SynchronousRaycastResult(handle): SynchronousRaycastResult
 
 #### Defined in
 
-[src/client/Raycast.ts:117](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L117)
+[src/client/Raycast.ts:117](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L117)
 
 ## Accessors
 
@@ -52,7 +52,7 @@ Whether we hit anything.
 
 #### Defined in
 
-[src/client/Raycast.ts:35](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L35)
+[src/client/Raycast.ts:35](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L35)
 
 ***
 
@@ -74,7 +74,7 @@ Whether the entity hit exists.
 
 #### Defined in
 
-[src/client/Raycast.ts:42](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L42)
+[src/client/Raycast.ts:42](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L42)
 
 ***
 
@@ -99,7 +99,7 @@ if the raycast has been marked as ready by the engine
 
 #### Defined in
 
-[src/client/Raycast.ts:72](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L72)
+[src/client/Raycast.ts:72](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L72)
 
 ***
 
@@ -121,7 +121,7 @@ Return the entity that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:14](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L14)
+[src/client/Raycast.ts:14](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L14)
 
 ***
 
@@ -143,7 +143,7 @@ Get the position of the entity that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:21](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L21)
+[src/client/Raycast.ts:21](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L21)
 
 ***
 
@@ -165,7 +165,7 @@ Material type that was hit.
 
 #### Defined in
 
-[src/client/Raycast.ts:49](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L49)
+[src/client/Raycast.ts:49](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L49)
 
 ***
 
@@ -187,7 +187,7 @@ Raycast result's handle.
 
 #### Defined in
 
-[src/client/Raycast.ts:56](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L56)
+[src/client/Raycast.ts:56](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L56)
 
 ***
 
@@ -209,7 +209,7 @@ Return the vector perpendicular to the tangent plane.
 
 #### Defined in
 
-[src/client/Raycast.ts:28](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L28)
+[src/client/Raycast.ts:28](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L28)
 
 ***
 
@@ -231,7 +231,7 @@ if the shape test handle was already discarded
 
 #### Defined in
 
-[src/client/Raycast.ts:63](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L63)
+[src/client/Raycast.ts:63](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L63)
 
 ## Methods
 
@@ -251,4 +251,4 @@ protected applyShapeTestResults(): void
 
 #### Defined in
 
-[src/client/Raycast.ts:76](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/Raycast.ts#L76)
+[src/client/Raycast.ts:76](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/Raycast.ts#L76)

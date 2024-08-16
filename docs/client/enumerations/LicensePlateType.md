@@ -6,7 +6,7 @@
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `FrontAndRearPlates` | `0` | [src/client/enums/Vehicle.ts:16](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Vehicle.ts#L16) |
-| `FrontPlate` | `1` | [src/client/enums/Vehicle.ts:17](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Vehicle.ts#L17) |
-| `None` | `3` | [src/client/enums/Vehicle.ts:19](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Vehicle.ts#L19) |
-| `RearPlate` | `2` | [src/client/enums/Vehicle.ts:18](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/Vehicle.ts#L18) |
+| `FrontAndRearPlates` | `0` | [src/client/enums/Vehicle.ts:16](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/Vehicle.ts#L16) |
+| `FrontPlate` | `1` | [src/client/enums/Vehicle.ts:17](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/Vehicle.ts#L17) |
+| `None` | `3` | [src/client/enums/Vehicle.ts:19](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/Vehicle.ts#L19) |
+| `RearPlate` | `2` | [src/client/enums/Vehicle.ts:18](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/Vehicle.ts#L18) |

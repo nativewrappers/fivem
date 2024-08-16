@@ -31,15 +31,15 @@ new Rectangle(
 
 #### Defined in
 
-[src/client/ui/Rectangle.ts:9](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L9)
+[src/client/ui/Rectangle.ts:9](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L9)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `color` | `public` | [`Color`](Color.md) | [src/client/ui/Rectangle.ts:7](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L7) |
-| `pos` | `public` | [`Point`](Point.md) | [src/client/ui/Rectangle.ts:5](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L5) |
-| `size` | `public` | [`Size`](Size.md) | [src/client/ui/Rectangle.ts:6](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L6) |
+| `color` | `public` | [`Color`](Color.md) | [src/client/ui/Rectangle.ts:7](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L7) |
+| `pos` | `public` | [`Point`](Point.md) | [src/client/ui/Rectangle.ts:5](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L5) |
+| `size` | `public` | [`Size`](Size.md) | [src/client/ui/Rectangle.ts:6](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L6) |
 
 ## Methods
 
@@ -68,7 +68,7 @@ draw(offset?, resolution?): void
 
 ##### Defined in
 
-[src/client/ui/Rectangle.ts:15](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L15)
+[src/client/ui/Rectangle.ts:15](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L15)
 
 #### draw(pos, size, color, resolution)
 
@@ -99,4 +99,4 @@ draw(
 
 ##### Defined in
 
-[src/client/ui/Rectangle.ts:16](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Rectangle.ts#L16)
+[src/client/ui/Rectangle.ts:16](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Rectangle.ts#L16)

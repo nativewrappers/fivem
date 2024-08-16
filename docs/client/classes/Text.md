@@ -43,21 +43,21 @@ new Text(
 
 #### Defined in
 
-[src/client/ui/Text.ts:86](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L86)
+[src/client/ui/Text.ts:86](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L86)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `alignment` | `public` | [`Alignment`](../enumerations/Alignment.md) | [src/client/ui/Text.ts:69](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L69) |
-| `caption` | `public` | `string` | [src/client/ui/Text.ts:64](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L64) |
-| `color` | `public` | [`Color`](Color.md) | [src/client/ui/Text.ts:67](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L67) |
-| `dropShadow` | `public` | `boolean` | [src/client/ui/Text.ts:70](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L70) |
-| `font` | `public` | [`Font`](../enumerations/Font.md) | [src/client/ui/Text.ts:68](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L68) |
-| `outline` | `public` | `boolean` | [src/client/ui/Text.ts:71](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L71) |
-| `pos` | `public` | [`Point`](Point.md) | [src/client/ui/Text.ts:65](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L65) |
-| `scale` | `public` | `number` | [src/client/ui/Text.ts:66](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L66) |
-| `wordWrap` | `public` | [`Size`](Size.md) | [src/client/ui/Text.ts:72](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L72) |
+| `alignment` | `public` | [`Alignment`](../enumerations/Alignment.md) | [src/client/ui/Text.ts:69](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L69) |
+| `caption` | `public` | `string` | [src/client/ui/Text.ts:64](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L64) |
+| `color` | `public` | [`Color`](Color.md) | [src/client/ui/Text.ts:67](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L67) |
+| `dropShadow` | `public` | `boolean` | [src/client/ui/Text.ts:70](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L70) |
+| `font` | `public` | [`Font`](../enumerations/Font.md) | [src/client/ui/Text.ts:68](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L68) |
+| `outline` | `public` | `boolean` | [src/client/ui/Text.ts:71](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L71) |
+| `pos` | `public` | [`Point`](Point.md) | [src/client/ui/Text.ts:65](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L65) |
+| `scale` | `public` | `number` | [src/client/ui/Text.ts:66](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L66) |
+| `wordWrap` | `public` | [`Size`](Size.md) | [src/client/ui/Text.ts:72](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L72) |
 
 ## Methods
 
@@ -86,7 +86,7 @@ draw(offset?, resolution?): void
 
 ##### Defined in
 
-[src/client/ui/Text.ts:108](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L108)
+[src/client/ui/Text.ts:108](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L108)
 
 #### draw(caption, pos, scale, color, font, alignment, dropShadow, outline, wordWrap, resolution)
 
@@ -129,7 +129,7 @@ draw(
 
 ##### Defined in
 
-[src/client/ui/Text.ts:109](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L109)
+[src/client/ui/Text.ts:109](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L109)
 
 ***
 
@@ -151,7 +151,7 @@ static addLongString(str): void
 
 #### Defined in
 
-[src/client/ui/Text.ts:55](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L55)
+[src/client/ui/Text.ts:55](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L55)
 
 ***
 
@@ -192,4 +192,4 @@ static draw(
 
 #### Defined in
 
-[src/client/ui/Text.ts:6](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Text.ts#L6)
+[src/client/ui/Text.ts:6](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Text.ts#L6)

@@ -34,7 +34,7 @@ new Timerbar(title, useProgressBar): Timerbar
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:91](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L91)
+[src/client/ui/Timerbar.ts:91](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L91)
 
 ## Accessors
 
@@ -60,7 +60,7 @@ set PlayerStyle(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:212](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L212)
+[src/client/ui/Timerbar.ts:212](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L212)
 
 ***
 
@@ -86,7 +86,7 @@ set Progress(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:140](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L140)
+[src/client/ui/Timerbar.ts:140](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L140)
 
 ***
 
@@ -112,7 +112,7 @@ set ProgressbarBgColor(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:182](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L182)
+[src/client/ui/Timerbar.ts:182](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L182)
 
 ***
 
@@ -138,7 +138,7 @@ set ProgressbarFgColor(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:195](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L195)
+[src/client/ui/Timerbar.ts:195](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L195)
 
 ***
 
@@ -154,7 +154,7 @@ get Sprite(): null | Sprite
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:216](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L216)
+[src/client/ui/Timerbar.ts:216](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L216)
 
 ***
 
@@ -180,7 +180,7 @@ set Text(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:128](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L128)
+[src/client/ui/Timerbar.ts:128](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L128)
 
 ***
 
@@ -206,7 +206,7 @@ set TextColor(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:169](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L169)
+[src/client/ui/Timerbar.ts:169](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L169)
 
 ***
 
@@ -232,7 +232,7 @@ set Title(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:120](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L120)
+[src/client/ui/Timerbar.ts:120](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L120)
 
 ***
 
@@ -248,7 +248,7 @@ get UseProgressBar(): boolean
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:136](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L136)
+[src/client/ui/Timerbar.ts:136](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L136)
 
 ***
 
@@ -274,4 +274,4 @@ set Visible(value): void
 
 #### Defined in
 
-[src/client/ui/Timerbar.ts:148](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Timerbar.ts#L148)
+[src/client/ui/Timerbar.ts:148](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Timerbar.ts#L148)

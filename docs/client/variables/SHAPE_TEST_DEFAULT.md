@@ -8,4 +8,4 @@ const SHAPE_TEST_DEFAULT: number;
 
 ## Defined in
 
-[src/client/enums/RaycastEnums.ts:30](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/enums/RaycastEnums.ts#L30)
+[src/client/enums/RaycastEnums.ts:30](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/RaycastEnums.ts#L30)

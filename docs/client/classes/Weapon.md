@@ -25,7 +25,7 @@ new Weapon(owner, hash): Weapon
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:26](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L26)
+[src/client/weapon/Weapon.ts:26](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L26)
 
 ## Accessors
 
@@ -55,7 +55,7 @@ set weapon ammo count
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:141](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L141)
+[src/client/weapon/Weapon.ts:141](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L141)
 
 ***
 
@@ -73,7 +73,7 @@ get weapon ammo type
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:132](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L132)
+[src/client/weapon/Weapon.ts:132](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L132)
 
 ***
 
@@ -91,7 +91,7 @@ check weapon can use on parachute
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:250](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L250)
+[src/client/weapon/Weapon.ts:250](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L250)
 
 ***
 
@@ -109,7 +109,7 @@ weapon components
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:37](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L37)
+[src/client/weapon/Weapon.ts:37](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L37)
 
 ***
 
@@ -127,7 +127,7 @@ get weapon default clip size
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:217](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L217)
+[src/client/weapon/Weapon.ts:217](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L217)
 
 ***
 
@@ -145,7 +145,7 @@ get weapon display name / label
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:77](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L77)
+[src/client/weapon/Weapon.ts:77](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L77)
 
 ***
 
@@ -163,7 +163,7 @@ get weapon group
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:123](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L123)
+[src/client/weapon/Weapon.ts:123](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L123)
 
 ***
 
@@ -181,7 +181,7 @@ weapon hash
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:46](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L46)
+[src/client/weapon/Weapon.ts:46](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L46)
 
 ***
 
@@ -199,7 +199,7 @@ get weapon hud stats
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:291](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L291)
+[src/client/weapon/Weapon.ts:291](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L291)
 
 ***
 
@@ -219,7 +219,7 @@ toggle weapon infinite ammo
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:227](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L227)
+[src/client/weapon/Weapon.ts:227](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L227)
 
 ***
 
@@ -239,7 +239,7 @@ toggle ped infinite ammo clip on all weapons
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:241](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L241)
+[src/client/weapon/Weapon.ts:241](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L241)
 
 ***
 
@@ -257,7 +257,7 @@ Check weapon is Mk2 or not
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:259](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L259)
+[src/client/weapon/Weapon.ts:259](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L259)
 
 ***
 
@@ -275,7 +275,7 @@ Check if the ped has the current weapon.
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:64](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L64)
+[src/client/weapon/Weapon.ts:64](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L64)
 
 ***
 
@@ -293,7 +293,7 @@ check ped is unarmed or not
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:55](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L55)
+[src/client/weapon/Weapon.ts:55](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L55)
 
 ***
 
@@ -311,7 +311,7 @@ get weapon localized name
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:86](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L86)
+[src/client/weapon/Weapon.ts:86](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L86)
 
 ***
 
@@ -329,7 +329,7 @@ get weapon max ammo
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:176](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L176)
+[src/client/weapon/Weapon.ts:176](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L176)
 
 ***
 
@@ -347,7 +347,7 @@ get weapon max ammo in clip
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:200](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L200)
+[src/client/weapon/Weapon.ts:200](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L200)
 
 ***
 
@@ -365,7 +365,7 @@ get weapon model
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:95](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L95)
+[src/client/weapon/Weapon.ts:95](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L95)
 
 ***
 
@@ -395,7 +395,7 @@ set weapon tint
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:104](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L104)
+[src/client/weapon/Weapon.ts:104](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L104)
 
 ## Methods
 
@@ -420,7 +420,7 @@ set weapon livery, only work for Mk2 weapon
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:269](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L269)
+[src/client/weapon/Weapon.ts:269](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L269)
 
 ***
 
@@ -444,7 +444,7 @@ get weapon display name / label by hash
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:300](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L300)
+[src/client/weapon/Weapon.ts:300](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L300)
 
 ***
 
@@ -468,4 +468,4 @@ get component hashes belongs to weapon
 
 #### Defined in
 
-[src/client/weapon/Weapon.ts:313](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/weapon/Weapon.ts#L313)
+[src/client/weapon/Weapon.ts:313](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/Weapon.ts#L313)

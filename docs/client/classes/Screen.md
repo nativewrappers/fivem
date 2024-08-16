@@ -28,7 +28,7 @@ get static AspectRatio(): number
 
 #### Defined in
 
-[src/client/ui/Screen.ts:29](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L29)
+[src/client/ui/Screen.ts:29](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L29)
 
 ***
 
@@ -44,7 +44,7 @@ get static Height(): number
 
 #### Defined in
 
-[src/client/ui/Screen.ts:25](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L25)
+[src/client/ui/Screen.ts:25](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L25)
 
 ***
 
@@ -60,7 +60,7 @@ get static Resolution(): Size
 
 #### Defined in
 
-[src/client/ui/Screen.ts:7](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L7)
+[src/client/ui/Screen.ts:7](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L7)
 
 ***
 
@@ -76,7 +76,7 @@ get static ScaledResolution(): Size
 
 #### Defined in
 
-[src/client/ui/Screen.ts:12](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L12)
+[src/client/ui/Screen.ts:12](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L12)
 
 ***
 
@@ -92,7 +92,7 @@ get static ScaledWidth(): number
 
 #### Defined in
 
-[src/client/ui/Screen.ts:21](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L21)
+[src/client/ui/Screen.ts:21](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L21)
 
 ***
 
@@ -108,7 +108,7 @@ get static Width(): number
 
 #### Defined in
 
-[src/client/ui/Screen.ts:17](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L17)
+[src/client/ui/Screen.ts:17](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L17)
 
 ## Methods
 
@@ -130,7 +130,7 @@ static displayHelpTextThisFrame(message): void
 
 #### Defined in
 
-[src/client/ui/Screen.ts:45](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L45)
+[src/client/ui/Screen.ts:45](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L45)
 
 ***
 
@@ -173,7 +173,7 @@ static showAdvancedNotification(
 
 #### Defined in
 
-[src/client/ui/Screen.ts:69](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L69)
+[src/client/ui/Screen.ts:69](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L69)
 
 ***
 
@@ -196,7 +196,7 @@ static showNotification(message, blinking): Notification
 
 #### Defined in
 
-[src/client/ui/Screen.ts:57](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L57)
+[src/client/ui/Screen.ts:57](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L57)
 
 ***
 
@@ -219,7 +219,7 @@ static showSubtitle(message, duration): void
 
 #### Defined in
 
-[src/client/ui/Screen.ts:33](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L33)
+[src/client/ui/Screen.ts:33](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L33)
 
 ***
 
@@ -242,4 +242,4 @@ static worldToScreen(position, scaleWidth): Size
 
 #### Defined in
 
-[src/client/ui/Screen.ts:106](https://github.com/nativewrappers/fivem/blob/a98996c0c5fa01724c4f2137e7528f7f3c03bc27/src/client/ui/Screen.ts#L106)
+[src/client/ui/Screen.ts:106](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/Screen.ts#L106)
