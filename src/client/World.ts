@@ -961,14 +961,45 @@ export abstract class World {
   }
 
   public static raycastDirection(
+    useExpensiveRaycast: true,
+    source: Vector3,
+    direction: Vector3,
+    maxDistance: number,
+  ): SynchronousRaycastResult;
+
+  public static raycastDirection(
+    useExpensiveRaycast: false,
+    source: Vector3,
+    direction: Vector3,
+    maxDistance: number,
+  ): AsynchronousRaycastResult;
+
+  public static raycastDirection(
+    useExpensiveRaycast: boolean,
     source: Vector3,
     direction: Vector3,
     maxDistance: number,
     losFlags: IntersectFlags = IntersectFlags.All,
     shapeTestOptions = SHAPE_TEST_DEFAULT,
     ignoreEntity?: BaseEntity,
-  ): AsynchronousRaycastResult {
+  ): SynchronousRaycastResult | AsynchronousRaycastResult {
     const target = Vector3.add(source, Vector3.multiply(direction, maxDistance));
+
+    if (useExpensiveRaycast) {
+      return new SynchronousRaycastResult(
+        StartExpensiveSynchronousShapeTestLosProbe(
+          source.x,
+          source.y,
+          source.z,
+          target.x,
+          target.y,
+          target.z,
+          losFlags,
+          ignoreEntity?.Handle ?? 0,
+          shapeTestOptions,
+        ),
+      );
+    }
 
     return new AsynchronousRaycastResult(
       StartShapeTestLosProbe(
