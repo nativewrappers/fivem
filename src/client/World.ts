@@ -11,6 +11,7 @@ import {
   SHAPE_TEST_DEFAULT,
   Weather,
 } from './enums';
+import { ShapeTestOptions, ShapeTestStatus } from './enums/RaycastEnums';
 import { GameplayCamera } from './GameplayCamera';
 import { VehicleHash } from './hashes';
 import { Ped, Vehicle } from './models';
@@ -965,6 +966,9 @@ export abstract class World {
     source: Vector3,
     direction: Vector3,
     maxDistance: number,
+    losFlags?: IntersectFlags,
+    shapeTestOptions?: number,
+    ignoreEntity?: BaseEntity,
   ): SynchronousRaycastResult;
 
   public static raycastDirection(
@@ -972,6 +976,9 @@ export abstract class World {
     source: Vector3,
     direction: Vector3,
     maxDistance: number,
+    losFlags?: IntersectFlags,
+    shapeTestOptions?: number,
+    ignoreEntity?: BaseEntity,
   ): AsynchronousRaycastResult;
 
   public static raycastDirection(
