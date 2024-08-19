@@ -502,8 +502,8 @@ export class Vector {
     yield this.x;
     yield this.y;
 
-    if (this.z) yield this.z;
-    if (this.w) yield this.w;
+    if (this.z !== undefined) yield this.z;
+    if (this.w !== undefined) yield this.w;
   }
 
   public toString() {
