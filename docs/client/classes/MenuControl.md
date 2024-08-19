@@ -22,7 +22,7 @@ new MenuControl(enabled): MenuControl
 
 #### Defined in
 
-[src/client/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/menu/MenuControl.ts#L4)
+[src/client/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/MenuControl.ts#L4)
 
 ## Accessors
 
@@ -48,4 +48,4 @@ set Enabled(value): void
 
 #### Defined in
 
-[src/client/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/ui/menu/MenuControl.ts#L8)
+[src/client/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/MenuControl.ts#L8)

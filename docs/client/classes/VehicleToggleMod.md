@@ -23,7 +23,7 @@ new VehicleToggleMod(owner, modType): VehicleToggleMod
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L8)
+[src/client/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L8)
 
 ## Accessors
 
@@ -49,7 +49,7 @@ set IsInstalled(value): void
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L21)
+[src/client/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L21)
 
 ***
 
@@ -65,7 +65,7 @@ get LocalizedModTypeName(): string
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L29)
+[src/client/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L29)
 
 ***
 
@@ -91,7 +91,7 @@ set ModType(modType): void
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L13)
+[src/client/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L13)
 
 ***
 
@@ -107,7 +107,7 @@ get Vehicle(): Vehicle
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L33)
+[src/client/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L33)
 
 ## Methods
 
@@ -123,4 +123,4 @@ remove(): void
 
 #### Defined in
 
-[src/client/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/models/VehicleToggleMod.ts#L37)
+[src/client/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleToggleMod.ts#L37)

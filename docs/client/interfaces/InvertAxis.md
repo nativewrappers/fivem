@@ -6,4 +6,4 @@
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `flags` | [`InvertAxisFlags`](../enumerations/InvertAxisFlags.md) | [src/client/enums/InvertAxis.ts:2](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/enums/InvertAxis.ts#L2) |
+| `flags` | [`InvertAxisFlags`](../enumerations/InvertAxisFlags.md) | [src/client/enums/InvertAxis.ts:2](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/enums/InvertAxis.ts#L2) |

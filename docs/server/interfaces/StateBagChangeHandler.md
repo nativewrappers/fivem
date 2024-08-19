@@ -33,4 +33,4 @@ interface StateBagChangeHandler(
 
 ## Defined in
 
-[src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/server/cfx/StateBagChangeHandler.ts#L2)
+[src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/cfx/StateBagChangeHandler.ts#L2)

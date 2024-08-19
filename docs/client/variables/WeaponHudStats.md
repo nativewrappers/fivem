@@ -10,4 +10,4 @@ Mapping of WeaponHash -> WeaponHudStats
 
 ## Defined in
 
-[src/client/weapon/WeaponHudStats.ts:19](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/weapon/WeaponHudStats.ts#L19)
+[src/client/weapon/WeaponHudStats.ts:19](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/weapon/WeaponHudStats.ts#L19)

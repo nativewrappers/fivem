@@ -21,4 +21,4 @@ if the animation successfully loaded
 
 ## Defined in
 
-[src/client/utils/Animations.ts:9](https://github.com/nativewrappers/fivem/blob/34b8061c177c9481c4691efcaef7602a414ca976/src/client/utils/Animations.ts#L9)
+[src/client/utils/Animations.ts:9](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/utils/Animations.ts#L9)
