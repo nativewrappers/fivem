@@ -200,7 +200,7 @@ export class Model {
    * This function will not automatically set the model as no longer needed when
    * done.
    *
-   * @param timeout Maximum allowed time for model to load.
+   * @param timeoutMs Maximum allowed time for model to load.
    */
   public async request(timeoutMs = 1000): Promise<boolean> {
     if (!this.IsInCdImage && !this.IsValid && !IsWeaponValid(this.hash)) {
@@ -212,7 +212,7 @@ export class Model {
     }
     RequestModel(this.hash);
     const timeout = GetGameTimer() + timeoutMs;
-    while (!this.IsLoaded && timeout < GetGameTimer()) {
+    while (!this.IsLoaded && GetGameTimer() < timeout) {
       await Wait(0);
     }
     return this.IsLoaded;
