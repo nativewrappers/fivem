@@ -174,8 +174,8 @@ export class Vector {
     x = operator(x, isNumber ? b : (b.x ?? 0));
     y = operator(y, isNumber ? b : (b.y ?? 0));
 
-    if (z) z = operator(z, isNumber ? b : (b.z ?? 0));
-    if (w) w = operator(w, isNumber ? b : (b.w ?? 0));
+    if (z !== undefined) z = operator(z, isNumber ? b : (b.z ?? 0));
+    if (w !== undefined) w = operator(w, isNumber ? b : (b.w ?? 0));
 
     return this.create(x, y, z, w) as unknown as U;
   }
@@ -307,8 +307,8 @@ export class Vector {
     x = operator(Math.abs(x), isNumber ? b : Math.abs(b.x ?? 0));
     y = operator(Math.abs(y), isNumber ? b : Math.abs(b.y ?? 0));
 
-    if (z) z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
-    if (w) w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
+    if (z !== undefined) z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
+    if (w !== undefined) w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
 
     return this.create(x, y, z, w) as unknown as U;
   }
@@ -569,8 +569,8 @@ export class Vector {
   /**
    * @see Vector.addY
    */
-  public addY(x: number) {
-    return Vector.addY(this, x);
+  public addY(y: number) {
+    return Vector.addY(this, y);
   }
 
   /**
