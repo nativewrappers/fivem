@@ -28,7 +28,7 @@ get static InvokingResource(): string
 
 #### Defined in
 
-[src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/Events.ts#L67)
+[src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/Events.ts#L67)
 
 ## Methods
 
@@ -44,7 +44,7 @@ static cancel(): void
 
 #### Defined in
 
-[src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/Events.ts#L59)
+[src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/Events.ts#L59)
 
 ***
 
@@ -69,7 +69,7 @@ An on wrapper that properly converts the classes
 
 #### Defined in
 
-[src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/Events.ts#L85)
+[src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/Events.ts#L85)
 
 ***
 
@@ -94,7 +94,7 @@ An onNet wrapper that properly converts the type into the correct type
 
 #### Defined in
 
-[src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/Events.ts#L74)
+[src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/Events.ts#L74)
 
 ***
 
@@ -110,4 +110,4 @@ static wasCanceled(): boolean
 
 #### Defined in
 
-[src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/server/Events.ts#L63)
+[src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/Events.ts#L63)

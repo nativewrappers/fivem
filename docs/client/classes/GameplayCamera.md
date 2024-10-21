@@ -32,7 +32,7 @@ Gets field of view of the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:95](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L95)
+[src/client/GameplayCamera.ts:95](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L95)
 
 ***
 
@@ -50,7 +50,7 @@ Get the forward vector of gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:26](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L26)
+[src/client/GameplayCamera.ts:26](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L26)
 
 ***
 
@@ -70,7 +70,7 @@ true if the aiming camera is rendering; otherwise, false.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:113](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L113)
+[src/client/GameplayCamera.ts:113](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L113)
 
 ***
 
@@ -90,7 +90,7 @@ true if the first person aiming camera is rendering; otherwise, false.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:122](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L122)
+[src/client/GameplayCamera.ts:122](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L122)
 
 ***
 
@@ -110,7 +110,7 @@ true if the gameplay camera is looking behind; otherwise, false.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:131](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L131)
+[src/client/GameplayCamera.ts:131](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L131)
 
 ***
 
@@ -130,7 +130,7 @@ true if the gameplay camera is rendering; otherwise, false.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:104](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L104)
+[src/client/GameplayCamera.ts:104](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L104)
 
 ***
 
@@ -150,7 +150,7 @@ true if the gameplay camera is shaking; otherwise, false.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:157](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L157)
+[src/client/GameplayCamera.ts:157](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L157)
 
 ***
 
@@ -168,7 +168,7 @@ Get the world position of gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:12](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L12)
+[src/client/GameplayCamera.ts:12](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L12)
 
 ***
 
@@ -198,7 +198,7 @@ Get heading of gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:54](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L54)
+[src/client/GameplayCamera.ts:54](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L54)
 
 ***
 
@@ -228,7 +228,7 @@ Set gameplay camera pitch relative to player.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:40](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L40)
+[src/client/GameplayCamera.ts:40](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L40)
 
 ***
 
@@ -246,7 +246,7 @@ Get the rotation of gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:19](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L19)
+[src/client/GameplayCamera.ts:19](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L19)
 
 ***
 
@@ -266,7 +266,7 @@ Sets the shake amplitude for the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:164](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L164)
+[src/client/GameplayCamera.ts:164](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L164)
 
 ***
 
@@ -284,7 +284,7 @@ Gets zoom of the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:88](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L88)
+[src/client/GameplayCamera.ts:88](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L88)
 
 ## Methods
 
@@ -309,7 +309,7 @@ Clamps the pitch of the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:81](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L81)
+[src/client/GameplayCamera.ts:81](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L81)
 
 ***
 
@@ -334,7 +334,7 @@ Clamps the yaw of the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:71](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L71)
+[src/client/GameplayCamera.ts:71](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L71)
 
 ***
 
@@ -359,7 +359,7 @@ Shakes the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:141](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L141)
+[src/client/GameplayCamera.ts:141](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L141)
 
 ***
 
@@ -377,4 +377,4 @@ Stops shaking the gameplay camera.
 
 #### Defined in
 
-[src/client/GameplayCamera.ts:148](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/GameplayCamera.ts#L148)
+[src/client/GameplayCamera.ts:148](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/GameplayCamera.ts#L148)

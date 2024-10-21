@@ -37,38 +37,38 @@ new UIMenuCheckboxItem(
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuCheckboxItem.ts:17](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L17)
+[src/client/ui/menu/items/UIMenuCheckboxItem.ts:17](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L17)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| `activated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`activated` | [src/client/ui/menu/items/UIMenuItem.ts:361](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L361) |
-| `badgeLeft` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeLeft` | [src/client/ui/menu/items/UIMenuItem.ts:374](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L374) |
-| `badgeRight` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeRight` | [src/client/ui/menu/items/UIMenuItem.ts:375](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L375) |
-| `checkboxChanged` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:7](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L7) |
-| `enabled` | `public` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`enabled` | [src/client/ui/menu/items/UIMenuItem.ts:354](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L354) |
-| `hovered` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`hovered` | [src/client/ui/menu/items/UIMenuItem.ts:356](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L356) |
-| `id` | `readonly` | `string` | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`id` | [src/client/ui/menu/items/UIMenuItem.ts:352](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L352) |
-| `labelText` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`labelText` | [src/client/ui/menu/items/UIMenuItem.ts:377](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L377) |
-| `offset` | `public` | [`Point`](Point.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`offset` | [src/client/ui/menu/items/UIMenuItem.ts:358](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L358) |
-| `panelActivated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`panelActivated` | [src/client/ui/menu/items/UIMenuItem.ts:362](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L362) |
-| `parent?` | `public` | [`Menu`](Menu.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`parent` | [src/client/ui/menu/items/UIMenuItem.ts:359](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L359) |
-| `rectangle` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`rectangle` | [src/client/ui/menu/items/UIMenuItem.ts:370](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L370) |
-| `selected` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`selected` | [src/client/ui/menu/items/UIMenuItem.ts:355](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L355) |
-| `selectedSprite` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`selectedSprite` | [src/client/ui/menu/items/UIMenuItem.ts:372](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L372) |
-| `supportsDescription` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsDescription` | [src/client/ui/menu/items/UIMenuItem.ts:364](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L364) |
-| `supportsLeftBadge` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsLeftBadge` | [src/client/ui/menu/items/UIMenuItem.ts:366](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L366) |
-| `supportsPanels` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsPanels` | [src/client/ui/menu/items/UIMenuItem.ts:365](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L365) |
-| `supportsRightBadge` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightBadge` | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:9](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L9) |
-| `supportsRightLabel` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightLabel` | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:10](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L10) |
-| `text` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`text` | [src/client/ui/menu/items/UIMenuItem.ts:371](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L371) |
-| `defaultBackColor` | `static` | [`Color`](Color.md) | `Color.Transparent` | - | [`UIMenuItem`](UIMenuItem.md).`defaultBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:344](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L344) |
-| `defaultForeColor` | `static` | [`Color`](Color.md) | `Color.WhiteSmoke` | - | [`UIMenuItem`](UIMenuItem.md).`defaultForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:348](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L348) |
-| `defaultHighlightedBackColor` | `static` | [`Color`](Color.md) | `Color.White` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:345](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L345) |
-| `defaultHighlightedForeColor` | `static` | [`Color`](Color.md) | `Color.Black` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:350](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L350) |
-| `defaultHoveredBackColor` | `static` | [`Color`](Color.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:346](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L346) |
-| `defaultHoveredForeColor` | `static` | [`Color`](Color.md) | `UIMenuItem.defaultForeColor` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:349](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L349) |
+| `activated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`activated` | [src/client/ui/menu/items/UIMenuItem.ts:361](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L361) |
+| `badgeLeft` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeLeft` | [src/client/ui/menu/items/UIMenuItem.ts:374](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L374) |
+| `badgeRight` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`badgeRight` | [src/client/ui/menu/items/UIMenuItem.ts:375](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L375) |
+| `checkboxChanged` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:7](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L7) |
+| `enabled` | `public` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`enabled` | [src/client/ui/menu/items/UIMenuItem.ts:354](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L354) |
+| `hovered` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`hovered` | [src/client/ui/menu/items/UIMenuItem.ts:356](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L356) |
+| `id` | `readonly` | `string` | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`id` | [src/client/ui/menu/items/UIMenuItem.ts:352](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L352) |
+| `labelText` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`labelText` | [src/client/ui/menu/items/UIMenuItem.ts:377](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L377) |
+| `offset` | `public` | [`Point`](Point.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`offset` | [src/client/ui/menu/items/UIMenuItem.ts:358](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L358) |
+| `panelActivated` | `readonly` | [`LiteEvent`](LiteEvent.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`panelActivated` | [src/client/ui/menu/items/UIMenuItem.ts:362](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L362) |
+| `parent?` | `public` | [`Menu`](Menu.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`parent` | [src/client/ui/menu/items/UIMenuItem.ts:359](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L359) |
+| `rectangle` | `readonly` | [`Rectangle`](Rectangle.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`rectangle` | [src/client/ui/menu/items/UIMenuItem.ts:370](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L370) |
+| `selected` | `public` | `boolean` | `false` | - | [`UIMenuItem`](UIMenuItem.md).`selected` | [src/client/ui/menu/items/UIMenuItem.ts:355](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L355) |
+| `selectedSprite` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`selectedSprite` | [src/client/ui/menu/items/UIMenuItem.ts:372](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L372) |
+| `supportsDescription` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsDescription` | [src/client/ui/menu/items/UIMenuItem.ts:364](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L364) |
+| `supportsLeftBadge` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsLeftBadge` | [src/client/ui/menu/items/UIMenuItem.ts:366](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L366) |
+| `supportsPanels` | `protected` | `boolean` | `true` | - | [`UIMenuItem`](UIMenuItem.md).`supportsPanels` | [src/client/ui/menu/items/UIMenuItem.ts:365](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L365) |
+| `supportsRightBadge` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightBadge` | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:9](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L9) |
+| `supportsRightLabel` | `protected` | `boolean` | `false` | [`UIMenuItem`](UIMenuItem.md).`supportsRightLabel` | - | [src/client/ui/menu/items/UIMenuCheckboxItem.ts:10](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L10) |
+| `text` | `readonly` | [`Text`](Text.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`text` | [src/client/ui/menu/items/UIMenuItem.ts:371](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L371) |
+| `defaultBackColor` | `static` | [`Color`](Color.md) | `Color.Transparent` | - | [`UIMenuItem`](UIMenuItem.md).`defaultBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:344](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L344) |
+| `defaultForeColor` | `static` | [`Color`](Color.md) | `Color.WhiteSmoke` | - | [`UIMenuItem`](UIMenuItem.md).`defaultForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:348](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L348) |
+| `defaultHighlightedBackColor` | `static` | [`Color`](Color.md) | `Color.White` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:345](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L345) |
+| `defaultHighlightedForeColor` | `static` | [`Color`](Color.md) | `Color.Black` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHighlightedForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:350](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L350) |
+| `defaultHoveredBackColor` | `static` | [`Color`](Color.md) | `undefined` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredBackColor` | [src/client/ui/menu/items/UIMenuItem.ts:346](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L346) |
+| `defaultHoveredForeColor` | `static` | [`Color`](Color.md) | `UIMenuItem.defaultForeColor` | - | [`UIMenuItem`](UIMenuItem.md).`defaultHoveredForeColor` | [src/client/ui/menu/items/UIMenuItem.ts:349](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L349) |
 
 ## Accessors
 
@@ -98,7 +98,7 @@ set BackColor(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:439](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L439)
+[src/client/ui/menu/items/UIMenuItem.ts:439](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L439)
 
 ***
 
@@ -124,7 +124,7 @@ set Checked(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuCheckboxItem.ts:29](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L29)
+[src/client/ui/menu/items/UIMenuCheckboxItem.ts:29](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L29)
 
 ***
 
@@ -154,7 +154,7 @@ set Description(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:420](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L420)
+[src/client/ui/menu/items/UIMenuItem.ts:420](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L420)
 
 ***
 
@@ -184,7 +184,7 @@ set ForeColor(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:459](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L459)
+[src/client/ui/menu/items/UIMenuItem.ts:459](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L459)
 
 ***
 
@@ -204,7 +204,7 @@ get FormattedDescription(): string
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:435](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L435)
+[src/client/ui/menu/items/UIMenuItem.ts:435](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L435)
 
 ***
 
@@ -234,7 +234,7 @@ set HighlightedBackColor(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:449](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L449)
+[src/client/ui/menu/items/UIMenuItem.ts:449](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L449)
 
 ***
 
@@ -264,7 +264,7 @@ set HighlightedForeColor(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:469](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L469)
+[src/client/ui/menu/items/UIMenuItem.ts:469](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L469)
 
 ***
 
@@ -284,7 +284,7 @@ get IsMouseInBounds(): boolean
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:525](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L525)
+[src/client/ui/menu/items/UIMenuItem.ts:525](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L525)
 
 ***
 
@@ -314,7 +314,7 @@ set LeftBadge(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:477](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L477)
+[src/client/ui/menu/items/UIMenuItem.ts:477](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L477)
 
 ***
 
@@ -344,7 +344,7 @@ set Panels(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:531](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L531)
+[src/client/ui/menu/items/UIMenuItem.ts:531](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L531)
 
 ***
 
@@ -374,7 +374,7 @@ set RightBadge(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:494](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L494)
+[src/client/ui/menu/items/UIMenuItem.ts:494](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L494)
 
 ***
 
@@ -404,7 +404,7 @@ set RightLabel(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:511](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L511)
+[src/client/ui/menu/items/UIMenuItem.ts:511](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L511)
 
 ***
 
@@ -430,7 +430,7 @@ set Style(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuCheckboxItem.ts:37](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L37)
+[src/client/ui/menu/items/UIMenuCheckboxItem.ts:37](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L37)
 
 ***
 
@@ -460,7 +460,7 @@ set Text(value): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:412](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L412)
+[src/client/ui/menu/items/UIMenuItem.ts:412](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L412)
 
 ## Methods
 
@@ -487,7 +487,7 @@ addEvent(event, ...args): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:575](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L575)
+[src/client/ui/menu/items/UIMenuItem.ts:575](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L575)
 
 ***
 
@@ -513,7 +513,7 @@ addPanel(panel): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:545](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L545)
+[src/client/ui/menu/items/UIMenuItem.ts:545](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L545)
 
 ***
 
@@ -539,7 +539,7 @@ badgeToColor(badge): Color
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:979](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L979)
+[src/client/ui/menu/items/UIMenuItem.ts:979](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L979)
 
 ***
 
@@ -565,7 +565,7 @@ badgeToTextureName(badge): string
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:616](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L616)
+[src/client/ui/menu/items/UIMenuItem.ts:616](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L616)
 
 ***
 
@@ -585,7 +585,7 @@ draw(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuCheckboxItem.ts:50](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L50)
+[src/client/ui/menu/items/UIMenuCheckboxItem.ts:50](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L50)
 
 ***
 
@@ -611,7 +611,7 @@ findPanelIndex(panel): number
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:556](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L556)
+[src/client/ui/menu/items/UIMenuItem.ts:556](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L556)
 
 ***
 
@@ -631,7 +631,7 @@ fireEvent(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:579](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L579)
+[src/client/ui/menu/items/UIMenuItem.ts:579](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L579)
 
 ***
 
@@ -651,7 +651,7 @@ formatDescription(): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:585](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L585)
+[src/client/ui/menu/items/UIMenuItem.ts:585](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L585)
 
 ***
 
@@ -677,7 +677,7 @@ removePanel(panelOrIndex): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:564](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L564)
+[src/client/ui/menu/items/UIMenuItem.ts:564](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L564)
 
 ***
 
@@ -703,7 +703,7 @@ setVerticalPosition(y): void
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuCheckboxItem.ts:45](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L45)
+[src/client/ui/menu/items/UIMenuCheckboxItem.ts:45](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuCheckboxItem.ts#L45)
 
 ***
 
@@ -729,7 +729,7 @@ static badgeToTextureDict(badge): string
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:7](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L7)
+[src/client/ui/menu/items/UIMenuItem.ts:7](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L7)
 
 ***
 
@@ -755,7 +755,7 @@ static getBadgeSize(badge): Size
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:182](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L182)
+[src/client/ui/menu/items/UIMenuItem.ts:182](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L182)
 
 ***
 
@@ -781,7 +781,7 @@ static getBadgeSpriteHeightOffset(sprite): number
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:178](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L178)
+[src/client/ui/menu/items/UIMenuItem.ts:178](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L178)
 
 ***
 
@@ -807,4 +807,4 @@ static getBadgeSpriteWidthOffset(sprite): number
 
 #### Defined in
 
-[src/client/ui/menu/items/UIMenuItem.ts:174](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/ui/menu/items/UIMenuItem.ts#L174)
+[src/client/ui/menu/items/UIMenuItem.ts:174](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/ui/menu/items/UIMenuItem.ts#L174)

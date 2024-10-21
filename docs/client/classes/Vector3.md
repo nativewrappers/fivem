@@ -196,14 +196,14 @@ lib/common/utils/Vector.d.ts:265
 ### addY()
 
 ```ts
-addY(x): Vector3
+addY(y): Vector3
 ```
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
