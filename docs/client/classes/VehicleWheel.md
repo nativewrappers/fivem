@@ -23,7 +23,7 @@ new VehicleWheel(owner, index): VehicleWheel
 
 #### Defined in
 
-[src/client/models/VehicleWheel.ts:7](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleWheel.ts#L7)
+[src/client/models/VehicleWheel.ts:7](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/models/VehicleWheel.ts#L7)
 
 ## Accessors
 
@@ -49,7 +49,7 @@ set Index(index): void
 
 #### Defined in
 
-[src/client/models/VehicleWheel.ts:12](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleWheel.ts#L12)
+[src/client/models/VehicleWheel.ts:12](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/models/VehicleWheel.ts#L12)
 
 ***
 
@@ -65,7 +65,7 @@ get Vehicle(): Vehicle
 
 #### Defined in
 
-[src/client/models/VehicleWheel.ts:20](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleWheel.ts#L20)
+[src/client/models/VehicleWheel.ts:20](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/models/VehicleWheel.ts#L20)
 
 ## Methods
 
@@ -81,7 +81,7 @@ burst(): void
 
 #### Defined in
 
-[src/client/models/VehicleWheel.ts:24](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleWheel.ts#L24)
+[src/client/models/VehicleWheel.ts:24](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/models/VehicleWheel.ts#L24)
 
 ***
 
@@ -97,4 +97,4 @@ fix(): void
 
 #### Defined in
 
-[src/client/models/VehicleWheel.ts:28](https://github.com/nativewrappers/fivem/blob/5ebb4b78605d0cb7cf468eefa811c3a586dedc74/src/client/models/VehicleWheel.ts#L28)
+[src/client/models/VehicleWheel.ts:28](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/client/models/VehicleWheel.ts#L28)

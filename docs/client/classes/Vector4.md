@@ -220,14 +220,14 @@ lib/common/utils/Vector.d.ts:265
 ### addY()
 
 ```ts
-addY(x): Vector4
+addY(y): Vector4
 ```
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `x` | `number` |
+| `y` | `number` |
 
 #### Returns
 
