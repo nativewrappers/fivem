@@ -20,5 +20,5 @@
   },
   "include": [],
   "exclude": ["lib", "**/examples/"],
-  "references": [{ "path": "./src/common" }, { "path": "./src/server" }, { "path": "./src/client" }]
+  "references": [{ "path": "./src/common" }, { "path": "./src/server" }, { "path": "./src/fivem" }, { "path": "./src/redm" }]
 }
