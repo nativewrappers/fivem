@@ -1,4 +1,4 @@
-import { GlobalData } from "./GlobalData";
+import { GlobalData } from './GlobalData';
 
 export class Resource {
   constructor(public name: string) {}

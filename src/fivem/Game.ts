@@ -4,6 +4,7 @@ import { Control, InputMode, Language, RadioStation } from './enums';
 import { Ped, Player, Prop, Vehicle } from './models';
 
 export abstract class Game {
+  public static useHashCache: boolean = true;
   // A map containing generated hashes.
   public static hashCache: Map<string, number> = new Map();
   /**
@@ -14,6 +15,10 @@ export abstract class Game {
   public static generateHash(input: string): number {
     if (typeof input === 'undefined') {
       return 0;
+    }
+
+    if (!this.useHashCache) {
+      return GetHashKey(input);
     }
 
     const _hash = this.hashCache.get(input);

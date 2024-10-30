@@ -6,11 +6,12 @@ import { Vector3, Wait } from './utils';
 /**
  * Class to create and manage entity models.
  */
-export class Model {
+export class Model implements Disposable {
   /**
    * Hash of this model.
    */
   private hash: number;
+  private requestedModel: boolean = false;
 
   /**
    * Creates a model object based on the hash key or model string.
@@ -22,6 +23,12 @@ export class Model {
       this.hash = Game.generateHash(hash);
     } else {
       this.hash = hash;
+    }
+  }
+
+  [Symbol.dispose](): void {
+    if (this.requestedModel) {
+      this.markAsNoLongerNeeded();
     }
   }
 
@@ -215,6 +222,8 @@ export class Model {
     while (!this.IsLoaded && GetGameTimer() < timeout) {
       await Wait(0);
     }
+    this.requestedModel = true;
+
     return this.IsLoaded;
   }
 

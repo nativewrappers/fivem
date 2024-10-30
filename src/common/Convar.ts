@@ -1,7 +1,6 @@
-import { GlobalData } from "./GlobalData";
+import { GlobalData } from './GlobalData';
 
 export class Convar {
-
   /**
    * @returns the current console buffer
    */
