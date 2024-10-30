@@ -1,3 +1,5 @@
+import { GlobalData } from "./GlobalData";
+
 export class Resource {
   constructor(public name: string) {}
   public getMetadata(metadataKey: string, index: number): string {
@@ -13,10 +15,20 @@ export class Resource {
   }
 
   public saveFile(fileName: string, data: string, length: number): boolean {
+    CLIENT: {
+      if (GlobalData.IS_CLIENT) {
+        throw new Error("This function isn't available on the client");
+      }
+    }
     return SaveResourceFile(this.name, fileName, data, length);
   }
 
   public scheduleTick(): void {
+    CLIENT: {
+      if (GlobalData.IS_CLIENT) {
+        throw new Error("This function isn't available on the client");
+      }
+    }
     return ScheduleResourceTick(this.name);
   }
 

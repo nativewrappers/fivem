@@ -11,7 +11,8 @@
 	"exports": {
 		".": "./common/index.js",
 		"./server": "./server/index.js",
-		"./client": "./client/index.js"
+		"./fivem": "./fivem/index.js",
+		"./redm": "./redm/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -43,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@citizenfx/client": "^2.0.7604-1",
-		"@citizenfx/server": "^2.0.7604-1",
+		"@citizenfx/server": "2.0.10673-1",
 		"@types/node": "^16.18.103",
 		"buffer": "^6.0.3",
 		"prettier": "^3.3.3",
@@ -52,6 +53,6 @@
 		"typedoc": "^0.26.5",
 		"typedoc-fivemjs-theme": "^0.2.7",
 		"typedoc-plugin-markdown": "^4.2.1",
-		"typescript": "^5.5.3"
+		"typescript": "^5.6.3"
 	}
 }

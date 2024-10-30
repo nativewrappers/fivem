@@ -12,8 +12,8 @@ importers:
         specifier: ^2.0.7604-1
         version: 2.0.7604-1
       '@citizenfx/server':
-        specifier: ^2.0.7604-1
-        version: 2.0.7604-1
+        specifier: 2.0.10673-1
+        version: 2.0.10673-1
       '@types/node':
         specifier: ^16.18.103
         version: 16.18.103
@@ -31,16 +31,16 @@ importers:
         version: 1.8.10
       typedoc:
         specifier: ^0.26.5
-        version: 0.26.5(typescript@5.5.3)
+        version: 0.26.5(typescript@5.6.3)
       typedoc-fivemjs-theme:
         specifier: ^0.2.7
         version: 0.2.7
       typedoc-plugin-markdown:
         specifier: ^4.2.1
-        version: 4.2.1(typedoc@0.26.5(typescript@5.5.3))
+        version: 4.2.1(typedoc@0.26.5(typescript@5.6.3))
       typescript:
-        specifier: ^5.5.3
-        version: 5.5.3
+        specifier: ^5.6.3
+        version: 5.6.3
     publishDirectory: lib
 
 packages:
@@ -48,8 +48,8 @@ packages:
   '@citizenfx/client@2.0.7604-1':
     resolution: {integrity: sha512-QF1tZC3XZ5XjlFZOY+nGlPqdKScfexSEUKitKgTF+q/34ouGdfhd58IF0oSDMrxmQQ9ROK98CYIYQdYoR5mX8w==}
 
-  '@citizenfx/server@2.0.7604-1':
-    resolution: {integrity: sha512-l74/gsl19cX/qABVaxI10B+yEJwQk6baXU1yZheM3Q8xyLaXwIS/I4uwWaXl+Tkus8+yVRJQXz8oZIFKwxxAoQ==}
+  '@citizenfx/server@2.0.10673-1':
+    resolution: {integrity: sha512-bOPsikRvLgMH5uD7jMOoa2nmY5ry76czJAC0UbA+bEtSrL9RJEl0P7ccU7RtH40tskN15JxNjnvMveEcDk7qxA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -280,8 +280,8 @@ packages:
     peerDependencies:
       typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x
 
-  typescript@5.5.3:
-    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -299,7 +299,7 @@ snapshots:
 
   '@citizenfx/client@2.0.7604-1': {}
 
-  '@citizenfx/server@2.0.7604-1': {}
+  '@citizenfx/server@2.0.10673-1': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -507,20 +507,20 @@ snapshots:
 
   typedoc-fivemjs-theme@0.2.7: {}
 
-  typedoc-plugin-markdown@4.2.1(typedoc@0.26.5(typescript@5.5.3)):
+  typedoc-plugin-markdown@4.2.1(typedoc@0.26.5(typescript@5.6.3)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.3)
+      typedoc: 0.26.5(typescript@5.6.3)
 
-  typedoc@0.26.5(typescript@5.5.3):
+  typedoc@0.26.5(typescript@5.6.3):
     dependencies:
       lunr: 2.3.9
       markdown-it: 14.1.0
       minimatch: 9.0.5
       shiki: 1.11.0
-      typescript: 5.5.3
+      typescript: 5.6.3
       yaml: 2.4.5
 
-  typescript@5.5.3: {}
+  typescript@5.6.3: {}
 
   uc.micro@2.1.0: {}
 

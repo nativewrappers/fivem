@@ -2,7 +2,7 @@
 
 We welcome contributions and assistance! If you want to know where to start, check out our [Github Projects sorted by name](https://github.com/nativewrappers/fivem/projects?query=is%3Aopen+sort%3Aname-asc).
 
-If you want to add a new feature, note that we strive to support the FiveM OneSync system, so keep that in mind when submitting feature requests.
+If you want to add a new feature, note that we strive to support OneSync, so keep that in mind when submitting feature requests.
 
 ## Development
 
@@ -13,12 +13,9 @@ To get setup for development, refer to [DEVELOPMENT.md](./DEVELOPMENT.md)
 We use GitHub issues to track public bugs and requests. Please ensure your bug description is clear and has sufficient instructions to be able to reproduce the issue. The best way is to provide an example resource in JS that uses any of the nativewrappers features directly.
 
 ## Pull Requests
-
 All active development of this project happens on GitHub. We actively welcome your [pull requests](https://help.github.com/articles/creating-a-pull-request).
 
-We require that all pull requests are made in the development branch. Please beware of that when opening a new PR.
-
-## Commit Message Conventionsf
+## Commit Message Conventions
 
 We don't have any strict commit message rules, but we encourage you to keep your commit messages short and descriptive.
 
