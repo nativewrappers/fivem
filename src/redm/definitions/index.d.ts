@@ -1,3 +1,3 @@
 /* eslint-disable */
 /// <reference path="./Citizen.d.ts" />
-/// <reference path="./rdr3.d.ts" />
+/// <reference path="./redm.d.ts" />
