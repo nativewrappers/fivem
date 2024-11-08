@@ -13,7 +13,7 @@
     "strict": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "types": ["@citizenfx/server", "@citizenfx/client", "@types/node"],
+    "types": ["@types/node"],
     "paths": {
       "@common/*": ["./common/*"]
     }

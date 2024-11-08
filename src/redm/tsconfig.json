@@ -3,7 +3,7 @@
 	"compilerOptions": {
     "target": "es2022",
 		"composite": true,
-		"types": ["@citizenfx/client"]
+		"types": []
 	},
 	"include": ["./"],
 	"references": [{ "path": "../common" }]
