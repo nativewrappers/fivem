@@ -90,10 +90,13 @@ const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
 }
 
 
-// NOTE: These dont expect to ever be removed.
-export const ConVar = (con_var_type: ConVarType, name: string, default_value: ConVarDefault, should_listen: boolean) => {
+// NOTE: These *should* call set methods so if you want to use these as a
+// makeshift wrapper to listen for convar changes you can
+// NOTE: The default value of the value this is set on will be used as
+// `default_value` for gets
+export const ConVar = (con_var_type: ConVarType, name: string, should_listen: boolean) => {
   return function (target: any, key: string): void {
-    update_decor_data(target, name, key, DecoratorType.NuiEvent, { con_var_type, should_listen, default_value });
+    update_decor_data(target, name, key, DecoratorType.NuiEvent, { con_var_type, should_listen });
 
   };
 };
@@ -108,7 +111,7 @@ export const CfxDecors = function () {
 
         const events = Reflect.get(this, "native_decor") as Array<DecoratorData>;
 
-        for (const { name, key, type, remote_only, should_listen, con_var_type, default_value} of events) {
+        for (const { name, key, type, remote_only, should_listen, con_var_type } of events) {
           switch (type) {
             case DecoratorType.NuiEvent: {
               RegisterNuiCallback(name, (...args: any[]) => {
@@ -140,6 +143,7 @@ export const CfxDecors = function () {
             }
 
             case DecoratorType.ConVar: {
+              const default_value = this[key];
               const con_var_fn = get_convar_fn(con_var_type!);
               Reflect.set(this, key, con_var_fn(name, default_value))
               if (should_listen) {
