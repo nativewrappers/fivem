@@ -1,4 +1,5 @@
 import { GlobalData } from "@common/GlobalData";
+import type { Buffer } from "buffer";
 
 enum MapChangeType {
   // whenever a value inside of the object changed
