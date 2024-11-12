@@ -1,3 +1,4 @@
+import { Event } from "@common/decors/Events";
 import { GlobalData } from "@common/GlobalData";
 import type { Buffer } from "buffer";
 
@@ -16,7 +17,7 @@ type MapChanges<K, V> = [MapChangeType, K?, V?] | [MapChangeType.SubValueChanged
 
 declare function msgpack_pack(data: any): Buffer;
 
-type ChangeListener = () => void;
+type ChangeListener<V> = (value: V) => void;
 
 /**
   * not ready to be used just thoughts right now
@@ -24,8 +25,8 @@ type ChangeListener = () => void;
 export class NetworkedMap<K, V> extends Map<K, V> {
   #syncName: string;
   #queuedChanges: MapChanges<K,V>[] = [];
-  #changeListeners: Map<K, ChangeListener[]> = new Map();
-  #subscribers: number[] = [];
+  #changeListeners: Map<K, ChangeListener<V>[]> = new Map();
+  #subscribers: Set<number> = new Set();
 
   constructor(syncName: string, initialValue?: [K, V][]) {
     super(initialValue);
@@ -44,13 +45,45 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     }
   }
 
-  listenForChange(key: K, fn: ChangeListener) {
+  // handles removing the player from the map whenever they're dropped
+  @Event("playerDropped")
+  private onPlayerDropped() {
+    this.removeSubscriber(source)
+  }
+
+  /*
+   * Adds a new subscriber to the map, if the 
+   */
+  addSubscriber(sub: number) {
+    this.#subscribers.add(sub);
+  }
+
+  removeSubscriber(sub: number): boolean {
+    return this.#subscribers.delete(sub);
+  }
+
+  /*
+   * Listens for the change on the specified key, it will get the resulting
+   * value on the change
+   */
+  listenForChange(key: K, fn: ChangeListener<V>) {
     const listener = this.#changeListeners.get(key);
     listener ? listener.push(fn) : this.#changeListeners.set(key, [fn]);
   }
 
-  #pushChangeForListener(key: K, value: V) {
+  #triggerEventForSubscribers(data: any) {
+    const packed_data = msgpack_pack(data);
+    for (const sub of this.#subscribers) {
+      TriggerClientEventInternal(`${this.#syncName}:syncChanges`, sub as any, packed_data as any, packed_data.length);
+    }
+  }
 
+  #pushChangeForListener(key: K, value: V) {
+    const listener = this.#changeListeners.get(key);
+    if (!listener) return;
+    for (const ln of listener) {
+      ln(value);
+    }
   }
 
   set(key: K, value: V): this {
@@ -99,7 +132,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   #networkTick() {
-    const packed_vars = msgpack_pack(this.#queuedChanges);
+    this.#triggerEventForSubscribers(this.#queuedChanges);
     this.#queuedChanges = [];
   }
 
