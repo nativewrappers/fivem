@@ -1,4 +1,4 @@
-import { Control } from '../../enums';
+import { Control } from "../../enums";
 
 export interface IButton {
   controls: Control[];

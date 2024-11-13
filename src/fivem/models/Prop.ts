@@ -1,9 +1,9 @@
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { BaseEntity } from './BaseEntity';
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { BaseEntity } from "./BaseEntity";
 
 export class Prop extends BaseEntity {
   public static exists(prop: Prop): boolean {
-    return typeof prop !== 'undefined' && prop.exists();
+    return typeof prop !== "undefined" && prop.exists();
   }
 
   public static fromHandle(handle: number): Prop | null {

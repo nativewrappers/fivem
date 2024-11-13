@@ -9,7 +9,7 @@ export class Kvp {
    */
   public setKvp<T = number | string>(key: string, value: T): void {
     const type = typeof value;
-    if (type === 'string') {
+    if (type === "string") {
       SetResourceKvp(key, value as any);
     } else {
       if (Number.isInteger(value)) {
@@ -27,7 +27,7 @@ export class Kvp {
    */
   public setKvpAsync<T = number | string>(key: string, value: T): void {
     const type = typeof value;
-    if (type === 'string') {
+    if (type === "string") {
       SetResourceKvpNoSync(key, value as any);
     } else {
       if (Number.isInteger(value)) {
@@ -78,7 +78,7 @@ export class Kvp {
 
   public getKvpJson<T>(key: string): T {
     const kvp = this.getKvpString(key);
-    return JSON.parse(kvp || '{}');
+    return JSON.parse(kvp || "{}");
   }
 
   /**
@@ -106,18 +106,18 @@ export class Kvp {
 
   private *handleKvp<T = number | string>(
     prefix: string,
-    iterType: 'string' | 'number' | 'float',
+    iterType: "string" | "number" | "float",
   ): IterableIterator<T> {
     const handle = StartFindKvp(prefix);
     if (handle === -1) return;
     let key;
     do {
       key = FindKvp(handle);
-      if (iterType === 'string') {
+      if (iterType === "string") {
         yield GetResourceKvpString(key) as unknown as T;
-      } else if (iterType === 'number') {
+      } else if (iterType === "number") {
         yield GetResourceKvpInt(key) as unknown as T;
-      } else if (iterType === 'float') {
+      } else if (iterType === "float") {
         yield GetResourceKvpFloat(key) as unknown as T;
       }
     } while (key);
@@ -137,7 +137,7 @@ export class Kvp {
    * @param prefix the prefix to search for
    */
   public getKvpsAsString(prefix: string): IterableIterator<string> {
-    return this.handleKvp<string>(prefix, 'string');
+    return this.handleKvp<string>(prefix, "string");
   }
 
   /**
@@ -152,7 +152,7 @@ export class Kvp {
    * @param prefix the prefix to search for
    */
   public getKvpsAsNumber(prefix: string): IterableIterator<number> {
-    return this.handleKvp<number>(prefix, 'number');
+    return this.handleKvp<number>(prefix, "number");
   }
 
   /**
@@ -167,6 +167,6 @@ export class Kvp {
    * @param prefix the prefix to search for
    */
   public getKvpsAsFloat(prefix: string): IterableIterator<number> {
-    return this.handleKvp<number>(prefix, 'float');
+    return this.handleKvp<number>(prefix, "float");
   }
 }

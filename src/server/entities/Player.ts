@@ -1,8 +1,8 @@
-import cfx from '../cfx';
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { cleanPlayerName } from '../utils';
-import { Vector3 } from '../utils';
-import { Ped } from './Ped';
+import cfx from "../cfx";
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { cleanPlayerName } from "../utils";
+import { Vector3 } from "../utils";
+import { Ped } from "./Ped";
 
 export class Player {
   protected type = ClassTypes.Player;
@@ -157,7 +157,7 @@ export class Player {
     return GetPlayerTimeInPursuit(this.Src, lastPursuit);
   }
 
-  public drop(reason = 'No reason specified'): void {
+  public drop(reason = "No reason specified"): void {
     DropPlayer(this.Src, reason);
   }
 

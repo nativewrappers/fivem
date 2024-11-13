@@ -1,7 +1,7 @@
-import { WeaponHash } from '../hashes';
-import { Weapon } from './Weapon';
-import { Game } from '../Game';
-import { Wait } from '../utils';
+import { WeaponHash } from "../hashes";
+import { Weapon } from "./Weapon";
+import { Game } from "../Game";
+import { Wait } from "../utils";
 
 /**
  * weapon asset

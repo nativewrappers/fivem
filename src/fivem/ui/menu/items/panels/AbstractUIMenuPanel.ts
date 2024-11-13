@@ -1,7 +1,7 @@
-import { UIMenuItem } from '../';
-import { Crypto } from '../../../../utils';
-import { Rectangle, Sprite } from '../../../';
-import { Menu } from '../../';
+import { UIMenuItem } from "../";
+import { Crypto } from "../../../../utils";
+import { Rectangle, Sprite } from "../../../";
+import { Menu } from "../../";
 
 export abstract class AbstractUIMenuPanel {
   public readonly id: string = Crypto.uuidv4();
@@ -41,7 +41,8 @@ export abstract class AbstractUIMenuPanel {
 
   public draw(): void {
     if (this.background) {
-      this.background.size.width = 431 + (this.ParentMenu ? this.ParentMenu.WidthOffset : 0);
+      this.background.size.width =
+        431 + (this.ParentMenu ? this.ParentMenu.WidthOffset : 0);
       this.background.pos.X = this.parentItem ? this.parentItem.offset.X : 0;
       if (this.background instanceof Sprite) {
         this.background.draw(Menu.screenResolution);

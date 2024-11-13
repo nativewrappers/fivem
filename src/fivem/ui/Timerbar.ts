@@ -1,9 +1,9 @@
-import { HudComponent } from '../enums';
-import { Color, Point, Size } from '../utils';
-import { Hud } from './Hud';
-import { LoadingPrompt } from './LoadingPrompt';
-import { Screen } from './Screen';
-import { Sprite } from './Sprite';
+import { HudComponent } from "../enums";
+import { Color, Point, Size } from "../utils";
+import { Hud } from "./Hud";
+import { LoadingPrompt } from "./LoadingPrompt";
+import { Screen } from "./Screen";
+import { Sprite } from "./Sprite";
 
 /** @internal */
 const activeTimerBars: Timerbar[] = [];
@@ -30,7 +30,7 @@ const drawText = (text: string, position: number[], options: any): void => {
   const color = options.color;
   const align = options.align;
 
-  SetTextEntry('CELL_EMAIL_BCON');
+  SetTextEntry("CELL_EMAIL_BCON");
   for (let i = 0; i < text.length; i += 99) {
     const subStringText = text.substr(i, Math.min(99, text.length - i));
     AddTextComponentSubstringPlayerName(subStringText);
@@ -78,8 +78,8 @@ const drawText = (text: string, position: number[], options: any): void => {
  */
 export class Timerbar {
   private sprite: Sprite | null;
-  private title = '';
-  private text = '';
+  private title = "";
+  private text = "";
   private useProgressBar = false;
   private usePlayerStyle = false;
   private isVisible = false;
@@ -91,7 +91,7 @@ export class Timerbar {
   constructor(title: string, useProgressBar = false) {
     this.title = title;
     this.useProgressBar = useProgressBar;
-    this.text = '';
+    this.text = "";
     this.pbarValue = 0.0;
     this.textColor = [240, 240, 240, 255];
     this.pbarBgColor = [155, 155, 155, 255];
@@ -102,9 +102,12 @@ export class Timerbar {
     const safeZoneX = (1.0 - safeZone) * 0.5;
     const safeZoneY = (1.0 - safeZone) * 0.5;
     this.sprite = new Sprite(
-      'timerbars',
-      'all_black_bg',
-      new Point(Screen.ScaledWidth * 0.918 - safeZoneX, Screen.Height * 0.984 - safeZoneY),
+      "timerbars",
+      "all_black_bg",
+      new Point(
+        Screen.ScaledWidth * 0.918 - safeZoneX,
+        Screen.Height * 0.984 - safeZoneY,
+      ),
       new Size(Screen.ScaledWidth * 0.165, Screen.Height * 0.035),
       0,
       new Color(255, 255, 255, 160),
@@ -235,12 +238,15 @@ setTick(() => {
     loadingPromptOffset = 0.035 + 0.035 * 0.038 * 2;
   }
 
-  activeTimerBars.forEach(timerbar => {
+  activeTimerBars.forEach((timerbar) => {
     const drawY =
-      0.984 - loadingPromptOffset - safeZoneY - activeTimerBars.indexOf(timerbar) * 0.038;
+      0.984 -
+      loadingPromptOffset -
+      safeZoneY -
+      activeTimerBars.indexOf(timerbar) * 0.038;
     DrawSprite(
-      'timerbars',
-      'all_black_bg',
+      "timerbars",
+      "all_black_bg",
       0.918 - safeZoneX,
       drawY,
       0.165,
@@ -254,7 +260,10 @@ setTick(() => {
 
     drawText(
       timerbar.Title,
-      [0.918 - safeZoneX + 0.012, drawY - 0.009 - (timerbar.PlayerStyle ? 0.00625 : 0)],
+      [
+        0.918 - safeZoneX + 0.012,
+        drawY - 0.009 - (timerbar.PlayerStyle ? 0.00625 : 0),
+      ],
       {
         align: 2,
         color: timerbar.TextColor,
@@ -275,16 +284,16 @@ setTick(() => {
         pbarY,
         0.0616,
         0.0105,
-        typeof timerbar.ProgressbarBgColor === 'number'
+        typeof timerbar.ProgressbarBgColor === "number"
           ? timerbar.ProgressbarBgColor
           : timerbar.ProgressbarBgColor[0],
-        typeof timerbar.ProgressbarBgColor === 'number'
+        typeof timerbar.ProgressbarBgColor === "number"
           ? timerbar.ProgressbarBgColor
           : timerbar.ProgressbarBgColor[1],
-        typeof timerbar.ProgressbarBgColor === 'number'
+        typeof timerbar.ProgressbarBgColor === "number"
           ? timerbar.ProgressbarBgColor
           : timerbar.ProgressbarBgColor[2],
-        typeof timerbar.ProgressbarBgColor === 'number'
+        typeof timerbar.ProgressbarBgColor === "number"
           ? timerbar.ProgressbarBgColor
           : timerbar.ProgressbarBgColor[3],
       );
@@ -294,16 +303,16 @@ setTick(() => {
         pbarY,
         width,
         0.0105,
-        typeof timerbar.ProgressbarFgColor === 'number'
+        typeof timerbar.ProgressbarFgColor === "number"
           ? timerbar.ProgressbarFgColor
           : timerbar.ProgressbarFgColor[0],
-        typeof timerbar.ProgressbarFgColor === 'number'
+        typeof timerbar.ProgressbarFgColor === "number"
           ? timerbar.ProgressbarFgColor
           : timerbar.ProgressbarFgColor[1],
-        typeof timerbar.ProgressbarFgColor === 'number'
+        typeof timerbar.ProgressbarFgColor === "number"
           ? timerbar.ProgressbarFgColor
           : timerbar.ProgressbarFgColor[2],
-        typeof timerbar.ProgressbarFgColor === 'number'
+        typeof timerbar.ProgressbarFgColor === "number"
           ? timerbar.ProgressbarFgColor
           : timerbar.ProgressbarFgColor[3],
       );

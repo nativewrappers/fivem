@@ -1,5 +1,5 @@
-import type { BaseEntity } from './models/BaseEntity';
-import { Vector3 } from './utils';
+import type { BaseEntity } from "./models/BaseEntity";
+import { Vector3 } from "./utils";
 
 /**
  * Class to manage invisible ropes between entities.
@@ -72,7 +72,14 @@ export class Rope {
    * @param position Location where the rope is to be attached.
    */
   public attachEntity(entity: BaseEntity, position: Vector3): void {
-    AttachRopeToEntity(this.handle, entity.Handle, position.x, position.y, position.z, false);
+    AttachRopeToEntity(
+      this.handle,
+      entity.Handle,
+      position.x,
+      position.y,
+      position.z,
+      false,
+    );
   }
 
   /**
@@ -104,8 +111,8 @@ export class Rope {
       length,
       false,
       false,
-      '',
-      '',
+      "",
+      "",
     );
   }
 

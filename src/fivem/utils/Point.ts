@@ -1,8 +1,10 @@
 export class Point {
-  public static parse(arg: [number, number] | { X: number; Y: number } | string): Point {
+  public static parse(
+    arg: [number, number] | { X: number; Y: number } | string,
+  ): Point {
     let point = new Point();
     if (arg) {
-      if (typeof arg === 'object') {
+      if (typeof arg === "object") {
         if (Array.isArray(arg)) {
           if (arg.length === 2) {
             point = new Point(arg[0], arg[1]);
@@ -11,8 +13,8 @@ export class Point {
           point = new Point(arg.X, arg.Y);
         }
       } else {
-        if (arg.indexOf(',') !== -1) {
-          const arr = arg.split(',');
+        if (arg.indexOf(",") !== -1) {
+          const arr = arg.split(",");
           point = new Point(parseFloat(arr[0]), parseFloat(arr[1]));
         }
       }

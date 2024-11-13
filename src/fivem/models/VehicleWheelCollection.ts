@@ -1,10 +1,13 @@
-import { Vehicle } from './Vehicle';
-import { VehicleWheel } from './VehicleWheel';
-import { VehicleWheelIndex } from '../enums';
+import { Vehicle } from "./Vehicle";
+import { VehicleWheel } from "./VehicleWheel";
+import { VehicleWheelIndex } from "../enums";
 
 export class VehicleWheelCollection {
   private _owner: Vehicle;
-  private readonly _vehicleWheels: Map<number, VehicleWheel> = new Map<number, VehicleWheel>();
+  private readonly _vehicleWheels: Map<number, VehicleWheel> = new Map<
+    number,
+    VehicleWheel
+  >();
 
   constructor(owner: Vehicle) {
     this._owner = owner;
@@ -19,25 +22,25 @@ export class VehicleWheelCollection {
 
   public getAllWheels(): (VehicleWheel | null | undefined)[] {
     return Object.keys(VehicleWheelIndex)
-      .filter(key => !isNaN(Number(key)))
-      .map(key => {
+      .filter((key) => !isNaN(Number(key)))
+      .map((key) => {
         const index = Number(key);
         if (this.hasWheel(index)) {
           return this.getWheel(index);
         }
         return null;
       })
-      .filter(w => w);
+      .filter((w) => w);
   }
 
   public burstAllWheels(): void {
-    this.getAllWheels().forEach(wheel => {
+    this.getAllWheels().forEach((wheel) => {
       wheel?.burst();
     });
   }
 
   public fixAllWheels(): void {
-    this.getAllWheels().forEach(wheel => {
+    this.getAllWheels().forEach((wheel) => {
       wheel?.fix();
     });
   }
@@ -46,17 +49,17 @@ export class VehicleWheelCollection {
     if (this._owner.Bones === undefined) return false;
     switch (wheel) {
       case VehicleWheelIndex.FrontLeftWheel:
-        return this._owner.Bones.hasBone('wheel_lf');
+        return this._owner.Bones.hasBone("wheel_lf");
       case VehicleWheelIndex.FrontRightWheel:
-        return this._owner.Bones.hasBone('wheel_rf');
+        return this._owner.Bones.hasBone("wheel_rf");
       case VehicleWheelIndex.MidLeftWheel:
-        return this._owner.Bones.hasBone('wheel_lm');
+        return this._owner.Bones.hasBone("wheel_lm");
       case VehicleWheelIndex.MidRightWheel:
-        return this._owner.Bones.hasBone('wheel_rm');
+        return this._owner.Bones.hasBone("wheel_rm");
       case VehicleWheelIndex.RearLeftWheel:
-        return this._owner.Bones.hasBone('wheel_lr');
+        return this._owner.Bones.hasBone("wheel_lr");
       case VehicleWheelIndex.RearRightWheel:
-        return this._owner.Bones.hasBone('wheel_rr');
+        return this._owner.Bones.hasBone("wheel_rr");
       default:
         return false;
     }

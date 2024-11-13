@@ -1,10 +1,10 @@
-import { ClassTypes } from '../common/utils/ClassTypes';
-import { Ped } from './models/Ped';
-import { Vector2, Vector3, Vector4 } from './utils';
-import { Player } from './models/Player';
-import { Prop } from './models/Prop';
-import { Vehicle } from './models/Vehicle';
-import { BaseEntity } from './models';
+import { ClassTypes } from "../common/utils/ClassTypes";
+import { Ped } from "./models/Ped";
+import { Vector2, Vector3, Vector4 } from "./utils";
+import { Player } from "./models/Player";
+import { Prop } from "./models/Prop";
+import { Vehicle } from "./models/Vehicle";
+import { BaseEntity } from "./models";
 
 export type NetEvent = (...args: any[]) => void;
 

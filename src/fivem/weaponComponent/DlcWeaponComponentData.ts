@@ -1,5 +1,5 @@
-import { WeaponComponentHash } from './WeaponComponentHash';
-import { getStringFromUInt8Array, getUInt32FromUint8Array } from '../utils';
+import { WeaponComponentHash } from "./WeaponComponentHash";
+import { getStringFromUInt8Array, getUInt32FromUint8Array } from "../utils";
 
 /**
  * DlcWeaponComponentData
@@ -40,7 +40,10 @@ export interface DlcWeaponComponentData {
  * DlcWeaponComponentData
  *
  */
-export const DlcWeaponComponentData = new Map<WeaponComponentHash, DlcWeaponComponentData>();
+export const DlcWeaponComponentData = new Map<
+  WeaponComponentHash,
+  DlcWeaponComponentData
+>();
 
 /**
  * Initialize DlcWeaponComponentData, avoid calling expansive native repeatedly
@@ -65,17 +68,43 @@ function initializeOnce() {
         const buffer = new Uint8Array(14 * intLength + 4 * strLength);
 
         // https://docs.fivem.net/natives/?_0x6CF598A2957C2BF8
-        Citizen.invokeNative('0x6CF598A2957C2BF8', i, j, buffer, Citizen.returnResultAnyway());
+        Citizen.invokeNative(
+          "0x6CF598A2957C2BF8",
+          i,
+          j,
+          buffer,
+          Citizen.returnResultAnyway(),
+        );
 
         // noinspection PointlessArithmeticExpressionJS
         const dlcWeaponComponentData: DlcWeaponComponentData = {
-          attachBone: getUInt32FromUint8Array(buffer, 0 * intLength, 1 * intLength),
-          bActiveByDefault: getUInt32FromUint8Array(buffer, 2 * intLength, 3 * intLength),
+          attachBone: getUInt32FromUint8Array(
+            buffer,
+            0 * intLength,
+            1 * intLength,
+          ),
+          bActiveByDefault: getUInt32FromUint8Array(
+            buffer,
+            2 * intLength,
+            3 * intLength,
+          ),
           unk: getUInt32FromUint8Array(buffer, 4 * intLength, 5 * intLength),
-          componentHash: getUInt32FromUint8Array(buffer, 6 * intLength, 7 * intLength),
+          componentHash: getUInt32FromUint8Array(
+            buffer,
+            6 * intLength,
+            7 * intLength,
+          ),
           unk2: getUInt32FromUint8Array(buffer, 8 * intLength, 9 * intLength),
-          componentCost: getUInt32FromUint8Array(buffer, 10 * intLength, 11 * intLength),
-          name: getStringFromUInt8Array(buffer, 12 * intLength, 12 * intLength + strLength),
+          componentCost: getUInt32FromUint8Array(
+            buffer,
+            10 * intLength,
+            11 * intLength,
+          ),
+          name: getStringFromUInt8Array(
+            buffer,
+            12 * intLength,
+            12 * intLength + strLength,
+          ),
           desc: getStringFromUInt8Array(
             buffer,
             12 * intLength + strLength,
@@ -83,7 +112,10 @@ function initializeOnce() {
           ),
         };
 
-        DlcWeaponComponentData.set(dlcWeaponComponentData.componentHash, dlcWeaponComponentData);
+        DlcWeaponComponentData.set(
+          dlcWeaponComponentData.componentHash,
+          dlcWeaponComponentData,
+        );
       }
     }
 

@@ -1,5 +1,5 @@
-import { Color, Point, Size } from '../utils';
-import { Screen } from './';
+import { Color, Point, Size } from "../utils";
+import { Screen } from "./";
 
 export class Sprite {
   public textureName: string;
@@ -73,7 +73,8 @@ export class Sprite {
     loadTexture = true,
     resolution?: Size,
   ): void {
-    const textureDictionary = arg1 && typeof arg1 === 'string' ? arg1 : this.TextureDict;
+    const textureDictionary =
+      arg1 && typeof arg1 === "string" ? arg1 : this.TextureDict;
 
     textureName = textureName || this.textureName;
     pos = pos || this.pos;

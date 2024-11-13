@@ -1,4 +1,3 @@
-
 export * from "./Native";
 
 export {
@@ -12,4 +11,4 @@ export {
   enumValues,
   getStringFromUInt8Array,
   getUInt32FromUint8Array,
-} from '@common/utils/index';
+} from "@common/utils/index";

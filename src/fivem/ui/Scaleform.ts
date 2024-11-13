@@ -1,4 +1,4 @@
-import { PointF, Vector3 } from '../utils';
+import { PointF, Vector3 } from "../utils";
 
 /**
  * Scaleforms will automatically load when calling any of the render functions.
@@ -18,8 +18,11 @@ import { PointF, Vector3 } from '../utils';
  * ```
  */
 export class Scaleform {
-  public static render2DMasked(scaleform1: Scaleform, scaleform2: Scaleform): Promise<void> {
-    return new Promise(async resolve => {
+  public static render2DMasked(
+    scaleform1: Scaleform,
+    scaleform2: Scaleform,
+  ): Promise<void> {
+    return new Promise(async (resolve) => {
       if (scaleform1.IsLoaded && scaleform2.IsLoaded) {
         DrawScaleformMovieFullscreenMasked(
           scaleform1.Handle,
@@ -89,15 +92,15 @@ export class Scaleform {
    */
   public callFunction(name: string, ...args: unknown[]): void {
     BeginScaleformMovieMethod(this.handle, name);
-    args.forEach(arg => {
+    args.forEach((arg) => {
       switch (typeof arg) {
-        case 'number':
+        case "number":
           PushScaleformMovieFunctionParameterInt(arg);
           break;
-        case 'string':
+        case "string":
           PushScaleformMovieFunctionParameterString(arg);
           break;
-        case 'boolean':
+        case "boolean":
           PushScaleformMovieFunctionParameterBool(arg);
           break;
         default:
@@ -132,13 +135,21 @@ export class Scaleform {
    */
   public callStringMethod(
     name: string,
-    param1 = '',
-    param2 = '',
-    param3 = '',
-    param4 = '',
-    param5 = '',
+    param1 = "",
+    param2 = "",
+    param3 = "",
+    param4 = "",
+    param5 = "",
   ): void {
-    CallScaleformMovieMethodWithString(this.handle, name, param1, param2, param3, param4, param5);
+    CallScaleformMovieMethodWithString(
+      this.handle,
+      name,
+      param1,
+      param2,
+      param3,
+      param4,
+      param5,
+    );
   }
 
   /**
@@ -159,7 +170,15 @@ export class Scaleform {
     param4 = -1.0,
     param5 = -1.0,
   ): void {
-    CallScaleformMovieMethodWithNumber(this.handle, name, param1, param2, param3, param4, param5);
+    CallScaleformMovieMethodWithNumber(
+      this.handle,
+      name,
+      param1,
+      param2,
+      param3,
+      param4,
+      param5,
+    );
   }
 
   /**
@@ -184,11 +203,11 @@ export class Scaleform {
     fParam3 = -1.0,
     fParam4 = -1.0,
     fParam5 = -1.0,
-    sParam1 = '',
-    sParam2 = '',
-    sParam3 = '',
-    sParam4 = '',
-    sParam5 = '',
+    sParam1 = "",
+    sParam2 = "",
+    sParam3 = "",
+    sParam4 = "",
+    sParam5 = "",
   ): void {
     CallScaleformMovieMethodWithNumberAndString(
       this.handle,
@@ -230,7 +249,7 @@ export class Scaleform {
   }
 
   public render2D(): Promise<void> {
-    return new Promise(async resolve => {
+    return new Promise(async (resolve) => {
       if (this.IsLoaded) {
         DrawScaleformMovieFullscreen(this.handle, 255, 255, 255, 255, 0);
       } else {
@@ -241,7 +260,7 @@ export class Scaleform {
   }
 
   public render2DScreenSpace(location: PointF, size: PointF): Promise<void> {
-    return new Promise(async resolve => {
+    return new Promise(async (resolve) => {
       if (this.IsLoaded) {
         const x = location.x; /* UI.Screen.Width*/
         const y = location.y; /* UI.Screen.Height*/
@@ -267,8 +286,12 @@ export class Scaleform {
     });
   }
 
-  public render3D(position: Vector3, rotation: Vector3, scale: Vector3): Promise<void> {
-    return new Promise(async resolve => {
+  public render3D(
+    position: Vector3,
+    rotation: Vector3,
+    scale: Vector3,
+  ): Promise<void> {
+    return new Promise(async (resolve) => {
       if (this.IsLoaded) {
         DrawScaleformMovie_3dNonAdditive(
           this.handle,
@@ -293,8 +316,12 @@ export class Scaleform {
     });
   }
 
-  public render3DAdditive(position: Vector3, rotation: Vector3, scale: Vector3): Promise<void> {
-    return new Promise(async resolve => {
+  public render3DAdditive(
+    position: Vector3,
+    rotation: Vector3,
+    scale: Vector3,
+  ): Promise<void> {
+    return new Promise(async (resolve) => {
       if (this.IsLoaded) {
         DrawScaleformMovie_3d(
           this.handle,
@@ -320,7 +347,7 @@ export class Scaleform {
   }
 
   public load(): Promise<boolean> {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       if (this.IsLoaded) {
         resolve(true);
       } else {
@@ -331,7 +358,9 @@ export class Scaleform {
             resolve(true);
           } else if (GetGameTimer() - start > 5000) {
             clearInterval(interval);
-            console.log(`^1[fivemjs/client] Could not load scaleform ${this.name}!^7`);
+            console.log(
+              `^1[fivemjs/client] Could not load scaleform ${this.name}!^7`,
+            );
             resolve(false);
           }
         }, 0);

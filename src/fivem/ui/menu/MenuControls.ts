@@ -1,4 +1,4 @@
-import { MenuControl } from './MenuControl';
+import { MenuControl } from "./MenuControl";
 
 export class MenuControls {
   public back = new MenuControl();

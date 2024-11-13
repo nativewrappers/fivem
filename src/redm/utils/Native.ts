@@ -5,5 +5,5 @@
  * @returns
  */
 export const _N = <T = void>(hash: string, ...args: InputArgument[]): T => {
-    return Citizen.invokeNative<T>(hash, ...args);
+  return Citizen.invokeNative<T>(hash, ...args);
 };

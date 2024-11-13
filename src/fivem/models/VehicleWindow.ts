@@ -1,5 +1,5 @@
-import { Vehicle } from './Vehicle';
-import { VehicleWindowIndex } from '../enums';
+import { Vehicle } from "./Vehicle";
+import { VehicleWindowIndex } from "../enums";
 
 export class VehicleWindow {
   private _owner: Vehicle;

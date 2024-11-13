@@ -1,6 +1,6 @@
-import { Alignment, Font } from '../enums';
-import { Color, Point, Size } from '../utils';
-import { IDrawable, Screen } from './';
+import { Alignment, Font } from "../enums";
+import { Color, Point, Size } from "../utils";
+import { IDrawable, Screen } from "./";
 
 export class Text implements IDrawable {
   public static draw(
@@ -47,7 +47,7 @@ export class Text implements IDrawable {
       SetTextWrap(x, (pos.X + wordWrap.width) / resolution.width);
     }
 
-    SetTextEntry('STRING');
+    SetTextEntry("STRING");
     Text.addLongString(caption);
     DrawText(x, y);
   }
@@ -156,9 +156,12 @@ export class Text implements IDrawable {
       scale = scale !== undefined && scale !== null ? scale : this.scale;
       color = color || this.color;
       font = font !== undefined && font !== null ? font : this.font;
-      alignment = alignment !== undefined && alignment !== null ? alignment : this.alignment;
-      dropShadow = typeof dropShadow === 'boolean' ? dropShadow : dropShadow;
-      outline = typeof outline === 'boolean' ? outline : outline;
+      alignment =
+        alignment !== undefined && alignment !== null
+          ? alignment
+          : this.alignment;
+      dropShadow = typeof dropShadow === "boolean" ? dropShadow : dropShadow;
+      outline = typeof outline === "boolean" ? outline : outline;
       wordWrap = wordWrap || this.wordWrap;
     }
 

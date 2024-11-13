@@ -1,11 +1,11 @@
-import { Ped } from '../models';
-import { Weapon } from '../weapon';
-import { WeaponComponentHash } from './WeaponComponentHash';
-import { WeaponComponent } from './WeaponComponent';
-import { InvalidWeaponComponent } from './InvalidWeaponComponent';
-import { WeaponComponentHashesByWeaponHash } from './WeaponComponentHashesByWeaponHash';
-import { ComponentAttachmentPoint } from './ComponentAttachmentPoint';
-import { ComponentAttachmentPointByHash } from './ComponentAttachmentPointByHash';
+import { Ped } from "../models";
+import { Weapon } from "../weapon";
+import { WeaponComponentHash } from "./WeaponComponentHash";
+import { WeaponComponent } from "./WeaponComponent";
+import { InvalidWeaponComponent } from "./InvalidWeaponComponent";
+import { WeaponComponentHashesByWeaponHash } from "./WeaponComponentHashesByWeaponHash";
+import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
+import { ComponentAttachmentPointByHash } from "./ComponentAttachmentPointByHash";
 
 /**
  * ped weapon components on weapon
@@ -45,7 +45,7 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param componentHash
    */
   public get(componentHash: WeaponComponentHash): WeaponComponent {
-    if (this.AllWeaponComponentHashes.some(x => x === componentHash)) {
+    if (this.AllWeaponComponentHashes.some((x) => x === componentHash)) {
       let component = this.components.get(componentHash);
 
       if (!component) {
@@ -146,7 +146,10 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    *
    */
   public getLuxuryFinishComponent(): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(undefined, ComponentAttachmentPoint.GunRoot);
+    return this.getAnyComponentByAttachmentPoints(
+      undefined,
+      ComponentAttachmentPoint.GunRoot,
+    );
   }
 
   /**
@@ -155,7 +158,10 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param index - index of component
    */
   public getMk2CamoComponent(index: number): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(index, ComponentAttachmentPoint.GunRoot);
+    return this.getAnyComponentByAttachmentPoints(
+      index,
+      ComponentAttachmentPoint.GunRoot,
+    );
   }
 
   /**
@@ -164,7 +170,10 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param index - index of component
    */
   public getMk2BarrelComponent(index: number): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(index, ComponentAttachmentPoint.Barrel);
+    return this.getAnyComponentByAttachmentPoints(
+      index,
+      ComponentAttachmentPoint.Barrel,
+    );
   }
 
   /**
@@ -176,9 +185,9 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
   private createAndAddComponent(hash: WeaponComponentHash): WeaponComponent {
     const uintHash = hash >>> 0;
 
-    console.log('createAndAdd', hash, uintHash);
+    console.log("createAndAdd", hash, uintHash);
 
-    console.log('about to create', this.owner, this.weapon, uintHash);
+    console.log("about to create", this.owner, this.weapon, uintHash);
 
     const component = new WeaponComponent(this.owner, this.weapon, uintHash);
     this.components.set(uintHash, component);
@@ -206,9 +215,10 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
   private getComponentHashesByAttachmentPoints(
     ...attachmentPoints: ComponentAttachmentPoint[]
   ): WeaponComponentHash[] {
-    return this.AllWeaponComponentHashes.filter(hash =>
+    return this.AllWeaponComponentHashes.filter((hash) =>
       attachmentPoints.some(
-        attachmentPoint => ComponentAttachmentPointByHash.get(hash) === attachmentPoint,
+        (attachmentPoint) =>
+          ComponentAttachmentPointByHash.get(hash) === attachmentPoint,
       ),
     );
   }
@@ -224,7 +234,9 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
     index?: number,
     ...attachmentPoints: ComponentAttachmentPoint[]
   ) {
-    const hashes = this.getComponentHashesByAttachmentPoints(...attachmentPoints);
+    const hashes = this.getComponentHashesByAttachmentPoints(
+      ...attachmentPoints,
+    );
 
     if (index === undefined) {
       return this.get(hashes[0]) ?? this.invalidComponent;

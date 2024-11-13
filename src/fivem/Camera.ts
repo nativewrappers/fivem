@@ -1,22 +1,22 @@
-import { CameraShake } from './enums';
-import { PedBone } from './models';
-import { BaseEntity } from './models/BaseEntity';
-import { Vector3 } from './utils';
-import { LoadAnimDict } from './utils/Animations';
+import { CameraShake } from "./enums";
+import { PedBone } from "./models";
+import { BaseEntity } from "./models/BaseEntity";
+import { Vector3 } from "./utils";
+import { LoadAnimDict } from "./utils/Animations";
 
 export class Camera {
   public static readonly shakeNames: string[] = [
-    'HAND_SHAKE',
-    'SMALL_EXPLOSION_SHAKE',
-    'MEDIUM_EXPLOSION_SHAKE',
-    'LARGE_EXPLOSION_SHAKE',
-    'JOLT_SHAKE',
-    'VIBRATE_SHAKE',
-    'ROAD_VIBRATION_SHAKE',
-    'DRUNK_SHAKE',
-    'SKY_DIVING_SHAKE',
-    'FAMILY5_DRUG_TRIP_SHAKE',
-    'DEATH_FAIL_IN_EFFECT_SHAKE',
+    "HAND_SHAKE",
+    "SMALL_EXPLOSION_SHAKE",
+    "MEDIUM_EXPLOSION_SHAKE",
+    "LARGE_EXPLOSION_SHAKE",
+    "JOLT_SHAKE",
+    "VIBRATE_SHAKE",
+    "ROAD_VIBRATION_SHAKE",
+    "DRUNK_SHAKE",
+    "SKY_DIVING_SHAKE",
+    "FAMILY5_DRUG_TRIP_SHAKE",
+    "DEATH_FAIL_IN_EFFECT_SHAKE",
   ];
 
   private handle: number;
@@ -191,7 +191,14 @@ export class Camera {
     offset: Vector3 = new Vector3(0, 0, 0),
   ): void {
     if (target instanceof BaseEntity) {
-      PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
+      PointCamAtEntity(
+        this.handle,
+        target.Handle,
+        offset.x,
+        offset.y,
+        offset.z,
+        true,
+      );
     } else if (target instanceof PedBone) {
       PointCamAtPedBone(
         this.handle,
@@ -232,7 +239,14 @@ export class Camera {
 
   public attachTo(object: BaseEntity | PedBone, offset: Vector3): void {
     if (object instanceof BaseEntity) {
-      AttachCamToEntity(this.handle, object.Handle, offset.x, offset.y, offset.z, true);
+      AttachCamToEntity(
+        this.handle,
+        object.Handle,
+        offset.x,
+        offset.y,
+        offset.z,
+        true,
+      );
     } else if (object instanceof PedBone) {
       AttachCamToPedBone(
         this.handle,

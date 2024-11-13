@@ -1,6 +1,6 @@
-import { Weapon } from './Weapon';
-import { Ped, Prop } from '../models';
-import { WeaponHash } from '../hashes';
+import { Weapon } from "./Weapon";
+import { Ped, Prop } from "../models";
+import { WeaponHash } from "../hashes";
 
 /**
  * ped weapons
@@ -134,7 +134,13 @@ export class WeaponCollection implements Iterable<Weapon> {
     if (weapon.IsPresent) {
       this.select(weapon);
     } else {
-      GiveWeaponToPed(this.owner.Handle, weapon.Hash, ammoCount, equipNow, isAmmoLoaded);
+      GiveWeaponToPed(
+        this.owner.Handle,
+        weapon.Hash,
+        ammoCount,
+        equipNow,
+        isAmmoLoaded,
+      );
     }
 
     return weapon;

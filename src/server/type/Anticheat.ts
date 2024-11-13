@@ -1,4 +1,4 @@
-import { Hash } from './Hash';
+import { Hash } from "./Hash";
 
 export type AnticheatWeaponDamageEvent = {
   actionResultId: number;

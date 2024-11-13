@@ -1,7 +1,7 @@
-import { Audio } from '../Audio';
-import { HudColor, NotificationType } from '../enums';
-import { Color, Size, String, Vector3 } from '../utils';
-import { Notification } from './';
+import { Audio } from "../Audio";
+import { HudColor, NotificationType } from "../enums";
+import { Color, Size, String, Vector3 } from "../utils";
+import { Notification } from "./";
 
 export abstract class Screen {
   public static get Resolution(): Size {
@@ -33,9 +33,9 @@ export abstract class Screen {
   public static showSubtitle(message: string, duration = 2500): void {
     const strings: string[] = String.stringToArray(message);
 
-    BeginTextCommandPrint('CELL_EMAIL_BCON');
+    BeginTextCommandPrint("CELL_EMAIL_BCON");
 
-    strings.forEach(element => {
+    strings.forEach((element) => {
       AddTextComponentSubstringPlayerName(element);
     });
 
@@ -45,21 +45,24 @@ export abstract class Screen {
   public static displayHelpTextThisFrame(message: string): void {
     const strings: string[] = String.stringToArray(message);
 
-    BeginTextCommandDisplayHelp('CELL_EMAIL_BCON');
+    BeginTextCommandDisplayHelp("CELL_EMAIL_BCON");
 
-    strings.forEach(element => {
+    strings.forEach((element) => {
       AddTextComponentSubstringPlayerName(element);
     });
 
     EndTextCommandDisplayHelp(0, false, false, -1);
   }
 
-  public static showNotification(message: string, blinking = false): Notification {
+  public static showNotification(
+    message: string,
+    blinking = false,
+  ): Notification {
     const strings: string[] = String.stringToArray(message);
 
-    SetNotificationTextEntry('CELL_EMAIL_BCON');
+    SetNotificationTextEntry("CELL_EMAIL_BCON");
 
-    strings.forEach(element => {
+    strings.forEach((element) => {
       AddTextComponentSubstringPlayerName(element);
     });
 
@@ -81,9 +84,9 @@ export abstract class Screen {
   ): Notification {
     const strings: string[] = String.stringToArray(message);
 
-    SetNotificationTextEntry('CELL_EMAIL_BCON');
+    SetNotificationTextEntry("CELL_EMAIL_BCON");
 
-    strings.forEach(element => {
+    strings.forEach((element) => {
       AddTextComponentSubstringPlayerName(element);
     });
 
@@ -92,11 +95,16 @@ export abstract class Screen {
     }
 
     if (flashColor !== Color.Transparent && blinking) {
-      SetNotificationFlashColor(flashColor.r, flashColor.g, flashColor.b, flashColor.a);
+      SetNotificationFlashColor(
+        flashColor.r,
+        flashColor.g,
+        flashColor.b,
+        flashColor.a,
+      );
     }
 
     if (sound) {
-      Audio.playSoundFrontEnd('DELETE', 'HUD_DEATHMATCH_SOUNDSET');
+      Audio.playSoundFrontEnd("DELETE", "HUD_DEATHMATCH_SOUNDSET");
     }
 
     SetNotificationMessage(iconSet, icon, true, Number(type), title, subtitle);
@@ -104,7 +112,11 @@ export abstract class Screen {
   }
 
   public static worldToScreen(position: Vector3, scaleWidth = false): Size {
-    const coords = GetScreenCoordFromWorldCoord(position.x, position.y, position.z);
+    const coords = GetScreenCoordFromWorldCoord(
+      position.x,
+      position.y,
+      position.z,
+    );
     return new Size(
       coords[1] * (scaleWidth ? this.ScaledWidth : this.Width),
       coords[2] * this.Height,

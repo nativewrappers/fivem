@@ -1,6 +1,6 @@
-import { AudioFlag } from './enums';
-import type { BaseEntity } from './models/BaseEntity';
-import { Vector3 } from './utils';
+import { AudioFlag } from "./enums";
+import type { BaseEntity } from "./models/BaseEntity";
+import { Vector3 } from "./utils";
 
 export abstract class Audio {
   public static playSoundAt(
@@ -16,7 +16,7 @@ export abstract class Audio {
       position.x,
       position.y,
       position.z,
-      set ?? '',
+      set ?? "",
       false,
       0,
       false,
@@ -31,13 +31,17 @@ export abstract class Audio {
     generateSoundId = true,
   ): number {
     const SOUND_ID = generateSoundId ? GetSoundId() : -1;
-    PlaySoundFromEntity(SOUND_ID, sound, entity.Handle, set ?? '', false, 0);
+    PlaySoundFromEntity(SOUND_ID, sound, entity.Handle, set ?? "", false, 0);
     return SOUND_ID;
   }
 
-  public static playSoundFrontEnd(sound: string, set?: string, generateSoundId = true): number {
+  public static playSoundFrontEnd(
+    sound: string,
+    set?: string,
+    generateSoundId = true,
+  ): number {
     const SOUND_ID = generateSoundId ? GetSoundId() : -1;
-    PlaySoundFrontend(SOUND_ID, sound, set ?? '', false);
+    PlaySoundFrontend(SOUND_ID, sound, set ?? "", false);
     return SOUND_ID;
   }
 
@@ -54,7 +58,7 @@ export abstract class Audio {
   }
 
   public static setAudioFlag(flag: string | AudioFlag, toggle: boolean): void {
-    if (typeof flag === 'string') {
+    if (typeof flag === "string") {
       SetAudioFlag(flag, toggle);
     } else {
       SetAudioFlag(this.audioFlags[Number(flag)], toggle);
@@ -77,50 +81,50 @@ export abstract class Audio {
     if (!musicFile) {
       if (!this.cachedMusicFile) {
         CancelMusicEvent(this.cachedMusicFile);
-        this.cachedMusicFile = '';
+        this.cachedMusicFile = "";
       }
     } else {
-      CancelMusicEvent(musicFile ?? '');
+      CancelMusicEvent(musicFile ?? "");
     }
   }
 
   protected static cachedMusicFile: string;
 
   private static readonly audioFlags: string[] = [
-    'ActivateSwitchWheelAudio',
-    'AllowCutsceneOverScreenFade',
-    'AllowForceRadioAfterRetune',
-    'AllowPainAndAmbientSpeechToPlayDuringCutscene',
-    'AllowPlayerAIOnMission',
-    'AllowPoliceScannerWhenPlayerHasNoControl',
-    'AllowRadioDuringSwitch',
-    'AllowRadioOverScreenFade',
-    'AllowScoreAndRadio',
-    'AllowScriptedSpeechInSlowMo',
-    'AvoidMissionCompleteDelay',
-    'DisableAbortConversationForDeathAndInjury',
-    'DisableAbortConversationForRagdoll',
-    'DisableBarks',
-    'DisableFlightMusic',
-    'DisableReplayScriptStreamRecording',
-    'EnableHeadsetBeep',
-    'ForceConversationInterrupt',
-    'ForceSeamlessRadioSwitch',
-    'ForceSniperAudio',
-    'FrontendRadioDisabled',
-    'HoldMissionCompleteWhenPrepared',
-    'IsDirectorModeActive',
-    'IsPlayerOnMissionForSpeech',
-    'ListenerReverbDisabled',
-    'LoadMPData',
-    'MobileRadioInGame',
-    'OnlyAllowScriptTriggerPoliceScanner',
-    'PlayMenuMusic',
-    'PoliceScannerDisabled',
-    'ScriptedConvListenerMaySpeak',
-    'SpeechDucksScore',
-    'SuppressPlayerScubaBreathing',
-    'WantedMusicDisabled',
-    'WantedMusicOnMission',
+    "ActivateSwitchWheelAudio",
+    "AllowCutsceneOverScreenFade",
+    "AllowForceRadioAfterRetune",
+    "AllowPainAndAmbientSpeechToPlayDuringCutscene",
+    "AllowPlayerAIOnMission",
+    "AllowPoliceScannerWhenPlayerHasNoControl",
+    "AllowRadioDuringSwitch",
+    "AllowRadioOverScreenFade",
+    "AllowScoreAndRadio",
+    "AllowScriptedSpeechInSlowMo",
+    "AvoidMissionCompleteDelay",
+    "DisableAbortConversationForDeathAndInjury",
+    "DisableAbortConversationForRagdoll",
+    "DisableBarks",
+    "DisableFlightMusic",
+    "DisableReplayScriptStreamRecording",
+    "EnableHeadsetBeep",
+    "ForceConversationInterrupt",
+    "ForceSeamlessRadioSwitch",
+    "ForceSniperAudio",
+    "FrontendRadioDisabled",
+    "HoldMissionCompleteWhenPrepared",
+    "IsDirectorModeActive",
+    "IsPlayerOnMissionForSpeech",
+    "ListenerReverbDisabled",
+    "LoadMPData",
+    "MobileRadioInGame",
+    "OnlyAllowScriptTriggerPoliceScanner",
+    "PlayMenuMusic",
+    "PoliceScannerDisabled",
+    "ScriptedConvListenerMaySpeak",
+    "SpeechDucksScore",
+    "SuppressPlayerScubaBreathing",
+    "WantedMusicDisabled",
+    "WantedMusicOnMission",
   ];
 }

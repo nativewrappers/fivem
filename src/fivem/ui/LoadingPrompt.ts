@@ -1,4 +1,4 @@
-import { LoadingSpinnerType } from '../enums';
+import { LoadingSpinnerType } from "../enums";
 
 /**
  * Show and hide loading prompt on the bottom right of the screen.
@@ -23,17 +23,17 @@ export abstract class LoadingPrompt {
    * @param spinnerType Type of spinner.
    */
   public static show(
-    loadingText = '',
+    loadingText = "",
     spinnerType: LoadingSpinnerType = LoadingSpinnerType.RegularClockwise,
   ): void {
     if (this.IsActive) {
       this.hide();
     }
 
-    if (loadingText === '') {
-      BeginTextCommandBusyString('');
+    if (loadingText === "") {
+      BeginTextCommandBusyString("");
     } else {
-      BeginTextCommandBusyString('STRING');
+      BeginTextCommandBusyString("STRING");
       AddTextComponentSubstringPlayerName(loadingText);
     }
 

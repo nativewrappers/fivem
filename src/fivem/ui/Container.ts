@@ -1,5 +1,5 @@
-import { Color, Point, Size } from '../utils';
-import { IDrawable, Screen } from './';
+import { Color, Point, Size } from "../utils";
+import { IDrawable, Screen } from "./";
 
 export class Container implements IDrawable {
   public pos: Point;
@@ -29,10 +29,22 @@ export class Container implements IDrawable {
     const x = (this.pos.X + offset.width) / resolution.width + w * 0.5;
     const y = (this.pos.Y + offset.height) / resolution.height + h * 0.5;
 
-    DrawRect(x, y, w, h, this.color.r, this.color.g, this.color.b, this.color.a);
+    DrawRect(
+      x,
+      y,
+      w,
+      h,
+      this.color.r,
+      this.color.g,
+      this.color.b,
+      this.color.a,
+    );
 
     for (const item of this.items) {
-      item.draw(new Size(this.pos.X + offset.width, this.pos.Y + offset.height), resolution);
+      item.draw(
+        new Size(this.pos.X + offset.width, this.pos.Y + offset.height),
+        resolution,
+      );
     }
   }
 }

@@ -1,5 +1,5 @@
-import { Vehicle } from './Vehicle';
-import { VehicleToggleModType } from '../enums';
+import { Vehicle } from "./Vehicle";
+import { VehicleToggleModType } from "../enums";
 
 export class VehicleToggleMod {
   private _owner: Vehicle;

@@ -1,5 +1,5 @@
-import { Font, Screen, Text } from '..';
-import { Maths } from './Maths';
+import { Font, Screen, Text } from "..";
+import { Maths } from "./Maths";
 
 export abstract class String {
   public static stringToArray(input: string): string[] {
@@ -23,7 +23,7 @@ export abstract class String {
     font = Font.ChaletLondon,
     scale = 0,
   ): number {
-    SetTextEntryForWidth('STRING');
+    SetTextEntryForWidth("STRING");
     Text.addLongString(input);
     SetTextFont(font);
     SetTextScale(1, scale);

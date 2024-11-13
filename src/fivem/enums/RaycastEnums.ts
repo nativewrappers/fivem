@@ -24,7 +24,10 @@ export enum ShapeTestOptions {
 export enum ShapeTestStatus {
   Discarded = 0,
   NotReady = 1,
-  Ready = 2
+  Ready = 2,
 }
 
-export const SHAPE_TEST_DEFAULT = ShapeTestOptions.IgnoreGlass | ShapeTestOptions.IgnoreSeeThrough | ShapeTestOptions.IgnoreNoCollision;
+export const SHAPE_TEST_DEFAULT =
+  ShapeTestOptions.IgnoreGlass |
+  ShapeTestOptions.IgnoreSeeThrough |
+  ShapeTestOptions.IgnoreNoCollision;

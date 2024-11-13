@@ -10,28 +10,29 @@ enum MapChangeType {
   // whenever a key was removed from the map
   Remove,
   // whenever reset() was called on the map
-  Reset
+  Reset,
 }
 
-type MapChanges<K, V> = [MapChangeType, K?, V?] | [MapChangeType.SubValueChanged, K, string, any];
+type MapChanges<K, V> =
+  | [MapChangeType, K?, V?]
+  | [MapChangeType.SubValueChanged, K, string, any];
 
 declare function msgpack_pack(data: any): Buffer;
 
 type ChangeListener<V> = (value: V) => void;
 
 /**
-  * not ready to be used just thoughts right now
-  */
+ * not ready to be used just thoughts right now
+ */
 export class NetworkedMap<K, V> extends Map<K, V> {
   #syncName: string;
-  #queuedChanges: MapChanges<K,V>[] = [];
+  #queuedChanges: MapChanges<K, V>[] = [];
   #changeListeners: Map<K, ChangeListener<V>[]> = new Map();
   #subscribers: Set<number> = new Set();
 
   constructor(syncName: string, initialValue?: [K, V][]) {
     super(initialValue);
     this.#syncName = syncName;
-
 
     GlobalData.GlobalTicks.push(this.#networkTick);
 
@@ -41,18 +42,18 @@ export class NetworkedMap<K, V> extends Map<K, V> {
         for (const networkTick of GlobalData.GlobalTicks) {
           networkTick();
         }
-      })
+      });
     }
   }
 
   // handles removing the player from the map whenever they're dropped
   @Event("playerDropped")
   private onPlayerDropped() {
-    this.removeSubscriber(source)
+    this.removeSubscriber(source);
   }
 
   /*
-   * Adds a new subscriber to the map, if the 
+   * Adds a new subscriber to the map, if the
    */
   addSubscriber(sub: number) {
     this.#subscribers.add(sub);
@@ -74,7 +75,12 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   #triggerEventForSubscribers(data: any) {
     const packed_data = msgpack_pack(data);
     for (const sub of this.#subscribers) {
-      TriggerClientEventInternal(`${this.#syncName}:syncChanges`, sub as any, packed_data as any, packed_data.length);
+      TriggerClientEventInternal(
+        `${this.#syncName}:syncChanges`,
+        sub as any,
+        packed_data as any,
+        packed_data.length,
+      );
     }
   }
 
@@ -91,7 +97,6 @@ export class NetworkedMap<K, V> extends Map<K, V> {
 
     // if we're an object
     if (value instanceof Object) {
-
       // define `this` so we can use it in the internal scope without breaking
       // any rules
       const curMap = this;
@@ -105,11 +110,16 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           const success = Reflect.set(target, p, newValue, receiver);
           if (success) {
             curMap.#pushChangeForListener(key, target);
-            curMap.#queuedChanges.push([MapChangeType.SubValueChanged, key, p as string, newValue]);
+            curMap.#queuedChanges.push([
+              MapChangeType.SubValueChanged,
+              key,
+              p as string,
+              newValue,
+            ]);
           }
           return success;
         },
-      }
+      };
       v = new Proxy(v, objectChangeHandler);
     }
     super.set(key, v);
@@ -123,7 +133,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     // just push a reset
     this.#queuedChanges = [];
     this.#queuedChanges.push([MapChangeType.Reset]);
-    super.clear()
+    super.clear();
   }
 
   delete(key: K): boolean {
@@ -137,6 +147,6 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   get [Symbol.toStringTag](): string {
-    return 'NetworkedMap';
-  };
+    return "NetworkedMap";
+  }
 }

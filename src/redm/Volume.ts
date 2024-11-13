@@ -1,8 +1,13 @@
-import { Vector3 } from '@common/utils/Vector3';
+import { Vector3 } from "@common/utils/Vector3";
 
 export class Volume {
   private handle: number;
-  constructor(coord: Vector3, rot: Vector3, scale: Vector3, customName?: string) {
+  constructor(
+    coord: Vector3,
+    rot: Vector3,
+    scale: Vector3,
+    customName?: string,
+  ) {
     if (customName) {
       this.handle = CreateVolumeCylinderWithCustomName(
         coord.x,

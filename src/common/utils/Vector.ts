@@ -1,7 +1,7 @@
 // Adapted from https://raw.githubusercontent.com/you21979/typescript-vector/master/vector3.ts
 
-import type { MsgpackBuffer } from '@common/types';
-import { ClassTypes } from './ClassTypes';
+import type { MsgpackBuffer } from "@common/types";
+import { ClassTypes } from "./ClassTypes";
 
 /**
  * Represents a 2-dimensional vector.
@@ -91,7 +91,12 @@ export class Vector {
 
   protected static create(x: number, y?: number): Vector2;
   protected static create(x: number, y?: number, z?: number): Vector3;
-  protected static create(x: number, y?: number, z?: number, w?: number): Vector4;
+  protected static create(
+    x: number,
+    y?: number,
+    z?: number,
+    w?: number,
+  ): Vector4;
   /**
    * Creates a new vector based on the provided vector-like object.
    * @param obj The object representing the vector.
@@ -116,11 +121,14 @@ export class Vector {
     z?: number,
     w?: number,
   ): InstanceType<T> {
-    if (y === undefined && typeof x === 'number') return new Vector2(x, x) as InstanceType<T>;
-    if (typeof x === 'object') ({ x, y, z, w } = x);
+    if (y === undefined && typeof x === "number")
+      return new Vector2(x, x) as InstanceType<T>;
+    if (typeof x === "object") ({ x, y, z, w } = x);
 
     const size =
-      this instanceof Vector ? this.size : [x, y, z, w].filter(arg => arg !== undefined).length;
+      this instanceof Vector
+        ? this.size
+        : [x, y, z, w].filter((arg) => arg !== undefined).length;
 
     switch (size) {
       default:
@@ -138,10 +146,14 @@ export class Vector {
    * @param msgpackBuffer The buffer containing binary data.
    * @returns A new vector instance.
    */
-  public static fromBuffer<T extends VectorType>(this: T, { buffer }: MsgpackBuffer) {
+  public static fromBuffer<T extends VectorType>(
+    this: T,
+    { buffer }: MsgpackBuffer,
+  ) {
     const arr: any = [];
 
-    for (let offset = 0; offset < buffer.length; offset += 4) arr.push(buffer.readFloatLE(offset));
+    for (let offset = 0; offset < buffer.length; offset += 4)
+      arr.push(buffer.readFloatLE(offset));
 
     return this.fromArray(arr) as InstanceType<T>;
   }
@@ -151,7 +163,10 @@ export class Vector {
    * @param obj The vector to clone.
    * @returns A new vector instance that is a copy of the provided vector.
    */
-  public static clone<T extends VectorType, U extends VectorLike>(this: T, obj: U) {
+  public static clone<T extends VectorType, U extends VectorLike>(
+    this: T,
+    obj: U,
+  ) {
     return this.create(obj);
   }
 
@@ -169,7 +184,7 @@ export class Vector {
     operator: (x: number, y: number) => number,
   ): U {
     let { x, y, z, w } = a;
-    const isNumber = typeof b === 'number';
+    const isNumber = typeof b === "number";
 
     x = operator(x, isNumber ? b : (b.x ?? 0));
     y = operator(y, isNumber ? b : (b.y ?? 0));
@@ -200,7 +215,11 @@ export class Vector {
    * @param x - The value to add to the x-component.
    * @returns A new vector with the x-component incremented.
    */
-  public static addX<T extends VectorType, U extends VectorLike>(this: T, obj: U, x: number) {
+  public static addX<T extends VectorType, U extends VectorLike>(
+    this: T,
+    obj: U,
+    x: number,
+  ) {
     const vec = this.clone(obj);
     vec.x += x;
 
@@ -213,7 +232,11 @@ export class Vector {
    * @param y - The value to add to the y-component.
    * @returns A new vector with the y-component incremented.
    */
-  public static addY<T extends VectorType, U extends VectorLike>(this: T, obj: U, y: number) {
+  public static addY<T extends VectorType, U extends VectorLike>(
+    this: T,
+    obj: U,
+    y: number,
+  ) {
     const vec = this.clone(obj);
     vec.y += y;
 
@@ -226,7 +249,11 @@ export class Vector {
    * @param z - The value to add to the z-component.
    * @returns A new vector with the z-component incremented.
    */
-  public static addZ<T extends VectorType, U extends Vec3 | Vec4>(this: T, obj: U, z: number) {
+  public static addZ<T extends VectorType, U extends Vec3 | Vec4>(
+    this: T,
+    obj: U,
+    z: number,
+  ) {
     const vec = this.clone(obj);
     vec.z! += z;
 
@@ -239,7 +266,11 @@ export class Vector {
    * @param w - The value to add to the w-component.
    * @returns A new vector with the w-component incremented.
    */
-  public static addW<T extends VectorType, U extends Vec4>(this: T, obj: U, w: number) {
+  public static addW<T extends VectorType, U extends Vec4>(
+    this: T,
+    obj: U,
+    w: number,
+  ) {
     const vec = this.clone(obj);
     vec.w! += w;
 
@@ -302,13 +333,15 @@ export class Vector {
     operator: (x: number, y: number) => number,
   ): U {
     let { x, y, z, w } = a;
-    const isNumber = typeof b === 'number';
+    const isNumber = typeof b === "number";
 
     x = operator(Math.abs(x), isNumber ? b : Math.abs(b.x ?? 0));
     y = operator(Math.abs(y), isNumber ? b : Math.abs(b.y ?? 0));
 
-    if (z !== undefined) z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
-    if (w !== undefined) w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
+    if (z !== undefined)
+      z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
+    if (w !== undefined)
+      w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
 
     return this.create(x, y, z, w) as unknown as U;
   }
@@ -382,12 +415,12 @@ export class Vector {
   ): number {
     let result = 0;
 
-    for (const key of ['x', 'y', 'z', 'w'] as (keyof U)[]) {
+    for (const key of ["x", "y", "z", "w"] as (keyof U)[]) {
       const x = a[key] as number | undefined;
       const y = b[key] as number | undefined;
 
       if (!!x && !!y) result += x * y;
-      else if (x || y) throw new Error('Vectors must have the same dimensions');
+      else if (x || y) throw new Error("Vectors must have the same dimensions");
     }
 
     return result;
@@ -399,7 +432,11 @@ export class Vector {
    * @param b - The second vector.
    * @returns A new vector perpendicular to both input vectors.
    */
-  public static crossProduct<T extends VectorType, U extends Vec3 | Vec4>(this: T, a: U, b: U) {
+  public static crossProduct<T extends VectorType, U extends Vec3 | Vec4>(
+    this: T,
+    a: U,
+    b: U,
+  ) {
     const { x: ax, y: ay, z: az, w: aw } = a as Vec;
     const { x: bx, y: by, z: bz } = b;
 
@@ -411,9 +448,16 @@ export class Vector {
       by === undefined ||
       bz === undefined
     )
-      throw new Error('Vector.crossProduct requires two three-dimensional vectors.');
+      throw new Error(
+        "Vector.crossProduct requires two three-dimensional vectors.",
+      );
 
-    return this.create(ay * bz - az * by, az * bx - ax * bz, ax * by - ay * bx, aw) as unknown as U;
+    return this.create(
+      ay * bz - az * by,
+      az * bx - ax * bz,
+      ax * by - ay * bx,
+      aw,
+    ) as unknown as U;
   }
 
   /**
@@ -421,7 +465,10 @@ export class Vector {
    * @param vector - The vector to be normalized.
    * @returns The new normalized vector.
    */
-  public static normalize<T extends VectorType, U extends VectorLike>(this: T, a: U): U {
+  public static normalize<T extends VectorType, U extends VectorLike>(
+    this: T,
+    a: U,
+  ): U {
     const length = a instanceof Vector ? a.Length : this.Length(a);
     return this.divide(a, length) as U;
   }
@@ -430,7 +477,10 @@ export class Vector {
    * Creates a vector from an array of numbers.
    * @param primitive An array of numbers (usually returned by a native).
    */
-  static fromArray<T extends VectorType, U extends VectorArray<T>>(this: T, primitive: U) {
+  static fromArray<T extends VectorType, U extends VectorArray<T>>(
+    this: T,
+    primitive: U,
+  ) {
     const [x, y, z, w] = primitive;
     return this.create(x, y, z, w) as InferVector<U>;
   }
@@ -439,14 +489,15 @@ export class Vector {
    * Creates a vector from an array or object containing vector components.
    * @param primitive The object to use as a vector.
    */
-  static fromObject<T extends VectorType, U extends InferVector<T> | VectorArray<T>>(
-    this: T,
-    primitive: U | MsgpackBuffer,
-  ) {
+  static fromObject<
+    T extends VectorType,
+    U extends InferVector<T> | VectorArray<T>,
+  >(this: T, primitive: U | MsgpackBuffer) {
     if (Array.isArray(primitive))
       return this.fromArray(primitive as VectorArray<T>) as InstanceType<T>;
 
-    if ('buffer' in primitive && 'type' in primitive) return this.fromBuffer(primitive);
+    if ("buffer" in primitive && "type" in primitive)
+      return this.fromBuffer(primitive);
 
     const { x, y, z, w } = primitive;
 
@@ -469,10 +520,13 @@ export class Vector {
    * @param obj - The vector for which to calculate the length.
    * @returns The magnitude of the vector.
    */
-  public static Length<T extends VectorType, U extends VectorLike>(this: T, obj: U): number {
+  public static Length<T extends VectorType, U extends VectorLike>(
+    this: T,
+    obj: U,
+  ): number {
     let sum = 0;
 
-    for (const key of ['x', 'y', 'z', 'w'] as (keyof U)[]) {
+    for (const key of ["x", "y", "z", "w"] as (keyof U)[]) {
       if (key in obj) {
         const value = obj[key] as number;
         sum += value * value;
@@ -507,7 +561,7 @@ export class Vector {
   }
 
   public toString() {
-    return `vector${this.size}(${this.toArray().join(', ')})`;
+    return `vector${this.size}(${this.toArray().join(", ")})`;
   }
 
   /**
@@ -634,7 +688,7 @@ export class Vector {
    * @param v - The object whose components will replace the current vector's components.
    */
   public replace<T extends VectorLike>(v: T): void {
-    for (const key of ['x', 'y', 'z', 'w'] as VectorKeys[]) {
+    for (const key of ["x", "y", "z", "w"] as VectorKeys[]) {
       if (key in this && key in v) this[key] = v[key] as number;
     }
   }

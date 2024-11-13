@@ -1,5 +1,5 @@
-import { Vehicle } from './Vehicle';
-import { VehicleDoorIndex } from '../enums';
+import { Vehicle } from "./Vehicle";
+import { VehicleDoorIndex } from "../enums";
 
 export class VehicleDoor {
   private _owner: Vehicle;

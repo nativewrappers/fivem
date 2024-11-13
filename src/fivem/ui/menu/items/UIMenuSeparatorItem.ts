@@ -1,6 +1,6 @@
-import { UIMenuItem } from './';
-import { Alignment } from '../../../enums';
-import { Menu } from '../';
+import { UIMenuItem } from "./";
+import { Alignment } from "../../../enums";
+import { Menu } from "../";
 
 export class UIMenuSeparatorItem extends UIMenuItem {
   protected supportsDescription = false;
@@ -10,7 +10,7 @@ export class UIMenuSeparatorItem extends UIMenuItem {
   protected supportsRightLabel = false;
 
   constructor(text?: string) {
-    super(text ?? '');
+    super(text ?? "");
     this.text.alignment = Alignment.Centered;
   }
 
@@ -26,7 +26,7 @@ export class UIMenuSeparatorItem extends UIMenuItem {
     this.rectangle.pos.X = this.offset.X;
     this.rectangle.draw(undefined, Menu.screenResolution);
 
-    if (this.text.caption !== '') {
+    if (this.text.caption !== "") {
       this.text.pos.X = this.offset.X + width / 2;
       this.text.draw(undefined, Menu.screenResolution);
     }

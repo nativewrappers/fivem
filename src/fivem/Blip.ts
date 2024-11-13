@@ -1,6 +1,6 @@
-import { Vector3 } from './utils';
-import { BlipColor, BlipSprite } from './enums';
-import { BaseEntity, Player } from './models';
+import { Vector3 } from "./utils";
+import { BlipColor, BlipSprite } from "./enums";
+import { BaseEntity, Player } from "./models";
 
 export class Blip {
   protected handle: number;
@@ -70,7 +70,7 @@ export class Blip {
   }
 
   public set Name(name: string) {
-    BeginTextCommandSetBlipName('STRING');
+    BeginTextCommandSetBlipName("STRING");
     AddTextComponentSubstringPlayerName(name);
     EndTextCommandSetBlipName(this.handle);
   }

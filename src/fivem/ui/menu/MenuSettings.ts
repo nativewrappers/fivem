@@ -1,5 +1,5 @@
-import { InputMode } from '../../index';
-import { Control } from '../../enums';
+import { InputMode } from "../../index";
+import { Control } from "../../enums";
 
 export class MenuSettings {
   public scaleWithSafezone = true;
@@ -8,15 +8,20 @@ export class MenuSettings {
   public mouseEdgeEnabled = true;
   public controlDisablingEnabled = true;
   public audio = {
-    library: 'HUD_FRONTEND_DEFAULT_SOUNDSET',
-    upDown: 'NAV_UP_DOWN',
-    leftRight: 'NAV_LEFT_RIGHT',
-    select: 'SELECT',
-    back: 'BACK',
-    error: 'ERROR',
+    library: "HUD_FRONTEND_DEFAULT_SOUNDSET",
+    upDown: "NAV_UP_DOWN",
+    leftRight: "NAV_LEFT_RIGHT",
+    select: "SELECT",
+    back: "BACK",
+    error: "ERROR",
   };
   public enabledControls = {
-    [InputMode.GamePad]: [Control.LookUpDown, Control.LookLeftRight, Control.Aim, Control.Attack],
+    [InputMode.GamePad]: [
+      Control.LookUpDown,
+      Control.LookLeftRight,
+      Control.Aim,
+      Control.Attack,
+    ],
     [InputMode.MouseAndKeyboard]: [
       Control.FrontendAccept,
       Control.FrontendAxisX,

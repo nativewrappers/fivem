@@ -1,5 +1,5 @@
-import type { Ped, Vector3 } from '.';
-import type { BaseEntity } from './models/BaseEntity';
+import type { Ped, Vector3 } from ".";
+import type { BaseEntity } from "./models/BaseEntity";
 export class NetworkedScene {
   private scene;
   constructor(

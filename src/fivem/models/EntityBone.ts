@@ -1,5 +1,5 @@
-import { Vector3 } from '../utils';
-import type { BaseEntity } from './BaseEntity';
+import { Vector3 } from "../utils";
+import type { BaseEntity } from "./BaseEntity";
 
 export class EntityBone {
   public get Index(): number {
@@ -11,11 +11,15 @@ export class EntityBone {
   }
 
   public get Position(): Vector3 {
-    return Vector3.fromArray(GetWorldPositionOfEntityBone(this.owner.Handle, this.index));
+    return Vector3.fromArray(
+      GetWorldPositionOfEntityBone(this.owner.Handle, this.index),
+    );
   }
 
   public get Rotation(): Vector3 {
-    return Vector3.fromArray(GetEntityBoneRotation(this.owner.Handle, this.index));
+    return Vector3.fromArray(
+      GetEntityBoneRotation(this.owner.Handle, this.index),
+    );
   }
 
   public get IsValid(): boolean {
@@ -29,6 +33,6 @@ export class EntityBone {
     this.owner = owner;
     this.index = boneIndex
       ? boneIndex
-      : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? '');
+      : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? "");
   }
 }

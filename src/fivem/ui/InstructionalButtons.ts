@@ -1,5 +1,5 @@
-import { Scaleform } from './Scaleform';
-import { IButton } from './interfaces/IButton';
+import { Scaleform } from "./Scaleform";
+import { IButton } from "./interfaces/IButton";
 
 /**
  * Draw native instructional buttons in the bottom left of the screen using scaleform
@@ -28,20 +28,20 @@ export class InstructionalButtons {
    * @param buttons Array of instructional buttons to be drawn
    */
   constructor(buttons: IButton[]) {
-    this.scaleform = new Scaleform('INSTRUCTIONAL_BUTTONS');
-    this.scaleform.callFunction('CLEAR_ALL');
-    this.scaleform.callFunction('SET_CLEAR_SPACE', 200);
+    this.scaleform = new Scaleform("INSTRUCTIONAL_BUTTONS");
+    this.scaleform.callFunction("CLEAR_ALL");
+    this.scaleform.callFunction("SET_CLEAR_SPACE", 200);
 
     buttons.forEach((button, index) => {
       this.pushButton(button, index);
     });
 
-    this.scaleform.callFunction('DRAW_INSTRUCTIONAL_BUTTONS');
-    this.scaleform.callFunction('SET_BACKGROUND_COLOUR', 0, 0, 0, 80);
+    this.scaleform.callFunction("DRAW_INSTRUCTIONAL_BUTTONS");
+    this.scaleform.callFunction("SET_BACKGROUND_COLOUR", 0, 0, 0, 80);
   }
 
   private pushButton(button: IButton, index: number) {
-    BeginScaleformMovieMethod(this.scaleform.Handle, 'SET_DATA_SLOT');
+    BeginScaleformMovieMethod(this.scaleform.Handle, "SET_DATA_SLOT");
     PushScaleformMovieFunctionParameterInt(index);
     // Looping backwards here since scaleform is using a stack so the first control ends up being the last
     // So looping backwards makes more sense here so that the controls are rendered in the order they're defined

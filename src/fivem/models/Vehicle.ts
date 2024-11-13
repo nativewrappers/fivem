@@ -4,7 +4,7 @@ import {
   VehicleModCollection,
   VehicleWheelCollection,
   VehicleWindowCollection,
-} from './';
+} from "./";
 import {
   RadioStation,
   VehicleClass,
@@ -12,12 +12,12 @@ import {
   VehicleLockStatus,
   VehicleRoofState,
   VehicleSeat,
-} from '../enums';
-import { Model } from '../Model';
-import { Game } from '../Game';
-import { Vector3 } from '../utils';
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { BaseEntity } from './BaseEntity';
+} from "../enums";
+import { Model } from "../Model";
+import { Game } from "../Game";
+import { Vector3 } from "../utils";
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { BaseEntity } from "./BaseEntity";
 
 export class Vehicle extends BaseEntity {
   public static getModelDisplayName(vehicleModel: Model): string {
@@ -33,7 +33,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public static exists(vehicle: Vehicle): boolean {
-    return typeof vehicle !== 'undefined' && vehicle.exists();
+    return typeof vehicle !== "undefined" && vehicle.exists();
   }
 
   public static fromHandle(handle: number): Vehicle | null {
@@ -258,7 +258,10 @@ export class Vehicle extends BaseEntity {
     SetVehicleHasMutedSirens(this.handle, value);
   }
 
-  public soundHorn(duration: number, mode = Game.generateHash('HELDDOWN')): void {
+  public soundHorn(
+    duration: number,
+    mode = Game.generateHash("HELDDOWN"),
+  ): void {
     StartVehicleHorn(this.handle, duration, mode, false);
   }
 
@@ -606,7 +609,9 @@ export class Vehicle extends BaseEntity {
   }
 
   public isExtraOn(extra: number): boolean {
-    return this.extraExists(extra) ? IsVehicleExtraTurnedOn(this.handle, extra) : false;
+    return this.extraExists(extra)
+      ? IsVehicleExtraTurnedOn(this.handle, extra)
+      : false;
   }
 
   public toggleExtra(extra: number, toggle: boolean): void {
@@ -669,7 +674,7 @@ export class Vehicle extends BaseEntity {
 
   public get HasBombBay(): boolean {
     return this.Bones
-      ? this.Bones.hasBone('door_hatch_1') && this.Bones.hasBone('door_hatch_r')
+      ? this.Bones.hasBone("door_hatch_1") && this.Bones.hasBone("door_hatch_r")
       : false;
   }
 
@@ -715,7 +720,15 @@ export class Vehicle extends BaseEntity {
   }
 
   public deform(position: Vector3, damageAmount: number, radius: number): void {
-    SetVehicleDamage(this.handle, position.x, position.y, position.z, damageAmount, radius, false);
+    SetVehicleDamage(
+      this.handle,
+      position.x,
+      position.y,
+      position.z,
+      damageAmount,
+      radius,
+      false,
+    );
   }
 
   public get PassengerCapacity(): number {
@@ -731,22 +744,29 @@ export class Vehicle extends BaseEntity {
   }
 
   public getHandlingFloat(fieldName: string): number {
-    return GetVehicleHandlingFloat(this.handle, 'CHandlingData', fieldName);
+    return GetVehicleHandlingFloat(this.handle, "CHandlingData", fieldName);
   }
 
   public setHandlingFloat(fieldName: string, value: number): void {
-    SetVehicleHandlingFloat(this.handle, 'CHandlingData', fieldName, value);
+    SetVehicleHandlingFloat(this.handle, "CHandlingData", fieldName, value);
   }
 
   public getHandlingInt(fieldName: string): number {
-    return GetVehicleHandlingInt(this.handle, 'CHandlingData', fieldName);
+    return GetVehicleHandlingInt(this.handle, "CHandlingData", fieldName);
   }
 
   public setHandlingInt(fieldName: string, value: number): void {
-    SetVehicleHandlingInt(this.handle, 'CHandlingData', fieldName, Math.ceil(value));
+    SetVehicleHandlingInt(
+      this.handle,
+      "CHandlingData",
+      fieldName,
+      Math.ceil(value),
+    );
   }
 
   public getHandlingVector(fieldName: string): Vector3 {
-    return Vector3.fromArray(GetVehicleHandlingVector(this.handle, 'CHandlingData', fieldName));
+    return Vector3.fromArray(
+      GetVehicleHandlingVector(this.handle, "CHandlingData", fieldName),
+    );
   }
 }

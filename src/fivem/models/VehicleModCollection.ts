@@ -1,4 +1,4 @@
-import { Vehicle } from './Vehicle';
+import { Vehicle } from "./Vehicle";
 import {
   VehicleColor,
   VehicleModType,
@@ -9,10 +9,10 @@ import {
   VehicleWindowTint,
   LicensePlateStyle,
   LicensePlateType,
-} from '../enums';
-import { VehicleMod } from './VehicleMod';
-import { Color } from '../utils';
-import { VehicleToggleMod } from './VehicleToggleMod';
+} from "../enums";
+import { VehicleMod } from "./VehicleMod";
+import { Color } from "../utils";
+import { VehicleToggleMod } from "./VehicleToggleMod";
 
 export class VehicleModCollection {
   private _owner: Vehicle;
@@ -20,10 +20,10 @@ export class VehicleModCollection {
     VehicleModType,
     VehicleMod
   >();
-  private readonly _vehicleToggleMods: Map<VehicleToggleModType, VehicleToggleMod> = new Map<
+  private readonly _vehicleToggleMods: Map<
     VehicleToggleModType,
     VehicleToggleMod
-  >();
+  > = new Map<VehicleToggleModType, VehicleToggleMod>();
 
   constructor(owner: Vehicle) {
     this._owner = owner;
@@ -40,24 +40,29 @@ export class VehicleModCollection {
     return this._vehicleMods.get(modType);
   }
 
-  public getToggleMod(modType: VehicleToggleModType): VehicleToggleMod | undefined {
+  public getToggleMod(
+    modType: VehicleToggleModType,
+  ): VehicleToggleMod | undefined {
     if (!this._vehicleToggleMods.has(modType)) {
-      this._vehicleToggleMods.set(modType, new VehicleToggleMod(this._owner, modType));
+      this._vehicleToggleMods.set(
+        modType,
+        new VehicleToggleMod(this._owner, modType),
+      );
     }
     return this._vehicleToggleMods.get(modType);
   }
 
   public getAllMods(): (VehicleMod | null | undefined)[] {
     return Object.keys(VehicleModType)
-      .filter(key => !isNaN(Number(key)))
-      .map(key => {
+      .filter((key) => !isNaN(Number(key)))
+      .map((key) => {
         const index = Number(key);
         if (this.hasVehicleMod(index)) {
           return this.getMod(index);
         }
         return null;
       })
-      .filter(m => m);
+      .filter((m) => m);
   }
 
   public get WheelType(): VehicleWheelType {
@@ -198,8 +203,8 @@ export class VehicleModCollection {
     }
     let on = true;
     Object.keys(VehicleNeonLight)
-      .filter(key => !isNaN(Number(key)))
-      .forEach(key => {
+      .filter((key) => !isNaN(Number(key)))
+      .forEach((key) => {
         if (!on) {
           return;
         }
@@ -210,8 +215,8 @@ export class VehicleModCollection {
 
   public setAllNeonLightsOn(on: boolean): void {
     Object.keys(VehicleNeonLight)
-      .filter(key => !isNaN(Number(key)))
-      .forEach(key => {
+      .filter((key) => !isNaN(Number(key)))
+      .forEach((key) => {
         this.setNeonLightsOn(Number(key), on);
       });
   }
@@ -219,8 +224,8 @@ export class VehicleModCollection {
   public get HasAllNeonLights(): boolean {
     return (
       Object.keys(VehicleNeonLight)
-        .filter(key => !isNaN(Number(key)))
-        .findIndex(light => !this.hasNeonLight(Number(light))) === -1
+        .filter((key) => !isNaN(Number(key)))
+        .findIndex((light) => !this.hasNeonLight(Number(light))) === -1
     );
   }
 
@@ -228,13 +233,13 @@ export class VehicleModCollection {
     if (this._owner.Bones === undefined) return false;
     switch (light) {
       case VehicleNeonLight.Left:
-        return this._owner.Bones.hasBone('neon_l');
+        return this._owner.Bones.hasBone("neon_l");
       case VehicleNeonLight.Right:
-        return this._owner.Bones.hasBone('neon_r');
+        return this._owner.Bones.hasBone("neon_r");
       case VehicleNeonLight.Front:
-        return this._owner.Bones.hasBone('neon_f');
+        return this._owner.Bones.hasBone("neon_f");
       case VehicleNeonLight.Back:
-        return this._owner.Bones.hasBone('neon_b');
+        return this._owner.Bones.hasBone("neon_b");
       default:
         return false;
     }
@@ -246,7 +251,12 @@ export class VehicleModCollection {
   }
 
   public set CustomPrimaryColor(color: Color) {
-    SetVehicleCustomPrimaryColour(this._owner.Handle, color.r, color.g, color.b);
+    SetVehicleCustomPrimaryColour(
+      this._owner.Handle,
+      color.r,
+      color.g,
+      color.b,
+    );
   }
 
   public get CustomSecondaryColor(): Color {
@@ -255,7 +265,12 @@ export class VehicleModCollection {
   }
 
   public set CustomSecondaryColor(color: Color) {
-    SetVehicleCustomSecondaryColour(this._owner.Handle, color.r, color.g, color.b);
+    SetVehicleCustomSecondaryColour(
+      this._owner.Handle,
+      color.r,
+      color.g,
+      color.b,
+    );
   }
 
   public get IsPrimaryColorCustom(): boolean {

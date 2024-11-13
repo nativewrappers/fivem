@@ -1,13 +1,13 @@
-import { Color, Point, Size } from '../../../../utils';
-import { AbstractUIMenuPanel } from './';
-import { Rectangle, Sprite, Text } from '../../../';
-import { Alignment, Control, Font } from '../../../../enums';
-import { Game, Menu } from '../../../../';
+import { Color, Point, Size } from "../../../../utils";
+import { AbstractUIMenuPanel } from "./";
+import { Rectangle, Sprite, Text } from "../../../";
+import { Alignment, Control, Font } from "../../../../enums";
+import { Game, Menu } from "../../../../";
 
 export class UIMenuColorPanel extends AbstractUIMenuPanel {
   protected readonly background: Sprite;
 
-  private _title = '';
+  private _title = "";
   private _text: Text;
   private _colors: Color[] = [];
   private _bar: Rectangle[] = [];
@@ -26,12 +26,31 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
 
   constructor(title: string, colors: Color[]) {
     super();
-    this.background = new Sprite('commonmenu', 'gradient_bgd', new Point(), new Size(431, 112));
-    this._leftArrow = new Sprite('commonmenu', 'arrowleft', new Point(), new Size(30, 30));
-    this._rightArrow = new Sprite('commonmenu', 'arrowright', new Point(), new Size(30, 30));
-    this._selectedRectangle = new Rectangle(new Point(), new Size(44.5, 8), Color.White);
+    this.background = new Sprite(
+      "commonmenu",
+      "gradient_bgd",
+      new Point(),
+      new Size(431, 112),
+    );
+    this._leftArrow = new Sprite(
+      "commonmenu",
+      "arrowleft",
+      new Point(),
+      new Size(30, 30),
+    );
+    this._rightArrow = new Sprite(
+      "commonmenu",
+      "arrowright",
+      new Point(),
+      new Size(30, 30),
+    );
+    this._selectedRectangle = new Rectangle(
+      new Point(),
+      new Size(44.5, 8),
+      Color.White,
+    );
     this._text = new Text(
-      '',
+      "",
       new Point(),
       0.35,
       Color.White,
@@ -47,7 +66,7 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
   }
 
   public set Title(value: string) {
-    this._title = value ? value.trim() : '';
+    this._title = value ? value.trim() : "";
     this._updateText();
   }
 
@@ -61,7 +80,7 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
     }
     this._colors = value;
     this._bar = [];
-    const colorRectangles = value.slice(0, this._total).map(color => {
+    const colorRectangles = value.slice(0, this._total).map((color) => {
       return new Rectangle(new Point(0, 0), new Size(44.5, 44.5), color);
     });
     this._bar.push(...colorRectangles);
@@ -74,8 +93,10 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
   }
 
   public set Color(value: Color) {
-    const index = this._colors.findIndex(c => {
-      return c.a === value.a && c.r === value.r && c.g === value.g && c.b === value.b;
+    const index = this._colors.findIndex((c) => {
+      return (
+        c.a === value.a && c.r === value.r && c.g === value.g && c.b === value.b
+      );
     });
     if (index !== -1) {
       this.Index = index;
@@ -115,8 +136,14 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
     ) {
       this._lastColor = current;
       if (this.ParentMenu)
-        this.ParentMenu.panelActivated.emit(this.parentItem, this, this.Index, current);
-      if (this.parentItem) this.parentItem.panelActivated.emit(this, this.Index, current);
+        this.ParentMenu.panelActivated.emit(
+          this.parentItem,
+          this,
+          this.Index,
+          current,
+        );
+      if (this.parentItem)
+        this.parentItem.panelActivated.emit(this, this.Index, current);
     }
   }
 
@@ -126,7 +153,7 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
     this._leftArrow.pos.Y = y + 15;
     this._rightArrow.pos.Y = y + 15;
     this._text.pos.Y = y + 15;
-    this._bar.forEach(async colorRect => {
+    this._bar.forEach(async (colorRect) => {
       colorRect.pos.Y = y + 55;
     });
   }
@@ -229,13 +256,26 @@ export class UIMenuColorPanel extends AbstractUIMenuPanel {
   private _processControls(): void {
     if (Game.isDisabledControlJustPressed(0, Control.Attack)) {
       if (this.ParentMenu) {
-        if (this.ParentMenu.isMouseInBounds(this._leftArrow.pos, this._leftArrow.size)) {
+        if (
+          this.ParentMenu.isMouseInBounds(
+            this._leftArrow.pos,
+            this._leftArrow.size,
+          )
+        ) {
           this._goLeft();
-        } else if (this.ParentMenu.isMouseInBounds(this._rightArrow.pos, this._rightArrow.size)) {
+        } else if (
+          this.ParentMenu.isMouseInBounds(
+            this._rightArrow.pos,
+            this._rightArrow.size,
+          )
+        ) {
           this._goRight();
         }
         this._bar.forEach(async (colorRect, index) => {
-          if (this.ParentMenu && this.ParentMenu.isMouseInBounds(colorRect.pos, colorRect.size)) {
+          if (
+            this.ParentMenu &&
+            this.ParentMenu.isMouseInBounds(colorRect.pos, colorRect.size)
+          ) {
             this.Index = this._min + index;
           }
         });

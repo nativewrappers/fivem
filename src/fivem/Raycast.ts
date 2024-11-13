@@ -1,8 +1,8 @@
-import { ShapeTestStatus } from './enums/RaycastEnums';
-import { Game } from './Game';
-import { MaterialHash } from './hashes';
-import { Ped, Prop, Vehicle } from './models';
-import { Delay, Vector3 } from './utils';
+import { ShapeTestStatus } from "./enums/RaycastEnums";
+import { Game } from "./Game";
+import { MaterialHash } from "./hashes";
+import { Ped, Prop, Vehicle } from "./models";
+import { Delay, Vector3 } from "./utils";
 
 /**
  * Class that represents the result of a raycast.

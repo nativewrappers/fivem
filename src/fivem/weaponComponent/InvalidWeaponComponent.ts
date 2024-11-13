@@ -1,8 +1,8 @@
-import { WeaponComponent } from './WeaponComponent';
-import { WeaponComponentHash } from './WeaponComponentHash';
-import { WeaponHash } from '../hashes';
-import { ComponentAttachmentPoint } from './ComponentAttachmentPoint';
-import { Game } from '../Game';
+import { WeaponComponent } from "./WeaponComponent";
+import { WeaponComponentHash } from "./WeaponComponentHash";
+import { WeaponHash } from "../hashes";
+import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
+import { Game } from "../Game";
 
 export class InvalidWeaponComponent extends WeaponComponent {
   constructor() {
@@ -18,7 +18,7 @@ export class InvalidWeaponComponent extends WeaponComponent {
   public set Active(value: boolean) {}
 
   public get DisplayName(): string {
-    return 'WCT_INVALID';
+    return "WCT_INVALID";
   }
 
   public get LocalizedName(): string {

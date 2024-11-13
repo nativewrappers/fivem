@@ -1,5 +1,5 @@
-import { Bone } from '../enums';
-import { EntityBone, Ped } from './';
+import { Bone } from "../enums";
+import { EntityBone, Ped } from "./";
 
 export class PedBone extends EntityBone {
   constructor(owner: Ped, boneId: Bone) {

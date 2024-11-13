@@ -1,4 +1,4 @@
-import { Crypto } from '../../../utils';
+import { Crypto } from "../../../utils";
 
 export class ListItem {
   public readonly id: string = Crypto.uuidv4();

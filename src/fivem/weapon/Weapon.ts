@@ -1,18 +1,18 @@
-import { WeaponComponentCollection } from '../weaponComponent/WeaponComponentCollection';
-import { Ped } from '../models';
-import { AmmoType, WeaponHash } from '../hashes';
-import { WeaponDisplayNameByHash } from './WeaponDisplayNameByHash';
-import { Game } from '../Game';
-import { Model } from '../Model';
-import { WeaponTint } from './WeaponTint';
-import { WeaponGroup } from './WeaponGroup';
-import { WeaponLivery } from './WeaponLivery';
-import { WeaponLiveryColor } from './WeaponLiveryColor';
-import { WeaponHudStats } from './WeaponHudStats';
-import { enumValues } from '../utils';
-import { Mk2WeaponHash } from './Mk2WeaponHash';
-import { WeaponComponentHash } from '../weaponComponent';
-import { WeaponComponentHashesByWeaponHash } from '../weaponComponent/WeaponComponentHashesByWeaponHash';
+import { WeaponComponentCollection } from "../weaponComponent/WeaponComponentCollection";
+import { Ped } from "../models";
+import { AmmoType, WeaponHash } from "../hashes";
+import { WeaponDisplayNameByHash } from "./WeaponDisplayNameByHash";
+import { Game } from "../Game";
+import { Model } from "../Model";
+import { WeaponTint } from "./WeaponTint";
+import { WeaponGroup } from "./WeaponGroup";
+import { WeaponLivery } from "./WeaponLivery";
+import { WeaponLiveryColor } from "./WeaponLiveryColor";
+import { WeaponHudStats } from "./WeaponHudStats";
+import { enumValues } from "../utils";
+import { Mk2WeaponHash } from "./Mk2WeaponHash";
+import { WeaponComponentHash } from "../weaponComponent";
+import { WeaponComponentHashesByWeaponHash } from "../weaponComponent/WeaponComponentHashesByWeaponHash";
 
 /**
  * ped weapon
@@ -75,7 +75,7 @@ export class Weapon {
    * @constructor
    */
   public get DisplayName(): string {
-    return Weapon.getDisplayNameFromHash(this.hash) ?? 'WCT_INVALID';
+    return Weapon.getDisplayNameFromHash(this.hash) ?? "WCT_INVALID";
   }
 
   /**
@@ -182,7 +182,7 @@ export class Weapon {
     // https://docs.fivem.net/natives/?_0xDC16122C7A20C933
     // noinspection UnnecessaryLocalVariableJS
     const amount: number = Citizen.invokeNative(
-      '0xDC16122C7A20C933',
+      "0xDC16122C7A20C933",
       this.owner.Handle,
       this.hash,
       Citizen.pointerValueInt(),
@@ -257,7 +257,9 @@ export class Weapon {
    * @constructor
    */
   public get IsMk2(): boolean {
-    return Array.from(enumValues(Mk2WeaponHash)).some(x => (x as number) === (this.hash as number));
+    return Array.from(enumValues(Mk2WeaponHash)).some(
+      (x) => (x as number) === (this.hash as number),
+    );
   }
 
   /**
@@ -268,19 +270,28 @@ export class Weapon {
    */
   public setLivery(liveryId: WeaponLivery, colorId: WeaponLiveryColor): void {
     if (!this.IsMk2) {
-      console.log(`[ERROR]${this.setLivery.name} failed. Reason: non-Mk2 weapon`);
+      console.log(
+        `[ERROR]${this.setLivery.name} failed. Reason: non-Mk2 weapon`,
+      );
       return;
     }
 
     const component = this.Components.getMk2CamoComponent(liveryId);
 
     if (component.IsInvalid) {
-      console.log(`[ERROR]${this.setLivery.name} failed. Reason: invalid liveryId/Component`);
+      console.log(
+        `[ERROR]${this.setLivery.name} failed. Reason: invalid liveryId/Component`,
+      );
       return;
     }
 
     component.Active = true;
-    SetPedWeaponLiveryColor(this.owner.Handle, this.hash, component.ComponentHash, colorId);
+    SetPedWeaponLiveryColor(
+      this.owner.Handle,
+      this.hash,
+      component.ComponentHash,
+      colorId,
+    );
   }
 
   /**
@@ -299,10 +310,10 @@ export class Weapon {
    */
   public static getDisplayNameFromHash(hash: WeaponHash): string {
     if (!hash) {
-      return 'WT_INVALID';
+      return "WT_INVALID";
     }
 
-    return WeaponDisplayNameByHash.get(hash) ?? 'WCT_INVALID';
+    return WeaponDisplayNameByHash.get(hash) ?? "WCT_INVALID";
   }
 
   /**
@@ -310,7 +321,9 @@ export class Weapon {
    *
    * @param hash
    */
-  public static getWeaponComponentHashes(hash: WeaponHash): WeaponComponentHash[] {
+  public static getWeaponComponentHashes(
+    hash: WeaponHash,
+  ): WeaponComponentHash[] {
     const hashes = WeaponComponentHashesByWeaponHash.get(hash);
 
     if (!hashes) {

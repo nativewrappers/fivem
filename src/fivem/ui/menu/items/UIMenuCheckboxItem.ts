@@ -1,7 +1,7 @@
-import { Menu, Sprite } from '../../';
-import { Color, LiteEvent, Point, Size } from '../../../utils';
-import { UIMenuItem } from './';
-import { CheckboxStyle } from '../../../enums';
+import { Menu, Sprite } from "../../";
+import { Color, LiteEvent, Point, Size } from "../../../utils";
+import { UIMenuItem } from "./";
+import { CheckboxStyle } from "../../../enums";
 
 export class UIMenuCheckboxItem extends UIMenuItem {
   public readonly checkboxChanged = new LiteEvent();
@@ -21,7 +21,12 @@ export class UIMenuCheckboxItem extends UIMenuItem {
     style: CheckboxStyle = CheckboxStyle.Tick,
   ) {
     super(text, description);
-    this._checkboxSprite = new Sprite('commonmenu', '', new Point(410, 95), new Size(50, 50));
+    this._checkboxSprite = new Sprite(
+      "commonmenu",
+      "",
+      new Point(410, 95),
+      new Size(50, 50),
+    );
     this.Checked = checked;
     this.Style = style;
   }
@@ -49,25 +54,26 @@ export class UIMenuCheckboxItem extends UIMenuItem {
 
   public draw(): void {
     super.draw();
-    this._checkboxSprite.pos.X = 380 + this.offset.X + (this.parent ? this.parent.WidthOffset : 0);
+    this._checkboxSprite.pos.X =
+      380 + this.offset.X + (this.parent ? this.parent.WidthOffset : 0);
     this._checkboxSprite.textureName = this._getSpriteName();
     this._checkboxSprite.color = this._getSpriteColor();
     this._checkboxSprite.draw(Menu.screenResolution);
   }
 
   private _getSpriteName(): string {
-    let name = 'blank';
+    let name = "blank";
     if (this._checked) {
       switch (this._style) {
         case CheckboxStyle.Tick:
-          name = 'tick';
+          name = "tick";
           break;
         case CheckboxStyle.Cross:
-          name = 'cross';
+          name = "cross";
           break;
       }
     }
-    return `shop_box_${name}${this.selected ? 'b' : ''}`;
+    return `shop_box_${name}${this.selected ? "b" : ""}`;
   }
 
   private _getSpriteColor(): Color {

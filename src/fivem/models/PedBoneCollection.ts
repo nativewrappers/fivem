@@ -1,4 +1,4 @@
-import { EntityBoneCollection, Ped, PedBone } from './';
+import { EntityBoneCollection, Ped, PedBone } from "./";
 
 export class PedBoneCollection extends EntityBoneCollection {
   constructor(owner: Ped) {
@@ -21,7 +21,9 @@ export class PedBoneCollection extends EntityBoneCollection {
   public getBone(boneIndex?: number, boneName?: string): PedBone {
     return new PedBone(
       this.owner as Ped,
-      boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ''),
+      boneIndex
+        ? boneIndex
+        : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
     );
   }
 }

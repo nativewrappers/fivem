@@ -1,6 +1,6 @@
-import { Color, Point, Size } from '../../../../utils';
-import { AbstractUIMenuPanel, UIMenuStatisticsPanelItem } from './';
-import { Menu, Rectangle } from '../../../';
+import { Color, Point, Size } from "../../../../utils";
+import { AbstractUIMenuPanel, UIMenuStatisticsPanelItem } from "./";
+import { Menu, Rectangle } from "../../../";
 
 export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
   protected readonly background: Rectangle;
@@ -8,9 +8,16 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
   private _divider = true;
   private _items: UIMenuStatisticsPanelItem[] = [];
 
-  constructor(item?: UIMenuStatisticsPanelItem[] | UIMenuStatisticsPanelItem, divider = true) {
+  constructor(
+    item?: UIMenuStatisticsPanelItem[] | UIMenuStatisticsPanelItem,
+    divider = true,
+  ) {
     super();
-    this.background = new Rectangle(new Point(), new Size(431, 47), new Color(0, 0, 0, 170));
+    this.background = new Rectangle(
+      new Point(),
+      new Size(431, 47),
+      new Color(0, 0, 0, 170),
+    );
     if (item) {
       this.addItem(item);
     }
@@ -33,16 +40,18 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
     this._items = value;
   }
 
-  public addItem(item: UIMenuStatisticsPanelItem | UIMenuStatisticsPanelItem[]): void {
+  public addItem(
+    item: UIMenuStatisticsPanelItem | UIMenuStatisticsPanelItem[],
+  ): void {
     const items = Array.isArray(item) ? item : [item];
     this._items.push(...items);
   }
 
   public removeItem(itemOrIndex: UIMenuStatisticsPanelItem | number): void {
-    if (typeof itemOrIndex === 'number') {
+    if (typeof itemOrIndex === "number") {
       this._items = this._items.filter((i, index) => index !== itemOrIndex);
     } else {
-      this._items = this._items.filter(i => i.id !== itemOrIndex.id);
+      this._items = this._items.filter((i) => i.id !== itemOrIndex.id);
     }
   }
 
@@ -55,7 +64,7 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
       item.activeBar.pos.Y = yOffset;
       item.text.pos.Y = yOffset - 12;
       if (this._divider) {
-        item.divider.forEach(async divider => {
+        item.divider.forEach(async (divider) => {
           divider.pos.Y = yOffset;
         });
       }
@@ -66,7 +75,9 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
     if (this.enabled) {
       super.draw();
 
-      const x = this.parentItem?.offset.X ?? 0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
+      const x =
+        this.parentItem?.offset.X ??
+        0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
       this._items.forEach(async (item, index) => {
         const itemCountOffset = 40 * (index + 1);
         item.backgroundBar.pos.X = x + 200;

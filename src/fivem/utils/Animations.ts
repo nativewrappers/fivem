@@ -1,4 +1,4 @@
-import { Wait } from '..';
+import { Wait } from "..";
 
 /**
  * A utility to load an animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used.
@@ -6,7 +6,10 @@ import { Wait } from '..';
  * @param waitTime how long to wait for the dictionary to load
  * @returns {boolean} if the animation successfully loaded
  */
-export const LoadAnimDict = async (animDict: string, waitTime = 1000): Promise<boolean> => {
+export const LoadAnimDict = async (
+  animDict: string,
+  waitTime = 1000,
+): Promise<boolean> => {
   const start = GetGameTimer();
 
   if (!HasAnimDictLoaded(animDict)) {
@@ -48,7 +51,7 @@ export const LoadAnimDictArray = async (
     }
 
     if (GetGameTimer() - start >= waitTime)
-      return [false, animDict.filter(dict => !animsLoaded.has(dict))];
+      return [false, animDict.filter((dict) => !animsLoaded.has(dict))];
     await Wait(0);
   }
 

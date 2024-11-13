@@ -1,8 +1,8 @@
-import { Menu, Sprite, Text } from '../../';
-import { Alignment, Font } from '../../../enums';
-import { Color, LiteEvent, Point, Size, String } from '../../../utils';
-import { ListItem } from '../modules/';
-import { UIMenuItem } from './';
+import { Menu, Sprite, Text } from "../../";
+import { Alignment, Font } from "../../../enums";
+import { Color, LiteEvent, Point, Size, String } from "../../../utils";
+import { ListItem } from "../modules/";
+import { UIMenuItem } from "./";
 
 export class UIMenuListItem extends UIMenuItem {
   public readonly listChanged = new LiteEvent();
@@ -28,10 +28,20 @@ export class UIMenuListItem extends UIMenuItem {
     arrowOnlyOnSelected = true,
   ) {
     super(text, description);
-    this._leftArrow = new Sprite('commonmenu', 'arrowleft', new Point(), new Size(30, 30));
-    this._rightArrow = new Sprite('commonmenu', 'arrowright', new Point(), new Size(30, 30));
+    this._leftArrow = new Sprite(
+      "commonmenu",
+      "arrowleft",
+      new Point(),
+      new Size(30, 30),
+    );
+    this._rightArrow = new Sprite(
+      "commonmenu",
+      "arrowright",
+      new Point(),
+      new Size(30, 30),
+    );
     this._itemText = new Text(
-      '',
+      "",
       new Point(),
       0.35,
       Color.White,
@@ -59,7 +69,7 @@ export class UIMenuListItem extends UIMenuItem {
   }
 
   public set SelectedItem(value: ListItem) {
-    const index = this.Items.findIndex(i => i.id === value.id);
+    const index = this.Items.findIndex((i) => i.id === value.id);
     if (index >= 0) {
       this.Index = index;
     }
@@ -78,7 +88,12 @@ export class UIMenuListItem extends UIMenuItem {
     if (!this._items.length) {
       return;
     }
-    value = value < 0 ? this._items.length - 1 : value > this._items.length - 1 ? 0 : value;
+    value =
+      value < 0
+        ? this._items.length - 1
+        : value > this._items.length - 1
+          ? 0
+          : value;
     this._index = value;
     this._textWidth = 0;
   }
@@ -124,7 +139,8 @@ export class UIMenuListItem extends UIMenuItem {
       );
     }
 
-    this._rightArrow.pos.X = this.offset.X + (this.parent ? this.parent.WidthOffset : 0) + 400;
+    this._rightArrow.pos.X =
+      this.offset.X + (this.parent ? this.parent.WidthOffset : 0) + 400;
     this._itemText.pos.X = this._rightArrow.pos.X + 5;
 
     this._itemText.color = this.enabled
@@ -151,6 +167,6 @@ export class UIMenuListItem extends UIMenuItem {
 
   private _getSelectedItemCaption(): string {
     const item = this.SelectedItem;
-    return item ? item.name : '';
+    return item ? item.name : "";
   }
 }

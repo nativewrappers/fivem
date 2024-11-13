@@ -1,7 +1,7 @@
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { Hash } from '../type/Hash';
-import { BaseEntity } from './BaseEntity';
-import { Vehicle } from './Vehicle';
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { Hash } from "../type/Hash";
+import { BaseEntity } from "./BaseEntity";
+import { Vehicle } from "./Vehicle";
 
 export class Ped extends BaseEntity {
   protected type = ClassTypes.Ped;

@@ -1,4 +1,4 @@
-import { Player, Vector3 } from '../';
+import { Player, Vector3 } from "../";
 import {
   DrivingStyle,
   FiringPattern,
@@ -7,17 +7,17 @@ import {
   RagdollType,
   SpeechModifier,
   VehicleSeat,
-} from '../enums';
-import { WeaponHash } from '../hashes';
-import { Tasks } from '../Tasks';
-import { PedBoneCollection, Vehicle } from './';
-import { WeaponCollection } from '../weapon/WeaponCollection';
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { BaseEntity } from './BaseEntity';
+} from "../enums";
+import { WeaponHash } from "../hashes";
+import { Tasks } from "../Tasks";
+import { PedBoneCollection, Vehicle } from "./";
+import { WeaponCollection } from "../weapon/WeaponCollection";
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { BaseEntity } from "./BaseEntity";
 
 export class Ped extends BaseEntity {
   public static exists(ped: Ped): boolean {
-    return typeof ped !== 'undefined' && ped.exists();
+    return typeof ped !== "undefined" && ped.exists();
   }
 
   public static fromHandle(handle: number): Ped | null {
@@ -37,43 +37,43 @@ export class Ped extends BaseEntity {
   private weapons?: WeaponCollection;
 
   private static readonly speechModifierNames: string[] = [
-    'SPEECH_PARAMS_STANDARD',
-    'SPEECH_PARAMS_ALLOW_REPEAT',
-    'SPEECH_PARAMS_BEAT',
-    'SPEECH_PARAMS_FORCE',
-    'SPEECH_PARAMS_FORCE_FRONTEND',
-    'SPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND',
-    'SPEECH_PARAMS_FORCE_NORMAL',
-    'SPEECH_PARAMS_FORCE_NORMAL_CLEAR',
-    'SPEECH_PARAMS_FORCE_NORMAL_CRITICAL',
-    'SPEECH_PARAMS_FORCE_SHOUTED',
-    'SPEECH_PARAMS_FORCE_SHOUTED_CLEAR',
-    'SPEECH_PARAMS_FORCE_SHOUTED_CRITICAL',
-    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY',
-    'SPEECH_PARAMS_MEGAPHONE',
-    'SPEECH_PARAMS_HELI',
-    'SPEECH_PARAMS_FORCE_MEGAPHONE',
-    'SPEECH_PARAMS_FORCE_HELI',
-    'SPEECH_PARAMS_INTERRUPT',
-    'SPEECH_PARAMS_INTERRUPT_SHOUTED',
-    'SPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR',
-    'SPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL',
-    'SPEECH_PARAMS_INTERRUPT_NO_FORCE',
-    'SPEECH_PARAMS_INTERRUPT_FRONTEND',
-    'SPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND',
-    'SPEECH_PARAMS_ADD_BLIP',
-    'SPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT',
-    'SPEECH_PARAMS_ADD_BLIP_FORCE',
-    'SPEECH_PARAMS_ADD_BLIP_SHOUTED',
-    'SPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE',
-    'SPEECH_PARAMS_ADD_BLIP_INTERRUPT',
-    'SPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE',
-    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED',
-    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR',
-    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL',
-    'SPEECH_PARAMS_SHOUTED',
-    'SPEECH_PARAMS_SHOUTED_CLEAR',
-    'SPEECH_PARAMS_SHOUTED_CRITICAL',
+    "SPEECH_PARAMS_STANDARD",
+    "SPEECH_PARAMS_ALLOW_REPEAT",
+    "SPEECH_PARAMS_BEAT",
+    "SPEECH_PARAMS_FORCE",
+    "SPEECH_PARAMS_FORCE_FRONTEND",
+    "SPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND",
+    "SPEECH_PARAMS_FORCE_NORMAL",
+    "SPEECH_PARAMS_FORCE_NORMAL_CLEAR",
+    "SPEECH_PARAMS_FORCE_NORMAL_CRITICAL",
+    "SPEECH_PARAMS_FORCE_SHOUTED",
+    "SPEECH_PARAMS_FORCE_SHOUTED_CLEAR",
+    "SPEECH_PARAMS_FORCE_SHOUTED_CRITICAL",
+    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY",
+    "SPEECH_PARAMS_MEGAPHONE",
+    "SPEECH_PARAMS_HELI",
+    "SPEECH_PARAMS_FORCE_MEGAPHONE",
+    "SPEECH_PARAMS_FORCE_HELI",
+    "SPEECH_PARAMS_INTERRUPT",
+    "SPEECH_PARAMS_INTERRUPT_SHOUTED",
+    "SPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR",
+    "SPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL",
+    "SPEECH_PARAMS_INTERRUPT_NO_FORCE",
+    "SPEECH_PARAMS_INTERRUPT_FRONTEND",
+    "SPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND",
+    "SPEECH_PARAMS_ADD_BLIP",
+    "SPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT",
+    "SPEECH_PARAMS_ADD_BLIP_FORCE",
+    "SPEECH_PARAMS_ADD_BLIP_SHOUTED",
+    "SPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE",
+    "SPEECH_PARAMS_ADD_BLIP_INTERRUPT",
+    "SPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE",
+    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED",
+    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR",
+    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL",
+    "SPEECH_PARAMS_SHOUTED",
+    "SPEECH_PARAMS_SHOUTED_CLEAR",
+    "SPEECH_PARAMS_SHOUTED_CRITICAL",
   ];
 
   private tasks: Tasks | undefined;
@@ -164,7 +164,9 @@ export class Ped extends BaseEntity {
   public get SeatIndex(): VehicleSeat {
     if (!this.CurrentVehicle) return VehicleSeat.None;
 
-    const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
+    const numberOfSeats = GetVehicleModelNumberOfSeats(
+      this.CurrentVehicle.Model.Hash,
+    );
     for (let seat = -1; seat < numberOfSeats; seat++) {
       if (this.CurrentVehicle.getPedOnSeat(seat).Handle == this.handle) {
         return seat;
@@ -577,12 +579,19 @@ export class Ped extends BaseEntity {
 
   public playAmbientSpeed(
     speechName: string,
-    voiceName = '',
+    voiceName = "",
     modifier: SpeechModifier = SpeechModifier.Standard,
   ): void {
-    if (Number(modifier) >= 0 && Number(modifier) < Ped.speechModifierNames.length) {
-      if (voiceName === '') {
-        PlayAmbientSpeech1(this.handle, speechName, Ped.speechModifierNames[Number(modifier)]);
+    if (
+      Number(modifier) >= 0 &&
+      Number(modifier) < Ped.speechModifierNames.length
+    ) {
+      if (voiceName === "") {
+        PlayAmbientSpeech1(
+          this.handle,
+          speechName,
+          Ped.speechModifierNames[Number(modifier)],
+        );
       } else {
         PlayAmbientSpeechWithVoice(
           this.handle,
@@ -593,7 +602,7 @@ export class Ped extends BaseEntity {
         );
       }
     } else {
-      throw new RangeError('modifier');
+      throw new RangeError("modifier");
     }
   }
 
@@ -638,7 +647,12 @@ export class Ped extends BaseEntity {
     return this.weapons;
   }
 
-  public giveWeapon(weapon: WeaponHash, ammoCount = 999, isHidden = false, equipNow = true): void {
+  public giveWeapon(
+    weapon: WeaponHash,
+    ammoCount = 999,
+    isHidden = false,
+    equipNow = true,
+  ): void {
     GiveWeaponToPed(this.handle, weapon, ammoCount, isHidden, equipNow);
   }
 
@@ -664,9 +678,20 @@ export class Ped extends BaseEntity {
     SetPedCanRagdoll(this.handle, value);
   }
 
-  public ragdoll(duration = -1, ragdollType: RagdollType = RagdollType.Normal): void {
+  public ragdoll(
+    duration = -1,
+    ragdollType: RagdollType = RagdollType.Normal,
+  ): void {
     this.CanRagdoll = true;
-    SetPedToRagdoll(this.handle, duration, duration, Number(ragdollType), false, false, false);
+    SetPedToRagdoll(
+      this.handle,
+      duration,
+      duration,
+      Number(ragdollType),
+      false,
+      false,
+      false,
+    );
   }
 
   public cancelRagdoll(): void {
@@ -678,7 +703,12 @@ export class Ped extends BaseEntity {
     helmetType: HelmetType,
     textureIndex: number,
   ): void {
-    GivePedHelmet(this.handle, !canBeRemovedByPed, Number(helmetType), textureIndex);
+    GivePedHelmet(
+      this.handle,
+      !canBeRemovedByPed,
+      Number(helmetType),
+      textureIndex,
+    );
   }
 
   public removeHelmet(instantly: boolean): void {
@@ -720,7 +750,13 @@ export class Ped extends BaseEntity {
     textureId: number,
     paletteId = 0,
   ): void {
-    SetPedComponentVariation(this.handle, componentId, drawableId, textureId, paletteId);
+    SetPedComponentVariation(
+      this.handle,
+      componentId,
+      drawableId,
+      textureId,
+      paletteId,
+    );
   }
 
   public setRandomComponentVariation(): void {
@@ -747,14 +783,23 @@ export class Ped extends BaseEntity {
     componentId: number,
     drawableId = this.getDrawableVariation(componentId),
   ): number {
-    return GetNumberOfPedTextureVariations(this.handle, componentId, drawableId);
+    return GetNumberOfPedTextureVariations(
+      this.handle,
+      componentId,
+      drawableId,
+    );
   }
 
   public setRandomProps(): void {
     SetPedRandomProps(this.handle);
   }
 
-  public setPropIndex(propId: number, drawableId: number, textureId: number, attach = true): void {
+  public setPropIndex(
+    propId: number,
+    drawableId: number,
+    textureId: number,
+    attach = true,
+  ): void {
     SetPedPropIndex(this.handle, propId, drawableId, textureId, attach);
   }
 
@@ -766,11 +811,20 @@ export class Ped extends BaseEntity {
     ClearAllPedProps(this.handle);
   }
 
-  public knockPropOff(p1: boolean, p2: boolean, p3: boolean, p4: boolean): void {
+  public knockPropOff(
+    p1: boolean,
+    p2: boolean,
+    p3: boolean,
+    p4: boolean,
+  ): void {
     KnockOffPedProp(this.handle, p1, p2, p3, p4);
   }
 
-  public isPropValid(propId: number, drawableId: number, textureId: number): boolean {
+  public isPropValid(
+    propId: number,
+    drawableId: number,
+    textureId: number,
+  ): boolean {
     return SetPedPreloadPropData(this.handle, propId, drawableId, textureId);
   }
 
@@ -838,16 +892,34 @@ export class Ped extends BaseEntity {
     this.setHeadOverlay(overlayId, value, opacity);
   }
 
-  public getHeadOverlay(overlayId: number): [number, number, number, number, number] | void {
-    const [ret, overlayValue, colourType, firstColour, secondColour, overlayOpacity] =
-      GetPedHeadOverlayData(this.handle, overlayId);
+  public getHeadOverlay(
+    overlayId: number,
+  ): [number, number, number, number, number] | void {
+    const [
+      ret,
+      overlayValue,
+      colourType,
+      firstColour,
+      secondColour,
+      overlayOpacity,
+    ] = GetPedHeadOverlayData(this.handle, overlayId);
     if (!ret) {
       return undefined;
     }
-    return [overlayValue, colourType, firstColour, secondColour, overlayOpacity];
+    return [
+      overlayValue,
+      colourType,
+      firstColour,
+      secondColour,
+      overlayOpacity,
+    ];
   }
 
-  public setHeadOverlay(overlayId: number, index: number, opacity: number): void {
+  public setHeadOverlay(
+    overlayId: number,
+    index: number,
+    opacity: number,
+  ): void {
     SetPedHeadOverlay(this.handle, overlayId, index, opacity);
   }
 
@@ -856,7 +928,11 @@ export class Ped extends BaseEntity {
   }
 
   public setHeadOverlayOpacity(overlayId: number, opacity: number): void {
-    this.setHeadOverlay(overlayId, this.getHeadOverlayValue(overlayId), opacity);
+    this.setHeadOverlay(
+      overlayId,
+      this.getHeadOverlayValue(overlayId),
+      opacity,
+    );
   }
 
   public setHeadOverlayColor(overlayId: number, color: number): void {
@@ -897,13 +973,24 @@ export class Ped extends BaseEntity {
   }
 
   public getHeadBlend():
-    | [number, number, number, number, number, number, number, number, number, boolean]
+    | [
+        number,
+        number,
+        number,
+        number,
+        number,
+        number,
+        number,
+        number,
+        number,
+        boolean,
+      ]
     | void {
     const buffer = new ArrayBuffer(80);
 
     if (
       !(Citizen.invokeNative(
-        '0x2746BD9D88C5C5D0',
+        "0x2746BD9D88C5C5D0",
         this.handle,
         new Float32Array(buffer),
       ) as unknown)
@@ -921,7 +1008,11 @@ export class Ped extends BaseEntity {
       18: isParent,
     } = new Uint32Array(buffer);
 
-    const { 0: shapeMix, 2: skinMix, 4: thirdMix } = new Float32Array(buffer, 48);
+    const {
+      0: shapeMix,
+      2: skinMix,
+      4: thirdMix,
+    } = new Float32Array(buffer, 48);
 
     return [
       shapeFirstId,

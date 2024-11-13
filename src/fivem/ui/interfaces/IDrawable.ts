@@ -1,4 +1,4 @@
-import { Color, Point, Size } from '../../utils/';
+import { Color, Point, Size } from "../../utils/";
 
 export interface IDrawable {
   pos: Point;

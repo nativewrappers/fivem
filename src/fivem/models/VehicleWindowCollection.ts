@@ -1,13 +1,11 @@
-import { Vehicle } from './Vehicle';
-import { VehicleWindowIndex } from '../enums';
-import { VehicleWindow } from './VehicleWindow';
+import { Vehicle } from "./Vehicle";
+import { VehicleWindowIndex } from "../enums";
+import { VehicleWindow } from "./VehicleWindow";
 
 export class VehicleWindowCollection {
   private _owner: Vehicle;
-  private readonly _vehicleWindows: Map<VehicleWindowIndex, VehicleWindow> = new Map<
-    VehicleWindowIndex,
-    VehicleWindow
-  >();
+  private readonly _vehicleWindows: Map<VehicleWindowIndex, VehicleWindow> =
+    new Map<VehicleWindowIndex, VehicleWindow>();
 
   constructor(owner: Vehicle) {
     this._owner = owner;
@@ -25,15 +23,15 @@ export class VehicleWindowCollection {
 
   public getAllWindows(): (VehicleWindow | null)[] {
     return Object.keys(VehicleWindowIndex)
-      .filter(key => !isNaN(Number(key)))
-      .map(key => {
+      .filter((key) => !isNaN(Number(key)))
+      .map((key) => {
         const index = Number(key);
         if (this.hasWindow(index)) {
           return this.getWindow(index);
         }
         return null;
       })
-      .filter(w => w);
+      .filter((w) => w);
   }
 
   public get AreAllWindowsIntact(): boolean {
@@ -41,13 +39,13 @@ export class VehicleWindowCollection {
   }
 
   public rollDownAllWindows(): void {
-    this.getAllWindows().forEach(window => {
+    this.getAllWindows().forEach((window) => {
       window?.rollDown();
     });
   }
 
   public rollUpAllWindows(): void {
-    this.getAllWindows().forEach(window => {
+    this.getAllWindows().forEach((window) => {
       window?.rollUp();
     });
   }
@@ -55,13 +53,13 @@ export class VehicleWindowCollection {
   public hasWindow(window: VehicleWindowIndex): boolean {
     switch (window) {
       case VehicleWindowIndex.FrontLeftWindow:
-        return this._owner.Bones.hasBone('window_lf');
+        return this._owner.Bones.hasBone("window_lf");
       case VehicleWindowIndex.FrontRightWindow:
-        return this._owner.Bones.hasBone('window_rf');
+        return this._owner.Bones.hasBone("window_rf");
       case VehicleWindowIndex.BackLeftWindow:
-        return this._owner.Bones.hasBone('window_lr');
+        return this._owner.Bones.hasBone("window_lr");
       case VehicleWindowIndex.BackRightWindow:
-        return this._owner.Bones.hasBone('window_rr');
+        return this._owner.Bones.hasBone("window_rr");
       default:
         return false;
     }

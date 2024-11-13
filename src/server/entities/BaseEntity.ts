@@ -1,10 +1,10 @@
-import cfx from '../cfx';
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { eEntityType } from '../enum/eEntityType';
-import { PopulationType } from '../enum/PopulationType';
-import { Hash } from '../type/Hash';
-import { Vector4 } from '../utils';
-import { Vector3 } from '../utils';
+import cfx from "../cfx";
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { eEntityType } from "../enum/eEntityType";
+import { PopulationType } from "../enum/PopulationType";
+import { Hash } from "../type/Hash";
+import { Vector4 } from "../utils";
+import { Vector3 } from "../utils";
 
 export class BaseEntity {
   protected type = ClassTypes.Entity;
@@ -61,7 +61,10 @@ export class BaseEntity {
   }
 
   public get PositionAndHeading(): Vector4 {
-    return Vector4.fromArray([...GetEntityCoords(this.handle), GetEntityHeading(this.handle)]);
+    return Vector4.fromArray([
+      ...GetEntityCoords(this.handle),
+      GetEntityHeading(this.handle),
+    ]);
   }
 
   public get Health(): number {

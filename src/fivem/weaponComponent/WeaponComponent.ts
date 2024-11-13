@@ -1,13 +1,13 @@
-import { Ped } from '../models';
-import { Weapon } from '../weapon';
-import { WeaponComponentHash } from './WeaponComponentHash';
-import { WeaponHash } from '../hashes';
-import { ComponentAttachmentPoint } from './ComponentAttachmentPoint';
-import { Game } from '../Game';
-import { ComponentDisplayNameByHash } from './ComponentDisplayNameByHash';
-import { WeaponComponentHashesByWeaponHash } from './WeaponComponentHashesByWeaponHash';
-import { ComponentAttachmentPointByHash } from './ComponentAttachmentPointByHash';
-import { WeaponComponentHudStats } from './WeaponComponentHudStats';
+import { Ped } from "../models";
+import { Weapon } from "../weapon";
+import { WeaponComponentHash } from "./WeaponComponentHash";
+import { WeaponHash } from "../hashes";
+import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
+import { Game } from "../Game";
+import { ComponentDisplayNameByHash } from "./ComponentDisplayNameByHash";
+import { WeaponComponentHashesByWeaponHash } from "./WeaponComponentHashesByWeaponHash";
+import { ComponentAttachmentPointByHash } from "./ComponentAttachmentPointByHash";
+import { WeaponComponentHudStats } from "./WeaponComponentHudStats";
 
 /**
  * ped weapon component on weapon
@@ -18,7 +18,11 @@ export class WeaponComponent {
   protected readonly weapon: Weapon;
   protected readonly componentHash: WeaponComponentHash;
 
-  public constructor(owner: Ped, weapon: Weapon, componentHash: WeaponComponentHash) {
+  public constructor(
+    owner: Ped,
+    weapon: Weapon,
+    componentHash: WeaponComponentHash,
+  ) {
     this.owner = owner;
     this.weapon = weapon;
     this.componentHash = componentHash;
@@ -48,7 +52,11 @@ export class WeaponComponent {
    * @constructor
    */
   public get Active(): boolean {
-    return HasPedGotWeaponComponent(this.owner.Handle, this.weapon.Hash, this.componentHash);
+    return HasPedGotWeaponComponent(
+      this.owner.Handle,
+      this.weapon.Hash,
+      this.componentHash,
+    );
   }
 
   /**
@@ -59,9 +67,17 @@ export class WeaponComponent {
    */
   public set Active(value: boolean) {
     if (value) {
-      GiveWeaponComponentToPed(this.owner.Handle, this.weapon.Hash, this.componentHash);
+      GiveWeaponComponentToPed(
+        this.owner.Handle,
+        this.weapon.Hash,
+        this.componentHash,
+      );
     } else {
-      RemoveWeaponComponentFromPed(this.owner.Handle, this.weapon.Hash, this.componentHash);
+      RemoveWeaponComponentFromPed(
+        this.owner.Handle,
+        this.weapon.Hash,
+        this.componentHash,
+      );
     }
   }
 
@@ -71,7 +87,10 @@ export class WeaponComponent {
    * @constructor
    */
   public get DisplayName(): string {
-    return WeaponComponent.getComponentDisplayNameFromHash(this.weapon.Hash, this.componentHash);
+    return WeaponComponent.getComponentDisplayNameFromHash(
+      this.weapon.Hash,
+      this.componentHash,
+    );
   }
 
   /**
@@ -89,7 +108,10 @@ export class WeaponComponent {
    * @constructor
    */
   public get AttachmentPoint(): ComponentAttachmentPoint {
-    return WeaponComponent.getAttachmentPoint(this.weapon.Hash, this.componentHash);
+    return WeaponComponent.getAttachmentPoint(
+      this.weapon.Hash,
+      this.componentHash,
+    );
   }
 
   /**
@@ -114,10 +136,10 @@ export class WeaponComponent {
     componentHash: WeaponComponentHash,
   ): string {
     if (!hash) {
-      return 'WCT_INVALID';
+      return "WCT_INVALID";
     }
 
-    return ComponentDisplayNameByHash.get(componentHash) ?? 'WCT_INVALID';
+    return ComponentDisplayNameByHash.get(componentHash) ?? "WCT_INVALID";
   }
 
   /**
@@ -136,10 +158,13 @@ export class WeaponComponent {
       return ComponentAttachmentPoint.Invalid;
     }
 
-    if (componentHashes.every(x => x !== componentHash)) {
+    if (componentHashes.every((x) => x !== componentHash)) {
       return ComponentAttachmentPoint.Invalid;
     }
 
-    return ComponentAttachmentPointByHash.get(componentHash) ?? ComponentAttachmentPoint.Invalid;
+    return (
+      ComponentAttachmentPointByHash.get(componentHash) ??
+      ComponentAttachmentPoint.Invalid
+    );
   }
 }

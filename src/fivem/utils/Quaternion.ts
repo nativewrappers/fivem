@@ -1,4 +1,4 @@
-import { Vector3 } from '.';
+import { Vector3 } from ".";
 
 export class Quaternion {
   public x: number;
@@ -9,7 +9,12 @@ export class Quaternion {
   constructor(value: number);
   constructor(vector: Vector3, w: number);
   constructor(x: number, y: number, z: number, w: number);
-  constructor(valueXOrVector: number | Vector3, yOrW?: number, z?: number, w?: number) {
+  constructor(
+    valueXOrVector: number | Vector3,
+    yOrW?: number,
+    z?: number,
+    w?: number,
+  ) {
     if (valueXOrVector instanceof Vector3) {
       this.x = valueXOrVector.x;
       this.y = valueXOrVector.y;

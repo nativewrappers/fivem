@@ -1,4 +1,4 @@
-import { BaseEntity } from './BaseEntity';
+import { BaseEntity } from "./BaseEntity";
 
 export class Entity extends BaseEntity {
   constructor(handle: number) {

@@ -1,12 +1,12 @@
-import { Blip } from '../Blip';
-import { ForceType } from '../enums';
-import { MaterialHash, WeaponHash } from '../hashes';
-import { Model } from '../Model';
-import { Quaternion, Vector3 } from '../utils';
-import { EntityBoneCollection } from './';
-import { EntityBone } from './EntityBone';
-import cfx, { StateBagChangeHandler } from '../cfx';
-import { ClassTypes } from '../../common/utils/ClassTypes';
+import { Blip } from "../Blip";
+import { ForceType } from "../enums";
+import { MaterialHash, WeaponHash } from "../hashes";
+import { Model } from "../Model";
+import { Quaternion, Vector3 } from "../utils";
+import { EntityBoneCollection } from "./";
+import { EntityBone } from "./EntityBone";
+import cfx, { StateBagChangeHandler } from "../cfx";
+import { ClassTypes } from "../../common/utils/ClassTypes";
 
 export class BaseEntity {
   public static fromNetworkId(networkId: number): BaseEntity | null {
@@ -79,7 +79,11 @@ export class BaseEntity {
       : `localEntity:${this.handle}`;
     // keyFilter is casted to any because it can take a null value.
     /* eslint-disable @typescript-eslint/no-explicit-any */
-    const cookie = AddStateBagChangeHandler(keyFilter as any, stateBagName, handler);
+    const cookie = AddStateBagChangeHandler(
+      keyFilter as any,
+      stateBagName,
+      handler,
+    );
     this.stateBagCookies.push(cookie);
     return cookie;
   }
@@ -90,12 +94,15 @@ export class BaseEntity {
    * @param handler the function to handle the change
    * @returns a cookie to be used in RemoveStateBagChangeHandler
    */
-  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler): number {
+  public listenForStateChange(
+    keyFilter: string | null,
+    handler: StateBagChangeHandler,
+  ): number {
     return this.AddStateBagChangeHandler(keyFilter, handler);
   }
 
   public removeStateListener(tgtCookie: number): void {
-    this.stateBagCookies = this.stateBagCookies.filter(cookie => {
+    this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie == tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
       return isCookie;
@@ -127,7 +134,8 @@ export class BaseEntity {
   }
 
   public set Matrix(vectors: Vector3[]) {
-    if (vectors.length !== 4) throw Error(`Expected 4 Vectors, got ${vectors.length}`);
+    if (vectors.length !== 4)
+      throw Error(`Expected 4 Vectors, got ${vectors.length}`);
     const [forward, right, up, pos] = vectors;
     SetEntityMatrix(
       this.handle,
@@ -219,11 +227,28 @@ export class BaseEntity {
   }
 
   public set Position(position: Vector3) {
-    SetEntityCoords(this.handle, position.x, position.y, position.z, false, false, false, true);
+    SetEntityCoords(
+      this.handle,
+      position.x,
+      position.y,
+      position.z,
+      false,
+      false,
+      false,
+      true,
+    );
   }
 
   public set PositionNoOffset(position: Vector3) {
-    SetEntityCoordsNoOffset(this.handle, position.x, position.y, position.z, true, true, true);
+    SetEntityCoordsNoOffset(
+      this.handle,
+      position.x,
+      position.y,
+      position.z,
+      true,
+      true,
+      true,
+    );
   }
 
   public get Rotation(): Vector3 {
@@ -236,11 +261,22 @@ export class BaseEntity {
 
   public get Quaternion(): Quaternion {
     const quaternion = GetEntityQuaternion(this.handle);
-    return new Quaternion(quaternion[0], quaternion[1], quaternion[2], quaternion[3]);
+    return new Quaternion(
+      quaternion[0],
+      quaternion[1],
+      quaternion[2],
+      quaternion[3],
+    );
   }
 
   public set Quaternion(quaternion: Quaternion) {
-    SetEntityQuaternion(this.handle, quaternion.x, quaternion.y, quaternion.z, quaternion.w);
+    SetEntityQuaternion(
+      this.handle,
+      quaternion.x,
+      quaternion.y,
+      quaternion.z,
+      quaternion.w,
+    );
   }
 
   public get Heading(): number {
@@ -460,7 +496,11 @@ export class BaseEntity {
     );
   }
 
-  public isInAngledArea(origin: Vector3, edge: Vector3, angle: number): boolean {
+  public isInAngledArea(
+    origin: Vector3,
+    edge: Vector3,
+    angle: number,
+  ): boolean {
     return IsEntityInAngledArea(
       this.handle,
       origin.x,
@@ -509,30 +549,40 @@ export class BaseEntity {
    */
   public getOffsetInRelativeCoords(worldCoords: Vector3): Vector3 {
     return Vector3.fromArray(
-      GetOffsetFromEntityGivenWorldCoords(this.handle, worldCoords.x, worldCoords.y, worldCoords.z),
+      GetOffsetFromEntityGivenWorldCoords(
+        this.handle,
+        worldCoords.x,
+        worldCoords.y,
+        worldCoords.z,
+      ),
     );
   }
 
   // TODO: Better example
   /**
-    * @example
-    * ```typescript
-    * const ply = Game.PlayerPed;
-    * const plyPos = ply.Position;
-    * const bag = await World.createProp(new Model('ba_prop_battle_bag_01b'), plyPos, true, true, true);
-    * bag.attachToBone(
-    *     ply.Bones.getBone(64113),
-    *     new Vector3(0.12, -0.25, 0.0),
-    *     new Vector3(105.0, 50.0, 190.0)
-    * )
-    * const offset = bag.getRelativePositionOffset(plyPos);
-    * ```
-    * @param worldCoords: the offset given the world coords
-    * @returns the offset position from the entity in relative coords
-    */
+   * @example
+   * ```typescript
+   * const ply = Game.PlayerPed;
+   * const plyPos = ply.Position;
+   * const bag = await World.createProp(new Model('ba_prop_battle_bag_01b'), plyPos, true, true, true);
+   * bag.attachToBone(
+   *     ply.Bones.getBone(64113),
+   *     new Vector3(0.12, -0.25, 0.0),
+   *     new Vector3(105.0, 50.0, 190.0)
+   * )
+   * const offset = bag.getRelativePositionOffset(plyPos);
+   * ```
+   * @param worldCoords: the offset given the world coords
+   * @returns the offset position from the entity in relative coords
+   */
   public getOffsetInWorldCoords(offset: Vector3): Vector3 {
     return Vector3.fromArray(
-      GetOffsetFromEntityInWorldCoords(this.handle, offset.x, offset.y, offset.z),
+      GetOffsetFromEntityInWorldCoords(
+        this.handle,
+        offset.x,
+        offset.y,
+        offset.z,
+      ),
     );
   }
 
@@ -544,12 +594,11 @@ export class BaseEntity {
   }
 
   /**
-    * @deprecated use [[getOffsetInWorldCoords]]
-    */
+   * @deprecated use [[getOffsetInWorldCoords]]
+   */
   public getOffsetPosition(offset: Vector3): Vector3 {
     return this.getOffsetInWorldCoords(offset);
   }
-
 
   public attachTo(
     entity: BaseEntity,
@@ -562,7 +611,7 @@ export class BaseEntity {
   ): void {
     if (this.handle == entity.Handle) {
       throw new Error(
-        'You cannot attach an entity to the same entity this will result in a crash!',
+        "You cannot attach an entity to the same entity this will result in a crash!",
       );
     }
     AttachEntityToEntity(
@@ -608,7 +657,7 @@ export class BaseEntity {
   ): void {
     if (this.handle == entityBone.Owner.Handle) {
       throw new Error(
-        'You cannot attach an entity to the same entity this will result in a crash!',
+        "You cannot attach an entity to the same entity this will result in a crash!",
       );
     }
     AttachEntityToEntity(

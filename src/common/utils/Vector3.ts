@@ -1,1 +1,1 @@
-export { Vector3 } from './Vector';
+export { Vector3 } from "./Vector";

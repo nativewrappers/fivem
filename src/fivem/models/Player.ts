@@ -1,7 +1,7 @@
-import { Model, Color } from '..';
-import cfx, { StateBagChangeHandler } from '../cfx';
-import { ClassTypes } from '../../common/utils/ClassTypes';
-import { BaseEntity, Ped } from './';
+import { Model, Color } from "..";
+import cfx, { StateBagChangeHandler } from "../cfx";
+import { ClassTypes } from "../../common/utils/ClassTypes";
+import { BaseEntity, Ped } from "./";
 
 export class Player {
   private handle: number;
@@ -44,7 +44,7 @@ export class Player {
   public get Ped(): Ped {
     const handle = GetPlayerPed(this.handle);
 
-    if (typeof this.ped === 'undefined' || handle !== this.ped.Handle) {
+    if (typeof this.ped === "undefined" || handle !== this.ped.Handle) {
       this.ped = new Ped(handle);
     }
 
@@ -68,7 +68,11 @@ export class Player {
   ): number {
     // keyFilter is casted to any because it can take a null value.
     /* eslint-disable @typescript-eslint/no-explicit-any */
-    const cookie = AddStateBagChangeHandler(keyFilter as any, `player:${this.ServerId}`, handler);
+    const cookie = AddStateBagChangeHandler(
+      keyFilter as any,
+      `player:${this.ServerId}`,
+      handler,
+    );
     this.stateBagCookies.push(cookie);
     return cookie;
   }
@@ -79,12 +83,15 @@ export class Player {
    * @param handler the function to handle the change
    * @returns a cookie to be used in RemoveStateBagChangeHandler
    */
-  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler): number {
+  public listenForStateChange(
+    keyFilter: string | null,
+    handler: StateBagChangeHandler,
+  ): number {
     return this.AddStateBagChangeHandler(keyFilter, handler);
   }
 
   public removeStateListener(tgtCookie: number): void {
-    this.stateBagCookies = this.stateBagCookies.filter(cookie => {
+    this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie == tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
       return isCookie;

@@ -14,11 +14,11 @@ export class LiteEvent implements LiteEvent {
   }
 
   public off(handler: { (...args: unknown[]): any }): void {
-    this.handlers = this.handlers.filter(h => h !== handler);
+    this.handlers = this.handlers.filter((h) => h !== handler);
   }
 
   public emit(...args: unknown[]): void {
-    this.handlers.slice(0).forEach(h => {
+    this.handlers.slice(0).forEach((h) => {
       h(...args);
     });
   }

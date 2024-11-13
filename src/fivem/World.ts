@@ -1,6 +1,6 @@
-import { Model, Prop } from './';
-import { Blip } from './Blip';
-import { Camera } from './Camera';
+import { Model, Prop } from "./";
+import { Blip } from "./Blip";
+import { Camera } from "./Camera";
 import {
   CameraTypes,
   CloudHat,
@@ -10,15 +10,15 @@ import {
   RopeType,
   SHAPE_TEST_DEFAULT,
   Weather,
-} from './enums';
-import { GameplayCamera } from './GameplayCamera';
-import { VehicleHash } from './hashes';
-import { Ped, Vehicle } from './models';
-import type { BaseEntity } from './models/BaseEntity';
-import { Pickup } from './Pickup';
-import { AsynchronousRaycastResult, SynchronousRaycastResult } from './Raycast';
-import { Rope } from './Rope';
-import { Color, Maths, Vector3, Wait } from './utils';
+} from "./enums";
+import { GameplayCamera } from "./GameplayCamera";
+import { VehicleHash } from "./hashes";
+import { Ped, Vehicle } from "./models";
+import type { BaseEntity } from "./models/BaseEntity";
+import { Pickup } from "./Pickup";
+import { AsynchronousRaycastResult, SynchronousRaycastResult } from "./Raycast";
+import { Rope } from "./Rope";
+import { Color, Maths, Vector3, Wait } from "./utils";
 
 /**
  * Class with common world manipulations.
@@ -91,7 +91,11 @@ export abstract class World {
    */
   public static set CurrentDate(date: Date) {
     SetClockDate(date.getDate(), date.getMonth(), date.getFullYear());
-    NetworkOverrideClockTime(date.getHours(), date.getMinutes(), date.getSeconds());
+    NetworkOverrideClockTime(
+      date.getHours(),
+      date.getMinutes(),
+      date.getSeconds(),
+    );
   }
 
   /**
@@ -125,7 +129,7 @@ export abstract class World {
       return;
     }
 
-    SetCloudHatTransition(this.cloudHatDict.get(this.currentCloudHat) ?? '', 3);
+    SetCloudHatTransition(this.cloudHatDict.get(this.currentCloudHat) ?? "", 3);
   }
 
   /**
@@ -258,15 +262,27 @@ export abstract class World {
   /**
    * Doesn't work
    */
-  public static get WeatherTransition(): [string | Weather, string | Weather, number] {
+  public static get WeatherTransition(): [
+    string | Weather,
+    string | Weather,
+    number,
+  ] {
     const transition = GetWeatherTypeTransition();
-    return [this.weatherDict[transition[0]], this.weatherDict[transition[1]], transition[2]];
+    return [
+      this.weatherDict[transition[0]],
+      this.weatherDict[transition[1]],
+      transition[2],
+    ];
   }
 
   /**
    * Doesn't work
    */
-  public static set WeatherTransition(transition: [string | Weather, string | Weather, number]) {
+  public static set WeatherTransition(transition: [
+    string | Weather,
+    string | Weather,
+    number,
+  ]) {
     SetWeatherTypeTransition(transition[0], transition[1], transition[2]);
   }
 
@@ -304,7 +320,9 @@ export abstract class World {
    */
   public static createBlip(position: Vector3, radius?: number): Blip {
     if (radius !== null && radius !== undefined) {
-      return new Blip(AddBlipForRadius(position.x, position.y, position.z, radius));
+      return new Blip(
+        AddBlipForRadius(position.x, position.y, position.z, radius),
+      );
     }
     return new Blip(AddBlipForCoord(position.x, position.y, position.z));
   }
@@ -319,7 +337,10 @@ export abstract class World {
    * @param active unknown
    * @returns
    */
-  public static createCamera(cameraType = CameraTypes.Scripted, active = true): Camera {
+  public static createCamera(
+    cameraType = CameraTypes.Scripted,
+    active = true,
+  ): Camera {
     return new Camera(CreateCam(cameraType, active));
   }
 
@@ -640,7 +661,16 @@ export abstract class World {
         model.Hash,
       );
     else
-      handle = CreatePickup(type, position.x, position.y, position.z, 0, value, true, model.Hash);
+      handle = CreatePickup(
+        type,
+        position.x,
+        position.y,
+        position.z,
+        0,
+        value,
+        true,
+        model.Hash,
+      );
 
     model.markAsNoLongerNeeded();
 
@@ -772,7 +802,16 @@ export abstract class World {
     range: number,
     intensity: number,
   ): void {
-    DrawLightWithRange(pos.x, pos.y, pos.z, color.r, color.g, color.b, range, intensity);
+    DrawLightWithRange(
+      pos.x,
+      pos.y,
+      pos.z,
+      color.r,
+      color.g,
+      color.b,
+      range,
+      intensity,
+    );
   }
 
   /**
@@ -864,7 +903,18 @@ export abstract class World {
    * @param color RGB color of line.
    */
   public static drawLine(start: Vector3, end: Vector3, color: Color): void {
-    DrawLine(start.x, start.y, start.z, end.x, end.y, end.z, color.r, color.g, color.b, color.a);
+    DrawLine(
+      start.x,
+      start.y,
+      start.z,
+      end.x,
+      end.y,
+      end.z,
+      color.r,
+      color.g,
+      color.b,
+      color.a,
+    );
   }
 
   /**
@@ -875,7 +925,12 @@ export abstract class World {
    * @param vertexC World coordinate of third point.
    * @param color RGB color of polygon.
    */
-  public static drawPoly(vertexA: Vector3, vertexB: Vector3, vertexC: Vector3, color: Color): void {
+  public static drawPoly(
+    vertexA: Vector3,
+    vertexB: Vector3,
+    vertexC: Vector3,
+    color: Color,
+  ): void {
     DrawPoly(
       vertexA.x,
       vertexA.y,
@@ -989,7 +1044,10 @@ export abstract class World {
     shapeTestOptions = SHAPE_TEST_DEFAULT,
     ignoreEntity?: BaseEntity,
   ): SynchronousRaycastResult | AsynchronousRaycastResult {
-    const target = Vector3.add(source, Vector3.multiply(direction, maxDistance));
+    const target = Vector3.add(
+      source,
+      Vector3.multiply(direction, maxDistance),
+    );
 
     if (useExpensiveRaycast) {
       return new SynchronousRaycastResult(
@@ -1084,10 +1142,10 @@ export abstract class World {
    * @returns Array of Props.
    */
   public static getAllProps(): Prop[] {
-    const handles: number[] = GetGamePool('CObject');
+    const handles: number[] = GetGamePool("CObject");
     const props: Prop[] = [];
 
-    handles.forEach(handle => props.push(new Prop(handle)));
+    handles.forEach((handle) => props.push(new Prop(handle)));
 
     return props;
   }
@@ -1101,7 +1159,7 @@ export abstract class World {
     const handles: number[] = GetAllRopes();
     const props: Rope[] = [];
 
-    handles.forEach(handle => props.push(new Rope(handle)));
+    handles.forEach((handle) => props.push(new Rope(handle)));
 
     return props;
   }
@@ -1112,10 +1170,10 @@ export abstract class World {
    * @returns Array of Peds.
    */
   public static getAllPeds(): Ped[] {
-    const handles: number[] = GetGamePool('CPed');
+    const handles: number[] = GetGamePool("CPed");
     const peds: Ped[] = [];
 
-    handles.forEach(handle => peds.push(new Ped(handle)));
+    handles.forEach((handle) => peds.push(new Ped(handle)));
 
     return peds;
   }
@@ -1126,10 +1184,10 @@ export abstract class World {
    * @returns Array of Vehicles.
    */
   public static getAllVehicles(): Vehicle[] {
-    const handles: number[] = GetGamePool('CVehicle');
+    const handles: number[] = GetGamePool("CVehicle");
     const vehicles: Vehicle[] = [];
 
-    handles.forEach(handle => vehicles.push(new Vehicle(handle)));
+    handles.forEach((handle) => vehicles.push(new Vehicle(handle)));
 
     return vehicles;
   }
@@ -1163,54 +1221,57 @@ export abstract class World {
    * @returns Array of Pickups.
    */
   public static getAllPickups(): Pickup[] {
-    const handles: number[] = GetGamePool('CPickup');
+    const handles: number[] = GetGamePool("CPickup");
     const pickups: Pickup[] = [];
 
-    handles.forEach(handle => pickups.push(new Pickup(handle)));
+    handles.forEach((handle) => pickups.push(new Pickup(handle)));
 
     return pickups;
   }
 
   private static currentCloudHat: CloudHat = CloudHat.Clear;
 
-  private static cloudHatDict: Map<CloudHat, string> = new Map<CloudHat, string>([
-    [CloudHat.Unknown, 'Unknown'],
-    [CloudHat.Altostratus, 'altostratus'],
-    [CloudHat.Cirrus, 'Cirrus'],
-    [CloudHat.Cirrocumulus, 'cirrocumulus'],
-    [CloudHat.Clear, 'Clear 01'],
-    [CloudHat.Cloudy, 'Cloudy 01'],
-    [CloudHat.Contrails, 'Contrails'],
-    [CloudHat.Horizon, 'Horizon'],
-    [CloudHat.HorizonBand1, 'horizonband1'],
-    [CloudHat.HorizonBand2, 'horizonband2'],
-    [CloudHat.HorizonBand3, 'horizonband3'],
-    [CloudHat.Horsey, 'horsey'],
-    [CloudHat.Nimbus, 'Nimbus'],
-    [CloudHat.Puffs, 'Puffs'],
-    [CloudHat.Rain, 'RAIN'],
-    [CloudHat.Snowy, 'Snowy 01'],
-    [CloudHat.Stormy, 'Stormy 01'],
-    [CloudHat.Stratoscumulus, 'stratoscumulus'],
-    [CloudHat.Stripey, 'Stripey'],
-    [CloudHat.Shower, 'shower'],
-    [CloudHat.Wispy, 'Wispy'],
+  private static cloudHatDict: Map<CloudHat, string> = new Map<
+    CloudHat,
+    string
+  >([
+    [CloudHat.Unknown, "Unknown"],
+    [CloudHat.Altostratus, "altostratus"],
+    [CloudHat.Cirrus, "Cirrus"],
+    [CloudHat.Cirrocumulus, "cirrocumulus"],
+    [CloudHat.Clear, "Clear 01"],
+    [CloudHat.Cloudy, "Cloudy 01"],
+    [CloudHat.Contrails, "Contrails"],
+    [CloudHat.Horizon, "Horizon"],
+    [CloudHat.HorizonBand1, "horizonband1"],
+    [CloudHat.HorizonBand2, "horizonband2"],
+    [CloudHat.HorizonBand3, "horizonband3"],
+    [CloudHat.Horsey, "horsey"],
+    [CloudHat.Nimbus, "Nimbus"],
+    [CloudHat.Puffs, "Puffs"],
+    [CloudHat.Rain, "RAIN"],
+    [CloudHat.Snowy, "Snowy 01"],
+    [CloudHat.Stormy, "Stormy 01"],
+    [CloudHat.Stratoscumulus, "stratoscumulus"],
+    [CloudHat.Stripey, "Stripey"],
+    [CloudHat.Shower, "shower"],
+    [CloudHat.Wispy, "Wispy"],
   ]);
 
   private static weatherDict: string[] = [
-    'EXTRASUNNY',
-    'CLEAR',
-    'CLOUDS',
-    'SMOG',
-    'FOGGY',
-    'OVERCAST',
-    'RAIN',
-    'THUNDER',
-    'CLEARING',
-    'NEUTRAL',
-    'SNOW',
-    'BLIZZARD',
-    'SNOWLIGHT',
-    'XMAS',
+    "EXTRASUNNY",
+    "CLEAR",
+    "CLOUDS",
+    "SMOG",
+    "FOGGY",
+    "OVERCAST",
+    "RAIN",
+    "THUNDER",
+    "CLEARING",
+    "NEUTRAL",
+    "SNOW",
+    "BLIZZARD",
+    "SNOWLIGHT",
+    "XMAS",
   ];
 }

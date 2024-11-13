@@ -1,6 +1,6 @@
-import { InvertAxis, InvertAxisFlags } from './enums';
-import type { BaseEntity } from './models/BaseEntity';
-import { Vector3 } from './utils';
+import { InvertAxis, InvertAxisFlags } from "./enums";
+import type { BaseEntity } from "./models/BaseEntity";
+import { Vector3 } from "./utils";
 
 /**
  * UNFINISHED! Class that represents a particle effect asset.
@@ -117,7 +117,7 @@ export class ParticleEffectAsset {
    * @param timeout Max time to load Particle Effect
    */
   public request(timeout: number): Promise<boolean> {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       if (!this.IsLoaded) {
         RequestNamedPtfxAsset(this.assetName);
         const start = GetGameTimer();

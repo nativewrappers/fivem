@@ -1,4 +1,4 @@
-import { Tasks } from './Tasks';
+import { Tasks } from "./Tasks";
 
 // TODO: Figure out why this uses 'null ped'
 export class TaskSequence {

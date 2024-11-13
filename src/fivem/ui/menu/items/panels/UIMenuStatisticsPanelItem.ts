@@ -1,6 +1,6 @@
-import { Color, Crypto, Point, Size } from '../../../../utils';
-import { Rectangle, Text } from '../../../';
-import { Alignment, Font } from '../../../../enums';
+import { Color, Crypto, Point, Size } from "../../../../utils";
+import { Rectangle, Text } from "../../../";
+import { Alignment, Font } from "../../../../enums";
 
 export class UIMenuStatisticsPanelItem {
   public readonly id: string = Crypto.uuidv4();
@@ -11,7 +11,14 @@ export class UIMenuStatisticsPanelItem {
   public readonly divider: Rectangle[] = [];
 
   constructor(name: string, percentage = 0) {
-    this.text = new Text('', new Point(), 0.35, Color.White, Font.ChaletLondon, Alignment.Left);
+    this.text = new Text(
+      "",
+      new Point(),
+      0.35,
+      Color.White,
+      Font.ChaletLondon,
+      Alignment.Left,
+    );
     this.backgroundBar = new Rectangle(
       new Point(),
       new Size(200, 10),
@@ -19,7 +26,9 @@ export class UIMenuStatisticsPanelItem {
     );
     this.activeBar = new Rectangle(new Point(), new Size(0, 10), Color.White);
     for (let i = 1; i <= 4; i++) {
-      this.divider.push(new Rectangle(new Point(), new Size(2, 10), Color.Black));
+      this.divider.push(
+        new Rectangle(new Point(), new Size(2, 10), Color.Black),
+      );
     }
     this.Name = name;
     this.Percentage = percentage;
@@ -30,7 +39,7 @@ export class UIMenuStatisticsPanelItem {
   }
 
   public set Name(value: string) {
-    this.text.caption = value ? value.trim() : '';
+    this.text.caption = value ? value.trim() : "";
   }
 
   public get Percentage(): number {
