@@ -38,17 +38,16 @@
 		"build": "pnpm run delete && tsc --build && tsc-alias && pnpm run copy-data",
 		"copy-data": "cp package.json lib/package.json && cp README.md lib/README.md",
 		"watch": "tsc --watch",
-		"ci": "pnpm run prettier && pnpm run build && pnpm typedoc",
-		"prettier": "prettier */**/*.ts --check",
-		"prettier-fix": "prettier */**/*.ts --write"
+		"ci": "pnpm run check && pnpm run build && pnpm typedoc",
+		"check": "pnpm biome format",
+		"biome-fix": "pnpm biome format --write"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
 		"@citizenfx/client": "^2.0.7604-1",
 		"@citizenfx/server": "2.0.10673-1",
 		"@types/node": "^16.18.103",
 		"buffer": "^6.0.3",
-		"prettier": "^3.3.3",
-		"prettier-linter-helpers": "^1.0.0",
 		"tsc-alias": "^1.8.10",
 		"typedoc": "^0.26.10",
 		"typedoc-fivemjs-theme": "^0.2.7",

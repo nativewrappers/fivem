@@ -1,6 +1,6 @@
 {
 	"plugin": ["typedoc-plugin-markdown"],
-	"entryPoints": ["./src/common/index.ts", "./src/client/index.ts", "./src/server/index.ts"],
+	"entryPoints": ["./src/common/index.ts", "./src/fivem/index.ts", "./src/redm/index.ts", "./src/server/index.ts"],
 	"readme": "none",
 	"out": "docs",
 	"enumMembersFormat": "table",
@@ -10,5 +10,5 @@
 	"indexFormat": "table",
 	"useCodeBlocks": true,
 	"expandObjects": true,
-	"hidePageHeader": true,
+	"hidePageHeader": true
 }
