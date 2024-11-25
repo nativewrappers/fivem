@@ -5,6 +5,9 @@ export enum ConVarType {
   Boolean,
 }
 
+// TODO: Have a way to clean all of this up (maybe hook Symbol.disposable
+// somehow?)
+
 /*
  * Registers the export call for {exportName} to this method
  */
@@ -18,7 +21,7 @@ export function Exports(exportName: string) {
         "Exports does not work on private methods, please mark the method as public",
       );
     }
-    function replacementMethod(this: any, ...args: any[]) {
+    function replacementMethod(this: any, ...args: any[]): any {
       const t = this;
 
       exports(exportName, (...args: any[]) => {
@@ -123,17 +126,17 @@ const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
   throw new Error("Got invalid ConVarType");
 };
 
-type DeserializeFn = (data: string) => unknown;
+type DeserializeFn<T> = (data: T) => unknown;
 
 /*
  * Gets the specified `ConVar`s value, do note that if you *expect* the convar
  * to be a float you should explicitly set is_floating_point, otherwise some
  * bundlers will remove the float
  */
-export function ConVar(
+export function ConVar<T>(
   name: string,
   is_floating_point?: boolean,
-  deserialize?: DeserializeFn,
+  deserialize?: DeserializeFn<T>,
 ) {
   // the implementation shows that this will be _initialValue, but it doesn't
   // seem to actually be???
