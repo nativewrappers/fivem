@@ -21,15 +21,13 @@ export function Exports(exportName: string) {
         "Exports does not work on private methods, please mark the method as public",
       );
     }
-    function replacementMethod(this: any, ...args: any[]): any {
-      const t = this;
 
+    context.addInitializer(function () {
+      const t = this;
       exports(exportName, (...args: any[]) => {
         return originalMethod.call(t, ...args);
       });
-    }
-
-    return replacementMethod;
+    });
   };
 }
 
