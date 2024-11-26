@@ -16,7 +16,7 @@ enum MapChangeType {
 }
 
 type MapChanges<K, V> =
-  [MapChangeType, K?, V?]
+  | [MapChangeType, K?, V?]
   | [MapChangeType.SubValueChanged, K, string, any];
 
 declare function msgpack_pack(data: any): Buffer;
@@ -55,7 +55,9 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     SERVER: if (GlobalData.IS_SERVER) return;
     CLIENT: {
       RegisterResourceAsEventHandler(`${this.#syncName}:syncChanges`);
-      addRawEventListener(`${this.#syncName}:syncChanges`, (data: any) => this.#handleSync(data));
+      addRawEventListener(`${this.#syncName}:syncChanges`, (data: any) =>
+        this.#handleSync(data),
+      );
     }
   }
 
@@ -88,8 +90,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
       const [change_type, key, value] = change_data;
       switch (change_type) {
         case MapChangeType.Add: {
-
-          this.set(key!, value!)
+          this.set(key!, value!);
           continue;
         }
         case MapChangeType.Remove: {
@@ -216,8 +217,8 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   /**
-    * Unregisters from the tick handler and removes the event listener
-    */
+   * Unregisters from the tick handler and removes the event listener
+   */
   dispose() {
     this[Symbol.dispose]();
   }
