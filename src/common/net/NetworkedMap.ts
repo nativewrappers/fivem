@@ -11,13 +11,16 @@ enum MapChangeType {
   Remove,
   // whenever reset() was called on the map
   Reset,
+  // Whenever they're subscribed initially and get the initial load of data
+  Init,
 }
 
 type MapChanges<K, V> =
-  | [MapChangeType, K?, V?]
+  [MapChangeType, K?, V?]
   | [MapChangeType.SubValueChanged, K, string, any];
 
 declare function msgpack_pack(data: any): Buffer;
+declare function msgpack_unpack(data: Buffer): any;
 
 type ChangeListener<V> = (value: V) => void;
 
@@ -34,20 +37,29 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     super(initialValue);
     this.#syncName = syncName;
 
-    GlobalData.GlobalTicks.push(this.#networkTick);
+    GlobalData.NetworkedTicks.push(this);
+
+    on("playerDropped", () => this.onPlayerDropped());
 
     // if we don't have a network tick then we want to register it.
-    if (!GlobalData.NetworkTick) {
-      GlobalData.NetworkTick = setTick(() => {
-        for (const networkTick of GlobalData.GlobalTicks) {
-          networkTick();
-        }
-      });
+    SERVER: {
+      if (!GlobalData.NetworkTick && GlobalData.IS_SERVER) {
+        GlobalData.NetworkTick = setTick(() => {
+          for (const networkedThis of GlobalData.NetworkedTicks) {
+            networkedThis.networkTick();
+          }
+        });
+      }
+    }
+
+    SERVER: if (GlobalData.IS_SERVER) return;
+    CLIENT: {
+      RegisterResourceAsEventHandler(`${this.#syncName}:syncChanges`);
+      addRawEventListener(`${this.#syncName}:syncChanges`, (data: any) => this.#handleSync(data));
     }
   }
 
   // handles removing the player from the map whenever they're dropped
-  @Event("playerDropped")
   private onPlayerDropped() {
     this.removeSubscriber(source);
   }
@@ -57,10 +69,50 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    */
   addSubscriber(sub: number) {
     this.#subscribers.add(sub);
+    const packed_data = msgpack_pack([MapChangeType.Init, Array.from(this)]);
+    TriggerClientEventInternal(
+      `${this.#syncName}:syncChanges`,
+      sub as any,
+      packed_data as any,
+      packed_data.length,
+    );
   }
 
   removeSubscriber(sub: number): boolean {
     return this.#subscribers.delete(sub);
+  }
+
+  #handleSync(msgpack_data: Buffer) {
+    const data = msgpack_unpack(msgpack_data);
+    for (const change_data of data) {
+      const [change_type, key, value] = change_data;
+      switch (change_type) {
+        case MapChangeType.Add: {
+
+          this.set(key!, value!)
+          continue;
+        }
+        case MapChangeType.Remove: {
+          super.delete(key!);
+          continue;
+        }
+        case MapChangeType.Reset: {
+          super.clear();
+          continue;
+        }
+        case MapChangeType.Init: {
+          const key_value = key as [K, V][];
+          for (const [k, v] of key_value) {
+            this.set(k, v);
+          }
+        }
+        case MapChangeType.SubValueChanged: {
+          const data = this.get(key!)!;
+          // @ts-ignore
+          data[value] = change_data[3];
+        }
+      }
+    }
   }
 
   /*
@@ -110,25 +162,33 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           const success = Reflect.set(target, p, newValue, receiver);
           if (success) {
             curMap.#pushChangeForListener(key, target);
-            curMap.#queuedChanges.push([
-              MapChangeType.SubValueChanged,
-              key,
-              p as string,
-              newValue,
-            ]);
+
+            SERVER: {
+              curMap.#queuedChanges.push([
+                MapChangeType.SubValueChanged,
+                key,
+                p as string,
+                newValue,
+              ]);
+            }
           }
           return success;
         },
       };
       v = new Proxy(v, objectChangeHandler);
     }
+
     super.set(key, v);
+
     this.#pushChangeForListener(key, v);
-    this.#queuedChanges.push([MapChangeType.Add, key, v]);
+    SERVER: {
+      this.#queuedChanges.push([MapChangeType.Add, key, v]);
+    }
     return this;
   }
 
   clear(): void {
+    CLIENT: throw new Error(`Cannot call 'clear' on client`);
     // if we're clearing our map then we want to remove all queued changes and
     // just push a reset
     this.#queuedChanges = [];
@@ -137,13 +197,29 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   delete(key: K): boolean {
+    CLIENT: throw new Error(`Cannot call 'delete' on client`);
     this.#queuedChanges.push([MapChangeType.Remove, key]);
     return super.delete(key);
   }
 
-  #networkTick() {
-    this.#triggerEventForSubscribers(this.#queuedChanges);
-    this.#queuedChanges = [];
+  networkTick() {
+    if (this.#queuedChanges.length !== 0) {
+      this.#triggerEventForSubscribers(this.#queuedChanges);
+      this.#queuedChanges = [];
+    }
+  }
+
+  [Symbol.dispose]() {
+    removeEventListener("playerDropped", this.onPlayerDropped);
+
+    GlobalData.NetworkedTicks.filter((v) => v !== this);
+  }
+
+  /**
+    * Unregisters from the tick handler and removes the event listener
+    */
+  dispose() {
+    this[Symbol.dispose]();
   }
 
   get [Symbol.toStringTag](): string {
