@@ -3,6 +3,10 @@
 import type { MsgpackBuffer } from "@common/types";
 import { ClassTypes } from "./ClassTypes";
 
+const EXT_VECTOR2 = 20;
+const EXT_VECTOR3 = 21;
+const EXT_VECTOR4 = 22;
+
 /**
  * Represents a 2-dimensional vector.
  */
@@ -148,13 +152,14 @@ export class Vector {
    */
   public static fromBuffer<T extends VectorType>(
     this: T,
-    { buffer }: MsgpackBuffer,
+    { buffer, type }: MsgpackBuffer,
   ) {
-    const arr: any = [];
+    if (type !== EXT_VECTOR2 && type !== EXT_VECTOR3 && type !== EXT_VECTOR4)
+      throw new Error("Buffer type is not a valid Vector.");
 
-    for (let offset = 0; offset < buffer.length; offset += 4)
-      arr.push(buffer.readFloatLE(offset));
-
+    const arr = Array.from(new Float32Array(buffer), (v) =>
+      Number(v.toPrecision(7)),
+    );
     return this.fromArray(arr) as InstanceType<T>;
   }
 
@@ -420,7 +425,8 @@ export class Vector {
       const y = b[key] as number | undefined;
 
       if (!!x && !!y) result += x * y;
-      else if (x || y) throw new Error("Vectors must have the same dimensions");
+      else if (x || y)
+        throw new Error("Vectors must have the same dimensions.");
     }
 
     return result;
@@ -477,7 +483,7 @@ export class Vector {
    * Creates a vector from an array of numbers.
    * @param primitive An array of numbers (usually returned by a native).
    */
-  static fromArray<T extends VectorType, U extends VectorArray<T>>(
+  static fromArray<T extends VectorType, U extends VectorArray<T> | number[]>(
     this: T,
     primitive: U,
   ) {
@@ -496,8 +502,7 @@ export class Vector {
     if (Array.isArray(primitive))
       return this.fromArray(primitive as VectorArray<T>) as InstanceType<T>;
 
-    if ("buffer" in primitive && "type" in primitive)
-      return this.fromBuffer(primitive);
+    if ("buffer" in primitive) return this.fromBuffer(primitive);
 
     const { x, y, z, w } = primitive;
 
