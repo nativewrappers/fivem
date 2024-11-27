@@ -482,7 +482,7 @@ export class Vector {
     primitive: U,
   ) {
     const [x, y, z, w] = primitive;
-    return this.create(x, y, z, w) as InferVector<U>;
+    return this.create(x, y, z, w) as InstanceType<T>;
   }
 
   /**
