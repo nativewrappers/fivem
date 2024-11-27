@@ -517,7 +517,7 @@ export class Vector {
     this: T,
     primitives: U,
   ) {
-    return primitives.map(this.fromArray);
+    return primitives.map(this.fromArray) as InstanceType<T>[];
   }
 
   /**
