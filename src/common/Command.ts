@@ -239,7 +239,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
         const commandObj = { ...this, name: `/${name}` };
 
         if (GlobalData.IS_CLIENT) {
-          emit("chat:addSuggestion", commandObj);
+          emit("chat:addSuggestions", commandObj);
         } else {
           commands.push(commandObj);
           emitNet("chat:addSuggestions", -1, commandObj);
