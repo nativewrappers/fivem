@@ -132,6 +132,10 @@ export class Model implements Disposable {
     return IsModelAVehicle(this.hash);
   }
 
+  public get IsAnyVehicle() {
+    return this.IsTrain || this.IsVehicle || this.IsBoat
+  }
+
   public get IsWeapon(): boolean {
     return IsWeaponValid(this.hash);
   }

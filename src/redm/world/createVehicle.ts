@@ -14,7 +14,7 @@ export async function createVehicle(
   bDontAutoCreateDraftAnimals = true,
   p8 = true,
 ): Promise<Vehicle | null> {
-  if (!model.IsPed || !model.request(1000)) {
+  if (!model.IsAnyVehicle || !model.request(1000)) {
     return null;
   }
 

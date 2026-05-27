@@ -16,7 +16,7 @@ export async function createDraftVehicle(
   draftAnimalPopGroup = 0,
   p9 = true,
 ): Promise<Vehicle | null> {
-  if (!model.IsPed || !model.request(1000)) {
+  if (!model.IsVehicle || !model.request(1000)) {
     return null;
   }
 
