@@ -281,7 +281,6 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           return Reflect.get(target, prop, reciever);
         },
         set(target, p, newValue, receiver) {
-          if (!super.has(key)) return false;
           const success = Reflect.set(target, p, newValue, receiver);
           if (success) {
             curThis.#pushChangeForListener(key, target);
