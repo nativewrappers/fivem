@@ -281,6 +281,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           return Reflect.get(target, prop, reciever);
         },
         set(target, p, newValue, receiver) {
+          if (!super.has(key)) return false;
           const success = Reflect.set(target, p, newValue, receiver);
           if (success) {
             curThis.#pushChangeForListener(key, target);
@@ -319,6 +320,17 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   delete(key: K): boolean {
     $CLIENT: if (GlobalData.IS_CLIENT) throw new Error(`Cannot call 'delete' on client`);
     this.#queuedChanges.push([MapChangeType.Remove, key]);
+    // we need to make sure that we remove any queued changes we have for setting
+    // the value/sub-value if done in the same tick as a remove
+    this.#queuedChanges = this.#queuedChanges.filter((v) => {
+      if (v[0] !== MapChangeType.Remove) {
+        if (v[1] === key) {
+          return false;
+        }
+      }
+
+      return true;
+    });
     return super.delete(key);
   }
 
