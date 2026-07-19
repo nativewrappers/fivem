@@ -79,7 +79,6 @@ export abstract class CommonBaseEntity extends IHandle {
       if (GlobalData.IS_REDM) {
         Citizen.invokeNative("0xE31A04513237DC89", this.handle);
       } else {
-        // @ts-expect-error: proper name on fivem
         NetworkUnregisterNetworkedEntity(this.handle);
       }
     }
